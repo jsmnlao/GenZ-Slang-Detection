@@ -92,7 +92,7 @@ Michael	O
 Jordan	O
 is	O
 the	O
-GOAT	O
+GOAT	B-SLANG
 of	O
 basketball	O
 .	O
@@ -150,7 +150,7 @@ and	O
 then	O
 she	O
 just	O
-ghosted	O
+ghosted	B-SLANG
 me	O
 .	O
 
@@ -205,7 +205,7 @@ song	O
 is	O
 living	O
 rent	B-SLANG
--	I-SLANG
+-	O
 free	I-SLANG
 in	O
 my	O
@@ -240,7 +240,7 @@ This	O
 pizza	O
 is	O
 bussin	B-SLANG
-’	I-SLANG
+’	O
 !	O
 
 Her	O
@@ -258,7 +258,7 @@ saying	O
 he	O
 ’	O
 s	O
-canceled	O
+canceled	B-SLANG
 after	O
 those	O
 comments	O
@@ -281,7 +281,7 @@ s	O
 such	O
 an	O
 e	B-SLANG
--	I-SLANG
+-	O
 boy	I-SLANG
 with	O
 those	O
@@ -297,7 +297,7 @@ s	O
 such	O
 an	O
 e	B-SLANG
--	I-SLANG
+-	O
 girl	I-SLANG
 with	O
 her	O
@@ -349,7 +349,7 @@ cap	B-SLANG
 
 I	O
 high	B-SLANG
--	I-SLANG
+-	O
 key	I-SLANG
 love	O
 this	O
@@ -454,12 +454,12 @@ periodt	B-SLANG
 .	O
 
 He	O
-finessed	B-SLANG
+finessed	O
 his	O
 way	O
 into	O
 the	O
-VIP	O
+VIP	B-SLANG
 section	O
 .	O
 
@@ -467,7 +467,7 @@ That	O
 joke	O
 had	O
 me	O
-weak	O
+weak	B-SLANG
 !	O
 
 She	O
@@ -525,7 +525,7 @@ outfit	O
 ?	O
 This	B-SLANG
 ain	I-SLANG
-’	I-SLANG
+’	O
 t	I-SLANG
 it	I-SLANG
 ,	I-SLANG
@@ -585,9 +585,9 @@ He	O
 was	O
 out	O
 there	O
-bangin	O
+bangin	B-SLANG
 ’	O
-30s	O
+30s	I-SLANG
 all	O
 night	O
 .	O
@@ -613,9 +613,9 @@ I	O
 m	O
 about	O
 to	O
-beat	O
-my	O
-face	O
+beat	B-SLANG
+my	I-SLANG
+face	I-SLANG
 for	O
 this	O
 event	O
@@ -694,7 +694,7 @@ had	O
 a	O
 major	O
 glow	B-SLANG
--	I-SLANG
+-	O
 up	I-SLANG
 over	O
 the	O
@@ -713,10 +713,10 @@ I	B-SLANG
 oop	I-SLANG
 !	O
 
-It	O
+It	B-SLANG
 ’	O
-s	O
-giving	O
+s	I-SLANG
+giving	I-SLANG
 90s	O
 nostalgia	O
 with	O
@@ -1035,8 +1035,8 @@ LA	O
 Fr	B-SLANG
 ?	O
 
-Ion	O
-even	O
+Ion	B-SLANG
+even	I-SLANG
 care	O
 what	O
 they	O
@@ -1050,10 +1050,10 @@ too	O
 much	O
 ,	O
 I	O
-can	O
+can	B-SLANG
 ’	O
-t	O
-even	O
+t	I-SLANG
+even	I-SLANG
 !	O
 
 Let	O
@@ -1351,8 +1351,8 @@ pizza	O
 I	O
 ’	O
 m	O
-with	O
-it	O
+with	B-SLANG
+it	I-SLANG
 .	O
 
 He	O
@@ -1545,7 +1545,7 @@ plans	O
 She	O
 ’	O
 s	O
-breadcrumbing	O
+breadcrumbing	B-SLANG
 him	O
 ,	O
 always	O
@@ -1619,8 +1619,8 @@ late	O
 kind	O
 of	O
 a	O
-pink	O
-flag	O
+pink	B-SLANG
+flag	I-SLANG
 ,	O
 but	O
 not	O
@@ -1667,26 +1667,6 @@ suit	O
 total	O
 zaddy	B-SLANG
 vibes	O
-.	O
-
-He	O
-ghosted	O
-me	O
-months	O
-ago	O
-,	O
-and	O
-now	O
-he	O
-’	O
-s	O
-zombie	B-SLANG
--	I-SLANG
-ing	I-SLANG
-by	O
-texting	O
-me	O
-again	O
 .	O
 
 I	O
@@ -1785,7 +1765,7 @@ That	O
 troll	O
 got	O
 a	O
-BAN	O
+BAN	B-SLANG
 from	O
 the	O
 server	O
@@ -1946,7 +1926,7 @@ now	O
 Keep	O
 this	O
 number	O
-ICO	O
+ICO	B-SLANG
 any	O
 emergencies	O
 
@@ -2070,7 +2050,7 @@ night	O
 but	O
 I	O
 got	O
-NR	O
+NR	B-SLANG
 .	O
 
 OIC	B-SLANG
@@ -2111,17 +2091,6 @@ now	O
 PRW	B-SLANG
 .	O
 
-For	O
-more	O
-info	O
-,	O
-check	O
-QPSA7	O
-in	O
-the	O
-FAQ	O
-.	O
-
 That	O
 video	O
 had	O
@@ -2147,7 +2116,7 @@ funny	O
 ,	O
 I	O
 was	O
-ROFLMAO	O
+ROFLMAO	B-SLANG
 .	O
 
 Let	O
@@ -2268,7 +2237,7 @@ was	O
 7K	B-SLANG
 !	O
 
-MRW	O
+MRW	B-SLANG
 I	O
 see	O
 the	O
@@ -2279,7 +2248,7 @@ the	O
 weekend	O
 .	O
 
-MFW	O
+MFW	B-SLANG
 someone	O
 eats	O
 my	O
@@ -2296,7 +2265,7 @@ a	O
 long	O
 week	O
 .	O
-IFY	O
+IFY	B-SLANG
 ,	O
 man	O
 .	O
@@ -2319,7 +2288,7 @@ in	O
 a	O
 while	O
 ,	O
-MU	O
+MU	B-SLANG
 !	O
 
 Work	O
@@ -2409,8 +2378,8 @@ what	O
 
 Hey	O
 ,	O
-?	B-SLANG
-4U	I-SLANG
+?	O
+4U	B-SLANG
 :	O
 Do	O
 you	O
@@ -2433,19 +2402,19 @@ repeat	O
 that	O
 ?	O
 
-Got	O
-it	O
+Got	B-SLANG
+it	I-SLANG
 ,	O
-^	B-SLANG
-^	I-SLANG
+^	O
+^	O
 
 I	O
 really	O
 appreciate	O
 you	O
-<	B-SLANG
-3	I-SLANG
-.	O
+<	O
+3	O
+.	B-SLANG
 
 They	O
 broke	O
@@ -2453,9 +2422,9 @@ up	O
 last	O
 night	O
 ,	O
-<	B-SLANG
-/	I-SLANG
-3	I-SLANG
+<	O
+/	O
+3	B-SLANG
 
 I	O
 love	O
@@ -2463,8 +2432,8 @@ you	O
 soooo	O
 much	O
 !	O
-<	B-SLANG
-3333	I-SLANG
+<	O
+3333	B-SLANG
 
 It	O
 was	O
@@ -2473,8 +2442,8 @@ tough	O
 project	O
 ,	O
 but	O
-@	B-SLANG
-TEOTD	I-SLANG
+@	O
+TEOTD	B-SLANG
 ,	O
 it	O
 was	O
@@ -2482,27 +2451,11 @@ worth	O
 it	O
 .	O
 
-Here	O
-’	O
-s	O
-my	O
-0	B-SLANG
-.	I-SLANG
-02	I-SLANG
-on	O
-the	O
-situation	O
-:	O
-We	O
-should	O
-wait	O
-.	O
-
 I	O
 ’	O
 ve	O
 got	O
-1TG	O
+1TG	B-SLANG
 before	O
 I	O
 finish	O
@@ -2862,8 +2815,8 @@ nailed	O
 that	O
 presentation	O
 ,	O
-^	B-SLANG
-5	I-SLANG
+^	O
+5	B-SLANG
 !	O
 
 That	O
@@ -2966,9 +2919,9 @@ sweet	O
 of	O
 you	O
 ,	O
-*	B-SLANG
-s	I-SLANG
-*	I-SLANG
+*	O
+s	O
+*	O
 .	O
 
 I	O
@@ -2977,9 +2930,9 @@ ll	O
 see	O
 you	O
 later	O
-*	B-SLANG
-w	I-SLANG
-*	I-SLANG
+*	O
+w	B-SLANG
+*	O
 .	O
 
 He	O
@@ -3634,20 +3587,6 @@ you	O
 today	O
 .	O
 
-A	B-SLANG
-/	I-SLANG
-N	I-SLANG
-:	O
-I	O
-’	O
-ll	O
-update	O
-the	O
-next	O
-chapter	O
-soon	O
-.	O
-
 I	O
 ’	O
 ve	O
@@ -3781,15 +3720,6 @@ work	O
 ,	O
 ASIG	B-SLANG
 .	O
-
-Hey	O
-,	O
-A	B-SLANG
-/	I-SLANG
-S	I-SLANG
-/	I-SLANG
-L	I-SLANG
-?	O
 
 Can	O
 you	O
@@ -3981,7 +3911,7 @@ sec	O
 He	O
 got	O
 B	B-SLANG
-&	I-SLANG
+&	O
 from	O
 the	O
 forum	O
@@ -4031,21 +3961,11 @@ Quiet	O
 B9	B-SLANG
 !	O
 
-My	O
-B	B-SLANG
-/	I-SLANG
-F	I-SLANG
-is	O
-meeting	O
-me	O
-later	O
-.	O
-
 Give	O
 me	O
 the	O
 B	B-SLANG
-/	I-SLANG
+/	O
 G	I-SLANG
 on	O
 that	O
@@ -4241,7 +4161,7 @@ m	O
 leaving	O
 early	O
 B	B-SLANG
-/	I-SLANG
+/	O
 C	I-SLANG
 I	O
 have	O
@@ -4313,7 +4233,7 @@ week	O
 
 Happy	O
 B	B-SLANG
--	I-SLANG
+-	O
 DAY	I-SLANG
 !	O
 
@@ -4671,7 +4591,7 @@ works	O
 .	O
 
 BM	B-SLANG
-&	I-SLANG
+&	O
 Y	I-SLANG
 ,	O
 I	O
@@ -5038,7 +4958,7 @@ joke	O
 made	O
 me	O
 C	B-SLANG
-&	I-SLANG
+&	O
 G	I-SLANG
 .	O
 
@@ -5295,7 +5215,7 @@ I	O
 ’	O
 ll	O
 C	B-SLANG
-/	I-SLANG
+/	O
 P	I-SLANG
 this	O
 to	O
@@ -5610,7 +5530,7 @@ ready	O
 Are	O
 you	O
 D46	B-SLANG
-?	I-SLANG
+?	O
 
 Let	O
 ’	O
@@ -5927,7 +5847,7 @@ new	O
 game	O
 to	O
 D	B-SLANG
-/	I-SLANG
+/	O
 L	I-SLANG
 .	O
 
@@ -6859,7 +6779,7 @@ FBOW	B-SLANG
 .	O
 
 FC	B-SLANG
-’	I-SLANG
+’	O
 INGO	I-SLANG
 ,	O
 just	O
@@ -7244,7 +7164,7 @@ G	B-SLANG
 
 My	O
 G	B-SLANG
-/	I-SLANG
+/	O
 F	I-SLANG
 is	O
 meeting	O
@@ -7396,7 +7316,7 @@ bold	O
 statement	O
 ,	O
 GD	B-SLANG
-/	I-SLANG
+/	O
 R	I-SLANG
 !	O
 
@@ -7576,7 +7496,7 @@ everyone	O
 !	O
 
 GL	B-SLANG
-/	I-SLANG
+/	O
 HF	I-SLANG
 before	O
 the	O
@@ -7747,7 +7667,7 @@ mad	O
 ,	O
 but	O
 GR	B-SLANG
-&	I-SLANG
+&	O
 D	I-SLANG
 !	O
 
@@ -7896,7 +7816,7 @@ Miss	O
 you	O
 ,	O
 H	B-SLANG
-&	I-SLANG
+&	O
 K	I-SLANG
 !	O
 
@@ -7967,7 +7887,7 @@ the	O
 best	O
 ,	O
 H	B-SLANG
--	I-SLANG
+-	O
 BDAY	I-SLANG
 !	O
 
@@ -8010,7 +7930,7 @@ the	O
 dads	O
 ,	O
 H	B-SLANG
--	I-SLANG
+-	O
 FDAY	I-SLANG
 !	O
 
@@ -8063,7 +7983,7 @@ out	O
 there	O
 an	O
 H	B-SLANG
--	I-SLANG
+-	O
 MDAY	I-SLANG
 !	O
 
@@ -8854,7 +8774,7 @@ my	O
 phone	O
 .	O
 
-JC	O
+JC	B-SLANG
 ,	O
 did	O
 you	O
@@ -8927,7 +8847,7 @@ t	O
 mean	O
 it	O
 ,	O
-JJ	O
+JJ	B-SLANG
 !	O
 
 Don	O
@@ -8950,7 +8870,7 @@ moving	O
 to	O
 Mars	O
 …	O
-JK	O
+JK	B-SLANG
 !	O
 
 If	O
@@ -8994,7 +8914,7 @@ mad	O
 I	O
 ’	O
 m	O
-JT	O
+JT	B-SLANG
 !	O
 
 JTLYK	B-SLANG
@@ -9062,7 +8982,7 @@ need	O
 a	O
 new	O
 k	B-SLANG
-/	I-SLANG
+/	O
 b	I-SLANG
 ,	O
 mine	O
@@ -9922,7 +9842,7 @@ latest	O
 update	O
 from	O
 M	B-SLANG
-$	I-SLANG
+$	O
 .	O
 
 He	O
@@ -12624,7 +12544,7 @@ so	O
 funny	O
 ,	O
 SH	B-SLANG
-^	I-SLANG
+^	O
 !	O
 
 I	O
@@ -12871,7 +12791,7 @@ being	O
 late	O
 ,	O
 S	B-SLANG
-’	I-SLANG
+’	O
 OK	I-SLANG
 .	O
 
@@ -13041,7 +12961,7 @@ respond	O
 You	O
 better	O
 ST	B-SLANG
-&	I-SLANG
+&	O
 D	I-SLANG
 before	O
 you	O
@@ -13272,8 +13192,8 @@ rough	O
 day	O
 ?	O
 T	B-SLANG
-:	I-SLANG
-)	I-SLANG
+:	O
+)	O
 T	I-SLANG
 !	O
 
@@ -14059,8 +13979,8 @@ I	O
 m	O
 wrong	O
 ?	O
-^	B-SLANG
-URS	I-SLANG
+^	O
+URS	B-SLANG
 !	O
 
 That	O
@@ -14161,7 +14081,7 @@ server	O
 .	O
 
 U	B-SLANG
--	I-SLANG
+-	O
 L	I-SLANG
 love	O
 this	O
@@ -14236,7 +14156,7 @@ the	O
 project	O
 ,	O
 URA	B-SLANG
-*	I-SLANG
+*	O
 !	O
 
 URH	B-SLANG
@@ -14529,7 +14449,7 @@ VWP	B-SLANG
 !	O
 
 W	B-SLANG
-@	I-SLANG
+@	O
 did	O
 you	O
 just	O
@@ -14544,7 +14464,7 @@ to	O
 the	O
 movies	O
 W	B-SLANG
-/	I-SLANG
+/	O
 my	O
 friends	O
 .	O
@@ -14559,7 +14479,7 @@ a	O
 while	O
 ,	O
 W	B-SLANG
-/	I-SLANG
+/	O
 B	I-SLANG
 !	O
 
@@ -14722,7 +14642,7 @@ t	O
 agree	O
 ?	O
 W	B-SLANG
-/	I-SLANG
+/	O
 E	I-SLANG
 .	O
 
@@ -14734,7 +14654,7 @@ to	O
 relax	O
 this	O
 W	B-SLANG
-/	I-SLANG
+/	O
 END	I-SLANG
 .	O
 
@@ -14956,7 +14876,7 @@ t	O
 finish	O
 this	O
 W	B-SLANG
-/	I-SLANG
+/	O
 O	I-SLANG
 more	O
 information	O
@@ -15020,7 +14940,7 @@ already	O
 here	O
 ,	O
 WRU	B-SLANG
-@	I-SLANG
+@	O
 ?	O
 
 WRUD	B-SLANG
@@ -15237,9 +15157,9 @@ That	O
 rollercoaster	O
 was	O
 X	B-SLANG
--	I-SLANG
+-	O
 1	I-SLANG
--	I-SLANG
+-	O
 10	I-SLANG
 !	O
 
@@ -15253,7 +15173,7 @@ She	O
 ’	O
 s	O
 X	B-SLANG
-!	I-SLANG
+!	O
 Always	O
 multitasking	O
 .	O
@@ -15319,7 +15239,7 @@ XYZ	B-SLANG
 !	O
 
 Y	B-SLANG
-?	I-SLANG
+?	O
 I	O
 don	O
 ’	O
@@ -15704,7 +15624,7 @@ place	O
 is	O
 a	O
 Z	B-SLANG
-%	I-SLANG
+%	O
 with	O
 all	O
 the	O
