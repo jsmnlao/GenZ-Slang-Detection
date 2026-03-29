@@ -1,0 +1,40 @@
+============================================================
+DICTIONARY BASELINE EVALUATION REPORT
+============================================================
+
+=== TRAIN ===
+  Sentence-level:
+    Accuracy  : 0.5939
+    Precision : 0.5622
+    Recall    : 0.8486
+    F1        : 0.6763
+  Token-level:
+    Accuracy  : 0.9197
+    Precision : 0.2666
+    Recall    : 0.5030
+    F1        : 0.3485
+
+=== DEV ===
+  Sentence-level:
+    Accuracy  : 0.5940
+    Precision : 0.5628
+    Recall    : 0.8427
+    F1        : 0.6749
+  Token-level:
+    Accuracy  : 0.9189
+    Precision : 0.2708
+    Recall    : 0.4915
+    F1        : 0.3492
+
+=== TEST ===
+  Sentence-level:
+    Accuracy  : 0.6000
+    Precision : 0.5675
+    Recall    : 0.8407
+    F1        : 0.6776
+  Token-level:
+    Accuracy  : 0.9230
+    Precision : 0.2733
+    Recall    : 0.5214
+    F1        : 0.3586
+
