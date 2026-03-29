@@ -1,0 +1,1563 @@
+sentence,binary_label,tags
+got the job today big w,1,O O O O O B-SLANG
+i forgot my wallet at home thats an l,1,O O O O O O O O B-SLANG
+your tweet got 5 likes and 100 replies calling you out l ratio,1,O O O O O O O O O O O B-SLANG I-SLANG
+that meme is so dank,1,O O O O B-SLANG
+that phrase is so cheugy no one says that anymore,1,O O O O B-SLANG O O O O O
+tfw you finish a big project and can finally relax,1,B-SLANG O O O O O O O O O
+hes really woke about climate change,1,O O B-SLANG O O O
+this new track is a total bop,1,O O O O O O B-SLANG
+michael jordan is the goat of basketball,1,O O O O B-SLANG O O
+look at that smol puppy its adorable,1,O O O B-SLANG O O O
+whats good fam long time no see,1,O O B-SLANG O O O O
+she really had a glow up since high school,1,O O O O B-SLANG I-SLANG O O O
+i stan bts so hard,1,O B-SLANG O O O
+we were talking for weeks and then she just ghosted me,1,O O O O O O O O O B-SLANG O
+hes just salty because he lost the game,1,O O B-SLANG O O O O O
+im just here to sip tea and watch the drama unfold,1,O O O O B-SLANG I-SLANG O O O O O
+his drip today is on point,1,O B-SLANG O O O O
+that hidden message in the movie was iconic iykyk,1,O O O O O O O O B-SLANG
+that song is living rent free in my head,1,O O O O B-SLANG I-SLANG O O O
+if you keep talking like that youre gonna catch these hands,1,O O O O O O O O B-SLANG I-SLANG I-SLANG
+she dragged him for his terrible performance,1,O B-SLANG O O O O O
+this pizza is bussin,1,O O O B-SLANG
+her makeup was snatched at the event,1,O O O B-SLANG O O O
+people are saying hes canceled after those comments,1,O O O O B-SLANG O O O
+ffs why is this meeting taking so long,1,B-SLANG O O O O O O O
+hes such an e boy with those black nails and chains,1,O O O B-SLANG I-SLANG O O O O O O
+shes such an e girl with her neon eyeliner and platform boots,1,O O O B-SLANG I-SLANG O O O O O O O
+she wore the same dress as the bride at the wedding big yikes,1,O O O O O O O O O O O B-SLANG I-SLANG
+im finna head out,1,O B-SLANG O O
+he said hes a millionaire but thats cap,1,O O O O O O O B-SLANG
+i high key love this song,1,O B-SLANG I-SLANG O O O
+he buys her gifts every day hes such a simp,1,O O O O O O O O O B-SLANG
+that outfit is so camp its amazing,1,O O O O B-SLANG O O
+he showed up to the party looking like a whole snack,1,O O O O O O O O O O B-SLANG
+youre being way too extra right now take several seats,1,O O O O O O O B-SLANG I-SLANG I-SLANG
+sheesh thats a lot of money,1,B-SLANG O O O O O
+this song hits different at night,1,O O B-SLANG I-SLANG O O
+you want to meet at 6 bet,1,O O O O O O B-SLANG
+thats the best movie of all time periodt,1,O O O O O O O B-SLANG
+he finessed his way into the vip section,1,O O O O O O B-SLANG O
+that joke had me weak,1,O O O O B-SLANG
+shes living her life like shes the main character in a movie,1,O O O O O O O B-SLANG I-SLANG O O O
+sis you are killing it in that outfit,1,B-SLANG O O O O O O O
+that meme is sending me,1,O O O B-SLANG I-SLANG
+im trying to stack up this gaup before the weekend,1,O O O O O O B-SLANG O O O
+that outfit this aint it chief,1,O O B-SLANG I-SLANG I-SLANG I-SLANG
+she brought a whole suitcase for a weekend trip shes so extra,1,O O O O O O O O O O O B-SLANG
+her clapback to that troll was savage,1,O B-SLANG O O O O O
+im about to pull up c me at the club,1,O O O O O O B-SLANG O O O
+its cold asl outside,1,O O B-SLANG O
+he was out there bangin 30s all night,1,O O O O B-SLANG I-SLANG O O
+he doesnt care what anyone thinks hes so based,1,O O O O O O O O B-SLANG
+im about to beat my face for this event tonight,1,O O O B-SLANG I-SLANG I-SLANG O O O O
+hes big mad because we beat his team last night,1,O B-SLANG I-SLANG O O O O O O O
+whats your body count,1,O O B-SLANG I-SLANG
+were going to a boujee restaurant tonight,1,O O O O B-SLANG O O
+he was joking about his bussy all night,1,O O O O O B-SLANG O O
+that performance was so cringe,1,O O O O B-SLANG
+that joke had me ded,1,O O O O B-SLANG
+pizza is the best food ever facts,1,O O O O O O B-SLANG
+she had a major glow up over the summer,1,O O O O B-SLANG I-SLANG O O O
+she spilled her drink on her dress and i oop,1,O O O O O O O O B-SLANG I-SLANG
+its giving 90s nostalgia with that outfit,1,B-SLANG I-SLANG O O O O O
+that party was lit,1,O O O B-SLANG
+that movie was mid nothing special,1,O O O B-SLANG O O
+not you eating the last slice of pizza,1,B-SLANG I-SLANG O O O O O O
+shes acting like such an npc just going with the flow,1,O O O O O B-SLANG O O O O O
+you dont understand memes ok boomer,1,O O O O B-SLANG I-SLANG
+im telling you that was the best movie ive ever seen on god,1,O O O O O O O O O O O B-SLANG I-SLANG
+that tweet got ratio d so bad more people replied than liked it,1,O O O B-SLANG O O O O O O O O O
+hes got so much rizz everyone likes him,1,O O O O B-SLANG O O O
+i spilled my drink sksksk,1,O O O O B-SLANG
+this new track slaps,1,O O O B-SLANG
+whys he acting so sus all of a sudden,1,O O O O B-SLANG O O O O
+shes slaying in that outfit tonight,1,O B-SLANG O O O O
+spill the tea i need to know what happened,1,O O B-SLANG O O O O O O
+that outfit is fire she really understood the assignment,1,O O O O O O B-SLANG I-SLANG I-SLANG
+those sneakers are valid,1,O O O B-SLANG
+vibe check are you good,1,B-SLANG I-SLANG O O O
+we were just vibing to some music all night,1,O O O B-SLANG O O O O O
+that performance was amazing wig,1,O O O O B-SLANG
+lets meet at 7 word,1,O O O O B-SLANG
+im tired af after that workout,1,O O B-SLANG O O O
+he solved that puzzle in seconds big brain moves,1,O O O O O O B-SLANG I-SLANG O
+hes such a chad always winning at everything,1,O O O B-SLANG O O O O
+that car is clapped its falling apart,1,O O O B-SLANG O O O
+i waited all day for him to text me back im such a clown,1,O O O O O O O O O O O O O B-SLANG
+that old tweet was so cringy i cant believe i posted that,1,O O O O O B-SLANG O O O O O O
+i have major fomo after seeing everyones vacation pics,1,O O O B-SLANG O O O O O
+youre moving to la fr,1,O O O O B-SLANG
+ion even care what they think,1,B-SLANG I-SLANG O O O O
+this meme is too much i cant even,1,O O O O O O B-SLANG I-SLANG
+lets meet irl next week,1,O O B-SLANG O O
+that woman asked to speak to the manager total karen move,1,O O O O O O O O O B-SLANG O
+im low key excited about the new movie,1,O B-SLANG I-SLANG O O O O O
+beyoncé is such a mom,1,O O O O B-SLANG
+keanu reeves is my dad,1,O O O O B-SLANG
+ngl that was a tough workout,1,B-SLANG O O O O O
+shes such a pick me girl always saying shes not like other girls,1,O O O B-SLANG I-SLANG I-SLANG O O O O O O O
+my boss is such a boomer doesnt even know how to use zoom,1,O O O O O B-SLANG O O O O O O O
+youre sleeping on this new album its so good,1,O B-SLANG I-SLANG O O O O O O
+she was throwing shade at my outfit,1,O O O B-SLANG O O O
+i was shook when i found out the news,1,O O B-SLANG O O O O O O
+you forgot your homework again smh,1,O O O O O B-SLANG
+tbh i didnt enjoy the party last night,1,B-SLANG O O O O O O O
+hes been texting me nonstop hes so thirsty,1,O O O O O O O B-SLANG
+she posted a total thirst trap on instagram,1,O O O O B-SLANG I-SLANG O O
+yas queen youre slaying that outfit,1,B-SLANG O O O O O
+he yeeted the ball across the yard,1,O B-SLANG O O O O O
+he talks with his mouth full that gave me the ick,1,O O O O O O O O O O B-SLANG
+naur why did you do that,1,B-SLANG O O O O O
+want to grab dinner say less im there,1,O O O O B-SLANG I-SLANG O O
+youre being so unserious about this important issue,1,O O O B-SLANG O O O O
+i was gagged when i saw her outfit,1,O O B-SLANG O O O O O
+she ate that performance no crumbs left,1,O B-SLANG O O O O O
+you won the game poggers,1,O O O O B-SLANG
+shes such a heather everyone loves her,1,O O O B-SLANG O O O
+you like pizza im with it,1,O O O O B-SLANG I-SLANG
+hes flexing his new car all over social media,1,O B-SLANG O O O O O O O
+everything is gucci dont worry,1,O O B-SLANG O O
+im ready for hot girl summer this year,1,O O O B-SLANG I-SLANG I-SLANG O O
+hes so sturdy on the dance floor,1,O O B-SLANG O O O O
+you cant beat the level sounds like a skill issue,1,O O O O O O O O B-SLANG I-SLANG
+that meme is tntl worthy,1,O O O B-SLANG O
+sorry g2g talk later,1,O B-SLANG O O
+i might move abroad one day ynk,1,O O O O O O B-SLANG
+that joke was hilarious csl,1,O O O O B-SLANG
+you bought the same shoes as me gmta,1,O O O O O O O B-SLANG
+imo that movie wasnt that great,1,B-SLANG O O O O O
+imoh this is the best pizza place in town,1,B-SLANG O O O O O O O O
+youre fired jk i could never fire you,1,O O B-SLANG O O O O O
+im spending the weekend with my bae,1,O O O O O O B-SLANG
+hows it going ssdd,1,O O O B-SLANG
+the beach is amazing wywh,1,O O O O B-SLANG
+i think hes benching me he texts but never makes plans,1,O O O B-SLANG O O O O O O O
+shes breadcrumbing him always texting but never wanting to meet,1,O B-SLANG O O O O O O O O
+everyones cuffing this fall its relationship season,1,O B-SLANG O O O O O
+we need to dtr soon i need to know where we stand,1,O O O B-SLANG O O O O O O O O
+he keeps telling me im overreacting but i think hes gaslighting me,1,O O O O O O O O O O B-SLANG O
+goodnight ily,1,O B-SLANG
+shes always late kind of a pink flag but not a dealbreaker,1,O O O O O O B-SLANG I-SLANG O O O O
+they hooked up last night definitely a smash,1,O O O O O O O B-SLANG
+weve been hanging out a lot but its just a situationship,1,O O O O O O O O O O B-SLANG
+look at him in that suit total zaddy vibes,1,O O O O O O O B-SLANG O
+ill be afk for 10 minutes need to take a break,1,O O B-SLANG O O O O O O O O
+i need that report asap,1,O O O O B-SLANG
+im atk ready for the meeting,1,O B-SLANG O O O O
+im busy atm can we talk later,1,O O B-SLANG O O O O
+lets meet up im a3,1,O O O O B-SLANG
+im bak what did i miss,1,O B-SLANG O O O O
+im stepping out bbl,1,O O O B-SLANG
+grabbing a snack bbs,1,O O O B-SLANG
+got to run bfn,1,O O O B-SLANG
+that troll got a ban from the server,1,O O O O B-SLANG O O O
+need to grab my phone brb,1,O O O O O B-SLANG
+just parking brt,1,O O B-SLANG
+btw ill be late to the party,1,B-SLANG O O O O O O
+i need to finish this b4 i go out,1,O O O O O B-SLANG O O O
+it was fun hanging out cu later,1,O O O O O B-SLANG O
+got to go cul8r,1,O O O B-SLANG
+cya tomorrow,1,B-SLANG O
+check the faq before you ask questions,1,O O B-SLANG O O O O
+i applied for the job fc,1,O O O O O B-SLANG
+fwiw i think you should go for it,1,B-SLANG O O O O O O O
+fyi the meeting has been moved to 3 pm,1,B-SLANG O O O O O O O O
+youre still talking about that gal,1,O O O O O B-SLANG
+that was a tough match gg,1,O O O O O B-SLANG
+its late gn,1,O O B-SLANG
+that party was gr8,1,O O O B-SLANG
+im signing off g9,1,O O O B-SLANG
+ic that makes sense now,1,B-SLANG O O O O
+keep this number ico any emergencies,1,O O O B-SLANG O O
+you mean so much to me ilu,1,O O O O O O B-SLANG
+imho the sequel was better than the original,1,B-SLANG O O O O O O O
+iow we need to finish the project by friday,1,B-SLANG O O O O O O O O
+lets just kiss this idea and avoid overcomplicating it,1,O O B-SLANG O O O O O O
+weve been in an ldr for two years now,1,O O O O B-SLANG O O O O
+that meme had me lmao,1,O O O O B-SLANG
+i just spilled coffee all over my desk lol,1,O O O O O O O O B-SLANG
+ltns how have you been,1,B-SLANG O O O O
+gotta run see you l8r,1,O O O O B-SLANG
+that was so unnecessary mte,1,O O O O B-SLANG
+hows it going m8,1,O O O B-SLANG
+i texted him last night but i got nr,1,O O O O O O O O B-SLANG
+oic that makes sense now,1,B-SLANG O O O O
+dealing with this paperwork is such a pita,1,O O O O O O O B-SLANG
+are you going to the prt tonight,1,O O O O O B-SLANG O
+i cant talk right now prw,1,O O O O O B-SLANG
+that video had me rofl,1,O O O O B-SLANG
+i tripped and spilled my drink roflol,1,O O O O O O B-SLANG
+the prank was so funny i was roflmao,1,O O O O O O O B-SLANG
+lets go sk8 at the park this weekend,1,O O B-SLANG O O O O O
+i need those sales stats by the end of the day,1,O O O O B-SLANG O O O O O O
+thx for helping me out,1,B-SLANG O O O O
+im heading out ttfn,1,O O O B-SLANG
+ive got to go ttyl,1,O O O O B-SLANG
+how are u doing today,1,O O B-SLANG O O
+have a great day u2,1,O O O O B-SLANG
+ill always be there for you u4e,1,O O O O O O B-SLANG
+wb how was your trip,1,B-SLANG O O O O
+wtf happened here,1,B-SLANG O O
+you aced the exam wtg,1,O O O O B-SLANG
+wuf you sound like youre from the uk,1,B-SLANG O O O O O O O
+that move was 7k,1,O O O B-SLANG
+mrw i see the weather forecast for the weekend,1,B-SLANG O O O O O O O O
+mfw someone eats my leftovers without asking,1,B-SLANG O O O O O O
+its been a long week ify man,1,O O O O O B-SLANG O
+you can pick the movie idc,1,O O O O O B-SLANG
+havent seen you in a while mu,1,O O O O O O B-SLANG
+work was brutal today adih,1,O O O O B-SLANG
+im exhausted time for bed zzz,1,O O O O O B-SLANG
+that movie was so emotional i have time right now,1,O O O O O O O B-SLANG O O
+even though youre far away youre fimh,1,O O O O O O B-SLANG
+you did great today bsaaw,1,O O O O B-SLANG
+that stand up comedy had me bwl,1,O O O O O O B-SLANG
+cant wait to hang out with my bff this weekend,1,O O O O O O O B-SLANG O O
+hey 4u do you know what time the meeting is,1,O B-SLANG O O O O O O O O
+sorry s can you repeat that,1,O B-SLANG O O O O
+got it,1,B-SLANG I-SLANG
+they broke up last night 3,1,O O O O O B-SLANG
+i love you soooo much 3333,1,O O O O O B-SLANG
+it was a tough project but teotd it was worth it,1,O O O O O O B-SLANG O O O O
+ive got 1tg before i finish this project,1,O O B-SLANG O O O O O
+got a 1up in the game extra chance,1,O O B-SLANG O O O O O
+lets have a 121 meeting to go over the details,1,O O O B-SLANG O O O O O O
+hes so 1337 at coding its impressive,1,O O B-SLANG O O O O
+youre my world 143,1,O O O B-SLANG
+1432 cant wait to see you,1,B-SLANG O O O O O
+were a team 14aa41,1,O O O B-SLANG
+you ate my last slice of pizza 182,1,O O O O O O O B-SLANG
+got a 19 no help at all,1,O O B-SLANG O O O O
+weve got a 10m team working on this project,1,O O O B-SLANG O O O O O
+youve been a big help 10x,1,O O O O O B-SLANG
+10q for your feedback on the report,1,B-SLANG O O O O O O
+ive only been there 1ce but i loved it,1,O O O O B-SLANG O O O O
+1dr what the weather will be like tomorrow,1,B-SLANG O O O O O O O
+youre amazing truly 1nam,1,O O O B-SLANG
+im heading 2 the store,1,O O B-SLANG O O
+whats the 20 for the party tonight,1,O O B-SLANG O O O O
+the answer seems 2b clear now,1,O O O B-SLANG O O
+that exam was 2ez,1,O O O B-SLANG
+that deal sounds 2g2bt,1,O O O B-SLANG
+all this work is 2m2h right now,1,O O O O B-SLANG O O
+youre sharing way too much 2mi,1,O O O O O B-SLANG
+lets finish this 2mor,1,O O O B-SLANG
+see you 2moro at the meeting,1,O O B-SLANG O O O
+are you coming to the concert 2n8,1,O O O O O O B-SLANG
+im free 2nte if you want to hang out,1,O O B-SLANG O O O O O O
+can you give me the 411 on what happened,1,O O O O O B-SLANG O O O
+when it comes to math im totally 404,1,O O O O O O O B-SLANG
+you coming to the 420 party this weekend,1,O O O O B-SLANG O O O
+youre everything to me 459,1,O O O O B-SLANG
+that movie is rated 4ao,1,O O O O B-SLANG
+i told you to clean your room 4col,1,O O O O O O O B-SLANG
+youll be in my heart 4eae,1,O O O O O B-SLANG
+friends 4eva,1,O B-SLANG
+hes from europe total 4nr,1,O O O O B-SLANG
+im putting my old car 4sale,1,O O O O O B-SLANG
+we nailed that presentation 5,1,O O O O B-SLANG
+thats a bit too personal 511,1,O O O O O B-SLANG
+that movie made me cry 555,1,O O O O O B-SLANG
+i lost my keys again 55555,1,O O O O O B-SLANG
+youre looking 6y in that outfit,1,O O B-SLANG O O O
+saw a bunch of 81 members at the rally,1,O O O O B-SLANG O O O O
+you mean the world to me 831,1,O O O O O O B-SLANG
+we need to 86 that project its not working,1,O O O B-SLANG O O O O O
+ive got to go 88,1,O O O O B-SLANG
+cant talk right now 9,1,O O O O B-SLANG
+ill see you later w,1,O O O O B-SLANG
+hes been attending aa meetings for a year now,1,O O O B-SLANG O O O O O
+aaf i did finish the report yesterday,1,B-SLANG O O O O O O
+sorry for the late response i was aak last night,1,O O O O O O O B-SLANG O O
+aamof i was just about to call you,1,B-SLANG O O O O O O O
+aamoi do you know when the meeting starts,1,B-SLANG O O O O O O O
+thanks for your help aap,1,O O O O B-SLANG
+aar we should meet next week to discuss this,1,B-SLANG O O O O O O O O
+despite everything im still aas,1,O O O O B-SLANG
+youre right again aashta,1,O O O B-SLANG
+shes been aatk all night working on that project,1,O O B-SLANG O O O O O O
+take care aayf until next time,1,O O B-SLANG O O O
+lol is an abbr for laugh out loud,1,O O O B-SLANG O O O O
+these ideas are abc lets come up with something original,1,O O O B-SLANG O O O O O O
+dont worry about the task its abd,1,O O O O O O B-SLANG
+im abt to leave for the meeting,1,O B-SLANG O O O O O
+im abt2 finish my assignment,1,O B-SLANG O O O
+it was nice seeing you abta,1,O O O O O B-SLANG
+my computer is abu after that update,1,O O O B-SLANG O O O
+the report you sent looks good ac,1,O O O O O O B-SLANG
+the party is open to everyone acc,1,O O O O O O B-SLANG
+when your computer freezes just acd,1,O O O O O B-SLANG
+had a minor acdnt on the way home but im okay,1,O O O B-SLANG O O O O O O O
+lets roll an ace for the weekend,1,O O O B-SLANG O O O
+can you ack that you received the package,1,O O B-SLANG O O O O O
+did you acpt the terms of the contract,1,O O B-SLANG O O O O O
+the company s latest acqstn was a huge success,1,O O O O B-SLANG O O O O
+work was tough today but adad,1,O O O O O B-SLANG
+finished the project adbb,1,O O O B-SLANG
+can you send me your add for the invitation,1,O O O O O B-SLANG O O O
+whats your addy for the party,1,O O B-SLANG O O O
+spent the day at the beach adip,1,O O O O O O B-SLANG
+youll need to talk to the admin to get access,1,O O O O O O B-SLANG O O O
+shes the adminr for this forum,1,O O B-SLANG O O O
+the package should arrive adn,1,O O O O B-SLANG
+i sent the package to your adr,1,O O O O O O B-SLANG
+the spell has an ae that affects multiple enemies,1,O O O O B-SLANG O O O O
+we need that report aeap,1,O O O O B-SLANG
+be right back afc for a bit,1,O O O B-SLANG O O O
+afaiaa the meeting is still on schedule,1,B-SLANG O O O O O O
+afaic were good to go,1,B-SLANG O O O O
+afaik they havent made a decision yet,1,B-SLANG O O O O O O
+afaiui the project is almost finished,1,B-SLANG O O O O O
+finish the task afap its a priority,1,O O O B-SLANG O O O
+he had an affa tattoo on his arm,1,O O O B-SLANG O O O O
+that wasnt serious just an afj,1,O O O O O B-SLANG
+no need for abbreviations this is an afz,1,O O O O O O O B-SLANG
+i need afpoe to review this document,1,O O B-SLANG O O O O
+hes got max agi stats in the game,1,O O O B-SLANG O O O O
+im ah just relaxing today,1,O B-SLANG O O O
+youre saying you finished that in 5 minutes aiamu,1,O O O O O O O O B-SLANG
+ill see you tomorrow aight,1,O O O O B-SLANG
+air the deadline was next week,1,B-SLANG O O O O O
+everything is going smoothly aisb,1,O O O O B-SLANG
+aisi we should approach this problem differently,1,B-SLANG O O O O O O
+i need to be the aitr and handle this responsibly,1,O O O O O B-SLANG O O O O
+hes aka the best coder in the company,1,O B-SLANG O O O O O O
+please send this memo to alcon,1,O O O O O B-SLANG
+that was so funny alol,1,O O O O B-SLANG
+doing an ama session on reddit later,1,O O B-SLANG O O O O
+please work amap on this project today,1,O O B-SLANG O O O O
+congrats on your promotion ambw,1,O O O O B-SLANG
+miss you aml,1,O O B-SLANG
+amof i was planning to call you today,1,B-SLANG O O O O O O O
+ive been playing ao all weekend,1,O O O B-SLANG O O
+im aoc if you need to reach me,1,O B-SLANG O O O O O O
+the mage cast an aoe spell on the enemies,1,O O O O B-SLANG O O O O
+she just turned 18 officially at the aom,1,O O O O O O O B-SLANG
+when it comes to reasons im tired aota,1,O O O O O O O B-SLANG
+goodnight sleep tight aoyp,1,O O O B-SLANG
+apac to the entire team for the hard work,1,B-SLANG O O O O O O O O
+i need to install this app for work,1,O O O O O B-SLANG O O
+we need to finish this aqap,1,O O O O O B-SLANG
+ill arc these old files,1,O B-SLANG O O O
+working in tech means being in an are,1,O O O O O O O B-SLANG
+had a huge arg with my friend last night,1,O O O B-SLANG O O O O O
+the plan didnt work asig,1,O O O O B-SLANG
+can you give me your asla,1,O O O O O B-SLANG
+ill be at in 5 minutes,1,O O B-SLANG O O O
+good luck with your exams atb,1,O O O O O B-SLANG
+ateotd we just want the project to succeed,1,B-SLANG O O O O O O O
+i love you more than atsits,1,O O O O O B-SLANG
+atsl we should consider other options,1,B-SLANG O O O O O
+see you later awc,1,O O O B-SLANG
+that party was aweso,1,O O O B-SLANG
+hes been awol for a few days now,1,O O B-SLANG O O O O O
+im waiting aydy,1,O O B-SLANG
+that meme is classic aybabtu,1,O O O O B-SLANG
+please send me the document ayec,1,O O O O O B-SLANG
+you can go ahead but ayor,1,O O O O O B-SLANG
+why would you do that aysos,1,O O O O O B-SLANG
+ays i cant believe it,1,B-SLANG O O O O
+ayt havent heard from you,1,B-SLANG O O O O
+aytmtb whats the point,1,B-SLANG O O O
+ayv time to get up,1,B-SLANG O O O O
+its all good now ayw,1,O O O O B-SLANG
+hes azn right,1,O B-SLANG O
+ill be b in a sec,1,O O B-SLANG O O O
+he got b from the forum,1,O O B-SLANG O O O
+our company focuses on b2b sales,1,O O O O B-SLANG O
+we need to boost our b2c strategy,1,O O O O O B-SLANG O
+break s over b2w,1,O O O B-SLANG
+dont take the b8 its a trap,1,O O O B-SLANG O O O
+quiet b9,1,O B-SLANG
+give me the b g on that,1,O O O B-SLANG I-SLANG O O
+i was bag laughing at that joke,1,O O B-SLANG O O O O
+that move was ba,1,O O O B-SLANG
+this is my bafo take it or leave it,1,O O O B-SLANG O O O O O
+that was such a bam move,1,O O O O B-SLANG O
+he handled that like a bamf,1,O O O O O B-SLANG
+bao of the changes in the schedule,1,B-SLANG O O O O O O
+he had a bas after hearing the good news,1,O O O B-SLANG O O O O O
+her outfit is so basic,1,O O O O B-SLANG
+finally finished the project basor,1,O O O O B-SLANG
+after the meeting it was bau,1,O O O O O B-SLANG
+good luck bay,1,O O B-SLANG
+im stepping out bb in 10,1,O O O B-SLANG O O
+this new project is a bbc,1,O O O O O B-SLANG
+gotta run bbiab,1,O O B-SLANG
+im heading to the store bbiaf,1,O O O O O B-SLANG
+hold on bbiam,1,O O B-SLANG
+let me grab some water bbias,1,O O O O O B-SLANG
+time for me to head out bbn,1,O O O O O O B-SLANG
+were having a bbq this weekend,1,O O O B-SLANG O O
+work s done for today bbt,1,O O O O O B-SLANG
+im late bc traffic was crazy,1,O O B-SLANG O O O
+im leaving early b c i have an appointment,1,O O O B-SLANG I-SLANG O O O O
+it was nice catching up bcnu,1,O O O O O B-SLANG
+im heading home early bcos im tired,1,O O O O B-SLANG O O
+i think i have a bco that new guy,1,O O O O O B-SLANG O O O
+i didnt know you had a bcoy,1,O O O O O O B-SLANG
+its not that hard no bd,1,O O O O O B-SLANG
+my bday is next week,1,O B-SLANG O O O
+happy b day,1,O B-SLANG I-SLANG
+thats a bdn to solve,1,O O B-SLANG O O
+he looked at me with a beg after pulling the prank,1,O O O O O O B-SLANG O O O O
+my main character in wow is a belf,1,O O O O O O O B-SLANG
+im meeting my bf for dinner,1,O O O B-SLANG O O
+hes my bfaw we have lunch together every day,1,O O B-SLANG O O O O O O
+im playing bf2 tonight,1,O O B-SLANG O
+weve been bffl since high school,1,O O B-SLANG O O O
+even though were miles apart were bfflnmw,1,O O O O O O B-SLANG
+its not that hard no bfd,1,O O O O O B-SLANG
+she gave me a bfg when i told her the news,1,O O O O B-SLANG O O O O O O
+were not as close anymore just bffn,1,O O O O O O B-SLANG
+he walked in with a bg after winning the game,1,O O O O O B-SLANG O O O O
+its my first time here bgwm,1,O O O O O B-SLANG
+running late bhl8 tonight,1,O O B-SLANG O
+gotta go bib,1,O O B-SLANG
+had too many beers last night you know how it is bibo,1,O O O O O O O O O O O B-SLANG
+its time to get bic and finish this report,1,O O O O B-SLANG O O O O
+bif dont forget the meeting at 3,1,B-SLANG O O O O O O
+im so mad at him he can bih,1,O O O O O O O B-SLANG
+im hanging out with my bil this weekend,1,O O O O O B-SLANG O O
+brb bio,1,O B-SLANG
+bion i actually won the lottery,1,B-SLANG O O O O O
+i dont care what you think bioya,1,O O O O O O B-SLANG
+youre being ridiculous bioyn,1,O O O B-SLANG
+that new sword is bis for my character,1,O O O O B-SLANG O O O
+the news about the merger is bisflatm for now,1,O O O O O O B-SLANG O O
+were waiting for the results bitmt lets finish the other tasks,1,O O O O O B-SLANG O O O O O
+that joke gave me a bl,1,O O O O O B-SLANG
+didnt win the game blnt,1,O O O O B-SLANG
+im chatting with some blokes on discord,1,O O O O B-SLANG O O
+if you dont like it bm,1,O O O O O B-SLANG
+bme thats not how it usually works,1,B-SLANG O O O O O O
+bm y i think shes going to quit soon,1,B-SLANG I-SLANG O O O O O O O
+thats my seat bob,1,O O O B-SLANG
+got some bn about the project,1,O O B-SLANG O O O
+i just found a boe item in the dungeon,1,O O O O B-SLANG O O O O
+another round of layoffs bohica,1,O O O O B-SLANG
+bol on your new job,1,B-SLANG O O O O
+im late bom i had a meeting,1,O O B-SLANG O O O O
+bolo for the new shipment tomorrow,1,B-SLANG O O O O O
+this meeting is making me booms,1,O O O O O B-SLANG
+that video had me bosmkl,1,O O O O B-SLANG
+okay bot whats the next agenda item,1,O B-SLANG O O O O O
+youre so gorgeous you bms,1,O O O O B-SLANG
+my boyf is meeting me for dinner,1,O B-SLANG O O O O O
+hes all talk just a bplm,1,O O O O O B-SLANG
+looking forward to the meeting br,1,O O O O O B-SLANG
+hold on brbb,1,O O B-SLANG
+need a quick break brnc,1,O O O O B-SLANG
+im so brd at work today,1,O O B-SLANG O O O
+ill brh if you need anything,1,O B-SLANG O O O O
+bsf lets get back to the point,1,B-SLANG O O O O O O
+my computer just hit me with the bsod,1,O O O O O O O B-SLANG
+im bringing an extra charger bsts,1,O O O O O B-SLANG
+if you dont like my idea bt,1,O O O O O O B-SLANG
+it seems like a good idea bta it might not work out,1,O O O O O O B-SLANG O O O O O
+oh another road trip btdt,1,O O O O B-SLANG
+i got a btycl last night,1,O O O B-SLANG O O
+shes absolutely stunning a real bubu,1,O O O O O B-SLANG
+that was a sick burn during the debate,1,O O O O B-SLANG O O O
+the mage class got a buff in the new update,1,O O O O O B-SLANG O O O O
+were having a party this weekend byob,1,O O O O O O B-SLANG
+the lan party is byoc so dont forget your setup,1,O O O O B-SLANG O O O O O
+our company is byod so you can use your own laptop,1,O O O B-SLANG O O O O O O O
+if you mess up again ill byoh,1,O O O O O O B-SLANG
+were going to the byop field this weekend,1,O O O O B-SLANG O O O
+that meeting sounds rough bytm,1,O O O O B-SLANG
+that joke made me c g,1,O O O O B-SLANG I-SLANG
+ive got to run c4n,1,O O O O B-SLANG
+my computer froze time for a cad,1,O O O O O O B-SLANG
+happy cakeday hope you have a great one,1,O B-SLANG O O O O O O
+turn on your cam for the meeting,1,O O O B-SLANG O O O
+im heading out for a cb anyone joining,1,O O O O O B-SLANG O O
+i cant talk right now cd9,1,O O O O O B-SLANG
+cfs i have some juicy gossip,1,B-SLANG O O O O O
+hey cfy need your help with something,1,O B-SLANG O O O O O
+can you chk if the report is ready,1,O O B-SLANG O O O O O
+heading out now ciao,1,O O O B-SLANG
+too much caffeine cico time,1,O O O B-SLANG O
+after that presentation im cid,1,O O O O B-SLANG
+i was clab during that sad movie,1,O O B-SLANG O O O O
+i cld help you with that later,1,O B-SLANG O O O O O
+just clk here to sign up,1,O B-SLANG O O O O
+i need to talk cm when youre free,1,O O O O B-SLANG O O O
+can you be my cmap during the meeting,1,O O O O B-SLANG O O O
+missed your call cmb when you can,1,O O O B-SLANG O O O
+shes the cmgr for our online forum,1,O O B-SLANG O O O O
+cmiiw but isnt the meeting tomorrow,1,B-SLANG O O O O O
+cmon you cant be serious,1,B-SLANG O O O O
+this story is too long cnp,1,O O O O O B-SLANG
+we need the report by cob today,1,O O O O O B-SLANG O
+im logging into coh tonight,1,O O O B-SLANG O
+im staying in cos its raining,1,O O O B-SLANG O O
+ill c p this to the other forum too,1,O B-SLANG I-SLANG O O O O O O
+ill respond to your cp later,1,O O O O B-SLANG O
+im trying to cr8 a new design,1,O O O B-SLANG O O O
+that concert was totally cray,1,O O O O B-SLANG
+im going to cre8 a new logo,1,O O O B-SLANG O O O
+that party was cra cra,1,O O O B-SLANG I-SLANG
+ive been studying all night but now i craft,1,O O O O O O O O B-SLANG
+i just need to grab something crb,1,O O O O O O B-SLANG
+that movie had me crbt at the end,1,O O O O B-SLANG O O O
+i landed a crit on the boss,1,O O O B-SLANG O O O
+that rollercoaster was crz,1,O O O B-SLANG
+ive got crs lately where did i put my keys,1,O O B-SLANG O O O O O O O
+that meme got a csg out of me,1,O O O O B-SLANG O O O
+im going to hop on css tonight for some games,1,O O O O O B-SLANG O O O O
+ct now call you later,1,B-SLANG O O O O
+hey ctc for a bit,1,O B-SLANG O O O
+that video had me cthu,1,O O O O B-SLANG
+ctn im in a meeting,1,B-SLANG O O O O
+cto you have to see this,1,B-SLANG O O O O O
+take care cu2 soon,1,O O B-SLANG O
+alright cua,1,O B-SLANG
+gotta go cul,1,O O B-SLANG
+heading out cula,1,O O B-SLANG
+goodnight cumid,1,O B-SLANG
+ill curlo dont be a stranger,1,O B-SLANG O O O O
+check out the doc and cwd,1,O O O O O B-SLANG
+that meeting was a total cwot,1,O O O O O B-SLANG
+im logging off cwyl,1,O O O B-SLANG
+oops cx the meeting is tomorrow,1,O B-SLANG O O O O
+got to go cyal8r,1,O O O B-SLANG
+i sent you the details cye,1,O O O O O B-SLANG
+its a surprise cyep,1,O O O B-SLANG
+ill cyo for the game later,1,O B-SLANG O O O O
+ill give you a d2 when im ready,1,O O O O B-SLANG O O O
+are you d46,1,O O B-SLANG
+lets head to da movies,1,O O O B-SLANG O
+dae feel like todays been really long,1,B-SLANG O O O O O O
+dafuq just happened there,1,B-SLANG O O O
+im busy dam,1,O O B-SLANG
+im playing daoc this weekend,1,O O B-SLANG O O
+even with the changes were dbau here,1,O O O O O B-SLANG O
+be careful online dbeyr,1,O O O B-SLANG
+i got dc d from the server,1,O O B-SLANG O O O O
+my dd is starting school this year,1,O B-SLANG O O O O O
+she looked absolutely ddg in that dress,1,O O O B-SLANG O O O
+you walked right into that one deez nutz,1,O O O O O O B-SLANG I-SLANG
+my degt loves playing soccer,1,O B-SLANG O O O
+i forgot my keys again derp,1,O O O O O B-SLANG
+im not talking about that df,1,O O O O O B-SLANG
+i finished the race dfl but at least i finished,1,O O O O B-SLANG O O O O O
+ill be right back dga,1,O O O O B-SLANG
+he dgaf about what people think,1,O B-SLANG O O O O
+were not talking about that dgt,1,O O O O O B-SLANG
+you did not just say that dgtg,1,O O O O O O B-SLANG
+saw you at the party last night dgyf,1,O O O O O O O B-SLANG
+my dh is cooking dinner tonight,1,O B-SLANG O O O O
+thanks for the dhu during the tough times,1,O O O B-SLANG O O O O
+whats the answer to this problem diik,1,O O O O O O B-SLANG
+hey diku you look familiar,1,O B-SLANG O O O
+you can complain all you want but dilligaf,1,O O O O O O O B-SLANG
+you think that bothers me dilligas,1,O O O O O B-SLANG
+dis i wouldnt help you think again,1,B-SLANG O O O O O O
+dityid about how stressful work has been,1,B-SLANG O O O O O O
+if you want it done right just diy,1,O O O O O O O B-SLANG
+whats happening in the news today dkdc,1,O O O O O O B-SLANG
+i earned a ton of dkp during the raid,1,O O O O O B-SLANG O O O
+im waiting for the new game to d l,1,O O O O O O O B-SLANG I-SLANG
+the file is taking forever to dl,1,O O O O O O B-SLANG
+goodnight dlbbb,1,O B-SLANG
+sleep well dltbbb,1,O O B-SLANG
+it dm whether we go now or later,1,O B-SLANG O O O O O O
+dmno but that was a weird thing to say,1,B-SLANG O O O O O O O O
+that movie wasnt scary at all dmy,1,O O O O O O B-SLANG
+im dn to hang out later,1,O B-SLANG O O O O
+what did you mean by that dnc,1,O O O O O O B-SLANG
+lets grab dnr tonight,1,O O B-SLANG O
+dnt forget to bring the tickets,1,B-SLANG O O O O O
+whats up d00d,1,O O B-SLANG
+shes a true doe always kind and caring,1,O O O B-SLANG O O O O
+that puppy is so dorbs,1,O O O O B-SLANG
+i applied a dot spell during the boss fight,1,O O O B-SLANG O O O O O
+my comment got a downvote guess it wasnt popular,1,O O O O B-SLANG O O O O
+im playing a dps role in the raid,1,O O O B-SLANG O O O O
+i think the meeting is tomorrow but dqmot,1,O O O O O O O B-SLANG
+dr whats the summary,1,B-SLANG O O O
+my ds is coming home from college this weekend,1,O B-SLANG O O O O O O O
+even if its hard always dtrt,1,O O O O O B-SLANG
+are you coming to the party dts,1,O O O O O O B-SLANG
+well be right back dttd,1,O O O O B-SLANG
+i accidentally made a dupe of the file,1,O O O O B-SLANG O O O
+dur that trip we took last year,1,B-SLANG O O O O O O
+lets not dv8 from the original plan,1,O O B-SLANG O O O O
+my dw planned a surprise for my birthday,1,O B-SLANG O O O O O O
+shes listed as a dwf in the profile,1,O O O O B-SLANG O O O
+hes a dwm looking for a new start,1,O O B-SLANG O O O O O
+i had to check the dxnry to figure out what that word meant,1,O O O O O B-SLANG O O O O O O O
+you keep saying that but dynwutb,1,O O O O O B-SLANG
+you were looking for your keys dyfi,1,O O O O O O B-SLANG
+the way you explain things dyfm,1,O O O O O B-SLANG
+dyjhiw you lose your keys right when you need them,1,B-SLANG O O O O O O O O O
+before you invest make sure to dyor,1,O O O O O O B-SLANG
+she was at the club on e last night,1,O O O O O O B-SLANG O O
+e1 needs to be ready by 5 pm,1,B-SLANG O O O O O O O
+dont worry about it its e123,1,O O O O O B-SLANG
+after hearing the good news i had an e2eg,1,O O O O O O O O B-SLANG
+ill reply in a bit im eak right now,1,O O O O O O B-SLANG O O
+its not a tech issue just an ebkac,1,O O O O O O O B-SLANG
+i accidentally hit ed and lost my work,1,O O O B-SLANG O O O O
+that took a lot of ef4t to complete,1,O O O O O B-SLANG O O
+he gave me an eg after pulling that prank,1,O O O O B-SLANG O O O O
+i told him hed fail and he totally had to ei,1,O O O O O O O O O O B-SLANG
+the blog post is still eip ill send it when its ready,1,O O O O O B-SLANG O O O O O O
+can you eli5 how blockchain works,1,O O B-SLANG O O O
+ill send you the details via em,1,O O O O O O B-SLANG
+whats your ema so i can send the files,1,O O B-SLANG O O O O O O
+that mistake was so embar,1,O O O O B-SLANG
+emfbi but i think youre mistaken about that,1,B-SLANG O O O O O O O
+i sent you an emsg this morning,1,O O O O B-SLANG O O
+thats enuf lets move on,1,O B-SLANG O O O
+please submit the report by eod,1,O O O O O B-SLANG
+thats all for today eol,1,O O O O B-SLANG
+meeting moved to 3 pm eom,1,O O O O O B-SLANG
+well talk after eos,1,O O O B-SLANG
+ive sent all the data eot,1,O O O O O B-SLANG
+i used to play eq all the time,1,O O O O B-SLANG O O O
+hes into erp in online games,1,O O B-SLANG O O O
+ers2 i cant believe that happened,1,B-SLANG O O O O O
+i accidentally hit es and lost all my work,1,O O O B-SLANG O O O O O
+i was so mad i told him to esad,1,O O O O O O O O B-SLANG
+whats your eta the meeting starts soon,1,O O B-SLANG O O O O
+that was the best movie eva,1,O O O O O B-SLANG
+the evo of technology is fascinating,1,O B-SLANG O O O O
+he was ewg me about my new haircut,1,O O B-SLANG O O O O O
+i sent an embarrassing email last night totally ewi,1,O O O O O O O O B-SLANG
+she handled the news eyc excited but not overwhelmed,1,O O O O B-SLANG O O O O
+that task was ez no problem,1,O O O B-SLANG O O
+the instructions were super ezy to follow,1,O O O O B-SLANG O O
+the gamer i met was an f,1,O O O O O O B-SLANG
+lets meet f2f to discuss the details,1,O O B-SLANG O O O O
+that new game is f2p so everyone can try it,1,O O O O B-SLANG O O O O O
+ill f4f if youre interested,1,O B-SLANG O O O
+ive been working for hours and im faak right now,1,O O O O O O O B-SLANG O O
+you look absolutely fab tonight,1,O O O B-SLANG O
+i forgot my wallet at home facepalm,1,O O O O O O B-SLANG
+that video was faf,1,O O O B-SLANG
+im done with this nonsense fay,1,O O O O O B-SLANG
+add me on fb,1,O O O B-SLANG
+shes my fbb we met through a group,1,O O B-SLANG O O O O O
+ill fbc you later about the event,1,O B-SLANG O O O O O
+heres a pic from my trip last year fbf,1,O O O O O O O O B-SLANG
+hes just an fbfr we dont talk much,1,O O O B-SLANG O O O O
+if you want to skip the movie fbm,1,O O O O O O O B-SLANG
+were finally fbo changed our relationship status,1,O O B-SLANG O O O O
+were in this together fbow,1,O O O O B-SLANG
+fc ingo just tell me the answer already,1,B-SLANG I-SLANG O O O O O O
+fcol why is this taking so long,1,B-SLANG O O O O O O
+lost the game feelsbadman,1,O O O B-SLANG
+got rejected for the third time feelsbatman,1,O O O O O O B-SLANG
+just finished my project early feelsgoodman,1,O O O O O B-SLANG
+if they didnt like my joke feitctaj,1,O O O O O O B-SLANG
+shoutout to my favorite accounts for ff,1,O O O O O O B-SLANG
+its an ffa in the chat anything goes,1,O O B-SLANG O O O O O
+you can complain all you want ficcl,1,O O O O O O B-SLANG
+just made the best joke fif,1,O O O O O B-SLANG
+how does this work fiik,1,O O O O B-SLANG
+this meeting is going nowhere fiiooh,1,O O O O O B-SLANG
+my fil is visiting this weekend,1,O B-SLANG O O O O
+she posted it on her finsta not her main account,1,O O O O O B-SLANG O O O O
+been working all day fish,1,O O O O B-SLANG
+the answer is easy just fitb,1,O O O O O B-SLANG
+spilled coffee all over my laptop fml,1,O O O O O O B-SLANG
+that joke had me fomc,1,O O O O B-SLANG
+he really made me mad i just wanted to tell him foad,1,O O O O O O O O O O O B-SLANG
+i heard about the party from a foaf,1,O O O O O O O B-SLANG
+that prank had me fomcl,1,O O O O B-SLANG
+that test was tough frt,1,O O O O B-SLANG
+thank you ftbomh for everything youve done,1,O O B-SLANG O O O O
+you said the movie was bad but i ftfy its great,1,O O O O O O O O B-SLANG O O
+we missed the bus ftl,1,O O O O B-SLANG
+got the last slice of pizza ftw,1,O O O O O O B-SLANG
+you messed up my plans fu,1,O O O O O B-SLANG
+that project is completely fubar now,1,O O O O B-SLANG O
+this project is completely fubb,1,O O O O B-SLANG
+lets fud and see who wins,1,O B-SLANG O O O O
+im exhausted time to futab,1,O O O O B-SLANG
+ill fw you the email,1,O B-SLANG O O O
+theyre not dating just fwb,1,O O O O B-SLANG
+if you want to stay in tonight fwm,1,O O O O O O O B-SLANG
+my phone s battery died fwp,1,O O O O O B-SLANG
+that new song is fye,1,O O O O B-SLANG
+this document is fyeo,1,O O O B-SLANG
+heres a funny meme fya,1,O O O O B-SLANG
+that joke made me g,1,O O O O B-SLANG
+i added you on g,1,O O O O B-SLANG
+my g f is meeting me after work,1,O B-SLANG I-SLANG O O O O O
+its been so long g2cu,1,O O O O B-SLANG
+cant stay long g2gicyal8er,1,O O O B-SLANG
+sorry g2r ill text you later,1,O B-SLANG O O O O
+g2tu i passed the exam,1,B-SLANG O O O O
+im g4c want to join,1,O B-SLANG O O O
+if youre ready ga with the presentation,1,O O O B-SLANG O O O
+youre completely wrong gac,1,O O O B-SLANG
+before you criticize gafc,1,O O O B-SLANG
+i got ganked while questing,1,O O B-SLANG O O
+hey gas i need some help,1,O B-SLANG O O O O
+ive got to head out gb,1,O O O O O B-SLANG
+break s over time to gbtw,1,O O O O O B-SLANG
+thanks for your help gbu,1,O O O O B-SLANG
+that meal was really gd,1,O O O O B-SLANG
+just teasing gdr,1,O O B-SLANG
+that was a bold statement gd r,1,O O O O O B-SLANG I-SLANG
+if you think its a good idea gfi,1,O O O O O O O B-SLANG
+im going out with my gf tonight,1,O O O O O B-SLANG O
+hes gfn but hell be back soon,1,O B-SLANG O O O O O
+thanks for playing gga,1,O O O B-SLANG
+that was fun gge1,1,O O O B-SLANG
+ggu2 that was close,1,B-SLANG O O O
+that dessert looks amazing ggmsot,1,O O O O B-SLANG
+this party is getting boring ggoh,1,O O O O O B-SLANG
+brb ggp,1,O B-SLANG
+that was a gh i thought i had you beat,1,O O O B-SLANG O O O O O O
+youve been complaining all day giar,1,O O O O O B-SLANG
+i left a gic for the baby shower,1,O O O B-SLANG O O O O
+if the data is wrong the results will be too gigo,1,O O O O O O O O O O B-SLANG
+that character looks like a girl but hes actually a girl,1,O O O O O B-SLANG O O O O B-SLANG
+you completed the task gj,1,O O O O B-SLANG
+gl on your test tomorrow,1,B-SLANG O O O O
+gl2u in the competition,1,B-SLANG O O O
+gla in the tournament everyone,1,B-SLANG O O O O
+gl hf before the match,1,B-SLANG I-SLANG O O O
+gle lets make this a great event,1,B-SLANG O O O O O O
+its a big day gle1,1,O O O O B-SLANG
+tough match glng,1,O O B-SLANG
+that joke had me gmba,1,O O O O B-SLANG
+your idea gmv for sure,1,O O B-SLANG O O
+its been fun gna everyone,1,O O O B-SLANG O
+gne1 sleep well,1,B-SLANG O O
+im logging off gnight,1,O O O B-SLANG
+time to sleep gnite,1,O O O B-SLANG
+gnsd talk to you tomorrow,1,B-SLANG O O O O
+that player is the goat of basketball,1,O O O O B-SLANG O O
+it happened a week ago goi already,1,O O O O O B-SLANG O
+that was hilarious gol,1,O O O B-SLANG
+ive already done it gomb,1,O O O O B-SLANG
+heres my beach selfie gpoy,1,O O O O B-SLANG
+you got the promotion gratz,1,O O O O B-SLANG
+shes a grl i met online,1,O O B-SLANG O O O
+you need to grwg after that mistake,1,O O O B-SLANG O O O
+i know youre mad but gr d,1,O O O O O B-SLANG I-SLANG
+nice play gs,1,O O B-SLANG
+we didnt win but gt,1,O O O O B-SLANG
+thats ridiculous gtfo,1,O O B-SLANG
+you really believe that gtfoh,1,O O O O B-SLANG
+im late for my meeting gtg,1,O O O O O B-SLANG
+that comment had me gtm,1,O O O O B-SLANG
+be right back gtrm,1,O O O B-SLANG
+its been a while gtsy,1,O O O O B-SLANG
+that meal was gud,1,O O O B-SLANG
+thanks for clearing that up gwhtlc,1,O O O O O B-SLANG
+sending you a big h,1,O O O O B-SLANG
+i h8 waking up early,1,O B-SLANG O O O
+you have to work late h8ttu,1,O O O O O B-SLANG
+talk to you later hag1,1,O O O O B-SLANG
+sending lots of hak to you,1,O O O B-SLANG O O
+i cant figure this out halp,1,O O O O O B-SLANG
+im doing fine hau,1,O O O B-SLANG
+miss you h k,1,O O B-SLANG I-SLANG
+i had a great time today h2cus,1,O O O O O O B-SLANG
+its getting late hagn,1,O O O B-SLANG
+talk to you tomorrow hago,1,O O O O B-SLANG
+thanks for your help hand,1,O O O O B-SLANG
+take care and hawt,1,O O O B-SLANG
+ill be waiting hb,1,O O O B-SLANG
+hbd hope you have a great day,1,B-SLANG O O O O O O
+wishing you all the best h bday,1,O O O O O B-SLANG I-SLANG
+im doing fine hbu,1,O O O B-SLANG
+going to the concert tonight hf,1,O O O O O B-SLANG
+you got the job hfac thats amazing,1,O O O O B-SLANG O O
+sending love to all the dads h fday,1,O O O O O O B-SLANG I-SLANG
+i forgot to reply to your message hhis,1,O O O O O O O B-SLANG
+hifw i found out we had a surprise test,1,B-SLANG O O O O O O O O
+ive been playing hl all day,1,O O O B-SLANG O O
+hla hows it going,1,B-SLANG O O O
+wishing all the moms out there an h mday,1,O O O O O O O B-SLANG I-SLANG
+ill be free later hmu if you want to hang out,1,O O O O B-SLANG O O O O O O
+this party is on a hnl,1,O O O O O B-SLANG
+hoas ill check the schedule,1,B-SLANG O O O O
+i need to heal my hp is low,1,O O O O O B-SLANG O O
+hey hru havent heard from you in a while,1,O B-SLANG O O O O O O O
+heres the link to the article hth,1,O O O O O O B-SLANG
+he has no clue what hes doing his hub is so far up,1,O O O O O O O O B-SLANG O O O O
+stop messing around get your huya and focus,1,O O O O O B-SLANG O O
+ill hv it done by tomorrow,1,O B-SLANG O O O O
+were running hvh tonight want to join,1,O O B-SLANG O O O O
+i cant come out tonight ive got too much hw,1,O O O O O O O O O B-SLANG
+did you see that game hyfr,1,O O O O O B-SLANG
+i2 was thinking the same thing,1,B-SLANG O O O O O
+thanks for the invite but ia8,1,O O O O O B-SLANG
+you need tax advice iaaa i can help,1,O O O O B-SLANG O O O
+iaad let me know if you need any medical advice,1,B-SLANG O O O O O O O O O
+need legal advice iaal happy to help,1,O O O B-SLANG O O O
+i dont have the answer right now but iac we should follow up tomorrow,1,O O O O O O O O B-SLANG O O O O O
+iae we should still be prepared,1,B-SLANG O O O O O
+trust me ianac,1,O O B-SLANG
+i dont know the law on this ianal,1,O O O O O O O B-SLANG
+this discussion is going nowhere iao,1,O O O O O B-SLANG
+missed anything while i was gone ib,1,O O O O O O B-SLANG
+thats exactly how i feel icam,1,O O O O O B-SLANG
+its not great but icbw,1,O O O O B-SLANG
+the meeting was a disaster icedi,1,O O O O O B-SLANG
+youre amazing icfilwu,1,O O B-SLANG
+icymi the new season starts next week,1,B-SLANG O O O O O O
+you won the lottery idbi,1,O O O O B-SLANG
+say what you want idgaf,1,O O O O B-SLANG
+idk where he went maybe check upstairs,1,B-SLANG O O O O O O
+will it rain today idts,1,O O O O B-SLANG
+idunno what happened to my keys,1,B-SLANG O O O O O
+follow me on ig for updates,1,O O O B-SLANG O O
+sorry ig2r im late for a meeting,1,O B-SLANG O O O O O
+im feeling relaxed ight,1,O O O B-SLANG
+whats your plan ign honestly,1,O O O B-SLANG O
+hold on igp real quick,1,O O B-SLANG O O
+ihni where that came from,1,B-SLANG O O O O
+iirc the meeting is at 2 pm,1,B-SLANG O O O O O O
+hes great with computers but iiio sometimes,1,O O O O O B-SLANG O
+ik that movie was amazing,1,B-SLANG O O O O
+that new cafe is so good ikr,1,O O O O O O B-SLANG
+ilbl8 traffic is terrible,1,B-SLANG O O O
+thanks for everything ilum,1,O O O B-SLANG
+ilysm youre the best,1,B-SLANG O O O
+just im me when youre ready,1,O B-SLANG O O O O
+imao that movie was overrated,1,B-SLANG O O O O
+i got your message iml,1,O O O O B-SLANG
+imnsho we should have left earlier,1,B-SLANG O O O O O
+ims i didnt mean to offend you,1,B-SLANG O O O O O O
+theres nothing to do imsb,1,O O O O B-SLANG
+i finished all my tasks early imtm,1,O O O O O O B-SLANG
+inal but i think you should get legal advice,1,B-SLANG O O O O O O O O
+heads up inc message,1,O O B-SLANG O
+looking at art galleries for some inspoo,1,O O O O O O B-SLANG
+send me an inv to the game,1,O O O B-SLANG O O O
+i took on too many projects iomh,1,O O O O O O B-SLANG
+thats exactly what i was saying irmc,1,O O O O O O B-SLANG
+we had a fight but isly,1,O O O O O B-SLANG
+iso a new job any leads,1,B-SLANG O O O O O
+why is this so complicated itam,1,O O O O O B-SLANG
+itt people share their favorite books,1,B-SLANG O O O O O
+ityk that the meeting was rescheduled,1,B-SLANG O O O O O
+im not sure but iuss,1,O O O O B-SLANG
+no matter what happens iwalu,1,O O O O B-SLANG
+this job is too stressful iwawo,1,O O O O O B-SLANG
+that decision was ridiculous hes an iwiam,1,O O O O O O B-SLANG
+she texted me iwsn,1,O O O B-SLANG
+that conversation got a little awkward iykwim,1,O O O O O O B-SLANG
+iyo whats the best way to learn coding,1,B-SLANG O O O O O O O
+iyq youre always so thoughtful,1,B-SLANG O O O O
+i dont think its going to work but iyss,1,O O O O O O O O B-SLANG
+what are j00 up to today,1,O O B-SLANG O O O
+is that j00r car outside,1,O O B-SLANG O O
+jac ill be right back,1,B-SLANG O O O O
+hold on jam while i finish this,1,O O B-SLANG O O O O
+jas let me grab my phone,1,B-SLANG O O O O O
+jc did you send that email,1,B-SLANG O O O O O
+youve been hesitating too long jdi,1,O O O O O B-SLANG
+you went to the concert im so jelly,1,O O O O O O O B-SLANG
+i took the quiz jff its not serious,1,O O O O B-SLANG O O O
+i dont know the answer jfgi,1,O O O O O B-SLANG
+take an umbrella jic it rains,1,O O O B-SLANG O O
+i didnt mean it jj,1,O O O O B-SLANG
+dont take it seriously im jja,1,O O O O O B-SLANG
+im moving to mars jk,1,O O O O B-SLANG
+if youre free tomorrow jlmk,1,O O O O B-SLANG
+jmo but i think the first movie was better,1,B-SLANG O O O O O O O O
+i wasnt being serious jp,1,O O O O B-SLANG
+dont get mad im jt,1,O O O O B-SLANG
+jtlyk the meeting s been moved to 3 pm,1,B-SLANG O O O O O O O O
+were starting a jv with another company,1,O O O B-SLANG O O O
+jw if you were still planning to come tonight,1,B-SLANG O O O O O O O O
+ill see you later k,1,O O O O B-SLANG
+kk anyone home,1,B-SLANG O O
+k8t is coming to the party tonight,1,B-SLANG O O O O O O
+i need a new k b mine is broken,1,O O O O B-SLANG I-SLANG O O O
+my kb stopped working,1,O B-SLANG O O
+that joke had me kdfu,1,O O O O B-SLANG
+that new game is kewl,1,O O O O B-SLANG
+im busy now but keya when im free,1,O O O O B-SLANG O O O
+keyme once you arrive at the hotel,1,B-SLANG O O O O O O
+goodnight kfy,1,O B-SLANG
+hes such a kia always correcting people,1,O O O B-SLANG O O O
+no matter what happens just kir,1,O O O O O B-SLANG
+it was great seeing you kit,1,O O O O O B-SLANG
+if they dont like it they can kma,1,O O O O O O O B-SLANG
+dont like my opinion kmk,1,O O O O B-SLANG
+i have so much homework kms,1,O O O O O B-SLANG
+you dont agree well kmt,1,O O O O B-SLANG
+i gave her a koc when we said goodbye,1,O O O O B-SLANG O O O O
+hes a kol in the tech industry,1,O O B-SLANG O O O O
+shes a total koreaboo always watching k dramas,1,O O O B-SLANG O O O O
+kos right now ill text you later,1,B-SLANG O O O O O O
+i havent been sick all year kow,1,O O O O O O B-SLANG
+we said goodbye with a kotc,1,O O O O O B-SLANG
+check out my new sneakers kotd,1,O O O O O B-SLANG
+we had our first kotl last night,1,O O O O B-SLANG O O
+its been a tough day knim,1,O O O O O B-SLANG
+hes got a lot of know about computers,1,O O O O O B-SLANG O O
+we stayed out late kpc,1,O O O O B-SLANG
+that player just ks d me in the game,1,O O O B-SLANG O O O O O
+that joke was funny ksc,1,O O O O B-SLANG
+im hanging out with kt tonight,1,O O O O B-SLANG O
+your presentation was awesome kutgw,1,O O O O B-SLANG
+that was such a bad move kys,1,O O O O O O B-SLANG
+l2g for a coffee,1,B-SLANG O O O
+were heading out to dinner l2k,1,O O O O O B-SLANG
+you keep dying early l2p,1,O O O O B-SLANG
+his coding skills are so l33t,1,O O O O O B-SLANG
+follow me for a l4l,1,O O O O B-SLANG
+gotta run l8rg8r,1,O O B-SLANG
+this week has been so stressful lab,1,O O O O O O B-SLANG
+that was a good one lbay,1,O O O O O B-SLANG
+you need to stop doing that lbs,1,O O O O O O B-SLANG
+im laughing but lbvs you need to fix that,1,O O O B-SLANG O O O O O
+its been fun ld,1,O O O B-SLANG
+were going to the concert ldo,1,O O O O O B-SLANG
+lemeno if youre free this weekend,1,B-SLANG O O O O O
+ill be lerk for a bit need to grab lunch,1,O O B-SLANG O O O O O O O
+the boss has lfd well continue tomorrow,1,O O O B-SLANG O O O
+im lfg for tonights raid,1,O B-SLANG O O O
+we need more players for the dungeon lfm,1,O O O O O O O B-SLANG
+its friday night lgh,1,O O O B-SLANG
+weve been flirting all night lh6,1,O O O O O B-SLANG
+she texted me lhsx after the party,1,O O O B-SLANG O O O
+this project is driving me crazy lhm,1,O O O O O O B-SLANG
+that story had me lho,1,O O O O B-SLANG
+i just updated my li profile,1,O O O O B-SLANG O
+you dont like my opinion lic,1,O O O O O B-SLANG
+we need some lik for the party,1,O O O B-SLANG O O O
+that joke was so cute limt,1,O O O O O B-SLANG
+ive got to go now llgb,1,O O O O O B-SLANG
+that meme had me lls,1,O O O O B-SLANG
+i couldnt stop laughing lmbo,1,O O O O B-SLANG
+that prank had me lmfao,1,O O O O B-SLANG
+weve been chatting for weeks lmirl sometime,1,O O O O O B-SLANG O
+lmk if you need help with your project,1,B-SLANG O O O O O O O
+that joke had me lmmfao,1,O O O O B-SLANG
+i dont want to get involved so lmnk,1,O O O O O O O B-SLANG
+lms if youre ready for the weekend,1,B-SLANG O O O O O O
+that joke didnt make sense it was lnt,1,O O O O O O O B-SLANG
+heres an loa for the project terms,1,O O B-SLANG O O O O
+that meme has me lolh,1,O O O O B-SLANG
+sending you lolo from across the miles,1,O O B-SLANG O O O O
+that situation was so bizarre im lolwtf,1,O O O O O O B-SLANG
+that was mildly funny but im just loti,1,O O O O O O O B-SLANG
+i just rewatched lotr last weekend,1,O O O B-SLANG O O
+that was pretty funny im lqtm over here,1,O O O O O B-SLANG O O
+that stand up comedian had me lshmbh,1,O O O O O O B-SLANG
+this movie is rated for lsv,1,O O O O O B-SLANG
+i just got a promotion ltd,1,O O O O O B-SLANG
+cant wait for the party ltlwdls,1,O O O O O B-SLANG
+my old laptop keeps crashing its an ltod,1,O O O O O O O B-SLANG
+i read your message and started lts,1,O O O O O O B-SLANG
+thanks for always being there lult,1,O O O O O B-SLANG
+i joined the prank for the lulz,1,O O O O O O B-SLANG
+i lvm call me back when you can,1,O B-SLANG O O O O O O
+that was so dry im lwos over here,1,O O O O O B-SLANG O O
+goodnight ly,1,O B-SLANG
+youre the best lylas,1,O O O B-SLANG
+youre amazing lylc,1,O O B-SLANG
+i miss you lysm,1,O O O B-SLANG
+i just installed the latest update from m,1,O O O O O O O B-SLANG
+hes always calling his mom for advice such an mb,1,O O O O O O O O O B-SLANG
+i cant talk about that right now mbs,1,O O O O O O O B-SLANG
+wishing you all a mc and a happy new year,1,O O O O B-SLANG O O O O O
+mdiac so i know a lot about law enforcement,1,B-SLANG O O O O O O O O
+whenever they talk about quantum physics mego,1,O O O O O O B-SLANG
+that movie was meh nothing special,1,O O O B-SLANG O O
+its been a long day mehh,1,O O O O O B-SLANG
+that performance was mez i couldnt look away,1,O O O B-SLANG O O O O
+im mfi for the new season of the show,1,O B-SLANG O O O O O O O
+hope everything goes well mgb,1,O O O O B-SLANG
+ill check with mgmt before making a decision,1,O O O B-SLANG O O O O
+you did an amazing job mhoty,1,O O O O O B-SLANG
+this meme is so relatable its mirl,1,O O O O O O B-SLANG
+im with miss 3 were going to the park,1,O O B-SLANG I-SLANG O O O O O
+thats your plan mkay sounds good,1,O O O B-SLANG O O
+he was being so rude so i gave him the mlm,1,O O O O O O O O O O B-SLANG
+hanging out with my mm this weekend,1,O O O O B-SLANG O O
+youre coming over later mmk,1,O O O O B-SLANG
+sorry mnc ill be right back,1,O B-SLANG O O O O
+i just received an mnsg can you help translate,1,O O O O B-SLANG O O O O
+the mod had to step in and calm things down,1,O B-SLANG O O O O O O O O
+you didnt mention morf,1,O O O B-SLANG
+hes such a momboy always calling his mom for advice,1,O O O B-SLANG O O O O O O
+in moo thats not the best approach,1,O B-SLANG O O O O O
+are you bringing a moos to the party,1,O O O O B-SLANG O O O
+cant talk about that right now mos,1,O O O O O O B-SLANG
+weve got a moss joining our team,1,O O O B-SLANG O O O
+im out of mp need to recharge,1,O O O B-SLANG O O O
+spending the afternoon with mr 3 at the park,1,O O O O B-SLANG I-SLANG O O O
+i made an mrt of that tweet with my own comment,1,O O O B-SLANG O O O O O O O
+ill send you an msg later with the details,1,O O O O B-SLANG O O O O
+ill send the first draft now mtf on updates,1,O O O O O O B-SLANG O O
+good luck on your test mtfbwu,1,O O O O O B-SLANG
+its been so long since we hung out mu,1,O O O O O O O O B-SLANG
+i tried making a joke but it was muah,1,O O O O O O O O B-SLANG
+havent seen you in ages musm,1,O O O O O B-SLANG
+goodnight mwah,1,O B-SLANG
+thats personal myo,1,O O B-SLANG
+ill handle it myself myob,1,O O O O B-SLANG
+dont worry everyones a n00b at first,1,O O O O B-SLANG O O
+you really aced that presentation n1,1,O O O O O B-SLANG
+whats up with you n2m over here,1,O O O O B-SLANG O O
+whats new nadt,1,O O B-SLANG
+this plant is rare nalopkt,1,O O O O B-SLANG
+i was going to call but nana its handled,1,O O O O O O B-SLANG O O
+i fixed the problem nbd,1,O O O O B-SLANG
+youre doing great for your first try nbfab,1,O O O O O O O B-SLANG
+i love your new place nc,1,O O O O O B-SLANG
+you hit two home runs nd,1,O O O O O B-SLANG
+do you have ne idea what time the show starts,1,O O O B-SLANG O O O O O O
+is ne1 coming to the game tonight,1,O B-SLANG O O O O O
+they nerfed my favorite character in the game,1,O B-SLANG O O O O O O
+ill pass on dessert nfm,1,O O O O B-SLANG
+im addicted to playing nfs,1,O O O O B-SLANG
+you got tickets to the concert nfw,1,O O O O O O B-SLANG
+be careful with that link its nfws,1,O O O O O O B-SLANG
+you played that perfectly nh,1,O O O O B-SLANG
+im home alone nifoc right now,1,O O O B-SLANG O O
+oh i misunderstood earlier nigi now,1,O O O O B-SLANG O
+theyre proposing a new building but its a total nimby situation,1,O O O O O O O O O B-SLANG O
+brb nirok for a few minutes,1,O B-SLANG O O O O
+please send the report nlt friday,1,O O O O B-SLANG O
+whats up nm just hanging out,1,O O B-SLANG O O O
+hows it going nmh just relaxing,1,O O O B-SLANG O O
+what are you up to tonight nmjc,1,O O O O O O B-SLANG
+hey whats going on nmu,1,O O O O B-SLANG
+i told no1 about the surprise,1,O O B-SLANG O O O
+that player kept dying total noob,1,O O O O O B-SLANG
+hes got some serious nowl about computers,1,O O O O B-SLANG O O
+whats going on with you noyb,1,O O O O O B-SLANG
+thanks for your help np,1,O O O O B-SLANG
+shes doing great as an nqt,1,O O O O O B-SLANG
+you got double sixes nr,1,O O O O B-SLANG
+you got 100 points ns,1,O O O O B-SLANG
+im not looking for anything serious just nsa,1,O O O O O O O B-SLANG
+that video is nsfl dont watch it,1,O O O B-SLANG O O O
+that image is nsfw dont open it at the office,1,O O O B-SLANG O O O O O O
+i think its accommodate nsisr,1,O O O O B-SLANG
+you didnt win but nt,1,O O O O B-SLANG
+whats up nthing just relaxing,1,O O B-SLANG O O
+nts remember to send the email tomorrow,1,B-SLANG O O O O O O
+forget what i said nvm,1,O O O O B-SLANG
+id nvr do that,1,O B-SLANG O O
+you won the lottery nw,1,O O O O B-SLANG
+this situation feels like theres nwo,1,O O O O O B-SLANG
+i saved the last slice o4u,1,O O O O O B-SLANG
+were facing a tough o in the next round,1,O O O O B-SLANG O O O O
+i got a great deal through oa,1,O O O O O O B-SLANG
+oatus did you see the game last night,1,B-SLANG O O O O O O O
+that was an amazing shot ob,1,O O O O O B-SLANG
+obv i was going to say yes,1,B-SLANG O O O O O O
+ofc ill be there tomorrow,1,B-SLANG O O O O
+hes the og of street style,1,O O B-SLANG O O O
+the weekend went by so fast ogim,1,O O O O O O B-SLANG
+oh at the coffee shop i cant believe they canceled the meeting,1,B-SLANG O O O O O O O O O O O
+ohhemmgee thats so cute,1,B-SLANG O O O
+ill call you back later oi right now,1,O O O O O B-SLANG O O
+oib what did i miss,1,B-SLANG O O O O
+youre really mad oj,1,O O O B-SLANG
+going to visit my ol this weekend,1,O O O O B-SLANG O O
+i met someone through oll,1,O O O O B-SLANG
+im going fishing with my om this weekend,1,O O O O O B-SLANG O O
+after sitting all day omaa,1,O O O O B-SLANG
+you want to change my weekend plans omdb,1,O O O O O O O B-SLANG
+omfg thats incredible,1,B-SLANG O O
+omg i cant believe it,1,B-SLANG O O O O
+omgyg2bk thats the best news ever,1,B-SLANG O O O O O
+you missed the shot omgys,1,O O O O B-SLANG
+oms thats the truth,1,B-SLANG O O O
+just finished up omw now,1,O O O B-SLANG O
+ill be onl tonight if you want to chat,1,O O B-SLANG O O O O O O
+finished for the day oo,1,O O O O B-SLANG
+that comment was totally ooc for him,1,O O O O B-SLANG O O
+its late im ooh,1,O O O B-SLANG
+oomf just liked my tweet,1,B-SLANG O O O O
+ootd ill finally visit paris,1,B-SLANG O O O O
+im ooto until monday so ill reply then,1,O B-SLANG O O O O O O
+cant talk right now im op,1,O O O O O B-SLANG
+you finished the project already orly,1,O O O O O B-SLANG
+im updating my os tonight,1,O O O B-SLANG O
+this might be ot but did you see the game last night,1,O O O B-SLANG O O O O O O O O
+its late otb for me,1,O O B-SLANG O O
+that joke had me otfl,1,O O O O B-SLANG
+im otl back in an hour,1,O B-SLANG O O O O
+its expensive but otoh its a great investment,1,O O O B-SLANG O O O O
+cant talk im otp right now,1,O O O B-SLANG O O
+that party was so ott but fun,1,O O O O B-SLANG O O
+ottomh id say its about five miles,1,B-SLANG O O O O O O
+got to go otw now,1,O O O B-SLANG O
+that match is ova,1,O O O B-SLANG
+i cant make it youre oyo this time,1,O O O O O B-SLANG O O
+im going to dinner with my p tonight,1,O O O O O O B-SLANG O
+its nice to have a p2p discussion about school events,1,O O O O O B-SLANG O O O O
+cant talk now p911,1,O O O B-SLANG
+pap of your new car,1,B-SLANG O O O O
+were on pat duty tonight,1,O O B-SLANG O O
+cant discuss that right now paw,1,O O O O O B-SLANG
+i found your number in the pbook,1,O O O O O O B-SLANG
+my pc is a wizard in the game,1,O B-SLANG O O O O O O
+if youre free later pcm,1,O O O O B-SLANG
+they were showing too much pda at the park,1,O O O O O B-SLANG O O O
+got the job im pdh right now,1,O O O O B-SLANG O O
+im unarmed pds,1,O O B-SLANG
+ill be there pdq,1,O O O B-SLANG
+hanging out with my peeps this weekend,1,O O O O B-SLANG O O
+your new car is pft,1,O O O O B-SLANG
+send me a pic of your new puppy,1,O O O B-SLANG O O O O
+that joke had me pip,1,O O O O B-SLANG
+pir cant talk about that right now,1,B-SLANG O O O O O O
+can you piss in my coffee,1,O O B-SLANG O O O
+i caught a rare pkmn today,1,O O O O B-SLANG O
+i just got a new pl8 for my car,1,O O O O O B-SLANG O O O
+that was a well pld match,1,O O O O B-SLANG O
+plmk if youre free tomorrow,1,B-SLANG O O O O
+can you send me the report pls,1,O O O O O O B-SLANG
+this event is perfect for plu,1,O O O O O B-SLANG
+plz send me the details asap,1,B-SLANG O O O O O
+plztlme what happened at the meeting,1,B-SLANG O O O O O
+ill pm you the details,1,O B-SLANG O O O
+pmfi but i think we need to revise this,1,B-SLANG O O O O O O O O
+pmfji but i have a suggestion,1,B-SLANG O O O O O
+that story had me pmsl,1,O O O O B-SLANG
+youre having a tough day poahf,1,O O O O O B-SLANG
+if theres no photo poidh,1,O O O O B-SLANG
+pos talk later,1,B-SLANG O O
+i need to use a pot to heal,1,O O O O O B-SLANG O O
+check out my potd on instagram,1,O O O B-SLANG O O
+from my pov this makes the most sense,1,O O B-SLANG O O O O O
+a lot of ppl showed up to the event,1,O O O B-SLANG O O O O O
+the package is ppu,1,O O O B-SLANG
+your baby is so presh,1,O O O O B-SLANG
+ill probs be there by 7,1,O B-SLANG O O O O
+ill prolly skip the meeting,1,O B-SLANG O O O
+im running a new proggy on my laptop,1,O O O O B-SLANG O O O
+be careful that site s full of pron,1,O O O O O O O B-SLANG
+just a psa dont forget to hydrate,1,O O B-SLANG O O O O
+lets change the topic psos,1,O O O O B-SLANG
+ive been playing on my psp all day,1,O O O O O B-SLANG O O
+looking for a group pst,1,O O O O B-SLANG
+i was so exhausted i just ptfo last night,1,O O O O O O B-SLANG O O
+well we won the game ptiypasi,1,O O O O O B-SLANG
+ptl we made it home safely,1,B-SLANG O O O O O
+that sounds interesting ptmm,1,O O O B-SLANG
+im using some pto to take a vacation,1,O O O B-SLANG O O O O
+i joined a pug for the dungeon,1,O O O B-SLANG O O O
+i prefer pve content over pvp,1,O O B-SLANG O O O
+lets try some pvp battles tonight,1,O O O B-SLANG O O
+i totally pwned that game last night,1,O O B-SLANG O O O O
+i didnt understand your point pxt,1,O O O O O B-SLANG
+whats that smell pu,1,O O O B-SLANG
+ill be late need to puks,1,O O O O O B-SLANG
+shes such a pyt,1,O O O B-SLANG
+got to go pz,1,O O O B-SLANG
+lets order some pza for dinner,1,O O O B-SLANG O O
+ive been waiting in the q for 30 minutes,1,O O O O O B-SLANG O O O
+hey q4u whats the plan for tonight,1,O B-SLANG O O O O O
+we need to run a qc check on the product,1,O O O O O B-SLANG O O O O
+qfe whats everyones favorite movie,1,B-SLANG O O O O
+that statement is ridiculous qfi,1,O O O O B-SLANG
+what they said was spot on qft,1,O O O O O O B-SLANG
+lets grab a qik coffee before the meeting,1,O O O B-SLANG O O O O
+come on ql im being serious,1,O O B-SLANG O O O
+be yourself everyone else is already taken qotd,1,O O O O O O O B-SLANG
+i lost my keys q_q,1,O O O O B-SLANG
+hey qq what time does the event start,1,O B-SLANG O O O O O O
+i sent the message still waiting for a qsl,1,O O O O O O O O B-SLANG
+i had a great qso with him about technology,1,O O O O B-SLANG O O O O
+look at that dog such a qt,1,O O O O O O B-SLANG
+my niece is an absolute qtpi,1,O O O O O B-SLANG
+r you coming to the party tonight,1,B-SLANG O O O O O O
+r8 my outfit from 1 to 10,1,B-SLANG O O O O O O
+youre awesome rbay,1,O O B-SLANG
+we need to leave rfn,1,O O O O B-SLANG
+rgr ill meet you there,1,B-SLANG O O O O
+i got the best seat rhip,1,O O O O O B-SLANG
+rip well miss you,1,B-SLANG O O O
+i cant play tonight got rl stuff to do,1,O O O O O B-SLANG O O O
+rly thats amazing,1,B-SLANG O O
+hes late again rme,1,O O O B-SLANG
+rmlb im not going to change my mind,1,B-SLANG O O O O O O O
+you need more details rmmm,1,O O O O B-SLANG
+that video was so funny roflcopter,1,O O O O O B-SLANG
+i couldnt stop laughing roflmao,1,O O O O B-SLANG
+that meme had me rotfl,1,O O O O B-SLANG
+the prank was so good rotfluts,1,O O O O O B-SLANG
+ive been playing rs all weekend,1,O O O B-SLANG O O
+ill finish the report rsn,1,O O O O B-SLANG
+ill be there at 5 rt,1,O O O O O B-SLANG
+after that drama ive got a new rtbs,1,O O O O O O O B-SLANG
+youre doing it wrong rtfm,1,O O O O B-SLANG
+you missed the point rtfq,1,O O O O B-SLANG
+rthx for sharing my post,1,B-SLANG O O O O
+before you ask rtms,1,O O O B-SLANG
+we need to focus on customer rtntn,1,O O O O O O B-SLANG
+the pay raise will be rtrctv to last month,1,O O O O O B-SLANG O O O
+shes planning for rtrmt in a few years,1,O O O B-SLANG O O O O
+youre still confused rtsm,1,O O O B-SLANG
+you missed the point rtwfq,1,O O O O B-SLANG
+ru coming to the party tonight,1,B-SLANG O O O O O
+before we start the game rumof,1,O O O O O B-SLANG
+ive been texting you rut,1,O O O O B-SLANG
+you seem upset ruok,1,O O O B-SLANG
+ill see you soon rx,1,O O O O B-SLANG
+got to get back to rw responsibilities,1,O O O O O B-SLANG O
+feeling down ryb for inspiration,1,O O B-SLANG O O
+i prefer ryo cigarettes,1,O O B-SLANG O
+the instructions are clear rys,1,O O O O B-SLANG
+s2r your address and ill mail it,1,B-SLANG O O O O O O
+s2s but the event has been canceled,1,B-SLANG O O O O O O
+if you sign up for that site youll get s4l,1,O O O O O O O O O B-SLANG
+that story was sal,1,O O O B-SLANG
+i didnt mean to be late sat,1,O O O O O O B-SLANG
+his comment was savage but true,1,O O O B-SLANG O O
+ill sb when i get your message,1,O B-SLANG O O O O O
+that performance had me sbia,1,O O O O B-SLANG
+i didnt mean to miss the call sbt,1,O O O O O O O B-SLANG
+its getting hot out sc,1,O O O O B-SLANG
+goodnight sd,1,O B-SLANG
+tucking you in sdmb,1,O O O B-SLANG
+senpai noticed me,1,B-SLANG O O
+we need to improve our seo for better website traffic,1,O O O O O B-SLANG O O O O
+when i saw the surprise i was sete,1,O O O O O O O B-SLANG
+just took a selfie at the beach,1,O O O B-SLANG O O O
+sfaik the meeting is still on for tomorrow,1,B-SLANG O O O O O O O
+youre tired sh im exhausted too,1,O O B-SLANG O O O
+thats so funny sh,1,O O O B-SLANG
+i forgot my keys again shid,1,O O O O O B-SLANG
+i totally ship those two characters,1,O O B-SLANG O O O
+i had to make the joke sicnr,1,O O O O O O B-SLANG
+im late sig2r,1,O O B-SLANG
+after that decision sihth,1,O O O B-SLANG
+simyc i was in a meeting,1,B-SLANG O O O O O
+one day ill sir with this idea,1,O O O B-SLANG O O O
+it was great catching up sit,1,O O O O O B-SLANG
+im sitd about the details of the project,1,O B-SLANG O O O O O O
+shes always advocating for causes total sjw,1,O O O O O O B-SLANG
+ive been sk8ng since i was a kid,1,O O B-SLANG O O O O O
+hes a total sk8r with all the tricks,1,O O O B-SLANG O O O O
+i used to have a crush on a sk8rboi,1,O O O O O O O O B-SLANG
+lets meet at 7 for dinner slap,1,O O O O O O B-SLANG
+i spend way too much time on sm,1,O O O O O O O B-SLANG
+the sky was smazed after the fireworks,1,O O O B-SLANG O O O
+hes smexi isnt he,1,O B-SLANG O O
+the logic in that statement has me smhid,1,O O O O O O O B-SLANG
+the meeting turned into a snafu,1,O O O O O B-SLANG
+that snert really needs to learn some manners,1,O B-SLANG O O O O O O
+ive got so many snrs to reply to on snapchat,1,O O O O B-SLANG O O O O O
+im going out with my so tonight,1,O O O O O B-SLANG O
+that soab cut me off in traffic,1,O B-SLANG O O O O O
+dont worry about being late s ok,1,O O O O O B-SLANG I-SLANG
+sol youll get used to it,1,B-SLANG O O O O O
+ive texted you three times today somy,1,O O O O O O B-SLANG
+just wondering sorg,1,O O B-SLANG
+sos im lost in the city,1,B-SLANG O O O O O
+cant chat long im sot today,1,O O O O B-SLANG O
+sotmg ill talk to you later,1,B-SLANG O O O O O
+cant talk now sowm,1,O O O B-SLANG
+spk your mind im listening,1,B-SLANG O O O O
+srsly i cant believe he said that,1,B-SLANG O O O O O O
+lets meet spst next week,1,O O B-SLANG O O
+i spto her about the event,1,O B-SLANG O O O O
+hes so sq always following the rules,1,O O B-SLANG O O O O
+sry i missed your call,1,B-SLANG O O O O
+ss for being late,1,B-SLANG O O O
+that movie was ssif i couldnt stop laughing,1,O O O B-SLANG O O O O
+his argument was ssinf i couldnt even respond,1,O O O B-SLANG O O O O
+you better st d before you get into trouble,1,O O B-SLANG I-SLANG O O O O O
+i couldnt believe what he was saying stfu,1,O O O O O O O B-SLANG
+im str8 not interested,1,O B-SLANG O O
+if you dont know just stw,1,O O O O O B-SLANG
+su i cant believe you said that,1,B-SLANG O O O O O O
+goodnight suitm,1,O B-SLANG
+heading out now sul,1,O O O B-SLANG
+sup havent heard from you in a while,1,B-SLANG O O O O O O O
+theyre talking again but im suth,1,O O O O O B-SLANG
+that traffic sux,1,O O B-SLANG
+thats not true suyf,1,O O O B-SLANG
+i got so much swag at the conference,1,O O O O B-SLANG O O O
+i sent you a letter swak,1,O O O O O B-SLANG
+the letter had swalk written on the envelope,1,O O O B-SLANG O O O O
+i didnt have time to check the facts so i made a swat,1,O O O O O O O O O O O O B-SLANG
+that joke had me swl,1,O O O O B-SLANG
+swmbo says i need to mow the lawn,1,B-SLANG O O O O O O O
+got to run syl,1,O O O B-SLANG
+ill be over in a bit sys,1,O O O O O O B-SLANG
+you dont know what youre talking about syy,1,O O O O O O O B-SLANG
+well get through this just t,1,O O O O O B-SLANG
+youre the best t4bu,1,O O O B-SLANG
+having a rough day t t,1,O O O O B-SLANG I-SLANG
+ta for all your help today,1,B-SLANG O O O O O
+got to sign off tafn,1,O O O O B-SLANG
+lets meet tam for breakfast,1,O O B-SLANG O O
+that character is such a tank,1,O O O O O B-SLANG
+i totally tanked that boss in the game,1,O O B-SLANG O O O O O
+our team was tanking the competition,1,O O O B-SLANG O O
+the project is tarfu right now,1,O O O B-SLANG O O
+just wanted to say hi tau,1,O O O O O B-SLANG
+hope youre doing well taumualu,1,O O O O B-SLANG
+he got tbagged after losing in the game,1,O O B-SLANG O O O O O
+tbbh i didnt like the movie,1,B-SLANG O O O O O
+the series finale was such a cliffhanger tbc,1,O O O O O O O B-SLANG
+the meeting time is tbd,1,O O O O B-SLANG
+im busy now tbl when you can,1,O O O B-SLANG O O O
+heres a photo from high school tbt,1,O O O O O O B-SLANG
+goodbye tc,1,O B-SLANG
+ive got to tcb before the deadline,1,O O O B-SLANG O O O
+stay safe and tcoy,1,O O O B-SLANG
+i love playing td games,1,O O O B-SLANG O
+he sent me a flirty message saying td2m,1,O O O O O O O B-SLANG
+she jokingly said tdtm during the chat,1,O O O B-SLANG O O O
+that video was tff,1,O O O B-SLANG
+that article was really helpful tfs,1,O O O O O B-SLANG
+tftf looking forward to your posts,1,B-SLANG O O O O O
+tfti but i cant make it to the party,1,B-SLANG O O O O O O O O
+this is a great tip tftt,1,O O O O O B-SLANG
+tg it stopped raining just in time,1,B-SLANG O O O O O O
+finally the weekend is here tgif,1,O O O O O B-SLANG
+thnq for helping me with my project,1,B-SLANG O O O O O O
+thnx for the advice,1,B-SLANG O O O
+look at that thot at the party,1,O O O B-SLANG O O O
+feeling stressed tht itll get better,1,O O B-SLANG O O O
+tia for any suggestions you can give,1,B-SLANG O O O O O O
+dont stress tiad,1,O O B-SLANG
+my comment was tic dont take it too seriously,1,O O O B-SLANG O O O O O
+til that honey never spoils,1,B-SLANG O O O O
+i appreciate that you always tilis,1,O O O O O B-SLANG
+cant talk about it now tir,1,O O O O O B-SLANG
+ive got to go tlk2ul8r,1,O O O O B-SLANG
+the article was tl couldnt finish it,1,O O O B-SLANG O O O
+heres the summary of the report tl dr,1,O O O O O O B-SLANG I-SLANG
+tm this movie is worth watching,1,B-SLANG O O O O O
+tma dont invest in that stock,1,B-SLANG O O O O O
+let me know what time works for you tmb,1,O O O O O O O O B-SLANG
+whoa thats tmi about your weekend,1,O O B-SLANG O O O
+youll love that restaurant tmot,1,O O O O B-SLANG
+this workload is tmth today,1,O O O B-SLANG O
+im heading out now tmyl so i can meet you,1,O O O O B-SLANG O O O O O
+tmwfi that movie is amazing,1,B-SLANG O O O O
+you think thats a free offer tnstaafl,1,O O O O O O B-SLANG
+its been fun tnt,1,O O O B-SLANG
+when i saw the surprise i had toj,1,O O O O O O O B-SLANG
+make sure you read the tos before signing up,1,O O O O O B-SLANG O O O
+im totes excited for the trip,1,O B-SLANG O O O O
+just wanted to say hi tou,1,O O O O O B-SLANG
+hope youre doing well toy,1,O O O O B-SLANG
+lets meet tpm for coffee,1,O O B-SLANG O O
+well have to wait for approval from tptb,1,O O O O O O O B-SLANG
+just wanted to say tq,1,O O O O B-SLANG
+that movie had me tsh,1,O O O O B-SLANG
+you got the last slice tsnf,1,O O O O O B-SLANG
+lets finish this project tstb,1,O O O O B-SLANG
+that hashtag is the latest tt on twitter,1,O O O O O B-SLANG O O
+i ttly agree with you on that,1,O B-SLANG O O O O O
+dont worry tttt itll get better,1,O O B-SLANG O O O
+ive got to run ttul,1,O O O O B-SLANG
+tu for all your help today,1,B-SLANG O O O O O
+youve been caught im tui,1,O O O O B-SLANG
+the party was turnt last night,1,O O O B-SLANG O O
+the comment was too funny not to say twss,1,O O O O O O O O B-SLANG
+its getting late ttg,1,O O O B-SLANG
+im going offline ttyafn,1,O O O B-SLANG
+lets catch up later ttys,1,O O O O B-SLANG
+ty for the gift,1,B-SLANG O O O
+tyfc your donation means a lot,1,B-SLANG O O O O O
+tyfyc i appreciate your feedback,1,B-SLANG O O O O
+i said it would rain tys,1,O O O O O B-SLANG
+no rush tyt,1,O O B-SLANG
+tyso for all your hard work,1,B-SLANG O O O O O
+you helped but made it harder tyafy,1,O O O O O O B-SLANG
+tyvm for the lovely gift,1,B-SLANG O O O O
+tx for the quick reply,1,B-SLANG O O O O
+you think im wrong urs,1,O O O O B-SLANG
+that joke was hilarious ucmu,1,O O O O B-SLANG
+woke up with a bruise total udi from last night,1,O O O O O O B-SLANG O O O
+you fixed the issue udm,1,O O O O B-SLANG
+things got heated last night total uds,1,O O O O O O B-SLANG
+that result was ufb,1,O O O B-SLANG
+the meeting is postponed ufn,1,O O O O B-SLANG
+you just won the lottery ufwm,1,O O O O O B-SLANG
+they canceled the event ugtbk,1,O O O O B-SLANG
+you got that for free uhgtbsm,1,O O O O O B-SLANG
+best food in town uktr,1,O O O O B-SLANG
+ill ul the files to the server,1,O B-SLANG O O O O O
+u l love this new song,1,B-SLANG I-SLANG O O O O
+please una in the report,1,O B-SLANG O O O
+that accident was really un4tun8,1,O O O O B-SLANG
+that game was unblefble,1,O O O B-SLANG
+the results are still uncrtn,1,O O O O B-SLANG
+that joke was funny but definitely unpc,1,O O O O O O B-SLANG
+you seem upset uok,1,O O O B-SLANG
+ur the best,1,B-SLANG O O
+you solved that puzzle so quickly ur2ys4me,1,O O O O O O B-SLANG
+thanks for helping with the project ura,1,O O O O O O B-SLANG
+urh in that outfit,1,B-SLANG O O O
+thanks for the gift ursktm,1,O O O O B-SLANG
+you nailed that presentation urtm,1,O O O O B-SLANG
+thanks for your help urw,1,O O O O B-SLANG
+ill keep this job usbca,1,O O O O B-SLANG
+i usu work from home on fridays,1,O B-SLANG O O O O O
+ive been playing ut all weekend,1,O O O B-SLANG O O
+hurry up ut2l,1,O O B-SLANG
+whats the best option utm,1,O O O O B-SLANG
+that outfit was a total uv,1,O O O O O B-SLANG
+thanks for helping me uw,1,O O O O B-SLANG
+we need to improve the ux of this website,1,O O O O O B-SLANG O O O
+thats v impressive,1,O B-SLANG O
+the total cost includes vat,1,O O O O B-SLANG
+you can totally see her vbl in that top,1,O O O O O B-SLANG O O O
+i saw the surprise and had a vbs,1,O O O O O O O B-SLANG
+lets hop on vc to discuss the project,1,O O O B-SLANG O O O O
+he made a veg when he pulled the prank,1,O O O B-SLANG O O O O O
+that meme was vff,1,O O O B-SLANG
+this laptop is great vfm,1,O O O O B-SLANG
+this phone is secondhand but in vgc,1,O O O O O O B-SLANG
+that was a tough match but vgg,1,O O O O O O B-SLANG
+you played a vgh in that round,1,O O O B-SLANG O O O
+hes got vip access to the event,1,O O B-SLANG O O O O
+i left you a vm about the meeting,1,O O O O B-SLANG O O O
+that dress looks vn on you,1,O O O B-SLANG O O
+you won the game with a vnh,1,O O O O O O B-SLANG
+we use voip for all our office calls,1,O O B-SLANG O O O O O
+im vry excited for the weekend,1,O B-SLANG O O O O
+that comment made me vsc,1,O O O O B-SLANG
+i missed the event vsf,1,O O O O B-SLANG
+your presentation was vwd,1,O O O B-SLANG
+you outsmarted me in that game vwp,1,O O O O O O B-SLANG
+w did you just say,1,B-SLANG O O O O
+im going to the movies w my friends,1,O O O O O B-SLANG O O
+youve been gone for a while w b,1,O O O O O O B-SLANG I-SLANG
+check out the latest updates on w3,1,O O O O O O B-SLANG
+w8 i need to check something first,1,B-SLANG O O O O O O
+im wah today so ill be online later,1,O B-SLANG O O O O O O
+he cut me off in traffic waj,1,O O O O O O B-SLANG
+wam i need to grab my keys,1,B-SLANG O O O O O O
+wan2 grab lunch later,1,B-SLANG O O O
+feeling bored wan2tlk,1,O O B-SLANG
+be careful downloading warez it could be risky,1,O O O B-SLANG O O O O
+was i need to check my calendar,1,B-SLANG O O O O O O
+wat are you talking about,1,B-SLANG O O O O
+weve been driving for hours wawa,1,O O O O O B-SLANG
+nice to meet you wayf,1,O O O O B-SLANG
+looking forward to hearing from you wbs,1,O O O O O O B-SLANG
+im doing well wbu,1,O O O B-SLANG
+thanks for the invite wc,1,O O O O B-SLANG
+it didnt go as planned but wca,1,O O O O O O B-SLANG
+you dont agree w e,1,O O O B-SLANG I-SLANG
+im planning to relax this w end,1,O O O O O B-SLANG I-SLANG
+i didnt like the movie but we,1,O O O O O O B-SLANG
+i looked it up on webo,1,O O O O O B-SLANG
+hes such a weebo always watching anime,1,O O O B-SLANG O O O
+whats your favorite wep in the game,1,O O O B-SLANG O O O
+i need the wh5 of the event before i can plan,1,O O O B-SLANG O O O O O O O
+they can do what they want whateves,1,O O O O O O B-SLANG
+wibni we could take a vacation right now,1,B-SLANG O O O O O O O
+youre acting like the boss wdalyic,1,O O O O O B-SLANG
+i just found out the news wdyk,1,O O O O O O B-SLANG
+im considering getting a new phone wdyt,1,O O O O O O B-SLANG
+im not sure about the plan wgaca,1,O O O O O O B-SLANG
+ill help but wiifm,1,O O O B-SLANG
+after that victory i can say wisp,1,O O O O O O B-SLANG
+i dont get it witp of this task,1,O O O O B-SLANG O O O
+witw is happening over there,1,B-SLANG O O O O
+were running out of time wiu,1,O O O O O B-SLANG
+ive got a busy wk ahead,1,O O O O B-SLANG O
+cant wait for the wkd,1,O O O O B-SLANG
+wrt your last email i have some questions,1,B-SLANG O O O O O O O
+he didnt even try wl,1,O O O O B-SLANG
+i cant finish this w o more information,1,O O O O B-SLANG I-SLANG O O
+her painting is a real woa,1,O O O O O B-SLANG
+that project was a total wombat,1,O O O O O B-SLANG
+ive been playing wow all night,1,O O O B-SLANG O O
+im at wrk right now cant talk,1,O O B-SLANG O O O O
+were all waiting for you wru,1,O O O O O B-SLANG
+im already here wru,1,O O O B-SLANG
+wrud later tonight,1,B-SLANG O O
+wtb a new gaming console any recommendations,1,B-SLANG O O O O O O
+you didnt agree wtfe i dont care,1,O O O B-SLANG O O O
+you seriously forgot the meeting wtfo,1,O O O O O B-SLANG
+we can talk more freely wtgp,1,O O O O O B-SLANG
+i got the promotion wtm,1,O O O O B-SLANG
+i wts my old gaming gear,1,O B-SLANG O O O O
+i have an extra keyboard wtt for your headphones,1,O O O O O B-SLANG O O O
+hey wu,1,O B-SLANG
+the software s wuciwug interface makes it easy to use,1,O O O B-SLANG O O O O O O
+long time no chat wup,1,O O O O B-SLANG
+wut did you just say,1,B-SLANG O O O O
+wuw for dinner tonight,1,B-SLANG O O O
+hey wuu2 this weekend,1,O B-SLANG O O
+wuz that a good idea,1,B-SLANG O O O O
+in tough situations ask yourself wwjd,1,O O O O O B-SLANG
+she finished her project early wwnc,1,O O O O O B-SLANG
+ill be waiting for your email wwyc,1,O O O O O O B-SLANG
+ive got some news wycm later,1,O O O O B-SLANG O
+wyd this afternoon,1,B-SLANG O O
+could you send me the file wygam,1,O O O O O O B-SLANG
+lets chat about the project wyham,1,O O O O O B-SLANG
+opportunities come wylei,1,O O B-SLANG
+the job offer is straightforward wysiwyg,1,O O O O O B-SLANG
+that rollercoaster was x 1 10,1,O O O B-SLANG I-SLANG I-SLANG
+love you x,1,O O B-SLANG
+shes x always multitasking,1,O B-SLANG O O
+that joke had me xd,1,O O O O B-SLANG
+xme could you move a little,1,B-SLANG O O O O O
+missing you xoxoxo,1,O O B-SLANG
+the presentation was xlnt,1,O O O B-SLANG
+lets xlr8 and finish this project,1,O B-SLANG O O O O
+ill xpost this to another group,1,O B-SLANG O O O O
+ran into my xyl today,1,O O O B-SLANG O
+hey xyz,1,O B-SLANG
+y i dont understand,1,B-SLANG O O O
+that movie was boring y,1,O O O O B-SLANG
+thanks for helping me with the project y2k,1,O O O O O O O B-SLANG
+whats ya plan for the weekend,1,O B-SLANG O O O O
+this list is full of yaa,1,O O O O O B-SLANG
+ugh yaba in this manual,1,O B-SLANG O O O
+you won the lottery yarly,1,O O O O B-SLANG
+take care ybic,1,O O B-SLANG
+if you skip this ybs,1,O O O O B-SLANG
+the system crashed and ycdbwycid,1,O O O O B-SLANG
+those leftovers ycht,1,O O B-SLANG
+if you dont believe me ycliu,1,O O O O O B-SLANG
+that joke was hilarious ycmu,1,O O O O B-SLANG
+i noticed yct on that post,1,O O B-SLANG O O O
+i finished the project yd,1,O O O O B-SLANG
+ill check with my yf before making plans,1,O O O O B-SLANG O O O
+the yg was polite and well dressed,1,O B-SLANG O O O O O
+youre killing it at work ygg,1,O O O O O B-SLANG
+they canceled the event ygtbkm,1,O O O O B-SLANG
+this heat is unbearable ygtr,1,O O O O B-SLANG
+dont fall for it yhbt,1,O O O O B-SLANG
+if you stay up late yhbw,1,O O O O O B-SLANG
+game over yhl,1,O O B-SLANG
+got it yiu,1,O O B-SLANG
+ykw i think we should just stay home,1,B-SLANG O O O O O O O
+if you dont like it ykwycd,1,O O O O O B-SLANG
+the yl at the party was very charming,1,O B-SLANG O O O O O O
+that diet worked for me but ymmv,1,O O O O O O B-SLANG
+lets take the trip yolo,1,O O O O B-SLANG
+whats yr plan for the weekend,1,O B-SLANG O O O O
+you think you can pull that off yryocc,1,O O O O O O O B-SLANG
+praying for you ysic,1,O O O B-SLANG
+you remember ysyd,1,O O B-SLANG
+check out this video on yt,1,O O O O O B-SLANG
+thanks for all your help ytb,1,O O O O O B-SLANG
+hurry up yttl,1,O O B-SLANG
+you fixed my computer ytg,1,O O O O B-SLANG
+thanks for the ride yw,1,O O O O B-SLANG
+were out of stock ywhnb,1,O O O O B-SLANG
+i won the game and was ywhol,1,O O O O O O B-SLANG
+i didnt win this time but ywsyls,1,O O O O O O B-SLANG
+youre going to finish on time yyssw,1,O O O O O O B-SLANG
+i scored a z on that test,1,O O O B-SLANG O O O
+this place is a z with all the chaos,1,O O O O B-SLANG O O O O
+its zh goodnight,1,O B-SLANG O
+zomg i cant believe you did that,1,B-SLANG O O O O O O
+our school has a zot policy for bullying,1,O O O O B-SLANG O O O
+hey zup with you today,1,O B-SLANG O O O
+i was so tired i went to bed and was out in seconds zzzz,1,O O O O O O O O O O O O O B-SLANG

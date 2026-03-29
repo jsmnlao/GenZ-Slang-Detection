@@ -1,0 +1,45 @@
+============================================================
+DATASET STATISTICS
+============================================================
+
+[train]  total=14000
+  Labels:
+    NOT_SLANG: 7000  (50.0%)
+    SLANG: 7000  (50.0%)
+  Sources:
+    gen_alpha: 10993  (78.5%)
+    gen_z: 1050  (7.5%)
+    wsj: 1957  (14.0%)
+
+[dev]  total=3000
+  Labels:
+    NOT_SLANG: 1500  (50.0%)
+    SLANG: 1500  (50.0%)
+  Sources:
+    gen_alpha: 2355  (78.5%)
+    gen_z: 225  (7.5%)
+    wsj: 420  (14.0%)
+
+[test]  total=3000
+  Labels:
+    NOT_SLANG: 1500  (50.0%)
+    SLANG: 1500  (50.0%)
+  Sources:
+    gen_alpha: 2356  (78.5%)
+    gen_z: 225  (7.5%)
+    wsj: 419  (14.0%)
+
+[generalization_test]  total=1000
+  Labels:
+    SLANG: 1000  (100.0%)
+  Sources:
+    gen_alpha: 1000  (100.0%)
+
+[Overlap validation]
+  Zero overlap across all splits: True
+  train ∩ dev: 0 shared sentences
+  train ∩ test: 0 shared sentences
+  train ∩ gen_test: 0 shared sentences
+  dev ∩ test: 0 shared sentences
+  dev ∩ gen_test: 0 shared sentences
+  test ∩ gen_test: 0 shared sentences
