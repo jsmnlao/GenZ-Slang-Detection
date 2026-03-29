@@ -49,5 +49,8 @@ output/
   test.csv                         # Test split
   generalization_test.csv          # Generalization test split (slang-only)
   dataset_stats.txt                # Full split statistics
+dictionary_baseline/
+  dictionary_baseline_report.txt   # Evaluation Report on dictionary lookup model
 build_dataset.py                   # Script to generate splits from labeled data
+  dictionary_baseline.py           # Script to implement dictionary lookup model and generate outputs
 ```
