@@ -1,0 +1,75 @@
+============================================================
+TF-IDF BASELINE EVALUATION REPORT
+============================================================
+
+=== TRAIN ===
+  Sentence-level:
+    Accuracy  : 0.9080
+    Precision : 0.9087
+    Recall    : 0.9071
+    F1        : 0.9079
+
+=== DEV ===
+  Sentence-level:
+    Accuracy  : 0.8373
+    Precision : 0.8447
+    Recall    : 0.8267
+    F1        : 0.8356
+
+=== TEST ===
+  Sentence-level:
+    Accuracy  : 0.8473
+    Precision : 0.8478
+    Recall    : 0.8467
+    F1        : 0.8472
+
+=== GENERALIZATION_TEST ===
+  Sentence-level:
+    Accuracy  : 0.7850
+    Precision : 1.0000
+    Recall    : 0.7850
+    F1        : 0.8796
+
+=== TOP POSITIVE FEATURES (predicting SLANG) ===
+  cringe                    6.0664
+  rizz                      5.6811
+  sheesh                    5.1626
+  periodt                   4.7708
+  yapping                   4.5856
+  bussin                    4.5689
+  glow up                   4.5171
+  glow                      4.4812
+  slay                      3.8954
+  cheugy                    3.8481
+  mewing                    3.6751
+  vibe check                3.4355
+  sus                       3.3311
+  skibidi                   3.3076
+  yeet                      3.1744
+  rizzler                   3.1357
+  big                       3.1283
+  aura                      3.0148
+  gyatt                     2.9771
+  pookie                    2.9482
+
+=== TOP NEGATIVE FEATURES (predicting NOT_SLANG) ===
+  lore                      -6.1639
+  and                       -5.2204
+  squad                     -5.1046
+  extra                     -5.0068
+  in                        -4.8404
+  beta                      -4.6193
+  of                        -4.4915
+  basic                     -4.4454
+  snacks                    -4.3079
+  snack                     -3.8551
+  fire                      -3.7161
+  to                        -3.6647
+  woke up                   -3.4835
+  mr                        -3.2755
+  by                        -3.2730
+  the                       -3.2339
+  mood                      -3.1559
+  ghost                     -2.8433
+  which                     -2.6677
+  caps                      -2.4691
