@@ -1,0 +1,52 @@
+============================================================
+BERT BIO TAGGING REPORT
+============================================================
+
+=== TRAIN ===
+  Sentence-level:
+    Accuracy  : 0.9176
+    Precision : 0.9394
+    Recall    : 0.8927
+    F1        : 0.9155
+  Token-level:
+    Accuracy  : 0.9849
+    Precision : 0.8406
+    Recall    : 0.7701
+    F1        : 0.8038
+
+=== DEV ===
+  Sentence-level:
+    Accuracy  : 0.8870
+    Precision : 0.9034
+    Recall    : 0.8667
+    F1        : 0.8847
+  Token-level:
+    Accuracy  : 0.9796
+    Precision : 0.7773
+    Recall    : 0.7222
+    F1        : 0.7487
+
+=== TEST ===
+  Sentence-level:
+    Accuracy  : 0.8973
+    Precision : 0.9110
+    Recall    : 0.8807
+    F1        : 0.8956
+  Token-level:
+    Accuracy  : 0.9836
+    Precision : 0.8100
+    Recall    : 0.7617
+    F1        : 0.7851
+
+=== GENERALIZATION_TEST ===
+  Sentence-level:
+    Accuracy  : 0.7680
+    Precision : 1.0000
+    Recall    : 0.7680
+    F1        : 0.8688
+  Token-level:
+    Accuracy  : 0.9379
+    Precision : 0.7121
+    Recall    : 0.5325
+    F1        : 0.6093
+
