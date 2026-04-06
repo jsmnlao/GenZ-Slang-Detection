@@ -15,7 +15,10 @@ Usage:
     # Full pipeline (sweep + ablation + final eval)
     python bertweet_binary.py
 
-    # Skip sweep, supply best config manually
+    # Sweep only (save best_config.json, stop before ablation/final eval)
+    python bertweet_binary.py --sweep_only
+
+    # Resume after sweep using saved best config
     python bertweet_binary.py --skip_sweep \\
         --best_config_json '{"learning_rate": 3e-05, "per_device_train_batch_size": 32, "max_seq_length": 128, "num_train_epochs": 3}'
 
@@ -406,6 +409,12 @@ def main():
         help='JSON string of best config, e.g. \'{"learning_rate": 3e-05, ...}\'',
     )
     parser.add_argument("--skip_ablation", action="store_true")
+    parser.add_argument(
+        "--sweep_only",
+        action="store_true",
+        help="Run sweep only; skip ablation and final eval. "
+             "Best config is printed and saved to best_config.json for later use.",
+    )
     args = parser.parse_args()
 
     global OUTPUT_DIR
@@ -440,11 +449,21 @@ def main():
         save_sweep_results(
             sweep_records, os.path.join(OUTPUT_DIR, "sweep_results.csv")
         )
+        best_config_path = os.path.join(OUTPUT_DIR, "best_config.json")
+        with open(best_config_path, "w", encoding="utf-8") as f:
+            json.dump(best_config, f, indent=2)
+        print(f"Best config saved to {best_config_path}")
     else:
         if args.best_config_json is None:
             parser.error("--skip_sweep requires --best_config_json")
         best_config = json.loads(args.best_config_json)
         print(f"\nSkipping sweep. Using provided config: {best_config}")
+
+    if args.sweep_only:
+        print("\n--sweep_only set. Stopping after sweep.")
+        print(f"To continue later, run:\n  python bertweet_binary.py --skip_sweep "
+              f"--best_config_json '{json.dumps(best_config)}'")
+        return
 
     # ------------------------------------------------------------------
     # Dataset size ablation
