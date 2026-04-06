@@ -1,0 +1,28 @@
+============================================================
+BERTWEET BINARY FINE-TUNING REPORT
+============================================================
+
+=== BEST HYPERPARAMETERS ===
+  Learning Rate             : 2e-05
+  Batch Size                : 16
+  Max Sequence Length       : 64
+  Num Epochs                : 3
+
+=== TEST SET RESULTS ===
+  Accuracy  : 0.9083
+  Precision : 0.8826
+  Recall    : 0.9420
+  F1        : 0.9113
+
+=== GENERALIZATION TEST RESULTS ===
+  Accuracy  : 0.9130
+  Precision : 1.0000
+  Recall    : 0.9130
+  F1        : 0.9545
+
+=== COMPARISON TO BASELINES ===
+  Model                             Test F1   Gen Test F1
+  --------------------------------------------------------
+  Dictionary Baseline                0.6770        0.7437
+  TF-IDF + LogReg                    0.8472        0.8796
+  BERTweet (this run)                0.9113        0.9545
