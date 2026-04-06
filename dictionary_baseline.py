@@ -6,7 +6,7 @@ Implements rule-based, dictionary look up model for detecting Gen Z slang in tex
 
 Usage:
     python dictionary_baseline.py
-    python dictionary_baseline.py --mlbtrio data/mlbtrio_cleaned.csv --train output/train.csv --dev output/dev.csv --test output/test.csv --output_dir dictionary_baseline
+    python dictionary_baseline.py --mlbtrio data/mlbtrio_cleaned.csv --train output/train.csv --dev output/dev.csv --test output/test.csv  --generalization output/generalization_test.csv --output_dir dictionary_baseline
 
 Output:
     dictionary_baseline/dictionary_baseline_report.txt
@@ -141,10 +141,11 @@ def evaluate_dataset(df, slang_list, split_name=""):
     return sentence_eval_results, token_eval_results
 
 
-def run_evaluations(train_path, dev_path, test_path, slang_list):
+def run_evaluations(train_path, dev_path, test_path, general_path, slang_list):
     df_train = pd.read_csv(train_path)
     df_dev = pd.read_csv(dev_path)
     df_test = pd.read_csv(test_path)
+    df_general = pd.read_csv(general_path)
 
     print("Evalutating TRAIN...")
     train_sentence_out, train_token_out = evaluate_dataset(
@@ -154,11 +155,19 @@ def run_evaluations(train_path, dev_path, test_path, slang_list):
     dev_sentence_out, dev_token_out = evaluate_dataset(df_dev, slang_list, "DEV")
     print("Evalutating TEST...")
     test_sentence_out, test_token_out = evaluate_dataset(df_test, slang_list, "TEST")
+    print("Evaluating GENERALIZATION_TEST...")
+    general_sentence_out, general_token_out = evaluate_dataset(
+        df_general, slang_list, "GENERALIZATION_TEST"
+    )
 
     return {
         "train": {"sentence": train_sentence_out, "token": train_token_out},
         "dev": {"sentence": dev_sentence_out, "token": dev_token_out},
         "test": {"sentence": test_sentence_out, "token": test_token_out},
+        "generalization_test": {
+            "sentence": general_sentence_out,
+            "token": general_token_out,
+        },
     }
 
 
@@ -170,7 +179,7 @@ def save_report(results, output_path):
         f.write("=" * 60 + "\n")
         f.write("\n")
 
-        for split in ["train", "dev", "test"]:
+        for split in ["train", "dev", "test", "generalization_test"]:
             f.write(f"=== {split.upper()} ===\n")
 
             s = results[split]["sentence"]
@@ -196,6 +205,7 @@ def main():
     parser.add_argument("--train", default="output/train.csv")
     parser.add_argument("--dev", default="output/dev.csv")
     parser.add_argument("--test", default="output/test.csv")
+    parser.add_argument("--generalization", default="output/generalization_test.csv")
     parser.add_argument("--output_dir", default="dictionary_baseline")
     args = parser.parse_args()
 
@@ -203,7 +213,9 @@ def main():
     slang_list = build_slang_list(df_mlbtrio)
 
     print("Running evaluations...")
-    results = run_evaluations(args.train, args.dev, args.test, slang_list)
+    results = run_evaluations(
+        args.train, args.dev, args.test, args.generalization, slang_list
+    )
 
     report_path = os.path.join(args.output_dir, "dictionary_baseline_report.txt")
     save_report(results, report_path)
