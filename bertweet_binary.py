@@ -240,7 +240,9 @@ def run_ablation(train_df, dev_df, test_df, tokenizer, best_config):
             subset_df = train_df
 
         n_train = len(subset_df)
-        run_dir = os.path.join(OUTPUT_DIR, "checkpoints", f"ablation_frac{int(frac * 100):03d}")
+        run_dir = os.path.join(
+            OUTPUT_DIR, "checkpoints", f"ablation_frac{int(frac * 100):03d}"
+        )
         print(f"\n[Ablation] frac={frac:.2f}  n_train={n_train}")
 
         train_ds = SlangDataset(subset_df, tokenizer, seq_len)
@@ -358,7 +360,9 @@ def save_final_report(test_metrics, gen_metrics, best_config, path):
 
         f.write("=== BEST HYPERPARAMETERS ===\n")
         f.write(f"  Learning Rate             : {best_config['learning_rate']}\n")
-        f.write(f"  Batch Size                : {best_config['per_device_train_batch_size']}\n")
+        f.write(
+            f"  Batch Size                : {best_config['per_device_train_batch_size']}\n"
+        )
         f.write(f"  Max Sequence Length       : {best_config['max_seq_length']}\n")
         f.write(f"  Num Epochs                : {best_config['num_train_epochs']}\n\n")
 
@@ -377,7 +381,7 @@ def save_final_report(test_metrics, gen_metrics, best_config, path):
         f.write("=== COMPARISON TO BASELINES ===\n")
         f.write(f"  {'Model':<30} {'Test F1':>10}  {'Gen Test F1':>12}\n")
         f.write("  " + "-" * 56 + "\n")
-        f.write(f"  {'Dictionary Baseline':<30} {'0.6770':>10}  {'N/A':>12}\n")
+        f.write(f"  {'Dictionary Baseline':<30} {'0.6770':>10}  {'0.7437':>12}\n")
         f.write(f"  {'TF-IDF + LogReg':<30} {'0.8472':>10}  {'0.8796':>12}\n")
         f.write(f"  {'BERTweet (this run)':<30} {test_f1:>10.4f}  {gen_f1:>12.4f}\n")
 
@@ -406,14 +410,14 @@ def main():
     parser.add_argument(
         "--best_config_json",
         default=None,
-        help='JSON string of best config, e.g. \'{"learning_rate": 3e-05, ...}\'',
+        help="JSON string of best config, e.g. '{\"learning_rate\": 3e-05, ...}'",
     )
     parser.add_argument("--skip_ablation", action="store_true")
     parser.add_argument(
         "--sweep_only",
         action="store_true",
         help="Run sweep only; skip ablation and final eval. "
-             "Best config is printed and saved to best_config.json for later use.",
+        "Best config is printed and saved to best_config.json for later use.",
     )
     args = parser.parse_args()
 
@@ -446,9 +450,7 @@ def main():
         print("HYPERPARAMETER SWEEP")
         print("=" * 60)
         best_config, sweep_records = run_sweep(train_df, dev_df, tokenizer)
-        save_sweep_results(
-            sweep_records, os.path.join(OUTPUT_DIR, "sweep_results.csv")
-        )
+        save_sweep_results(sweep_records, os.path.join(OUTPUT_DIR, "sweep_results.csv"))
         best_config_path = os.path.join(OUTPUT_DIR, "best_config.json")
         with open(best_config_path, "w", encoding="utf-8") as f:
             json.dump(best_config, f, indent=2)
@@ -461,8 +463,10 @@ def main():
 
     if args.sweep_only:
         print("\n--sweep_only set. Stopping after sweep.")
-        print(f"To continue later, run:\n  python bertweet_binary.py --skip_sweep "
-              f"--best_config_json '{json.dumps(best_config)}'")
+        print(
+            f"To continue later, run:\n  python bertweet_binary.py --skip_sweep "
+            f"--best_config_json '{json.dumps(best_config)}'"
+        )
         return
 
     # ------------------------------------------------------------------
