@@ -1,0 +1,21 @@
+============================================================
+QWEN (deepseek-v3.2) — TOKEN_COT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       token_cot
+Samples:        3000
+Parse errors:   593 (19.8%)
+
+Sentence-level:
+  Accuracy  : 0.7747
+  Precision : 0.7008
+  Recall    : 0.9587
+  F1        : 0.8097
+
+Token-level:
+  Accuracy  : 0.9359
+  Precision : 0.3425
+  Recall    : 0.6524
+  F1        : 0.4492
+

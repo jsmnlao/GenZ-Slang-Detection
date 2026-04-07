@@ -1,0 +1,793 @@
+text,gold_label,pred_label,correct,reasoning,categories
+this must be the last big stretch of the american seacoast that is undeveloped there are a few ramshackle fishing towns with quiet atolls of resort houses nearby,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This describes a geographical or coastal scene. All words — 'this', 'must', 'be', 'the', 'last', 'big', 'stretch', 'of', 'the', 'american', 'seacoast', 'that', 'is', 'undeveloped', 'there', 'are', 'a', 'few', 'ramshackle', 'fishing', 'towns', 'with', 'quiet', 'atolls', 'of', 'resort', 'houses', 'nearby' — are standard English used in a descriptive context. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+you didnt agree wtfe i dont care,SLANG,SLANG,True,"Scanning each token: 'you' is a standard pronoun. 'didnt' is a contraction of 'did not', considered standard in informal writing. 'agree' is a standard verb. 'wtfe' is slang acronym ('what the fuck ever') and a single-token slang expression. 'i' is a standard pronoun. 'dont' is a contraction of 'do not', considered standard in informal writing. 'care' is a standard verb. The sentence contains the slang acronym 'wtfe', so this is SLANG.",syntactic|semantic
+i see your highly educated may i ask where you got stupid information like that wait i bet from the cdc or some post that got their info from the cdc i dont think i have parasites infestation it does feel like it at times though  th,NOT_SLANG,SLANG,False,"Reasoning:  
+First, split the text into tokens:  
+Tokens: [""i"", ""see"", ""your"", ""highly"", ""educated"", ""may"", ""i"", ""ask"", ""where"", ""you"", ""got"", ""stupid"", ""information"", ""like"", ""that"", ""wait"", ""i"", ""bet"", ""from"", ""the"", ""cdc"", ""or"", ""some"", ""post"", ""that"", ""got"", ""their"", ""info"", ""from"", ""the"", ""cdc"", ""i"", ""dont"", ""think"", ""i"", ""have"", ""parasites"", ""infestation"", ""it"", ""does"", ""feel"", ""like"", ""it"", ""at"", ""times"", ""though""]  
+Count: 47 tokens exactly.
+
+Next, scan for slang expressions.  
+Possible slang:  
+- ""stupid"": Could be standard insulting word, not necessarily slang if used literally.  
+- ""info"": Abbreviation for ""information"", common informal/slang usage.  
+- ""dont"": Abbreviation for ""do not"", common informal/slang usage.  
+- ""cdc"": Is an organization acronym, not slang.  
+- ""bet"": Could be slang meaning ""I guess"" or ""I'm sure"". In context ""wait i bet from the cdc"" → it's slang for ""I'm guessing"".  
+
+Consider definitions:  
+- ""info"": informal abbreviation, internet slang.  
+- ""dont"": informal abbreviation, internet slang.  
+- ""bet"": slang when used as ""I bet"" meaning ""I guess/I'm sure"".  
+
+Multi-word slang spans?  
+- ""i bet"": Could be a slang phrase, but ""i"" is a pronoun, and ""bet"" is the slang token. So ""bet"" is B-SLANG.  
+
+Check context for slang usage:  
+- ""stupid information"": ""stupid"" is used as adjective meaning foolish, standard usage, not slang specific.  
+- ""info"": appears twice: ""their info"" and implicitly earlier, but second occurrence is ""info"" explicitly, slang abbreviation.  
+- ""dont"": slang abbreviation.  
+
+Thus slang tokens:  
+1. ""info"" (first occurrence? Actually token #28 is ""info"") → token 28: slang  
+2. ""dont"" → token 33: slang  
+3. ""bet"" → token 18: slang  
+
+No other",syntactic|semantic|hallucination
+just check out drip stop leaping around don t as y tho i,NOT_SLANG,SLANG,False,"Scanning each token:
+
+1. just - standard word  
+2. check - standard word  
+3. out - standard word  
+4. drip - Gen Z slang meaning stylish clothing/outfit/fashion sense  
+5. stop - standard word  
+6. leaping - standard word  
+7. around - standard word  
+8. don - standard word  
+9. t - standard word (contraction ""don't"")  
+10. as - standard word  
+11. y - Gen Z slang abbreviation for ""why""  
+12. tho - Gen Z slang abbreviation for ""though""  
+13. i - standard word  
+
+There are three slang tokens: 'drip' (single-word slang), 'y' (slang abbreviation), 'tho' (slang abbreviation). They are not part of a multi-word slang expression — each stands alone as separate slang terms.  
+
+Token 4 'drip' is B-SLANG, token 11 'y' is B-SLANG, token 12 'tho' is B-SLANG.",syntactic|semantic|hallucination
+they bussin fr,SLANG,SLANG,True,"Scanning each token: 'they' is a standard pronoun. 'bussin' is slang meaning really good / delicious / amazing. 'fr' is slang meaning 'for real'. Both slang terms appear as separate slang tokens, so the sentence contains slang.",syntactic|semantic
+just imagine how peaceful the world would be if all the elites just lit up a j and chilled tf out,NOT_SLANG,SLANG,False,"Scanning each token: 
+- 'just', 'imagine', 'how', 'peaceful', 'the', 'world', 'would', 'be', 'if', 'all', 'the' are standard English words. 
+- 'elites' is a standard term (might refer to wealthy/powerful class). 
+- 'lit up a j' — 'lit up' means to smoke (standard), but 'j' is slang for 'joint' (a marijuana cigarette). 'lit up a j' is a three-token slang expression. 
+- 'chilled tf out' — 'chilled' is slang for relaxed, 'tf' is slang abbreviation for 'the fuck', 'out' completes the phrase. The phrase 'chilled tf out' is slang, with 'tf' as a standalone slang abbreviation embedded in the slang phrase. The full slang expression 'chilled tf out' is a three-token slang phrase.
+Thus, slang spans are: 'lit up a j' and 'chilled tf out'.",syntactic|semantic|hallucination
+don t talk about pfps with me buddy mr scary meanie aura boy,SLANG,SLANG,True,"Scanning tokens carefully (there are 13 tokens): 
+
+Tokens: don, t, talk, about, pfps, with, me, buddy, mr, scary, meanie, aura, boy.
+
+- ""pfps"" stands for 'profile pictures' — internet slang abbreviation commonly used in online communities. This is slang.
+- ""buddy"" can be slang if used sarcastically, but here it's neutral.
+- ""mr scary meanie aura boy"" could be a mock-ironic nickname, but each word is standard. 'aura' could be slang in certain contexts, but combined as a teasing description it might be sarcastic internet slang. However, the phrase 'mr scary meanie aura boy' is a constructed nickname likely used in a playful mocking way — it qualifies as a multi-word slang expression because it is a stylized label used in informal online discourse. Therefore, the whole span ""mr scary meanie aura boy"" is slang. 
+
+Thus, there are two slang expressions: ""pfps"" (single token) and ""mr scary meanie aura boy"" (4 tokens).
+
+So, tokens:
+
+1. don -> O
+2. t -> O (contraction of ""not"")
+3. talk -> O
+4. about -> O
+5. pfps -> B-SLANG
+6. with -> O
+7. me -> O
+8. buddy -> O (neutral here)
+9. mr -> B-SLANG (start of nickname slang)
+10. scary -> I-SLANG
+11. meanie -> I-SLANG
+12. aura -> I-SLANG
+13. boy -> I-SLANG",syntactic|semantic
+what has jolted many junk buyers is the sudden realization that junk bonds cannot necessarily be bought and sold with the ease of common stocks and many investmentgrade bonds,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This is a formal sentence from a financial/business context. All words are used in their standard, literal sense — 'junk bonds', 'investmentgrade' are financial terms but not slang; they are technical jargon. There is no internet slang or informal slang usage, so this is NOT_SLANG.",syntactic|semantic
+please send me the document ayec,SLANG,SLANG,True,"Scanning each token: 'please send me the document' are standard English words. 'ayec' — this could be an abbreviation (e.g., ""at your earliest convenience""), though not widely recognized as slang. However, in internet slang detection, abbreviations like this are often considered slang if they are informal shorthand. I'll treat 'ayec' as a single-token slang expression.",syntactic|semantic
+the ghost of mandela hope my flows they propel it let these words be your earth and moon you consume every message as i lead this army make room for mistakes and depression and with that being said my nigga let me ask this question,NOT_SLANG,SLANG,False,"Let's examine each token for slang usage, remembering that slang expressions can be multi-word. The text is poetic/lyrical. Common slang to check: ""flows"" (slang for rap lyrics), ""propel it"" (not slang), ""my nigga"" is a highly informal slang term, often used in African-American vernacular English and hip-hop context — it is a two-word slang expression here: ""my"" + ""nigga"". Other tokens like ""ghost"", ""mandela"", ""hope"", ""earth"", ""moon"", ""consume"", ""message"", ""lead"", ""army"", ""room"", ""mistakes"", ""depression"", ""question"" are used in their literal or poetic sense, not slang. So the slang span is ""my nigga"". Total tokens: ""the ghost of mandela hope my flows they propel it let these words be your earth and moon you consume every message as i lead this army make room for mistakes and depression and with that being said my nigga let me ask this question"" — let's count tokens: the(1) ghost(2) of(3) mandela(4) hope(5) my(6) flows(7) they(8) propel(9) it(10) let(11) these(12) words(13) be(14) your(15) earth(16) and(17) moon(18) you(19) consume(20) every(21) message(22) as(23) i(24) lead(25) this(26) army(27) make(28) room(29) for(30) mistakes(31) and(32) depression(33) and(34) with(35) that(36) being(37) said(38) my(39) nigga(40) let(41) me(42) ask(43) this(44) question(45). Token 39 (""my"") is part of slang expression ""my nigga"", token 40 (""nigga"") is continuation. So B-SLANG at token 39, I-SLANG at token 40. All others O.",syntactic|semantic|hallucination
+she got the ick because i m a man of principle,SLANG,SLANG,True,"Scanning each token: 'the' is a standard article. 'ick' is Gen Z slang meaning a sudden feeling of disgust or repulsion, usually toward a romantic partner. The expression ""got the ick"" is slang usage: 'got' is a verb, 'the' article, 'ick' slang — but only 'ick' is slang. The slang expression here is single token 'ick'. The rest of tokens ('i m' stands for ""I am"") are standard English words. Therefore the sentence contains slang.",syntactic|semantic
+mr aura himself,SLANG,NOT_SLANG,False,"Scanning each token: 'mr aura himself'. This phrase uses 'aura' metaphorically, suggesting someone embodies an aura. While this could be seen as slangy in certain contexts, Gen Z slang examples in my training indicate slang terms like 'mid', 'bop', 'glow up' — 'aura' is not typical Gen Z slang, and here it seems metaphorical. Thus I assess NOT_SLANG.",syntactic|semantic
+fax sc got the best quality,SLANG,SLANG,True,"Scanning each token: 'fax' is slang shorthand for 'facts', meaning truth. 'sc' could stand for 'Supreme Court' or abbreviation, but context suggests slang abbreviation. 'got the best quality' are standard words. The sentence contains slang abbreviation 'fax', so this is SLANG.",syntactic|semantic
+there s crazy lore behind that,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'there' is standard. 's' (short for 'is') is a common contraction. 'crazy' could be slang meaning 'extreme' or 'wild', but in context it's likely standard adjective usage. 'lore' refers to narrative background in fandoms, standard term. 'behind that' is standard. No clear slang expression here, though 'crazy lore' might be used colloquially, it doesn’t qualify as a distinct slang phrase. The sentence does not contain internet slang, so this is NOT_SLANG.",syntactic|semantic
+the agency said polish prime minister tadeusz mazowiecki told iranian deputy foreign minister mahmoud vaezi of polands willingess to purchase the gas during mr vaezis current visit to warsaw,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This sentence describes formal diplomatic communication using official names, positions, and factual information — a formal geopolitical news sentence. All words are used in their standard, official, literal meanings. No slang expressions appear, so this is NOT_SLANG.",syntactic|semantic
+its the basic nature of drug trials no false promises fo those who still havent caught on,NOT_SLANG,SLANG,False,"Scanning each token: 'its', 'the', 'basic', 'nature', 'of', 'drug', 'trials', 'no', 'false', 'promises' are standard words. 'fo' is slang abbreviation for 'for'. 'those', 'who', 'still', 'havent', 'caught', 'on' are standard. 'caught on' is sometimes slang for ""became popular/understood"", but in this context ""havent caught on"" appears literal (""haven't understood/learned""). 'fo' is slang. The sentence contains slang abbreviation 'fo', so this is SLANG.",syntactic|semantic|hallucination
+a really basic rule of intl law for you to learn is that the us does not control the laws of brazil just as it hasn t interfered with eu rules that apple and facebook and microsoft don t lie the us govt also doesn t in,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'intl' is a common abbreviation for international and not slang. 'us' is abbreviation for United States, standard. 'eu' is abbreviation for European Union, standard. 'govt' is abbreviation for government, standard. None are slang as they are formal abbreviations used in serious contexts. All other tokens are standard English words in literal usage. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+lol she is dc schools begin next monday so i am having one last hurrah before school drop off begins  this cheugy kkkaren is an excellent case study of the kkkolonizer personality disorder she has a large enough body of work wno filte,SLANG,SLANG,True,"Token list: lol, she, is, dc, schools, begin, next, monday, so, i, am, having, one, last, hurrah, before, school, drop, off, begins, this, cheugy, kkkaren, is, an, excellent, case, study, of, the, kkkolonizer, personality, disorder, she, has, a, large, enough, body, of, work, wno, filte  
+
+Step-by-step slang detection:  
+- 'lol' is internet slang for 'laugh out loud'. This is slang (B-SLANG).  
+- 'dc' might be abbreviation for 'District of Columbia' or 'direct current', but here likely referring to Washington DC schools — not slang.  
+- 'hurrah' is a standard English expression (not slang).  
+- 'cheugy' is Gen Z slang meaning outdated, uncool — slang (B-SLANG).  
+- 'kkkaren' is internet slang referencing Karen meme with exaggerated 'kkk' prefix — slang (but note: it's a single token; likely derivative meme term). Could be considered slang.  
+- 'kkkolonizer' is internet slang mocking 'colonizer' with exaggerated prefix — slang (single token).  
+- 'wno filte': unclear, possibly typos/errors, not standard slang terms (maybe 'no filter' but miswritten).  
+
+Important: multi-word slang spans?  
+- 'lol' is single token slang.  
+- 'cheugy' is single token slang.  
+- 'kkkaren' is single token slang.  
+- 'kkkolonizer' is single token slang.  
+
+No multi-word slang expressions present (e.g., 'hurrah' is not slang).  
+
+Thus, tokens with slang: lol, cheugy, kkkaren, kkkolonizer. Each is a single token slang expression (so each gets B-SLANG, no I-SLANG needed).",syntactic|semantic
+it s more like a fanum tax ishowspeed among us big chungus rizz,SLANG,SLANG,True,"Token by token:  
+'it' = standard pronoun (O).  
+'s' = contraction of 'is', standard (O).  
+'more' = standard adverb (O).  
+'like' = standard preposition (O).  
+'a' = standard article (O).  
+'fanum tax' = internet meme slang (two-token phrase, B-SLANG I-SLANG).  
+'ishowspeed' = internet personality name, used as slang term meaning fast/chasing? but here likely referring to the streamer as slang usage? Common slang for speed/chasing; treat as single-token slang B-SLANG.  
+'among us' = game title, but also meme slang phrase (two-token phrase, B-SLANG I-SLANG).  
+'big chungus' = meme slang (two-token phrase, B-SLANG I-SLANG).  
+'rizz' = slang for charisma (single-token B-SLANG).  
+
+Sequence:  
+Tokens: it s more like a fanum tax ishowspeed among us big chungus rizz  
+1. it → O  
+2. s → O  
+3. more → O  
+4. like → O  
+5. a → O  
+6. fanum → B-SLANG  
+7. tax → I-SLANG  
+8. ishowspeed → B-SLANG  
+9. among → B-SLANG  
+10. us → I-SLANG  
+11. big → B-SLANG  
+12. chungus → I-SLANG  
+13. rizz → B-SLANG  
+
+All listed expressions are recognized internet memes/slang terms (fanum tax, ishowspeed, among us, big chungus, rizz).",syntactic|semantic
+hate jjk hate gege idc but dont come at people for being invested about a character and their lore oh my god yall niggas miserable,NOT_SLANG,SLANG,False,"Scanning each token:  
+1-4 'hate jjk hate gege' likely about manga/anime Jujutsu Kaisen (JJK) and author Gege — standard usage.  
+'idc' is slang abbreviation for 'I don't care' — single token slang.  
+'but dont come at people' standard English.  
+'being invested' standard usage.  
+'about a character and their lore' standard.  
+'oh my god' common phrase, not slang.  
+'yall' slang for 'you all' — single token slang.  
+'niggas' slang for 'people' — single token slang.  
+'miserable' standard.  
+
+Total tokens: hate (1) jjk (2) hate (3) gege (4) idc (5) but (6) dont (7) come (8) at (9) people (10) for (11) being (12) invested (13) about (14) a (15) character (16) and (17) their (18) lore (19) oh (20) my (21) god (22) yall (23) niggas (24) miserable (25).  
+
+Slang tokens: idc (B-SLANG), yall (B-SLANG), niggas (B-SLANG).  
+Note: each is standalone slang, not part of multi-word slang phrase.  
+Sentence contains slang → SLANG.",syntactic|semantic|hallucination
+lit into you better off,SLANG,SLANG,True,"Scanning each token: 'lit' is slang (meaning exciting, cool), but here it could also be literal (to light something). The phrase 'into you' might be slang if part of a slang phrase, but 'lit into you' could be slang for criticizing angrily (lit into you). However, the phrase 'better off' is standard. Let's interpret 'lit into' as slang meaning angrily criticize. So 'lit' is B-SLANG and 'into' is I-SLANG, 'you' might be part but usually phrase is ""lit into someone"" so 'you' is part. Then 'better off' is standard. So slang span: lit into you.",syntactic|semantic
+this idiot deserved being miserable for how hard he messed up the lore timeline,NOT_SLANG,SLANG,False,"Scanning each token: 'this' is a standard determiner. 'idiot' could be slang but is standard derogatory term used in literal sense. 'deserved' is standard English. 'being miserable' is standard description. 'for' is preposition. 'how hard' is standard adverb phrase. 'he' is pronoun. 'messed up' is slang expression meaning ruined or botched, this is a two-token slang phrase ('messed' and 'up'). 'the lore timeline' are standard words. The sentence contains the slang expression 'messed up', so this is SLANG.",syntactic|semantic|hallucination
+it s in her blood her father is a marxist economic professor hence price cap not so much cannot happen,NOT_SLANG,NOT_SLANG,True,"Scanning tokens sequentially (space-separated):  
+1. ""it"" – standard pronoun.  
+2. ""s"" – contraction for 'is', standard.  
+3. ""in"" – standard preposition.  
+4. ""her"" – standard pronoun.  
+5. ""blood"" – figurative but literal idiom 'in her blood', not slang.  
+6. ""her"" – standard pronoun.  
+7. ""father"" – standard noun.  
+8. ""is"" – standard verb.  
+9. ""a"" – standard article.  
+10. ""marxist"" – political term, standard.  
+11. ""economic"" – standard adjective.  
+12. ""professor"" – standard noun.  
+13. ""hence"" – standard conjunction.  
+14. ""price"" – standard noun.  
+15. ""cap"" – here possibly 'price cap' is a financial term, not slang.  
+16. ""not"" – standard adverb.  
+17. ""so"" – standard adverb.  
+18. ""much"" – standard determiner.  
+19. ""cannot"" – standard verb contraction.  
+20. ""happen"" – standard verb.  
+
+This text is a formal/political sentence discussing ideological inheritance. No slang terms like ""fr"", ""glow up"", ""bop"", etc. are present. The phrase ""in her blood"" is a common idiom, not slang. Hence overall NOT_SLANG.",syntactic|semantic
+those might work deep breath is the most basic one but it does its job,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'those might work deep breath is the most basic one but it does its job' — 'deep breath' could refer to a literal breathing exercise or a mindfulness practice, but here it is standard descriptive language. 'basic' might be slang when used to mean 'simple or lacking sophistication', but in this context it seems descriptive ('most basic one'). Given the lack of clear slang usage, this is NOT_SLANG.",syntactic|semantic
+i am not joking he knows about the lore too and i show him ur art sometimes and he likes it,NOT_SLANG,SLANG,False,"Scanning each token: 'i' 'am' 'not' 'joking' 'he' 'knows' 'about' 'the' 'lore' 'too' 'and' 'i' 'show' 'him' 'ur' 'art' 'sometimes' 'and' 'he' 'likes' 'it'. Most tokens are standard English words. The word 'lore' is slang meaning the backstory or mythology of a game/franchise (common in gaming communities), so 'lore' is slang. 'ur' is internet slang shorthand for 'your'. The sentence contains two slang tokens: 'lore' and 'ur'. Each is a single token slang expression. Both are slang, so this is SLANG.",syntactic|semantic|hallucination
+ohiomaxxing sus nah imma rizzmaxx but is gooning to looksmaxxers sigma oh my gyatt,SLANG,SLANG,True,"Step 1: Token list:  
+1. ""ohiomaxxing"" — internet slang term meaning adopting Ohio-specific lifestyle traits, part of ""-maxxing"" meme culture, slang.  
+2. ""sus"" — slang meaning suspicious or suspect.  
+3. ""nah"" — slang for ""no"".  
+4. ""imma"" — slang for ""I'm going to"" (contraction).  
+5. ""rizzmaxx"" — slang: ""rizz"" + ""-maxx"", meaning maximizing charisma/flirtatious skills.  
+6. ""but"" — standard word.  
+7. ""is"" — standard word.  
+8. ""gooning"" — slang: part of ""goonmaxxing"" meme, related to being a goon (gamer/idiot).  
+9. ""to"" — standard word.  
+10. ""looksmaxxers"" — slang: ""looksmaxx"" + ""ers"", people who maximize their looks appearance.  
+11. ""sigma"" — slang: sigma male, a personality archetype meme.  
+12. ""oh"" — standard word.  
+13. ""my"" — standard word.  
+14. ""gyatt"" — slang: exaggerated pronunciation of ""god"" in ""god damn"" meme, often referring to butt.  
+
+Step 2: Slang expressions — each slang token here is standalone (no multi-word slang phrases), so each slang token gets B-SLANG (no I-SLANG needed).  
+Step 3: Distinguish slang from literal: entire sentence is meme slang internet jargon, no literal usage.",syntactic|semantic
+i m losing respect for ross throughout this debacle he s a clout chaser through and through,SLANG,SLANG,True,"Scanning each token:  
+1. 'i' — standard word.  
+2. 'm' — contraction of 'am', standard.  
+3. 'losing' — standard.  
+4. 'respect' — standard.  
+5. 'for' — standard.  
+6. 'ross' — standard (name).  
+7. 'throughout' — standard.  
+8. 'this' — standard.  
+9. 'debacle' — standard.  
+10. 'he' — standard.  
+11. 's' — contraction of 'is', standard.  
+12. 'a' — standard.  
+13. 'clout chaser' — Gen Z slang term meaning someone who seeks fame/social media attention — this is a two-token slang expression ('clout' meaning reputation/fame, 'chaser' meaning pursuer).  
+14. 'clout' — B-SLANG start of expression.  
+15. 'chaser' — I-SLANG continuation.  
+16. 'through' — standard.  
+17. 'and' — standard.  
+18. 'through' — standard.  
+No other slang tokens.",syntactic|semantic
+estimated and actual results involving losses are omitted,NOT_SLANG,NOT_SLANG,True,"Scanning each token: this is a formal sentence about financial reporting or data presentation. All words — 'estimated', 'and', 'actual', 'results', 'involving', 'losses', 'are', 'omitted' — are standard English used in their literal professional sense. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+lost to in top in the qualifier happy with how the squad is looking for this upcoming collegiate season,NOT_SLANG,SLANG,False,"Scanning each token: 'lost to in top in the qualifier happy with how the squad is looking for this upcoming collegiate season'. This is a sports-related comment. 'top' could mean slang for best but here it is likely ranking position. 'squad' can be slang for group or team — often used in sports and gaming as slang for a crew or team. Considering context, 'squad' is likely slang here. Other tokens are standard words. So 'squad' is a single-token slang expression, making this SLANG.",syntactic|semantic|hallucination
+give him that gyatt,SLANG,SLANG,True,"Scanning each token: 'give him that' are standard words. 'gyatt' is slang for 'god, damn', typically referring to an attractive body. The sentence contains the slang term 'gyatt', so this is SLANG.",syntactic|semantic
+it was shades of october until it turned and stabilized at about,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'it', 'was', 'shades', 'of', 'october', 'until', 'it', 'turned', 'and', 'stabilized', 'at', 'about'. 'shades of October' might be a phrase, but here it seems metaphorical—likely referring to a resemblance to a past event in October, not slang. No slang terms or internet slang appear in this sentence. This is NOT_SLANG.",syntactic|semantic
+that joke had me lmmfao,SLANG,SLANG,True,"Scanning each token: 'that joke had me' are standard English words. 'lmmfao' is internet slang, an abbreviation for 'laughing my motherfucking ass off' — this is a single-token slang expression. The sentence contains the slang term 'lmmfao', so this is SLANG.",syntactic|semantic
+oh yh just noticed the extra underscore,NOT_SLANG,SLANG,False,"Scanning each token: 'oh' is common informal exclamation but not slang. 'yh' is slang abbreviation for 'yeah', a single token slang expression. 'just noticed the extra underscore' are all standard English words. The sentence contains the slang abbreviation 'yh', so this is SLANG.",syntactic|semantic|hallucination
+like this today was a beautiful day to fish and you ruined it by watching your squad lose to the secs best bowling program no shame in just being who you are little bro,NOT_SLANG,SLANG,False,"Scanning each token: The text contains several slang expressions.
+
+- ""like this"" — ""like this"" at the start is conversational filler, but not typically tagged as slang.
+- ""fish"" — Here likely refers to fishing activity, not slang.
+- ""your squad"" — ""squad"" is slang for your group/friends/team.
+- ""secs"" — abbreviation for ""SEC's"" (referring to Southeastern Conference in sports), not slang.
+- ""no shame"" — ""no shame"" could be a phrase, but it's standard English.
+- ""little bro"" — ""little bro"" is slang for younger brother or a friendly term.
+
+Detailed token breakdown:
+Tokens: 
+1. like
+2. this
+3. today
+4. was
+5. a
+6. beautiful
+7. day
+8. to
+9. fish
+10. and
+11. you
+12. ruined
+13. it
+14. by
+15. watching
+16. your
+17. squad
+18. lose
+19. to
+20. the
+21. secs
+22. best
+23. bowling
+24. program
+25. no
+26. shame
+27. in
+28. just
+29. being
+30. who
+31. you
+32. are
+33. little
+34. bro
+
+Identifying slang spans:
+- Token 17: ""squad"" — slang term. Single token slang → B-SLANG.
+- Tokens 33-34: ""little bro"" — slang expression. Two-token slang → B-SLANG (33) and I-SLANG (34).
+
+All other tokens are standard English words in literal usage (like, this, today, etc.).
+
+Thus, slang tokens: 17, 33, 34.",syntactic|semantic|hallucination
+its a bop dangerously for boynextdoor,SLANG,SLANG,True,"Scanning each token: 'its' is standard contraction. 'a' is standard article. 'bop' is slang for a catchy song, so this should be B-SLANG. 'dangerously' is standard word. 'for' is standard preposition. 'boynextdoor' is slang phrase — the entire phrase 'boynextdoor' is a single token slang term meaning a cute neighbor or TikTok aesthetic, so it's B-SLANG. There are two slang tokens: 'bop' and 'boynextdoor', so SLANG.",syntactic|semantic
+perculesperky pottercodiene dripno peace has leaked era drfl duration   verse completed leaked by dansoup,NOT_SLANG,SLANG,False,"Scanning each token:
+- ""perculesperky"" – looks like a username or nickname, but not a recognized slang term.
+- ""pottercodiene"" – seems like a username or non-standard term, not slang.
+- ""dripno"" – possibly a partial slang; ""drip"" is slang for style/fashion but here it's combined with ""no"".
+- ""peace"" – standard English.
+- ""has"" – standard English.
+- ""leaked"" – slang for unauthorized release of information/media.
+- ""era"" – slang (short for time/period in pop culture contexts).
+- ""drfl"" – unclear abbreviation, not slang.
+- ""duration"" – standard English.
+- ""verse"" – slang for song section or lyrical segment.
+- ""completed"" – standard English.
+- ""leaked"" – slang again (same as earlier token).
+- ""by"" – standard English.
+- ""dansoup"" – username, not slang.
+
+Considering slang tokens: ""leaked"" (first occurrence), ""era"", ""verse"", ""leaked"" (second occurrence). Each is a single-word slang expression, not part of a multi-word phrase, so each gets B-SLANG individually.
+
+Therefore, this is SLANG.",syntactic|semantic|hallucination
+woah sus,SLANG,SLANG,True,"Scanning each token: 'woah' is an expression of surprise, could be slang, but here it's informal. 'sus' is slang meaning suspicious or sketchy. Given the slang usage, 'sus' qualifies as slang. This sentence contains slang, so it is SLANG.",syntactic|semantic
+are you d46,SLANG,NOT_SLANG,False,"Scanning each token: 'are', 'you' are standard words. 'd46' is not widely recognized slang but could be an obscure acronym or code — likely not slang by common internet slang standards. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic|hallucination
+are you bringing a moos to the party,SLANG,NOT_SLANG,False,"Scanning each token: 'are you bringing a' are standard words. 'moos' appears — this might be slang abbreviation for ""MOOS""? Possibly slang for ""moot""? Checking context: unclear slang, likely intended as standard word. 'to the party' standard words. Likely NOT_SLANG unless 'moos' is slang. Without clear slang evidence, it's NOT_SLANG.",syntactic|semantic|hallucination
+on lit entre les lignes mdr,NOT_SLANG,SLANG,False,"Scanning each token: 'on lit entre les lignes' is French for 'we read between the lines', all standard French words. 'mdr' is internet slang, equivalent to 'lol' in French — a single-token slang expression. The sentence contains slang abbreviation 'mdr', so this is SLANG.",syntactic|semantic|hallucination
+mudryk doesnt even know how to play proper squad football stop it lol,NOT_SLANG,SLANG,False,"Scanning each token:  
+1. mudryk – proper noun (player name), not slang.  
+2. doesnt – standard word contraction, not slang.  
+3. even – standard adverb, not slang.  
+4. know – standard verb, not slang.  
+5. how – standard adverb, not slang.  
+6. to – standard preposition, not slang.  
+7. play – standard verb, not slang.  
+8. proper – standard adjective, not slang.  
+9. squad – standard noun (squad football), not slang.  
+10. football – standard noun, not slang.  
+11. stop – standard verb (imperative), not slang.  
+12. it – standard pronoun, not slang.  
+13. lol – internet abbreviation (laugh out loud) — slang, single token.
+
+The sentence contains the slang abbreviation 'lol', so this is SLANG.",syntactic|semantic|hallucination
+hazel i know youre reading this your ass is joining periodt,NOT_SLANG,SLANG,False,"Scanning each token: 'hazel' is likely a name, not slang. 'i', 'know', 'youre', 'reading', 'this' are standard English words. 'your' is standard. 'ass' could be slang here for 'you' in a humorous emphatic way — it’s used colloquially/internet slang as 'your ass' meaning 'you'. 'is', 'joining' are standard. 'periodt' is Gen Z slang meaning 'end of discussion, emphatic agreement', single token slang. So there are two slang tokens: 'ass' (within the phrase 'your ass' as slang for 'you') is slang, and 'periodt' is slang. But note: 'your' is part of the phrase but 'your' itself is not slang, only 'ass' here is slang. 'ass' is a single token slang term, separate from 'periodt'. This is SLANG.",syntactic|semantic|hallucination
+for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not stepping foot in michigan or wisconsin is a losing strategy pokmon go to the polls was cringe,NOT_SLANG,SLANG,False,"Scanning each token:  
+""for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not stepping foot in michigan or wisconsin is a losing strategy pokmon go to the polls was cringe""  
+
+Sequence breakdown:  
+- ""for"", ""what"", ""she"", ""ran"", ""a"", ""terrible"", ""campaign"", ""vote"", ""for"", ""me"", ""i"", ""m"", ""a"", ""woman"", ""trump"", ""is"", ""bad"", ""isn"", ""t"", ""a"", ""winning"", ""strategy"", ""not"", ""stepping"", ""foot"", ""in"", ""michigan"", ""or"", ""wisconsin"", ""is"", ""a"", ""losing"", ""strategy"" — all standard words/phrases, no slang.  
+- ""pokmon go to the polls"" – likely a political meme/reference (Pokémon Go to the polls), but ""pokmon"" looks like typo of Pokémon. This phrase could be considered slang/meme, but it's a fixed expression.  
+- ""was"" — standard.  
+- ""cringe"" — slang term meaning embarrassing/uncomfortable.  
+
+Slang identification:  
+- ""pokmon go to the polls"" is a multi-word meme phrase, slang: tokens: ""pokmon"", ""go"", ""to"", ""the"", ""polls"" → B-SLANG for first token, then I-SLANG for the rest.  
+- ""cringe"" — slang term, but it's separate from the meme phrase → B-SLANG.
+
+Therefore, tokens ""pokmon"", ""go"", ""to"", ""the"", ""polls"" are part of one slang expression, and ""cringe"" is a separate slang expression.",syntactic|semantic|hallucination
+it s only a skip tho because of gunna and his mumble rapping had it been the vibe like i ll be loving you long time the song would ve definitely been a bop,SLANG,SLANG,True,"Scanning tokens:
+1. 'it': standard pronoun.
+2. 's': contraction of 'is', standard usage.
+3. 'only': standard adverb.
+4. 'a': article.
+5. 'skip': slang here meaning skipping/skipping a song? Possibly slang usage.
+6. 'tho': slang abbreviation for 'though'.
+7. 'because': standard preposition.
+8. 'of': preposition.
+9. 'gunna': a rapper's name, possibly slang for ""going to"" but context suggests name of artist.
+10. 'and': standard conjunction.
+11. 'his': pronoun.
+12. 'mumble': slang adjective used to describe mumble rap.
+13. 'rapping': slang noun for hip-hop style.
+14. 'had': standard verb.
+15. 'it': pronoun.
+16. 'been': verb.
+17. 'the': article.
+18. 'vibe': slang meaning the feeling/mood.
+19. 'like': could be slang filler, but here likely means 'similar to'.
+20. 'i': pronoun.
+21. 'll': contraction 'will'.
+22. 'be': verb.
+23. 'loving': verb.
+24. 'you': pronoun.
+25. 'long': adjective.
+26. 'time': noun.
+27. 'the': article.
+28. 'song': noun.
+29. 'would': verb.
+30. 've': contraction 'have'.
+31. 'definitely': adverb.
+32. 'been': verb.
+33. 'a': article.
+34. 'bop': slang meaning a really good song.
+
+Slang expressions:
+- Token 5 'skip': slang meaning not keeping a song/avoiding it (music slang).
+- Token 6 'tho': slang abbreviation.
+- Token 12 'mumble': slang descriptor.
+- Token 13 'rapping': slang term for rap music.
+- Token 18 'vibe': slang.
+- Token 34 'bop': slang.
+
+Each slang is single token or part of phrase? 'mumble rapping' could be considered two-word slang, but 'rapping' alone is slang too. However 'mumble' is slang. 'mumble rapping' is a two-word slang phrase (mumble rap). Treat as B-SLANG on 'mumble' and I-SLANG on 'rapping'.
+
+'skip tho' not a multi-word slang; 'tho' is separate slang.",syntactic|semantic
+symphony was always a bop what y all talkin bout,SLANG,SLANG,True,"Scanning each token: 'symphony', 'was', 'always' are standard words. 'a' is a standard article. 'bop' is slang for a really good song. 'what' is standard. 'y' is a slang abbreviation for 'you'. 'all' is standard but here part of a slang phrase ""y'all"" (contracted form). 'talkin' is slang for 'talking'. 'bout' is slang for 'about'. So slang expressions are: 'bop' (single token), 'y' (could be considered as slang abbreviation) but also ""y'all"" and ""talkin bout"" as slang. Let’s analyze slang spans: 'bop' is a single slang token, 'y all talkin bout' is a slang phrase that is equivalent to 'you all talking about' in slang/casual internet speech. However, each token ('y', 'all', 'talkin', 'bout') individually can be considered slang usage, so the entire phrase 'y all talkin bout' is slang. However, strictly per BIO tagging rules for multi-word slang, we should treat them as continuous slang tokens. So overall slang tokens: 'bop' and 'y all talkin bout'.  
+
+Step-by-step:  
+- Token 0 'symphony': O  
+- Token 1 'was': O  
+- Token 2 'always': O  
+- Token 3 'a': O  
+- Token 4 'bop': B-SLANG (single slang word)  
+- Token 5 'what': O  
+- Token 6 'y': B-SLANG (beginning of slang phrase 'y all talkin bout')  
+- Token 7 'all': I-SLANG  
+- Token 8 'talkin': I-SLANG  
+- Token 9 'bout': I-SLANG",syntactic|semantic
+letterboxd vibe check wannabe pretentious lesbian edition,SLANG,SLANG,True,"Scanning each token: 'letterboxd' is a platform name, possibly a proper noun but not slang. 'vibe check' is Gen Z slang for assessing the mood/energy — a two-token slang phrase. 'wannabe pretentious lesbian edition' are descriptive words used literally, not slang. The sentence contains the slang expression 'vibe check', so this is SLANG.",syntactic|semantic
+stop yapping i said he didnt sold out and you said he did now show me his sold out plaque simple,SLANG,SLANG,True,"Scanning each token: 'stop' — standard word. 'yapping' — slang meaning talking a lot/chatting endlessly (Gen Z slang). 'i', 'said', 'he', 'didnt', 'sold', 'out', 'and', 'you', 'said', 'he', 'did', 'now', 'show', 'me', 'his', 'sold', 'out', 'plaque', 'simple' — all standard English words. 'sold out' here appears twice, but it's used in literal sense (a sold out plaque implies an award for selling tickets). It is not slang meaning betraying principles. The slang expression is the single token 'yapping'. So this is SLANG.",syntactic|semantic
+winged snack,NOT_SLANG,SLANG,False,"Scanning each token: 'winged snack' is an idiomatic phrase from Gen Z slang, referring to a snack someone took without permission. This is slang expression, not literal birds/wings. So this is slang expression spanning both tokens.",syntactic|semantic|hallucination
+historia wasnt supposed to kill eren historia and floch were the only ones on erens side what the fuck are you yapping about,NOT_SLANG,SLANG,False,"Scanning each token:
+- 'historia', 'wasnt', 'supposed', 'to', 'kill', 'eren', 'historia', 'and', 'floch', 'were', 'the', 'only', 'ones', 'on', 'eren', 's', 'side' – all are standard words or names, no slang.
+- 'what', 'the', 'fuck' – 'fuck' is a common slang/swear word used as an expletive here, but 'what the fuck' is a slang phrase expressing disbelief/anger; 'the' is part of this phrase. Multi-word slang expression: 'what the fuck'.
+- 'are', 'you', 'yapping', 'about' – 'yapping' is slang meaning talking excessively/nonsense, often in an annoying way, but is a single-word slang here. The phrase ends, so 'about' is not slang.
+
+Thus, slang expressions:
+1. 'what the fuck': B-SLANG on 'what', I-SLANG on 'the', I-SLANG on 'fuck'.
+2. 'yapping': B-SLANG on 'yapping'.
+
+Other tokens are O.",syntactic|semantic|hallucination
+this is why i don t date well that and every fucking human being is annoying as hell but like seriously you date someone and you can t be like hey erm honey maybe you should cut out the sweets and pumpkin spice lattes every day it s a basic conversation lmaooo,NOT_SLANG,SLANG,False,"Scanning each token: 
+1. this is why i don t date well that and every fucking human being is annoying as hell - ""fucking"" here is slang used as an intensifier.
+2. ""as hell"" is slang intensifier phrase meaning ""extremely"".
+3. ""lmaooo"" at end is internet slang for ""laughing my ass off"".
+4. ""hey erm honey"" are standard words.
+5. ""maybe you should cut out the sweets and pumpkin spice lattes every day it s a basic conversation"" are all standard English.
+6. Important: ""date"" and ""like"" appear in standard usage here, not slang.
+7. ""fucking"" is slang: B-SLANG for token ""fucking"".
+8. ""as hell"": tokens ""as"" and ""hell"" form multi-word slang phrase, ""hell"" is slang meaning ""very/extremely"" in context. However, ""as"" is a standard preposition connecting slang. Since ""as hell"" is idiomatic slang, we mark ""as"" as I-SLANG following B-SLANG ""hell"" or ""as""? Actually common analysis treats ""as hell"" together: ""as"" B-SLANG, ""hell"" I-SLANG for slang expression ""as hell"".
+9. ""lmaooo"": single token slang.
+
+Final slang spans: 
+- ""fucking"" (single token slang)
+- ""as hell"" (two-token slang phrase)
+- ""lmaooo"" (single token slang)
+
+Thus SLANG.",syntactic|semantic|hallucination
+too stupid to put a lit or plate on it,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'too stupid to put a' are standard English words. 'lit' is slang meaning cool/exciting, but here 'lit' might be literal light (e.g., a car's headlight), but in this phrase 'lit or plate', 'lit' likely refers to 'light' in a literal sense — car headlight. Checking context: 'put a lit or plate on it' — without context this is ambiguous, but if we assume this is internet slang, 'lit' could be slang. However, 'plate' is not slang here (license plate). The phrase 'lit or plate' appears as alternative options; 'lit' might be slang, but likely literal given pairing with 'plate'. Since it's ambiguous but likely literal usage, I'll treat 'lit' as standard English. No clear slang tokens present. This is NOT_SLANG.",syntactic|semantic
+i continue to believe this was a body double the real vic jr had just been snatched away by government officialsthe black tattoo society and a rando was put in that grave it is a tradition with people of this name after all,NOT_SLANG,SLANG,False,"Reasoning: Scanning each token:  
+1. 'i' – standard pronoun.  
+2. 'continue' – standard verb.  
+3. 'to' – standard preposition.  
+4. 'believe' – standard verb.  
+5. 'this' – standard pronoun.  
+6. 'was' – standard verb.  
+7. 'a' – standard article.  
+8. 'body' – could be slang in phrases like 'body count', but here 'body double' means a physical stand-in (literal meaning).  
+9. 'double' – part of phrase 'body double' (literal, not slang).  
+10. 'the' – standard article.  
+11. 'real' – standard adjective.  
+12. 'vic' – likely a name.  
+13. 'jr' – suffix (literal).  
+14. 'had' – standard verb.  
+15. 'just' – standard adverb.  
+16. 'been' – standard verb.  
+17. 'snatched' – slang for 'taken' or 'kidnapped' in informal contexts – yes, slang token.  
+18. 'away' – standard adverb, but could follow slang. 'snatched away' might be slang phrase? 'snatched' is slang; 'away' is just adverb completing phrase. Checking: ""snatched away"" isn't a distinct slang phrase; slang token is 'snatched'.  
+19. 'by' – standard preposition.  
+20. 'government' – standard noun.  
+21. 'officialsthe' – token: this is 'officialsthe' merged? Actually, text has no spaces after 'officials', so token is 'officialsthe'. This looks like a typo or merged word, but not slang.  
+22. 'black' – standard adjective.  
+23. 'tattoo' – standard noun.  
+24. 'society' – standard noun.  
+25. 'and' – standard conjunction.  
+26. 'a' – standard article.  
+27. 'rando' – slang for a random/unknown person – yes, slang token.  
+28. 'was' – standard verb.  
+29. 'put' – standard verb.  
+30. 'in' – standard preposition.  
+31. 'that' – standard pronoun.  
+32. 'grave' – standard noun.  
+33. 'it' – standard pronoun.  
+34. 'is' – standard verb.  
+35. 'a",syntactic|semantic|hallucination
+hel yeah tomatoes cheese and salty snackfoods are such a good combo,NOT_SLANG,SLANG,False,"Scanning each token: 'hel' likely stands for 'hell' and appears to be part of the slang phrase 'hel yeah' which is a colloquial expression meaning strong agreement — this is a two-token slang expression. 'tomatoes cheese and salty snackfoods are such a good combo' are all standard words in literal usage. The sentence contains the slang expression 'hel yeah', so this is SLANG.",syntactic|semantic|hallucination
+something about a beautiful low vibrational plate,SLANG,NOT_SLANG,False,"Scanning each token: 'something', 'about', 'a', 'beautiful', 'low', 'vibrational', 'plate'. This appears to describe a 'low vibrational plate', but 'low vibrational' isn't slang — it could be a technical or spiritual term. No Gen Z internet slang terms like 'low', 'vibe', 'plate' in slang usage are present. All tokens are standard English, so this is NOT_SLANG.",syntactic|semantic
+enjoy my st batch of cod black ops beta gameplay uploading now to dspgaming ill return at pm pdt for wwe champions and tonight we finally reach league unlocking the big monthend event and great loot dont miss as we pull for hogans live,NOT_SLANG,SLANG,False,"Scanning each token: This appears to be a gaming content update announcement. Key tokens: 'cod' (Call of Duty) is gaming abbreviation, but not slang in this context; 'black ops' is game title; 'beta' is standard gaming term; 'uploading' is standard; 'to' is standard; 'dspgaming' likely channel name; 'ill' (I'll) is standard contraction; 'wwe' is wrestling organization abbreviation; 'league' could be slang ('reach league' possibly referring to reaching a league in game, not slang 'league' as slang for being in a relationship); 'monthend' could be abbreviation for month-end event; 'loot' is gaming term (collectibles/items), not slang here; 'pull for' in gaming community slang means 'attempt to obtain' (e.g., pulling for a character in gacha games) — 'pull' is slang; 'hogans' likely refers to Hogan (character/item). No clear Gen Z slang except 'pull' in 'pull for'. The slang phrase is 'pull for' (two tokens), meaning trying to obtain something in a game. Thus, tokens 'pull' and 'for' should be tagged B-SLANG and I-SLANG. All other tokens are standard gaming terms, abbreviations, or English words. The sentence contains slang 'pull for', so this is SLANG.",syntactic|semantic|hallucination
+every player on the squad garbage ass losing seasons in a row gators,NOT_SLANG,SLANG,False,"Scanning each token: 'every', 'player', 'on', 'the', 'squad' are standard words. 'garbage ass' is a slang phrase used to disparage performance — typically 'garbage' combined with 'ass' as an intensifier; 'ass' is not literally anatomical but slang intensifier. 'losing', 'seasons', 'in', 'a', 'row', 'gators' are standard words; 'gators' could refer to a team nickname and is not slang here. The slang expression is 'garbage ass'. So this is SLANG.",syntactic|semantic|hallucination
+nestled in the remote mountains of southern sichuan province about miles southwest of beijing it is virtually cut off from the rest of china,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This is a factual geographical description sentence about a location in China. All words — 'nestled', 'in', 'the', 'remote', 'mountains', 'of', 'southern', 'sichuan', 'province', 'about', 'miles', 'southwest', 'of', 'beijing', 'it', 'is', 'virtually', 'cut', 'off', 'from', 'the', 'rest', 'of', 'china' — are standard English used in their literal meanings. 'sichuan' and 'beijing' are proper nouns referring to specific places. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+lmao wanna bet its doable a bunch of idf bodyguards nothing a slap cant fix,NOT_SLANG,SLANG,False,"Scanning each token: 'lmao' is slang (Laughing My Ass Off) — single token slang. 'wanna' is slang contraction of 'want to' — single token slang. 'bet' is standard English. 'its' is standard contraction (it's). 'doable' is standard English. 'a bunch of idf bodyguards nothing a slap cant fix': all tokens are standard English words; 'bunch', 'idf', 'bodyguards', 'nothing', 'a', 'slap', 'cant', 'fix' — 'cant' is informal but standard contraction of 'can't', 'slap' is literal, not slang, 'bunch' here is literal meaning group, not slang 'a bunch'. 'idf' stands for Israel Defense Forces, which is an acronym but used literally here, not slang. Two slang tokens present: 'lmao' and 'wanna'.",syntactic|semantic
+current mood,NOT_SLANG,SLANG,False,"Scanning each token: 'current' is a standard English word, not slang. 'mood' can be used as slang to refer to a vibe or feeling, but in a minimal context like 'current mood', it is ambiguous — often used in memes or social media captions as slang expression for a current state or vibe. Considering typical internet usage, 'current mood' as a phrase can be considered slang. It is a multi-word slang expression. However, it's a phrase used as slang (like in meme captions), so 'current' is part of the slang phrase. This is SLANG.",syntactic|semantic|hallucination
+doesnt make any sense finally had the chance to partake in miss universe only for it to be snatched away by xeno,NOT_SLANG,SLANG,False,"1. Scan each token:  
+- ""doesnt"" – standard contraction of ""does not"", not slang.  
+- ""make"" – standard verb.  
+- ""any"" – standard.  
+- ""sense"" – standard.  
+- ""finally"" – standard.  
+- ""had"" – standard.  
+- ""the"" – standard article.  
+- ""chance"" – standard.  
+- ""to"" – standard.  
+- ""partake"" – standard verb.  
+- ""in"" – standard preposition.  
+- ""miss"" – likely part of ""miss universe"" (proper noun/title).  
+- ""universe"" – part of title ""Miss Universe"".  
+- ""only"" – standard.  
+- ""for"" – standard.  
+- ""it"" – standard.  
+- ""to"" – standard.  
+- ""be"" – standard.  
+- ""snatched"" – slang, as used figuratively to mean 'taken away unfairly/quickly' in casual/internet talk.  
+- ""away"" – part of slang phrase ""snatched away"" (continuation).  
+- ""by"" – standard preposition.  
+- ""xeno"" – likely referring to someone or something named ""Xeno"", not slang.  
+
+2. Slang expression: ""snatched away"" – a two-token slang phrase. ""snatched"" is often slang meaning taken away, especially in contexts of opportunity, looks, victory etc., and paired with ""away"" completes the figurative expression.  
+
+3. No other slang terms present.  
+
+4. Label: SLANG.",syntactic|semantic|hallucination
+n w ayers president and chief executive officer jerry j siano said the agency is holding conversations about acquiring zwiren collins karo trusk a midsized chicago agency but a deal isnt yet close to being completed,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This is a formal business news sentence about corporate acquisition discussions. All tokens — 'n', 'w', 'ayers', 'president', 'chief', 'executive', 'officer', 'jerry', 'j', 'siano', 'said', 'the', 'agency', 'is', 'holding', 'conversations', 'about', 'acquiring', 'zwiren', 'collins', 'kar o', 'trusk', 'a', 'midsized', 'chicago', 'agency', 'but', 'a', 'deal', 'isn', 't', 'yet', 'close', 'to', 'being', 'completed' — are formal English words, acronym initials ('n', 'w', 'j'), proper names, and business terminology. There is no slang usage of any token, so this is NOT_SLANG.",syntactic|semantic
+jungkook kocham cie happy birthday pookie,SLANG,SLANG,True,Scanning each token: 'jungkook' is a person's name (standard). 'kocham cie' is Polish for 'I love you' (non-English phrase but not slang). 'happy birthday' is standard English greeting. 'pookie' is slang for a loved one (a pet name). 'pookie' is a slang term. Therefore the sentence contains slang.,syntactic|semantic
+my cousin was here it looked so lit,SLANG,SLANG,True,"Scanning each token: 'my cousin was here it looked so' are all standard English words. 'lit' is Gen Z slang meaning exciting, fun, or great. This is a slang usage. The sentence contains the slang term 'lit', so this is SLANG. Note that 8 tokens: my, cousin, was, here, it, looked, so, lit.",syntactic|semantic
+always seemed a gentle giant to james was entertaining also in his own box at times awful news lit up the kp in his time here,NOT_SLANG,SLANG,False,"Scanning each token: 'gentle giant' is a descriptive phrase but not slang. 'james' is a name. 'entertaining' is standard. 'awful news' is standard. 'lit up' here appears in a context describing 'news lit up the kp', which might be slang meaning made it exciting or lively, but I'll check 'kp' - could be abbreviation or slang. 'kp' might refer to KP Index or something else, but 'lit up' is slang for exciting event. Let's scan: 'always seemed a gentle giant to james was entertaining also in his own box at times awful news lit up the kp in his time here' — I need to ensure exact token count. Tokens: 1 always, 2 seemed, 3 a, 4 gentle, 5 giant, 6 to, 7 james, 8 was, 9 entertaining, 10 also, 11 in, 12 his, 13 own, 14 box, 15 at, 16 times, 17 awful, 18 news, 19 lit, 20 up, 21 the, 22 kp, 23 in, 24 his, 25 time, 26 here. So 26 tokens.
+
+Now identifying slang: 'lit' and 'up' together can be slang phrase meaning made it exciting or 'lit' alone slang for excellent, but 'lit up' as slang often means to make lively or exciting. However 'news lit up the kp' could be figurative but slang usage possible. Given this text likely informal, 'lit up' is slang. No other slang tokens. So 'lit' and 'up' are multi-word slang phrase. I'll tag B-SLANG for 'lit', I-SLANG for 'up'. All others O.",syntactic|semantic|hallucination
+mr hoelzer however sued stamford claiming that the city had abandoned the artwork and that it had waited too long to reclaim it,NOT_SLANG,NOT_SLANG,True,"Scanning each token: this appears to be a formal legal statement (fragment of a news article). All tokens — 'mr', 'hoelzer', 'however', 'sued', 'stamford', 'claiming', 'that', 'the', 'city', 'had', 'abandoned', 'the', 'artwork', 'and', 'that', 'it', 'had', 'waited', 'too', 'long', 'to', 'reclaim', 'it' — are standard English words in their literal meanings. There is no slang usage or internet slang, so this is NOT_SLANG.",syntactic|semantic
+no im disabled and was making it under trump now im forced to reduce basic needsi worked hard my whole life and illeagles have more resources than me,NOT_SLANG,SLANG,False,"Scanning each token sequentially: 'no' is standard negation. 'im' is slang abbreviation for 'I'm' — slang usage. 'disabled and was making it under trump now im forced to reduce basic needs' contains no slang: 'disabled', 'making it' could be slang but 'making it' here means managing financially (standard), 'trump' is a name, 'now', 'im' is slang abbreviation, 'forced to reduce basic needs' is standard. 'i worked hard my whole life and' all standard words. 'illeagles' is slang misspelling of 'illegals' — slang usage. 'have more resources than me' is standard. Slang expressions: 'im' (first instance) single token slang, 'im' (second instance) single token slang, 'illeagles' single token slang. So this is SLANG.",syntactic|semantic|hallucination
+slayyyyyyyyyyyyyy periodt boo,SLANG,SLANG,True,"Scanning each token: 'slayyyyyyyyyyyyyy' is a slang expression meaning 'to do something exceptionally well', often used for praise or affirmation — it is a single token slang word (exaggerated spelling). 'periodt' is slang emphasizing finality or strong agreement (variant of 'period'). 'boo' is slang for boyfriend/girlfriend or romantic partner. Each token is a standalone slang term, not part of a multi-word phrase. Therefore, each is B-SLANG individually. So this is SLANG.",syntactic|semantic
+i just got a promotion ltd,SLANG,SLANG,True,"Scanning each token: 'i just got a promotion' are all standard words. 'ltd' could be abbreviation for 'limited' but context shows internet slang — likely 'LTD' meaning 'Long Time Dead' or slang abbreviation. This is a single-token slang expression. The sentence contains slang 'ltd', so this is SLANG.",syntactic|semantic
+the lawsuit alleges that an inventory of pinkertons memorabilia disclosed that one of the watches hadnt been forked over by american brands american brands failure to surrender the gold watch has damaged new pinkertons in an amount as yet to be determined and deprived it of a valuable artifact for which it had bargained the suit charges,NOT_SLANG,SLANG,False,"Scanning each token: 'forked over' is slang — means handed over/given, commonly used informally as slang. Other tokens are standard legal/formal English. The slang expression is 'forked over', a two-token phrase.  
+Token-by-token analysis:  
+the (O)  
+lawsuit (O)  
+alleges (O)  
+that (O)  
+an (O)  
+inventory (O)  
+of (O)  
+pinkertons (O)  
+memorabilia (O)  
+disclosed (O)  
+that (O)  
+one (O)  
+of (O)  
+the (O)  
+watches (O)  
+hadnt (O)  
+been (O)  
+forked (B-SLANG, start of slang phrase)  
+over (I-SLANG, continuation)  
+by (O)  
+american (O)  
+brands (O)  
+american (O)  
+brands (O)  
+failure (O)  
+to (O)  
+surrender (O)  
+the (O)  
+gold (O)  
+watch (O)  
+has (O)  
+damaged (O)  
+new (O)  
+pinkertons (O)  
+in (O)  
+an (O)  
+amount (O)  
+as (O)  
+yet (O)  
+to (O)  
+be (O)  
+determined (O)  
+and (O)  
+deprived (O)  
+it (O)  
+of (O)  
+a (O)  
+valuable (O)  
+artifact (O)  
+for (O)  
+which (O)  
+it (O)  
+had (O)  
+bargained (O)  
+the (O)  
+suit (O)  
+charges (O)",syntactic|semantic|hallucination
+beta in a nutshell,NOT_SLANG,SLANG,False,"Scanning each token: 'beta' in internet slang can refer to someone who is weak/submissive, but here the phrase 'in a nutshell' means 'summarized briefly', which is a conventional idiom not slang. Checking token-by-token: 'beta' could be slang depending on context, but paired with 'in a nutshell' could be describing a concept 'beta' in a summary. Without clear slang context, assume 'beta' is slang (common internet slang usage). 'in a nutshell' is a common idiom, not slang. The sentence contains slang token 'beta', so this is SLANG.",syntactic|semantic|hallucination
+big w for us george fans,SLANG,SLANG,True,"Scanning each token: 'big' is a standard adjective. 'w' is a slang abbreviation for 'win' — but it's part of the phrase 'big w', a slang expression meaning a significant victory or positive outcome. 'for us george fans' are standard words. The slang phrase 'big w' is a two-token slang expression, so this is SLANG.",syntactic|semantic
+attitude is everything sometimes peoples attitude will attract negative aura to them,SLANG,NOT_SLANG,False,"Scanning each token: This is a motivational sentence. 'attitude', 'is', 'everything', 'sometimes', 'people', 's', 'attitude', 'will', 'attract', 'negative', 'aura', 'to', 'them'. All tokens are standard English words in a literal sense. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+ipd and several units are investigating an irondequoit home after several people were found dead the investigation began early this morning as crews responded to a fire on knapp ave now officials are ruling this as a homicide based on the condition of the home and deceased,NOT_SLANG,NOT_SLANG,True,"Scanning each token: this is a formal news report about a homicide investigation. All words — 'ipd' (likely law enforcement abbreviation for 'Ithaca Police Department'), 'units', 'investigating', 'irondequoit' (a location), 'home', 'people', 'found', 'dead', 'investigation', 'began', 'early', 'this', 'morning', 'crews', 'responded', 'fire', 'knapp', 'ave' (street abbreviation), 'now', 'officials', 'ruling', 'this', 'as', 'homicide', 'based', 'condition', 'home', 'deceased' — are standard English used in their literal, formal sense. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+my family be looking at me crazy because of how much i love green beans but apparently i get that from my mom cause she loved them or ate them so much while she was pregnant either way theyre my favorite,NOT_SLANG,SLANG,False,"Reasoning: Scanning tokens carefully:
+1. my, family, be - ""be"" is used in slang AAVE-ish structure ""my family be looking"" (habitual 'be'), so it's slang.
+2. looking - part of the slang expression, since ""be looking at me crazy"" is slang phrasing.
+3. at - preposition, part of slang phrasing but considered slang span continuation? Usually in ""looking at me crazy"", ""crazy"" is slang, but ""looking"" might be standard. More precisely: ""be looking"" is the slang start, ""crazy"" is slang in this context, but might be separate. However, ""be looking at me crazy"" is overall slang phrasing. Let's parse: Token sequence: ""my"" O, ""family"" O, ""be"" B-SLANG (start of slang expression), ""looking"" I-SLANG (part of ""be looking""), ""at"" I-SLANG? But ""at"" is preposition, not typically slang. Actually, slang might be just ""be looking crazy""? But better: AAVE ""be + verb-ing"" is a slang grammatical construction, so ""be looking"" is slang expression. However, ""at me"" are not slang, ""crazy"" is slang in this context (meaning ""strange""). So two slang segments: ""be looking"" (tokens 3-4) and ""crazy"" (token 7). But multi-word slang ""be looking"" (two tokens). ""crazy"" is single token slang. ""cause"" (token 21) is slang shorthand for 'because'. Other tokens: 'green beans', 'apparently', 'get', 'that', 'from', 'mom', 'she', 'loved', 'them', 'ate', 'so', 'much', 'while', 'was', 'pregnant', 'either', 'way', 'theyre', 'my', 'favorite' are all standard usage.
+
+List tokens numbered:
+1. my O
+2. family O
+3. be B-SLANG (start of ""be looking"" slang expression)
+4. looking I-SLANG (continuation of slang ""be looking"")
+5. at O (preposition, not slang)
+6. me O
+7. crazy B-SLANG (slang meaning ""strange""/""weird"" here)
+8. because O
+9. of O
+10. how O
+11. much O
+12",syntactic|semantic|hallucination
+consistency and good story telling  fax,NOT_SLANG,SLANG,False,"Scanning each token: 'consistency', 'and', 'good', 'story', 'telling' are all standard English words. 'fax' is Gen Z slang meaning 'facts' (truth). The sentence contains the slang term 'fax', so this is SLANG.",syntactic|semantic|hallucination
+got a close buddy of mine looking for a black ops  beta code anyone got a spare one,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'got' is informal but standard. 'a close buddy of mine' are standard phrases. 'looking for a' standard. 'black ops' is a game series, not slang. 'beta' is gaming terminology. 'code' is standard. 'anyone got a spare one' are standard words. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+hello baskin robbins ill have a large pepperoni pizza with extra olives,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'hello' is a standard greeting. 'baskin robbins' is a brand name. 'ill' is a misspelling of 'I'll'. 'have', 'a', 'large', 'pepperoni', 'pizza', 'with', 'extra', 'olives' are all standard English words. No slang expressions or internet slang are present. The sentence is a straightforward pizza order request, likely ironic because it's for a pizza at an ice cream chain, but the tokens themselves are all standard/non-slang. Therefore, this is NOT_SLANG.",syntactic|semantic
+yuma must have been in a good mood he kept touching everyone,NOT_SLANG,NOT_SLANG,True,"Scanning each token: 'yuma' is likely a name, standard. 'must have been in a good mood he kept touching everyone' — all are standard English words in their literal sense. 'good mood' is standard descriptive language, not slang. There is no slang usage present, so this is NOT_SLANG.",syntactic|semantic
+hi sir lovely weather we are having right with rizz,NOT_SLANG,SLANG,False,"Scanning each token: 'hi sir lovely weather we are having right' are all standard English words. 'with' is a preposition. 'rizz' is Gen Z slang for charisma, charm, ability to flirt. The sentence contains the slang term 'rizz', so this is SLANG.",syntactic|semantic|hallucination
+it s a new gucci highly classified undersea camouflage designed to vastly reduce visibility from low flying asw platforms called dead and decaying whale shark,NOT_SLANG,SLANG,False,"Scanning each token: 'gucci' is slang for 'good' or 'high-quality', used here to describe the camouflage. However, the sentence seems to be a technical military description, and 'gucci' might be jargon but is still slang usage. 'dead and decaying whale shark' is not slang. The slang token here is 'gucci'. Since it's a single token slang term, it should be tagged B-SLANG. All other tokens are standard or technical terms. The text is a mix of technical and slang, so slang is present.",syntactic|semantic|hallucination
+pricor inc offering of one million new shares of common stock and shares by holders via drexel burnham lambert inc and jc bradford co,NOT_SLANG,NOT_SLANG,True,"Scanning each token: This is a formal financial announcement describing a stock offering. All tokens are formal finance/business terminology: company names, numbers, terms like 'offering', 'common stock', etc. No slang expressions are present. The sentence is purely technical financial language, so this is NOT_SLANG.",syntactic|semantic
+sell pressure concerns are so pleby tbh if you have a highly desirable token then buy pressure will make any sell pressure negligible basic economics here but that s cosmos negativity for you,NOT_SLANG,SLANG,False,"Scanning each token: 'sell', 'pressure', 'concerns', 'are', 'so', 'pleby' is slang (""pleb"" being an internet slang insult meaning low-class/amateur), 'tbh' is slang abbreviation (to be honest). After that: 'if', 'you', 'have', 'a', 'highly', 'desirable', 'token', 'then', 'buy', 'pressure', 'will', 'make', 'any', 'sell', 'pressure', 'negligible', 'basic', 'economics', 'here', 'but', 'that', 's', 'cosmos', 'negativity', 'for', 'you'. The slang expressions are 'pleby' (single token) and 'tbh' (single token). All other words are standard English. So this is SLANG.",syntactic|semantic|hallucination
+that would be a big w,SLANG,SLANG,True,"Scanning each token: 'that' is a pronoun, 'would' is an auxiliary verb, 'be' is a verb, 'a' is an article, 'big' is an adjective — all standard English. 'w' is Gen Z slang meaning 'win' or 'victory'. So 'w' is slang as a single token. The sentence contains slang 'w', so this is SLANG.",syntactic|semantic
+this is back when kevin hated clip shows before he tried to do one and just became grandad s daily senile snack hour with fish lunch and the outofits,NOT_SLANG,NOT_SLANG,True,"Scanning tokens carefully: 'this is back when kevin hated clip shows before he tried to do one and just became grandad s daily senile snack hour with fish lunch and the outofits'. Need to examine token-by-token slang detection.  
+- 'this', 'is', 'back', 'when', 'kevin', 'hated', 'clip shows' — standard words.  
+- 'clip shows' is not slang — literal usage.  
+- 'daily senile snack hour' might sound unusual but is not recognized Gen Z slang — seems like a descriptive phrase.  
+- 'outofits' — checking: not a standard word, could be slang for 'out of it' or disoriented. In internet contexts, 'out of it' can be slang, but 'outofits' is written as one token and can be slang for feeling disoriented/confused. However, more likely it is a typo/misspelling of 'out of it' but as a single token, it is not standard slang expression. Given it's a creative informal phrase, but not recognized slang, no token qualifies as slang.  
+Therefore, the sentence does not contain Gen Z slang, so this is NOT_SLANG.",syntactic|semantic
+slay isnt even enough to describe this,SLANG,SLANG,True,"Scanning each token: 'slay' is Gen Z slang for doing something exceptionally well or looking fantastic. 'isnt' is standard English contraction (is not). 'even enough to describe this' are standard English words. The sentence contains the slang term 'slay' as a single token expression, so this is SLANG.",syntactic|semantic
+the exchange has a board meeting scheduled for tomorrow and it is expected that some public announcement could be made after that,NOT_SLANG,NOT_SLANG,True,Scanning each token: this is a formal sentence about business scheduling. All words are standard English in a professional context. No slang expressions are present. This is NOT_SLANG.,syntactic|semantic
+damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus,NOT_SLANG,SLANG,False,"Reasoning: Scanning each token sequentially:
+
+1. damn - common informal slang for expressing surprise/disapproval.
+2. bro - slang for brother/friend.
+3. some - standard word.
+4. men - standard word.
+5. are - standard word.
+6. really - standard word.
+7. down bad - Gen Z slang phrase meaning ""in a desperate/pathetic situation"".
+   - down → B-SLANG
+   - bad → I-SLANG
+8. like - standard word.
+9. that - standard word.
+10. huh - slang for questioning/acknowledgment.
+11. and - standard word.
+12. is - standard word.
+13. that - standard word.
+14. a - standard word.
+15. woman - standard word.
+16. for sure - informal phrase but considered slang/casual affirmation.
+   - for → B-SLANG
+   - sure → I-SLANG
+17. the - standard word.
+18. voice - standard word.
+19. is - standard word.
+20. super - slang intensifier (very).
+21. sus - slang for suspicious.
+22. - Token count is 21, not 23. Wait, let's re-count tokens from input text: ""damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus"". Tokenizing: damn, bro, some, men, are, really, down, bad, like, that, huh, and, is, that, a, woman, for, sure, the, voice, is, super, sus → 23 tokens. Yes, 23 tokens.
+
+23 tokens:
+1. damn (slang)
+2. bro (slang)
+3. some (O)
+4. men (O)
+5. are (O)
+6. really (O)
+7. down (part of slang phrase ""down bad"")
+8. bad (part of slang phrase ""down bad"")
+9. like (O)
+10. that (O)
+11. huh (slang)
+12. and (O)
+13. is (O)
+14. that (O)
+15. a (O)
+16. woman (O)
+17. for (part of slang phrase ""for sure"")
+18. sure (part of slang phrase ""for sure"")
+19. the (O)
+20. voice (O)
+21. is (O)
+22. super (slang)
+23. sus (slang)
+
+Tags: B",syntactic|semantic|hallucination
+i was so sad when i saw her tumblr was gone where am i gonna get aesthetic mood reblog images from now grace has great taste,NOT_SLANG,SLANG,False,"Scanning each token: 'i was so sad when i saw her tumblr was gone where am i gonna get aesthetic mood reblog images from now grace has great taste' — break into tokens: 1.i 2.was 3.so 4.sad 5.when 6.i 7.saw 8.her 9.tumblr 10.was 11.gone 12.where 13.am 14.i 15.gonna 16.get 17.aesthetic 18.mood 19.reblog 20.images 21.from 22.now 23.grace 24.has 25.great 26.taste.  
+
+Check for slang:  
+- 'gonna' (token 15) is informal abbreviation of 'going to' — commonly considered slang.  
+- 'tumblr' (token 9) is a brand name/platform, not slang itself.  
+- 'reblog' (token 19) is a platform-specific term from Tumblr (sharing/resharing), but in internet context it's standard for that platform, not slang.  
+- 'aesthetic mood' (tokens 17-18) — 'aesthetic' is Gen Z slang for visually pleasing style, but here combined with 'mood' might be descriptive phrase. However, 'mood' can be slang for expressing relatable feeling, but in phrase ""aesthetic mood reblog images"" it's describing type of images, likely not slang usage. Given the context, 'aesthetic' itself could be slang usage, but 'mood' is literal. Since 'gonna' is clear slang, the sentence contains slang.",syntactic|semantic|hallucination
+he was already a baddie in the mcu though so they had no new ideas for actors for doom,SLANG,SLANG,True,"Reasoning: Scanning each token:
+1. 'he' - standard pronoun.
+2. 'was' - standard verb.
+3. 'already' - standard adverb.
+4. 'a' - standard article.
+5. 'baddie' - slang (term for attractive/confident person, often used in Gen Z contexts).
+6. 'in' - standard preposition.
+7. 'the' - standard article.
+8. 'mcu' - acronym for Marvel Cinematic Universe, used here as a proper noun, slang? 'MCU' is widely recognized, but considered slang? I'd treat it as a proper noun and not slang, but sometimes it can be slang in certain contexts. However, since slang usage here is casual, 'mcu' is internet slang.
+9. 'though' - standard conjunction.
+10. 'so' - standard conjunction.
+11. 'they' - standard pronoun.
+12. 'had' - standard verb.
+13. 'no' - standard adverb.
+14. 'new' - standard adjective.
+15. 'ideas' - standard noun.
+16. 'for' - standard preposition.
+17. 'actors' - standard noun.
+18. 'for' - standard preposition.
+19. 'doom' - standard noun (likely referring to a character or concept).
+
+Slang expression identified: 'baddie' is single-token slang. 'mcu' is also slang abbreviation. However, 'mcu' is tagged as slang? In this sentence, it's a proper noun, but slang for the Marvel Cinematic Universe, so slang. So B-SLANG for 'baddie' and B-SLANG for 'mcu'. Both are separate slang expressions.
+Therefore Label: SLANG
+Tags: O O O O B-SLANG O B-SLANG O O O O O O O O O O O",syntactic|semantic
+cataracts refer to a clouding of the eyes natural lens,NOT_SLANG,NOT_SLANG,True,"Scanning each token: this is a medical definition about cataracts. All words — 'cataracts', 'refer', 'to', 'a', 'clouding', 'of', 'the', 'eyes', 'natural', 'lens' — are standard English terms used literally. No slang expressions are present, so this is NOT_SLANG.",syntactic|semantic
+periodt the goat aint taking no apologies from no disingenuous ass ppl,SLANG,SLANG,True,"Reasoning: Scanning each token: 'periodt' is slang (emphatic 'period', ends with 't' for emphasis). 'the' is standard article. 'goat' is slang meaning greatest of all time. 'aint' is slang for 'is not'. 'taking' is standard. 'no' is slang reinforcement (multiple 'no' for emphatic negative). 'apologies' is standard. 'from' is standard. 'no' again slang reinforcement. 'disingenuous' is standard. 'ass' is slang modifying 'ppl'. 'ppl' is slang for 'people'.  
+The sentence contains slang terms: 'periodt', 'goat', 'aint', each 'no' (twice) as part of emphatic slang negation, 'ass' as slang modifier, 'ppl' for 'people'. Full slang spans: 'periodt' (single token), 'goat' (single token), 'aint' (single token), 'no apologies from no' is part of a slang structure but each token is standalone slang or standard? ""no"" as slang can be separate tokens but not a multi-span phrase. 'ass ppl' is slang for 'ass people' meaning like annoying people. 'ass' modifies 'ppl' — 'ass' and 'ppl' are separate slang tokens but not necessarily multi-word slang expression?  
+Token-by-token: 'periodt' B-SLANG, 'the' O, 'goat' B-SLANG, 'aint' B-SLANG, 'taking' O, 'no' B-SLANG (slang negation), 'apologies' O, 'from' O, 'no' B-SLANG (slang negation), 'disingenuous' O, 'ass' B-SLANG, 'ppl' B-SLANG (though could be I-SLANG if considered part of 'ass ppl', but they are two separate slang terms). Better: 'ass ppl' is slang phrase? Possibly not a single slang expression; 'ass' is slang modifier and 'ppl' slang abbreviation, but combined as 'ass ppl' is slang phrase meaning annoying people. Since it's two tokens representing one slang phrase: 'ass ppl' → B-SLANG for 'ass', I-SLANG for 'ppl'.  
+Thus tags: periodt B-SLANG, the O, goat B-SLANG",syntactic|semantic
+its actually insane how much basic stuff is just entirely online now,NOT_SLANG,SLANG,False,"Scanning each token: 'its' is standard abbreviation. 'actually' is standard adverb. 'insane' in this context is slang, meaning extremely surprising or crazy, not referring to literal mental illness — this is a single-token slang word. 'how much basic stuff is just entirely online now' are all standard English words. The sentence contains the slang term 'insane', so this is SLANG.",syntactic|semantic|hallucination
+quick hits from last nights victory the oline held its ground all night run game needs some tweaking pass game looked great at times defense could be dare i say better than last year the band still played elons fight song pregame,NOT_SLANG,SLANG,False,"Scanning each token:
+- 'quick hits' — could be slang for brief updates/news, common in sports reporting, so B-SLANG and I-SLANG for multi-word slang expression.
+- 'from last nights victory the' — standard words.
+- 'oline' — slang abbreviation for offensive line, common in sports contexts, B-SLANG.
+- 'held its ground all night' — standard words.
+- 'run game' — slang abbreviation for running game, common in sports contexts, B-SLANG and I-SLANG.
+- 'needs some tweaking pass game' — standard words.
+- 'pass game' — slang abbreviation for passing game, B-SLANG and I-SLANG.
+- 'looked great at times defense' — standard words.
+- 'could be dare i say better than last year the' — standard words.
+- 'band still played' — standard words.
+- 'elons fight song' — standard words.
+- 'pregame' — slang abbreviation for pre-game, B-SLANG.
+
+Slang expressions detected: ""quick hits"", ""oline"", ""run game"", ""pass game"", ""pregame"".",syntactic|semantic|hallucination
+no matter what happens just kir,SLANG,NOT_SLANG,False,"Scanning each token: 'no' - standard word; 'matter' - standard word; 'what' - standard word; 'happens' - standard word; 'just' - standard word; 'kir' - unusual token, could be slang abbreviation (maybe 'keep it real' or similar), but I must assess based on known slang: 'kir' is not a common Gen Z slang term I recognize. In this context, it might be a typo or incomplete word, but if part of slang expression it would be single token. Since I don't know 'kir' as slang, I will treat the sentence as standard English. Therefore, this sentence does not contain slang.",syntactic|semantic|hallucination
+puddin pants squad never gon catch up,NOT_SLANG,SLANG,False,"Scanning each token: 'puddin' appears misspelled — likely slang as 'puddin' could be casual/street slang for pudding used figuratively. 'pants squad' maybe slang? 'gon' is slang shortening of gonna (going to). 'catch up' can be literal, but in slang context maybe phrase. Considering possible slang: 'puddin pants' could be slang name/nickname — but unsure. More reliably: 'gon' is clearly slang (shortening of gonna). 'catch up' not slang here. The sentence contains the slang token 'gon', so this is SLANG.",syntactic|semantic|hallucination
+prizepicks  flex friday entry x payout link below   to someone who likes  rts if we cash good luck,NOT_SLANG,SLANG,False,"Scanning tokens:
+- 'prizepicks' — likely a brand/platform name; standard, not slang.
+- 'flex' — here likely slang meaning 'to boast/show off' (as in showing betting picks).
+- 'friday' — standard.
+- 'entry' — standard.
+- 'x' — standard.
+- 'payout' — standard.
+- 'link' — standard.
+- 'below' — standard.
+- 'to' — standard.
+- 'someone' — standard.
+- 'who' — standard.
+- 'likes' — standard.
+- 'rts' — unclear, possibly shorthand for 'retweets'; slang abbreviation.
+- 'if' — standard.
+- 'we' — standard.
+- 'cash' — slang meaning 'win money' (betting slang).
+- 'good' — standard.
+- 'luck' — standard.
+Potentially slang tokens: 'flex', 'rts', 'cash'.
+- 'flex' could be slang but is standalone.
+- 'rts' could be slang abbreviation.
+- 'cash' is slang for winning money.
+These are each single-token slang, not part of a multi-word slang phrase.
+Thus: SLANG.",syntactic|semantic|hallucination
+whaddya wanna bet they bussed these dweebs in from georgia,SLANG,SLANG,True,"Scanning each token: 'whaddya' = 'what do you' (contraction slang). 'wanna' = 'want to' (contraction slang). 'bet' is standard. 'they' is standard. 'bussed' here means transported, could be slang if meaning ""bused to fraud"" but more likely literal transport, so likely not slang. 'these' standard. 'dweebs' is slang (old-fashioned insult). 'in' standard. 'from' standard. 'georgia' standard. So slang tokens: 'whaddya', 'wanna', 'dweebs'. Each is separate slang term, not a multi-word expression. There are 10 tokens. Tags: O for 'whaddya'? No, it's slang abbreviation, so B-SLANG. Then 'wanna' is separate slang contraction, also B-SLANG (not continuation of previous). 'dweebs' also slang, B-SLANG. Rest are O.",syntactic|semantic
+i got beta codes for  lmk,NOT_SLANG,SLANG,False,"Scanning each token: 'i' is standard pronoun. 'got' is standard verb. 'beta codes for' are standard words. 'lmk' is internet slang abbreviation for 'let me know', a single-token slang expression. The sentence contains the slang abbreviation 'lmk', so this is SLANG.",syntactic|semantic|hallucination
+week  is in the books defense was stout offense shook off the rust special teams did what we needed great to see our kids have so much fun playing football  fly to the football play for each other,NOT_SLANG,SLANG,False,"Reasoning: This is a sports commentary tweet. Scanning each token:
+1. week — standard word.
+2. is — standard word.
+3. in — standard word.
+4. the — standard word.
+5. books — phrase 'in the books' means finished/completed, common informal sports phrasing. 'in the books' is a fixed expression meaning recorded as history; sports slang context suggests it is slang.
+6. defense — standard sports term.
+7. was — standard word.
+8. stout — strong/effective in sports context, slang usage.
+9. offense — standard sports term.
+10. shook — standard word.
+11. off — standard word.
+12. the — standard word.
+13. rust — phrase 'shake off the rust' means overcoming early-season sluggishness — sports slang, multi-word expression from 'shook off the rust'.
+14. special — standard word.
+15. teams — standard word.
+16. did — standard word.
+17. what — standard word.
+18. we — standard word.
+19. needed — standard word.
+20. great — standard word.
+21. to — standard word.
+22. see — standard word.
+23. our — standard word.
+24. kids — informal but not slang.
+25. have — standard word.
+26. so — standard word.
+27. much — standard word.
+28. fun — standard word.
+29. playing — standard word.
+30. football — standard word.
+31. fly — phrase 'fly to the football' means hustle/attack aggressively — sports slang, multi-word expression 'fly to the football'.
+32. to — part of slang phrase 'fly to'.
+33. the — part of slang phrase 'to the football'.
+34. football — part of slang phrase 'to the football'.
+35. play — standard word.
+36. for — standard word.
+37. each — standard word.
+38. other — standard word.
+
+Detected slang expressions:
+- 'in the books' (tokens: 'in' (token 3), 'the' (4), 'books' (5)) — sports slang.
+- 'stout' (token 8) — slang in sports meaning strong/tough.
+- 'shook off the rust' (tokens: 'shook' (10), 'off' (11), 'the' (12), 'rust' (13)) — sports slang.
+- 'fly to the football' (tokens: 'fly' (31), 'to' (32),",syntactic|semantic|hallucination
+flysir red honey drip overlooked heroes performance ohio via out now,SLANG,NOT_SLANG,False,"Scanning each token: ""flysir"" is unfamiliar — likely an invented name or obscure slang. ""red honey drip"" — ""honey drip"" might be slang, but unclear. ""overlooked heroes performance ohio via out now"" appear standard. However, this could be describing a music track release (out now). Considering slang detection, ""out now"" is common usage. But there's no clear established slang here. Given the strangeness, likely NOT_SLANG as no identifiable slang phrase stands out.",syntactic

@@ -1,0 +1,15 @@
+============================================================
+QWEN (qwen-plus) — SENTENCE_COT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       sentence_cot
+Samples:        3000
+Parse errors:   3000 (100.0%)
+
+Sentence-level:
+  Accuracy  : 0.8153
+  Precision : 0.7819
+  Recall    : 0.8747
+  F1        : 0.8257
+

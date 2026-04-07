@@ -1,0 +1,156 @@
+======================================================================
+QUALITATIVE ANALYSIS OF COT RATIONALES
+======================================================================
+
+Source file:     llm_evaluation/outputs/qwen/qwen-plus_token_cot_raw.jsonl
+Total sampled:   100
+Correct preds:   50
+Incorrect preds: 50
+
+----------------------------------------------------------------------
+REASONING CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Category              Total       %   Correct  Incorrect
+----------------------------------------------------------------------
+Semantic               100  (100.0%)       50          50
+Syntactic               99  ( 99.0%)       49          50
+Hallucination           42  ( 42.0%)        0          42
+Other                    0  (  0.0%)        0           0
+
+Note: categories are not mutually exclusive — a rationale can be
+both syntactic and semantic, or semantic and hallucination, etc.
+
+======================================================================
+REPRESENTATIVE EXAMPLES BY CATEGORY
+======================================================================
+
+--- Semantic ---
+
+  Text:       asia culture travel submitted the document as part of its legal defense to the international chamber
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  This is a formal legal/business sentence naming entities (Asia Culture Travel, International Chamber of Commerce, Northrop) and describing procedural actions. All tokens — 'asia', 'culture', 'travel', 'submitted', 'the', 'document', etc. — are standa
+
+  Text:       however none of the big three weeklies recorded circulation gains recently
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'however', 'none', 'of', 'the', 'big', 'three', 'weeklies', 'recorded', 'circulation', 'gains', 'recently' — all are standard English words used in formal journalism/financial reporting. 'Big three' is a conventional phrase (e.g.
+
+  Text:       im very happy to watch and give you a vibe check i think a lot of that is lefty gobbleygook stemming
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Reasoning: Scanning each token for slang: - 'im' = informal contraction of 'I'm', but not considered slang in this context (common orthographic variant, not lexical slang). - 'vibe check' = established Gen Z slang phrase meaning an informal assessmen
+
+  Text:       lol but the pts get such yummy snacks
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'lol' is internet slang for 'laugh out loud' — a well-established, single-token slang expression. 'but the pts get such yummy snacks' are all standard English words; 'pts' could be ambiguous but in context likely stands for 'pare
+
+  Text:       i hate the fact that i have the urge to constantly ask for reassurance about whether my friends stil
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'i', 'hate', 'the', 'fact', 'that', 'i', 'have', 'the', 'urge', 'to', 'constantly', 'ask', 'for', 'reassurance', 'about', 'whether', 'my', 'friends', 'still', 'love', 'me', 'or', 'not', 'why', 'can', 't', 'i', 'be', 'secure', 'in
+
+--- Syntactic ---
+
+  Text:       asia culture travel submitted the document as part of its legal defense to the international chamber
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  This is a formal legal/business sentence naming entities (Asia Culture Travel, International Chamber of Commerce, Northrop) and describing procedural actions. All tokens — 'asia', 'culture', 'travel', 'submitted', 'the', 'document', etc. — are standa
+
+  Text:       however none of the big three weeklies recorded circulation gains recently
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'however', 'none', 'of', 'the', 'big', 'three', 'weeklies', 'recorded', 'circulation', 'gains', 'recently' — all are standard English words used in formal journalism/financial reporting. 'Big three' is a conventional phrase (e.g.
+
+  Text:       im very happy to watch and give you a vibe check i think a lot of that is lefty gobbleygook stemming
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Reasoning: Scanning each token for slang: - 'im' = informal contraction of 'I'm', but not considered slang in this context (common orthographic variant, not lexical slang). - 'vibe check' = established Gen Z slang phrase meaning an informal assessmen
+
+  Text:       lol but the pts get such yummy snacks
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'lol' is internet slang for 'laugh out loud' — a well-established, single-token slang expression. 'but the pts get such yummy snacks' are all standard English words; 'pts' could be ambiguous but in context likely stands for 'pare
+
+  Text:       i hate the fact that i have the urge to constantly ask for reassurance about whether my friends stil
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'i', 'hate', 'the', 'fact', 'that', 'i', 'have', 'the', 'urge', 'to', 'constantly', 'ask', 'for', 'reassurance', 'about', 'whether', 'my', 'friends', 'still', 'love', 'me', 'or', 'not', 'why', 'can', 't', 'i', 'be', 'secure', 'in
+
+--- Hallucination ---
+
+  Text:       lol but the pts get such yummy snacks
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'lol' is internet slang for 'laugh out loud' — a well-established, single-token slang expression. 'but the pts get such yummy snacks' are all standard English words; 'pts' could be ambiguous but in context likely stands for 'pare
+
+  Text:       ate alot
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'ate' is Gen Z slang meaning 'dominated' or 'performed exceptionally well' (e.g., "she ate the competition"). 'alot' is a misspelling of 'a lot', but in slang contexts, 'ate' + 'alot' often appears together as an emphatic phrase 
+
+  Text:       beta in a nutshell
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'beta' is used here as internet slang meaning an unpolished or early version of something (e.g., 'beta test'), or sometimes to describe a person in a pejorative, stereotyped way — both are common slang usages. 'in a nutshell' is 
+
+  Text:       would love to see stan call someone bro its like hes trying to b down w the kids
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'stan' is slang (originally from fan culture, now verb meaning to obsessively support); 'bro' is informal but widely accepted standard English, not Gen Z slang per se; 'b down' is slang for 'be down' (i.e., willing/cool with some
+
+  Text:       beep bop boop bot be gone
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'beep', 'bop', 'boop' are onomatopoeic terms often used in internet/meme culture to mimic robot sounds — collectively they form a playful, stereotypical "robot speech" slang phrase. Though each word individually can be non-slang 
+
+======================================================================
+COMMON FAILURE MODES
+======================================================================
+
+False positives (predicted SLANG, gold NOT_SLANG): 40
+False negatives (predicted NOT_SLANG, gold SLANG):  10
+
+Sample false positives:
+  "lol but the pts get such yummy snacks"
+  Reasoning: Scanning each token: 'lol' is internet slang for 'laugh out loud' — a well-established, single-token slang expression. 'but the pts get such yummy snacks' are all standard English words; 'pts' could b
+  Categories: syntactic, semantic, hallucination
+
+  "ate alot"
+  Reasoning: Scanning each token: 'ate' is Gen Z slang meaning 'dominated' or 'performed exceptionally well' (e.g., "she ate the competition"). 'alot' is a misspelling of 'a lot', but in slang contexts, 'ate' + 'a
+  Categories: syntactic, semantic, hallucination
+
+  "beta in a nutshell"
+  Reasoning: Scanning each token: 'beta' is used here as internet slang meaning an unpolished or early version of something (e.g., 'beta test'), or sometimes to describe a person in a pejorative, stereotyped way —
+  Categories: syntactic, semantic, hallucination
+
+  "would love to see stan call someone bro its like hes trying to b down w the kids"
+  Reasoning: Scanning each token: 'stan' is slang (originally from fan culture, now verb meaning to obsessively support); 'bro' is informal but widely accepted standard English, not Gen Z slang per se; 'b down' is
+  Categories: syntactic, semantic, hallucination
+
+  "beep bop boop bot be gone"
+  Reasoning: Scanning each token: 'beep', 'bop', 'boop' are onomatopoeic terms often used in internet/meme culture to mimic robot sounds — collectively they form a playful, stereotypical "robot speech" slang phras
+  Categories: syntactic, semantic, hallucination
+
+Sample false negatives:
+  "was i need to check my calendar"
+  Reasoning: Scanning each token: 'was' is a standard verb. 'i' is a pronoun. 'need', 'to', 'check', 'my', 'calendar' are all standard English words used literally. None of these tokens are recognized as internet 
+  Categories: syntactic, semantic, hallucination
+
+  "cant discuss that right now paw"
+  Reasoning: Scanning each token: 'cant' is a standard contraction of 'cannot', not slang. 'discuss', 'that', 'right', 'now' are all standard English words. 'paw' — while potentially a typo or abbreviation — in th
+  Categories: syntactic, semantic, hallucination
+
+  "sweetie pie pookie bear you big old softy"
+  Reasoning: Scanning each token: 'sweetie pie', 'pookie bear' are affectionate nicknames — common in internet and casual speech, but they are established compound terms with long-standing usage (not newly coined 
+  Categories: syntactic, semantic
+
+  "my computer froze time for a cad"
+  Reasoning: Scanning each token: 'my', 'computer', 'froze', 'time', 'for', 'a' are all standard English words. 'cad' is an archaic British term for a dishonest or unscrupulous man — it's not contemporary internet
+  Categories: syntactic, semantic, hallucination
+
+  "i sent several forms in fax including the submission request for revisal they dont have su"
+  Reasoning: Scanning each token: This is a formal, bureaucratic/business communication about submitting forms, faxing, revisal requests, and revenue applications. Terms like 'fax', 'submission request', 'revisal'
+  Categories: syntactic, semantic
+

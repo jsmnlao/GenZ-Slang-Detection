@@ -1,0 +1,15 @@
+============================================================
+QWEN (qwen-plus) — SENTENCE_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       sentence_fewshot
+Samples:        3000
+Parse errors:   3000 (100.0%)
+
+Sentence-level:
+  Accuracy  : 0.7937
+  Precision : 0.7332
+  Recall    : 0.9233
+  F1        : 0.8174
+

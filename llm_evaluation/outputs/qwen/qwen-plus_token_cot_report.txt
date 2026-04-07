@@ -1,0 +1,21 @@
+============================================================
+QWEN (qwen-plus) — TOKEN_COT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       token_cot
+Samples:        3000
+Parse errors:   536 (17.9%)
+
+Sentence-level:
+  Accuracy  : 0.8093
+  Precision : 0.7610
+  Recall    : 0.9020
+  F1        : 0.8255
+
+Token-level:
+  Accuracy  : 0.9532
+  Precision : 0.4383
+  Recall    : 0.5696
+  F1        : 0.4954
+

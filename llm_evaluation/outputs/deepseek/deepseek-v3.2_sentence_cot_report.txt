@@ -1,0 +1,15 @@
+============================================================
+QWEN (deepseek-v3.2) — SENTENCE_COT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       sentence_cot
+Samples:        3000
+Parse errors:   3000 (100.0%)
+
+Sentence-level:
+  Accuracy  : 0.8010
+  Precision : 0.7400
+  Recall    : 0.9280
+  F1        : 0.8234
+

@@ -1,0 +1,156 @@
+======================================================================
+QUALITATIVE ANALYSIS OF COT RATIONALES
+======================================================================
+
+Source file:     llm_evaluation/outputs/deepseek/deepseek-v3.2_token_cot_raw.jsonl
+Total sampled:   100
+Correct preds:   50
+Incorrect preds: 50
+
+----------------------------------------------------------------------
+REASONING CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Category              Total       %   Correct  Incorrect
+----------------------------------------------------------------------
+Semantic                99  ( 99.0%)       50          49
+Syntactic              100  (100.0%)       50          50
+Hallucination           45  ( 45.0%)        0          45
+Other                    0  (  0.0%)        0           0
+
+Note: categories are not mutually exclusive — a rationale can be
+both syntactic and semantic, or semantic and hallucination, etc.
+
+======================================================================
+REPRESENTATIVE EXAMPLES BY CATEGORY
+======================================================================
+
+--- Semantic ---
+
+  Text:       this must be the last big stretch of the american seacoast that is undeveloped there are a few ramsh
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: This describes a geographical or coastal scene. All words — 'this', 'must', 'be', 'the', 'last', 'big', 'stretch', 'of', 'the', 'american', 'seacoast', 'that', 'is', 'undeveloped', 'there', 'are', 'a', 'few', 'ramshackle', 'fishi
+
+  Text:       you didnt agree wtfe i dont care
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'you' is a standard pronoun. 'didnt' is a contraction of 'did not', considered standard in informal writing. 'agree' is a standard verb. 'wtfe' is slang acronym ('what the fuck ever') and a single-token slang expression. 'i' is a
+
+  Text:       i see your highly educated may i ask where you got stupid information like that wait i bet from the 
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Reasoning:   First, split the text into tokens:   Tokens: ["i", "see", "your", "highly", "educated", "may", "i", "ask", "where", "you", "got", "stupid", "information", "like", "that", "wait", "i", "bet", "from", "the", "cdc", "or", "some", "post", "t
+
+  Text:       just check out drip stop leaping around don t as y tho i
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token:  1. just - standard word   2. check - standard word   3. out - standard word   4. drip - Gen Z slang meaning stylish clothing/outfit/fashion sense   5. stop - standard word   6. leaping - standard word   7. around - standard word
+
+  Text:       they bussin fr
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'they' is a standard pronoun. 'bussin' is slang meaning really good / delicious / amazing. 'fr' is slang meaning 'for real'. Both slang terms appear as separate slang tokens, so the sentence contains slang.
+
+--- Syntactic ---
+
+  Text:       this must be the last big stretch of the american seacoast that is undeveloped there are a few ramsh
+  Gold:       NOT_SLANG
+  Predicted:  NOT_SLANG (CORRECT)
+  Reasoning:  Scanning each token: This describes a geographical or coastal scene. All words — 'this', 'must', 'be', 'the', 'last', 'big', 'stretch', 'of', 'the', 'american', 'seacoast', 'that', 'is', 'undeveloped', 'there', 'are', 'a', 'few', 'ramshackle', 'fishi
+
+  Text:       you didnt agree wtfe i dont care
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'you' is a standard pronoun. 'didnt' is a contraction of 'did not', considered standard in informal writing. 'agree' is a standard verb. 'wtfe' is slang acronym ('what the fuck ever') and a single-token slang expression. 'i' is a
+
+  Text:       i see your highly educated may i ask where you got stupid information like that wait i bet from the 
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Reasoning:   First, split the text into tokens:   Tokens: ["i", "see", "your", "highly", "educated", "may", "i", "ask", "where", "you", "got", "stupid", "information", "like", "that", "wait", "i", "bet", "from", "the", "cdc", "or", "some", "post", "t
+
+  Text:       just check out drip stop leaping around don t as y tho i
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token:  1. just - standard word   2. check - standard word   3. out - standard word   4. drip - Gen Z slang meaning stylish clothing/outfit/fashion sense   5. stop - standard word   6. leaping - standard word   7. around - standard word
+
+  Text:       they bussin fr
+  Gold:       SLANG
+  Predicted:  SLANG (CORRECT)
+  Reasoning:  Scanning each token: 'they' is a standard pronoun. 'bussin' is slang meaning really good / delicious / amazing. 'fr' is slang meaning 'for real'. Both slang terms appear as separate slang tokens, so the sentence contains slang.
+
+--- Hallucination ---
+
+  Text:       i see your highly educated may i ask where you got stupid information like that wait i bet from the 
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Reasoning:   First, split the text into tokens:   Tokens: ["i", "see", "your", "highly", "educated", "may", "i", "ask", "where", "you", "got", "stupid", "information", "like", "that", "wait", "i", "bet", "from", "the", "cdc", "or", "some", "post", "t
+
+  Text:       just check out drip stop leaping around don t as y tho i
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token:  1. just - standard word   2. check - standard word   3. out - standard word   4. drip - Gen Z slang meaning stylish clothing/outfit/fashion sense   5. stop - standard word   6. leaping - standard word   7. around - standard word
+
+  Text:       just imagine how peaceful the world would be if all the elites just lit up a j and chilled tf out
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token:  - 'just', 'imagine', 'how', 'peaceful', 'the', 'world', 'would', 'be', 'if', 'all', 'the' are standard English words.  - 'elites' is a standard term (might refer to wealthy/powerful class).  - 'lit up a j' — 'lit up' means to sm
+
+  Text:       the ghost of mandela hope my flows they propel it let these words be your earth and moon you consume
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Let's examine each token for slang usage, remembering that slang expressions can be multi-word. The text is poetic/lyrical. Common slang to check: "flows" (slang for rap lyrics), "propel it" (not slang), "my nigga" is a highly informal slang term, of
+
+  Text:       its the basic nature of drug trials no false promises fo those who still havent caught on
+  Gold:       NOT_SLANG
+  Predicted:  SLANG (INCORRECT)
+  Reasoning:  Scanning each token: 'its', 'the', 'basic', 'nature', 'of', 'drug', 'trials', 'no', 'false', 'promises' are standard words. 'fo' is slang abbreviation for 'for'. 'those', 'who', 'still', 'havent', 'caught', 'on' are standard. 'caught on' is sometimes
+
+======================================================================
+COMMON FAILURE MODES
+======================================================================
+
+False positives (predicted SLANG, gold NOT_SLANG): 43
+False negatives (predicted NOT_SLANG, gold SLANG):  7
+
+Sample false positives:
+  "i see your highly educated may i ask where you got stupid information like that wait i bet"
+  Reasoning: Reasoning:   First, split the text into tokens:   Tokens: ["i", "see", "your", "highly", "educated", "may", "i", "ask", "where", "you", "got", "stupid", "information", "like", "that", "wait", "i", "be
+  Categories: syntactic, semantic, hallucination
+
+  "just check out drip stop leaping around don t as y tho i"
+  Reasoning: Scanning each token:  1. just - standard word   2. check - standard word   3. out - standard word   4. drip - Gen Z slang meaning stylish clothing/outfit/fashion sense   5. stop - standard word   6. l
+  Categories: syntactic, semantic, hallucination
+
+  "just imagine how peaceful the world would be if all the elites just lit up a j and chilled"
+  Reasoning: Scanning each token:  - 'just', 'imagine', 'how', 'peaceful', 'the', 'world', 'would', 'be', 'if', 'all', 'the' are standard English words.  - 'elites' is a standard term (might refer to wealthy/power
+  Categories: syntactic, semantic, hallucination
+
+  "the ghost of mandela hope my flows they propel it let these words be your earth and moon y"
+  Reasoning: Let's examine each token for slang usage, remembering that slang expressions can be multi-word. The text is poetic/lyrical. Common slang to check: "flows" (slang for rap lyrics), "propel it" (not slan
+  Categories: syntactic, semantic, hallucination
+
+  "its the basic nature of drug trials no false promises fo those who still havent caught on"
+  Reasoning: Scanning each token: 'its', 'the', 'basic', 'nature', 'of', 'drug', 'trials', 'no', 'false', 'promises' are standard words. 'fo' is slang abbreviation for 'for'. 'those', 'who', 'still', 'havent', 'ca
+  Categories: syntactic, semantic, hallucination
+
+Sample false negatives:
+  "mr aura himself"
+  Reasoning: Scanning each token: 'mr aura himself'. This phrase uses 'aura' metaphorically, suggesting someone embodies an aura. While this could be seen as slangy in certain contexts, Gen Z slang examples in my 
+  Categories: syntactic, semantic
+
+  "are you d46"
+  Reasoning: Scanning each token: 'are', 'you' are standard words. 'd46' is not widely recognized slang but could be an obscure acronym or code — likely not slang by common internet slang standards. No slang expre
+  Categories: syntactic, semantic, hallucination
+
+  "are you bringing a moos to the party"
+  Reasoning: Scanning each token: 'are you bringing a' are standard words. 'moos' appears — this might be slang abbreviation for "MOOS"? Possibly slang for "moot"? Checking context: unclear slang, likely intended 
+  Categories: syntactic, semantic, hallucination
+
+  "something about a beautiful low vibrational plate"
+  Reasoning: Scanning each token: 'something', 'about', 'a', 'beautiful', 'low', 'vibrational', 'plate'. This appears to describe a 'low vibrational plate', but 'low vibrational' isn't slang — it could be a techni
+  Categories: syntactic, semantic
+
+  "attitude is everything sometimes peoples attitude will attract negative aura to them"
+  Reasoning: Scanning each token: This is a motivational sentence. 'attitude', 'is', 'everything', 'sometimes', 'people', 's', 'attitude', 'will', 'attract', 'negative', 'aura', 'to', 'them'. All tokens are standa
+  Categories: syntactic, semantic
+
