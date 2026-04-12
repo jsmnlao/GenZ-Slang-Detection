@@ -75,6 +75,25 @@ def expand_to_tokens(df):
     return pd.DataFrame(records)
 
 
+def extract_spans(tags):
+    spans = []
+    start, current_label = None, None
+    for i, tag in enumerate(tags):
+        if tag.startswith("B-"):
+            if start is not None:
+                spans.append((start, i - 1, current_label))
+            start, current_label = i, tag[2:]
+        elif tag.startswith("I-"):
+            pass  # continuation of current span
+        else:  # O
+            if start is not None:
+                spans.append((start, i - 1, current_label))
+                start, current_label = None, None
+    if start is not None:
+        spans.append((start, len(tags) - 1, current_label))
+    return spans
+
+
 def classify_tokens(tdf):
     buckets = {"TP": [], "FP": [], "TN": [], "FN": []}
     for _, row in tdf.iterrows():
@@ -123,7 +142,44 @@ def span_level_section(df):
         y_true.append(str(row['gold_tags']).split())
         y_pred.append(str(row['pred_tags']).split())
     lines.append(classification_report(y_true, y_pred))
-    lines.append("")
+    return "\n".join(lines)
+
+
+def span_examples_section(df, n=10):
+    lines = ["─" * 70, "SPAN-LEVEL EXAMPLES", "─" * 70]
+    tp, fp, fn = [], [], []
+
+    for _, row in df.iterrows():
+        tokens = str(row["text"]).split()
+        gold_tags = str(row["gold_tags"]).split()
+        pred_tags = str(row["pred_tags"]).split()
+        gold_spans = set(extract_spans(gold_tags))
+        pred_spans = set(extract_spans(pred_tags))
+
+        for span in gold_spans & pred_spans:          # in both → TP
+            start, end, label = span
+            tp.append((tokens, start, end, label, gold_tags, pred_tags, row["text"]))
+        for span in pred_spans - gold_spans:          # in pred only → FP
+            start, end, label = span
+            fp.append((tokens, start, end, label, gold_tags, pred_tags, row["text"]))
+        for span in gold_spans - pred_spans:          # in gold only → FN
+            start, end, label = span
+            fn.append((tokens, start, end, label, gold_tags, pred_tags, row["text"]))
+
+    def fmt_span_examples(examples, label):
+        lines = [f"  {label} — Count: {len(examples)}", ""]
+        for tokens, start, end, lbl, gold_tags, pred_tags, sentence in examples[:n]:
+            span_text = " ".join(tokens[start:end + 1])
+            lines.append(f"  span: [{span_text}]  ({lbl})")
+            lines.append(f"    gold : {' '.join(gold_tags)}")
+            lines.append(f"    pred : {' '.join(pred_tags)}")
+            lines.append(f"    sent : \"{sentence}\"")
+            lines.append("")
+        return "\n".join(lines)
+
+    lines.append(fmt_span_examples(tp, "TP (span correctly identified)"))
+    lines.append(fmt_span_examples(fp, "FP (span predicted but not in gold)"))
+    lines.append(fmt_span_examples(fn, "FN (span in gold but not predicted)"))
     return "\n".join(lines)
 
 
@@ -217,6 +273,7 @@ def build_report(df, source_label, n_examples=10):
         f"  F1 Score  : {f1:.4f}",
         "",
         span_level_section(df),
+        span_examples_section(df, n=n_examples),
         sentence_level_section(df),
     ]
 

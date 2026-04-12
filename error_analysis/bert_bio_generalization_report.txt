@@ -32,6 +32,164 @@ SPAN-LEVEL METRICS
    macro avg       0.66      0.51      0.57      1232
 weighted avg       0.66      0.51      0.57      1232
 
+──────────────────────────────────────────────────────────────────────
+SPAN-LEVEL EXAMPLES
+──────────────────────────────────────────────────────────────────────
+  TP (span correctly identified) — Count: 618
+
+  span: [mewing]  (SLANG)
+    gold : O O B-SLANG O O
+    pred : O O B-SLANG O O
+    sent : "is bro mewing on stage"
+
+  span: [green flag]  (SLANG)
+    gold : O B-SLANG I-SLANG
+    pred : O B-SLANG I-SLANG
+    sent : "biggest green flag"
+
+  span: [rizzler]  (SLANG)
+    gold : O O O O O O B-SLANG
+    pred : O O O O O O B-SLANG
+    sent : "he has fucking nothing on the rizzler"
+
+  span: [yapping]  (SLANG)
+    gold : O O O O O O O B-SLANG O
+    pred : O O O O O O O B-SLANG O
+    sent : "are those the best words your always yapping bout"
+
+  span: [mog]  (SLANG)
+    gold : B-SLANG O
+    pred : B-SLANG O
+    sent : "mog time"
+
+  span: [fax]  (SLANG)
+    gold : O O B-SLANG
+    pred : O O B-SLANG
+    sent : "nothing but fax"
+
+  span: [mog]  (SLANG)
+    gold : O B-SLANG O O O O O O O O
+    pred : O B-SLANG O O O O O O O O
+    sent : "hey mog frog snake fox eater wait we are coming"
+
+  span: [gyatttt]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [tweaking]  (SLANG)
+    gold : O B-SLANG O O
+    pred : O B-SLANG O O
+    sent : "im tweaking so hard"
+
+  span: [ate this up]  (SLANG)
+    gold : O B-SLANG I-SLANG I-SLANG O O
+    pred : O B-SLANG I-SLANG I-SLANG O O
+    sent : "she ate this up so bad"
+
+  FP (span predicted but not in gold) — Count: 309
+
+  span: [rizz]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [skibidi]  (SLANG)
+    gold : O O B-SLANG O O
+    pred : O O B-SLANG O B-SLANG
+    sent : "what is gyatt and skibidi"
+
+  span: [glow up]  (SLANG)
+    gold : O O O O O O O B-SLANG
+    pred : O O O O O O B-SLANG I-SLANG
+    sent : "see as be like aboki whey glow up"
+
+  span: [ick]  (SLANG)
+    gold : O O O B-SLANG I-SLANG O O O O O O
+    pred : O O O O O B-SLANG O O O O O
+    sent : "either way i got the ick from other factors so whatever"
+
+  span: [vibe check]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG O
+    pred : O O O O O O B-SLANG I-SLANG
+    sent : "i guess i didnt pass the vibe check"
+
+  span: [bop]  (SLANG)
+    gold : O O O O O O O O O B-SLANG O O O O O O O O O O O O O O O O O O O O O O
+    pred : O O O O O O O O B-SLANG O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "i cant believe its been years since this bop came out i remember being obsessed with it when it came out still believe its sonically one of gidles best songs till date"
+
+  span: [negative aura]  (SLANG)
+    gold : O O O O O O O O O O O O B-SLANG I-SLANG O O O
+    pred : O O O O O O O O O O O O B-SLANG B-SLANG I-SLANG O O
+    sent : "may be subject to change ofc like with everything in this stupid ohio negative aura chud life"
+
+  span: [ohio]  (SLANG)
+    gold : O O O O O O O O O O O O B-SLANG I-SLANG O O O
+    pred : O O O O O O O O O O O O B-SLANG B-SLANG I-SLANG O O
+    sent : "may be subject to change ofc like with everything in this stupid ohio negative aura chud life"
+
+  span: [rizzing up]  (SLANG)
+    gold : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG I-SLANG B-SLANG I-SLANG I-SLANG O O B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG O
+    pred : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG B-SLANG B-SLANG I-SLANG B-SLANG B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG I-SLANG
+    sent : "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+
+  span: [baby]  (SLANG)
+    gold : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG I-SLANG B-SLANG I-SLANG I-SLANG O O B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG O
+    pred : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG B-SLANG B-SLANG I-SLANG B-SLANG B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG I-SLANG
+    sent : "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+
+  FN (span in gold but not predicted) — Count: 614
+
+  span: [kitten]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [hawk]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [done im]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [low]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [tax]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [tuah]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [you]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [rizz me]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [summ]  (SLANG)
+    gold : O O O O O O O O O O B-SLANG
+    pred : O O O O O O O O O O O
+    sent : "it s like they don t know their lore or summ"
+
+  span: [green flags]  (SLANG)
+    gold : O O O O B-SLANG I-SLANG O
+    pred : O O O O O O O
+    sent : "seeing people talk about green flags amp"
 
 ──────────────────────────────────────────────────────────────────────
 SENTENCE-LEVEL EXACT MATCH

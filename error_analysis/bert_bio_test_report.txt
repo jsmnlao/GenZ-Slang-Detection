@@ -32,6 +32,164 @@ SPAN-LEVEL METRICS
    macro avg       0.80      0.76      0.78      1740
 weighted avg       0.80      0.76      0.78      1740
 
+──────────────────────────────────────────────────────────────────────
+SPAN-LEVEL EXAMPLES
+──────────────────────────────────────────────────────────────────────
+  TP (span correctly identified) — Count: 1316
+
+  span: [thirsty]  (SLANG)
+    gold : B-SLANG O
+    pred : B-SLANG O
+    sent : "thirsty s"
+
+  span: [sheesh]  (SLANG)
+    gold : O O O O O O O O O O O O B-SLANG
+    pred : O O O O O O O O O O O O B-SLANG
+    sent : "maybe the wef is looking for a female to fill a role sheesh"
+
+  span: [glow up]  (SLANG)
+    gold : O O O B-SLANG I-SLANG O O O O
+    pred : O O O B-SLANG I-SLANG O O O O
+    sent : "pas mal le glow up de fin les voyages"
+
+  span: [cua]  (SLANG)
+    gold : O B-SLANG
+    pred : O B-SLANG
+    sent : "alright cua"
+
+  span: [cam]  (SLANG)
+    gold : O O O B-SLANG O O O
+    pred : O O O B-SLANG O O O
+    sent : "turn on your cam for the meeting"
+
+  span: [faf]  (SLANG)
+    gold : O O O B-SLANG
+    pred : O O O B-SLANG
+    sent : "that video was faf"
+
+  span: [bussin]  (SLANG)
+    gold : O O O B-SLANG O
+    pred : O O O B-SLANG O
+    sent : "sue it s bussin omg"
+
+  span: [green flag]  (SLANG)
+    gold : O O B-SLANG I-SLANG
+    pred : O O B-SLANG I-SLANG
+    sent : "are you green flag"
+
+  span: [negative aura]  (SLANG)
+    gold : B-SLANG I-SLANG O O O O O O O O O O O O O O O
+    pred : B-SLANG I-SLANG O O O O O O O O O O O O O O O
+    sent : "negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular talk usnews"
+
+  span: [low vibrational]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    pred : O O O O O B-SLANG I-SLANG O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "theres an offset from whatever low vibrational music i listenedlisten to is offset by the associations it gives me in connecting my past to my present and so onreally tho as one cohesive ongoing experience of being"
+
+  FP (span predicted but not in gold) — Count: 308
+
+  span: [hype]  (SLANG)
+    gold : O O O O O O O O O O O O O O
+    pred : O O O O B-SLANG O O O O O O O O O
+    sent : "i love that a hype squad member is getting flammed for being a moron"
+
+  span: [green flag]  (SLANG)
+    gold : O O O O O O O O O O O O O B-SLANG
+    pred : O O O O O O O O O O O O B-SLANG I-SLANG
+    sent : "seeing how men respect their oshis especially in hololive is such a green flag"
+
+  span: [thirsty]  (SLANG)
+    gold : O O
+    pred : O B-SLANG
+    sent : "not thirsty"
+
+  span: [bop]  (SLANG)
+    gold : O O O O O O O O O O O O
+    pred : O O O O O O O O O O B-SLANG O
+    sent : "so shall it be prince god will perfect your healing bop daddy"
+
+  span: [low]  (SLANG)
+    gold : O O O B-SLANG I-SLANG B-SLANG I-SLANG
+    pred : O O B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG
+    sent : "he has low fanum tax no cap"
+
+  span: [aura]  (SLANG)
+    gold : B-SLANG O O O O O
+    pred : B-SLANG O O O O B-SLANG
+    sent : "fax flip phone gave him aura"
+
+  span: [negative aura]  (SLANG)
+    gold : O O O O O O O O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O B-SLANG I-SLANG
+    sent : "my exact thoughts when i saw this bro is full time debbie downer emitting constant negative aura"
+
+  span: [bop]  (SLANG)
+    gold : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    pred : O O O O O O O O B-SLANG O O O O O O O O O O O O O O O O O O O O
+    sent : "ill have you know i am the gen bop it champion i beat it to the point it stopped dead in its tracks and told me my score undefeated"
+
+  span: [clout chaser]  (SLANG)
+    gold : O B-SLANG I-SLANG O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    pred : O O B-SLANG I-SLANG O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "that donation clout chaser tryna kick suga outta bts is totally in bed with sm theyre trying to bury taeils scandal sms been hating on bts since ever always trying to shade them but they cant"
+
+  span: [sheesh]  (SLANG)
+    gold : O O O O B-SLANG I-SLANG O O O O
+    pred : O O O O B-SLANG I-SLANG O O O B-SLANG
+    sent : "it s a veritable red flag factory over there sheesh"
+
+  FN (span in gold but not predicted) — Count: 424
+
+  span: [flag]  (SLANG)
+    gold : O O O O O O O O O O O O O B-SLANG
+    pred : O O O O O O O O O O O O B-SLANG I-SLANG
+    sent : "seeing how men respect their oshis especially in hololive is such a green flag"
+
+  span: [ishowspeed]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG B-SLANG
+    pred : O O O O O B-SLANG I-SLANG O O O O O B-SLANG
+    sent : "it s more like a fanum tax ishowspeed among us big chungus rizz"
+
+  span: [big chungus]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG B-SLANG
+    pred : O O O O O B-SLANG I-SLANG O O O O O B-SLANG
+    sent : "it s more like a fanum tax ishowspeed among us big chungus rizz"
+
+  span: [among us]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG B-SLANG
+    pred : O O O O O B-SLANG I-SLANG O O O O O B-SLANG
+    sent : "it s more like a fanum tax ishowspeed among us big chungus rizz"
+
+  span: [ceo]  (SLANG)
+    gold : B-SLANG B-SLANG B-SLANG O O O O O O O O O
+    pred : B-SLANG O O O O O O O O O O O
+    sent : "goat ceo menace it dont matter what you name it your him"
+
+  span: [menace]  (SLANG)
+    gold : B-SLANG B-SLANG B-SLANG O O O O O O O O O
+    pred : B-SLANG O O O O O O O O O O O
+    sent : "goat ceo menace it dont matter what you name it your him"
+
+  span: [snatched]  (SLANG)
+    gold : O O O O B-SLANG O
+    pred : O O O O O O
+    sent : "at least we managed snatched sancho"
+
+  span: [aura]  (SLANG)
+    gold : O O O O O O O B-SLANG O
+    pred : O O O O O O O O O
+    sent : "cam ward wtf im covered in his aura rn"
+
+  span: [vibe]  (SLANG)
+    gold : O O O O O B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O
+    sent : "victoria de maturity give clear vibe u too much as u composed ur head one place"
+
+  span: [vibrational of]  (SLANG)
+    gold : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O B-SLANG I-SLANG O O O O O O O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "i dont ever wanna go through another stage or period of time in my life where i am constantly begging and telling someone how to treat me that was so low vibrational of me im vibin at a wayyy higher level now and that shit won t fly anymore"
 
 ──────────────────────────────────────────────────────────────────────
 SENTENCE-LEVEL EXACT MATCH
