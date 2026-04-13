@@ -1,0 +1,676 @@
+====================================================================
+ERROR ANALYSIS REPORT — Gen Z Slang Detection (Baselines)
+====================================================================
+Generated : 2026-04-08 12:30:01
+Test set  : output/test.csv  (3000 rows, 1500 SLANG / 1500 NOT_SLANG)
+Models    : Dictionary Baseline, TF-IDF Baseline
+
+====================================================================
+SECTION 1: MODEL METRICS SUMMARY (TEST SET)
+====================================================================
+
+Model                         Accuracy  Precision   Recall       F1
+--------------------------------------------------------------------
+Dictionary Baseline             0.6000     0.5675   0.8407   0.6776
+TF-IDF Baseline                 0.8473     0.8478   0.8467   0.8472
+
+====================================================================
+SECTION 2: CONFUSION MATRICES
+====================================================================
+
+--- Dictionary Baseline ---
+                               Pred SLANG  Pred NOT_SLANG
+                Actual SLANG      TP=1261          FN=239
+            Actual NOT_SLANG       FP=961          TN=539
+  False Positive Rate : 0.641  (predicted SLANG when actually NOT_SLANG)
+  False Negative Rate : 0.159  (predicted NOT_SLANG when actually SLANG)
+
+--- TF-IDF Baseline ---
+                               Pred SLANG  Pred NOT_SLANG
+                Actual SLANG      TP=1270          FN=230
+            Actual NOT_SLANG       FP=228         TN=1272
+  False Positive Rate : 0.152  (predicted SLANG when actually NOT_SLANG)
+  False Negative Rate : 0.153  (predicted NOT_SLANG when actually SLANG)
+
+====================================================================
+SECTION 3: TOP-10 FALSE POSITIVES AND FALSE NEGATIVES
+====================================================================
+
+--- Dictionary Baseline: Top 10 False Positives ---
+    (Predicted SLANG, Actual NOT_SLANG)
+    [ 1] they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not ...
+    [ 2] best lr  class for beta will have u movin
+    [ 3] looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and e...
+    [ 4] we think this is a superior deal to mccaws
+    [ 5] six top executives at the new yorkbased company sold shares in august and september
+    [ 6] every month we release exclusive extras to our supporters on patreon this month weve got a creature summone...
+    [ 7] lukaku just snatched his chain
+    [ 8] the department didnt specify how many consumers have been hurt by the alleged discriminatory practices sayi...
+    [ 9] not thirsty
+    [10] lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent ...
+
+--- Dictionary Baseline: Top 10 False Negatives ---
+    (Predicted NOT_SLANG, Actual SLANG)
+    [ 1] negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular talk us...
+    [ 2] peep the sign
+    [ 3] seeing how men respect their oshis especially in hololive is such a green flag
+    [ 4] it s sigma
+    [ 5] ruben is mewing send help
+    [ 6] fax flip phone gave him aura
+    [ 7] a red flag is a red flag
+    [ 8] racks bussin out a nigga jeans might as well go amp
+    [ 9] sleek vibin colour of le wand
+    [10] i just bagged a baddie
+
+--- TF-IDF Baseline: Top 10 False Positives ---
+    (Predicted SLANG, Actual NOT_SLANG)
+    [ 1] we think this is a superior deal to mccaws
+    [ 2] hurmm nak cut off and softblock siapa lagi eh i wanna remove toxic and negative aura people
+    [ 3] not thirsty
+    [ 4] so shall it be prince god will perfect your healing bop daddy
+    [ 5] wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so ...
+    [ 6] my exact thoughts when i saw this bro is full time debbie downer emitting constant negative aura
+    [ 7] wasnt even its really shook me up
+    [ 8] wedding that didn t trenddavido s shook the internet
+    [ 9] bob stone is a fictional name but the incident described is real
+    [10] imagine making emojis at the rantings of a mental patient  yeah bud that paranoid stream of delusions is bu...
+
+--- TF-IDF Baseline: Top 10 False Negatives ---
+    (Predicted NOT_SLANG, Actual SLANG)
+    [ 1] alright cua
+    [ 2] theres an offset from whatever low vibrational music i listenedlisten to is offset by the associations it g...
+    [ 3] this is a bop i live mixed a friends grandmothers old collection of local country western s that were playe...
+    [ 4] top performing projects by number of calls over the last hours sheesh booba fepe cook cz
+    [ 5] still kind of shook that i saw danzig sing for the misfits last year
+    [ 6] ntm on exes but like addison really ate with pepsi
+    [ 7] unfortunately it is a thing to look less guilty and get off the radar never works or to see how others will...
+    [ 8] they must really vibe with the english teacher aesthetic
+    [ 9] he must be shut down periodt they should have called the cops on his ass he has no respect for anyone or an...
+    [10] omo zinoleesky done finish saw a video of him vibing to his new song and i shook head make he just talk con...
+
+====================================================================
+SECTION 4: POLYSEMY WORD ANALYSIS
+====================================================================
+For each polysemous word: TP/TN/FP/FN counts and up to 3 example sentences.
+FP = model predicted SLANG but label was NOT_SLANG (false alarm).
+FN = model predicted NOT_SLANG but label was SLANG (missed slang).
+
+────────────────────────────────────────────────────────────────────
+Word: "fire"  |  TF-IDF coeff: -3.7161
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=3  TN=29  FP=29  FN=3
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad abilites sp...
+      [2] oh south carolina might need to fire shane beamer right now
+      [3] need to fire that photographer if hid shots are this bad
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] just allowed a first down fire durkin
+      [2] naaah but i love this angle it s fire stay chillax
+      [3] now this this is fire
+    True Positives (correctly SLANG):
+      [1] itll smother the flames as fire needs oxygen to burn also dont yeet the flames unless you really hate your house
+      [2] dinner was fire
+      [3] those white lu sideline jackets with sparky are fire
+    True Negatives (correctly NOT_SLANG):
+      [1] worst performance i ve ever seen fire beamer
+      [2] i smell weed and hear a fire alarm in the distance sometimes you dont need words to tell a story
+      [3] smores by a bon fire
+
+  TF-IDF BASELINE  (coeff -3.7161 → biased toward NOT_SLANG)
+    Counts: TP=2  TN=57  FP=1  FN=4
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] that s why you need a fire extinguisher
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] itll smother the flames as fire needs oxygen to burn also dont yeet the flames unless you really hate your house
+      [2] dinner was fire
+      [3] just allowed a first down fire durkin
+    True Positives (correctly SLANG):
+      [1] naaah but i love this angle it s fire stay chillax
+      [2] now this this is fire
+    True Negatives (correctly NOT_SLANG):
+      [1] trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad abilites sp...
+      [2] oh south carolina might need to fire shane beamer right now
+      [3] need to fire that photographer if hid shots are this bad
+
+────────────────────────────────────────────────────────────────────
+Word: "sick"  |  TF-IDF coeff: -0.1557
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=3  TN=1  FP=3  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] i got checked for iron about  months ago when i was also having these symptoms i lit have no idea what s wrong i feel...
+      [2] i ate too much la tiao now i feel sick
+      [3] i ate junk food twice and felt sick after
+    True Positives (correctly SLANG):
+      [1] bunch of fat ugly femcels in this post that use this vile shit for easy clout legit off yourselves ingame as for this...
+      [2] i m really sick and i m salty asf because i m working until tuesday and i can t take any medicine
+      [3] i be so fucking low vibrational when i m sick
+    True Negatives (correctly NOT_SLANG):
+      [1] bo beta drops and i get sick currently dying instead of playing the beta
+
+  TF-IDF BASELINE  (coeff -0.1557 → biased toward NOT_SLANG)
+    Counts: TP=1  TN=4  FP=0  FN=2
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] bunch of fat ugly femcels in this post that use this vile shit for easy clout legit off yourselves ingame as for this...
+      [2] i m really sick and i m salty asf because i m working until tuesday and i can t take any medicine
+    True Positives (correctly SLANG):
+      [1] i be so fucking low vibrational when i m sick
+    True Negatives (correctly NOT_SLANG):
+      [1] i got checked for iron about  months ago when i was also having these symptoms i lit have no idea what s wrong i feel...
+      [2] i ate too much la tiao now i feel sick
+      [3] bo beta drops and i get sick currently dying instead of playing the beta
+
+────────────────────────────────────────────────────────────────────
+Word: "slay"  |  TF-IDF coeff: +3.8954
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=33  TN=0  FP=4  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so slay
+      [2] once an old man sat next to me at a pub and said i hear the beast from the east is returning with the gruffest britis...
+      [3] oooh pretty i love that dolly style of eye makeup so much it s so yummy i can never pull it off so im always jealous ...
+    True Positives (correctly SLANG):
+      [1] awesome slay i wish we dmed more i like our friendship
+      [2] chat i luv my new oomfies yall are so slay
+      [3] i had one slay on a during a night attack cooks don t fuck around
+
+  TF-IDF BASELINE  (coeff +3.8954 → biased toward SLANG)
+    Counts: TP=33  TN=1  FP=3  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so slay
+      [2] oooh pretty i love that dolly style of eye makeup so much it s so yummy i can never pull it off so im always jealous ...
+      [3] do you think you can fix a broken person only if they want to be helped and are honest my english teacher in high sch...
+    True Positives (correctly SLANG):
+      [1] awesome slay i wish we dmed more i like our friendship
+      [2] chat i luv my new oomfies yall are so slay
+      [3] i had one slay on a during a night attack cooks don t fuck around
+    True Negatives (correctly NOT_SLANG):
+      [1] once an old man sat next to me at a pub and said i hear the beast from the east is returning with the gruffest britis...
+
+────────────────────────────────────────────────────────────────────
+Word: "extra"  |  TF-IDF coeff: -5.0068
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=5  TN=0  FP=73  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not that serio...
+      [2] oh joy a classic blame shift favourites of the day   please arrive extra early due to xyz problem  your booking can t...
+      [3] as much as i love his wispy look the extra close cut may have been a good thing before this adventure
+    True Positives (correctly SLANG):
+      [1] ill even act extra white like hey hows the weather to not make you uncomfortable with my poc swagger
+      [2] probably get two just to be extra safe
+      [3] im bringing an extra charger bsts
+
+  TF-IDF BASELINE  (coeff -5.0068 → biased toward NOT_SLANG)
+    Counts: TP=0  TN=72  FP=1  FN=5
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] i hope you got extra mac sauce for all those burgers
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] ill even act extra white like hey hows the weather to not make you uncomfortable with my poc swagger
+      [2] probably get two just to be extra safe
+      [3] im bringing an extra charger bsts
+    True Negatives (correctly NOT_SLANG):
+      [1] they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not that serio...
+      [2] oh joy a classic blame shift favourites of the day   please arrive extra early due to xyz problem  your booking can t...
+      [3] as much as i love his wispy look the extra close cut may have been a good thing before this adventure
+
+────────────────────────────────────────────────────────────────────
+Word: "basic"  |  TF-IDF coeff: -4.4454
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=9  TN=0  FP=74  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent is laughab...
+      [2] cool tech but this is not a replacement for cell service it s only a basic connection for textcalls it will not be ea...
+      [3] if you d do your damn research you d know that already but you seem to not want to do basic research and get your fac...
+    True Positives (correctly SLANG):
+      [1] ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it would be b...
+      [2] the twins theyre just so basic humans empty and nothings match good on them i dont like them at all
+      [3] i dont but its kind of basic overall it needs more support to no be finecky
+
+  TF-IDF BASELINE  (coeff -4.4454 → biased toward NOT_SLANG)
+    Counts: TP=2  TN=73  FP=1  FN=7
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] flying is pretty basic sono its not really a big deal
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] the twins theyre just so basic humans empty and nothings match good on them i dont like them at all
+      [2] i dont but its kind of basic overall it needs more support to no be finecky
+      [3] i m oldhead is a mentality theres new old heads you can t distinguish theres another generation of music basic trap i...
+    True Positives (correctly SLANG):
+      [1] ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it would be b...
+      [2] no shade but this cookie looks mad basic
+    True Negatives (correctly NOT_SLANG):
+      [1] lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent is laughab...
+      [2] cool tech but this is not a replacement for cell service it s only a basic connection for textcalls it will not be ea...
+      [3] if you d do your damn research you d know that already but you seem to not want to do basic research and get your fac...
+
+────────────────────────────────────────────────────────────────────
+Word: "beta"  |  TF-IDF coeff: -4.6193
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=3  TN=31  FP=31  FN=5
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] best lr  class for beta will have u movin
+      [2] looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and easy to con...
+      [3] they literally changed the feel of mw twice in beta before releasing the full game but whatever helps you sleep at night
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] with women who they desire sexually is simply approval seeking and weak behavior it is an attempt by beta males to ma...
+      [2] remember pence is a beta male trump would have demolished her
+      [3] low testosterone beta
+    True Positives (correctly SLANG):
+      [1] all my settings for the black ops  beta this should help those of you that are currently looking around for some idea...
+      [2] white dudes lol beta
+      [3] tonight at pm est       stack beta vibin be there
+    True Negatives (correctly NOT_SLANG):
+      [1] reach level in the black ops beta to unlock these skins for free play the beta here
+      [2] just play the beta i played for hours and didn t run into anyone that suspicious
+      [3] new beta out
+
+  TF-IDF BASELINE  (coeff -4.6193 → biased toward NOT_SLANG)
+    Counts: TP=1  TN=61  FP=1  FN=7
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] wtf is this aiffs the ai they let us have is not the lunar lander shit they have we have beta shite
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] with women who they desire sexually is simply approval seeking and weak behavior it is an attempt by beta males to ma...
+      [2] all my settings for the black ops  beta this should help those of you that are currently looking around for some idea...
+      [3] white dudes lol beta
+    True Positives (correctly SLANG):
+      [1] another pathetic beta male fcking over americans
+    True Negatives (correctly NOT_SLANG):
+      [1] best lr  class for beta will have u movin
+      [2] reach level in the black ops beta to unlock these skins for free play the beta here
+      [3] looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and easy to con...
+
+────────────────────────────────────────────────────────────────────
+Word: "squad"  |  TF-IDF coeff: -5.1046
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=5  TN=28  FP=38  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] oh he did something he decided to find a way into early retirement instead of going with his squad into battle to fig...
+      [2] second biggest net spend in the league this window squad is considerably stronger than it was entering the window it ...
+      [3] new coaches plenty of new squad members sheaf the midfield supremo injured palmer surprise contract ambush typical st...
+    True Positives (correctly SLANG):
+      [1] rehashing garbage that has been rejected because of no public option everyone take note they do this before elections...
+      [2] you know what i think you re the best rizzler of the skibidi squad
+      [3] i ve been here stable af dong squad strong
+    True Negatives (correctly NOT_SLANG):
+      [1] i love that a hype squad member is getting flammed for being a moron
+      [2] wubs squad
+      [3] nobody axes a player out the squad like conte
+
+  TF-IDF BASELINE  (coeff -5.1046 → biased toward NOT_SLANG)
+    Counts: TP=1  TN=66  FP=0  FN=4
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] rehashing garbage that has been rejected because of no public option everyone take note they do this before elections...
+      [2] i ve been here stable af dong squad strong
+      [3] and she is already back in her shit all that happened is that she saw jasmine crockett going viral and copied her lon...
+    True Positives (correctly SLANG):
+      [1] you know what i think you re the best rizzler of the skibidi squad
+    True Negatives (correctly NOT_SLANG):
+      [1] i love that a hype squad member is getting flammed for being a moron
+      [2] wubs squad
+      [3] nobody axes a player out the squad like conte
+
+────────────────────────────────────────────────────────────────────
+Word: "lore"  |  TF-IDF coeff: -6.1639
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=3  TN=29  FP=37  FN=2
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] every month we release exclusive extras to our supporters on patreon this month weve got a creature summoned by the n...
+      [2] controversial opinion but i prefer episodes over seasons more introduced activities a guarenteed exotic mission every...
+      [3] ot isd literally the best game ive ever played actually lolzz ive loved it since  and now its even better it has lore...
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] real ones have a yapping contest about fnaf lore
+      [2] in general i think he would vibe with how fnaf fansongs usually create and explore their own lore instead of the game...
+    True Positives (correctly SLANG):
+      [1] oomf is explaining the charli xcx x matty healy x taylor swift lore outside the pub
+      [2] oh my god lore is eating
+      [3] grinding your life away is meaningless unless you know the lore and references like your back pocket i knew this is h...
+    True Negatives (correctly NOT_SLANG):
+      [1] an undeserved deus ex machina of a transformation with no lore like ultra instinct and ego
+      [2] world of warcratf the war within lore if you do the quests youll understand hallowfall lore song look and think
+      [3] what a nice lore change
+
+  TF-IDF BASELINE  (coeff -6.1639 → biased toward NOT_SLANG)
+    Counts: TP=1  TN=65  FP=1  FN=4
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] hi guys today i will explain the lore of mileven so insert superduperwuperwopperwopperwopperwopperjuniordoubletriplew...
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] in general i think he would vibe with how fnaf fansongs usually create and explore their own lore instead of the game...
+      [2] oomf is explaining the charli xcx x matty healy x taylor swift lore outside the pub
+      [3] oh my god lore is eating
+    True Positives (correctly SLANG):
+      [1] real ones have a yapping contest about fnaf lore
+    True Negatives (correctly NOT_SLANG):
+      [1] every month we release exclusive extras to our supporters on patreon this month weve got a creature summoned by the n...
+      [2] an undeserved deus ex machina of a transformation with no lore like ultra instinct and ego
+      [3] controversial opinion but i prefer episodes over seasons more introduced activities a guarenteed exotic mission every...
+
+────────────────────────────────────────────────────────────────────
+Word: "ghost"  |  TF-IDF coeff: -2.8433
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=1  TN=15  FP=12  FN=2
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] ghost from power came into zara when i worked there and cussed out my co worker for asking for a picture then came up...
+      [2] omg i absolutely did i commented on it hahaha but in my head it was posted wayyy closer to the ghost mention in his l...
+      [3] nephi  and after the angel had spoken unto us he departed hes there he delivers his message and hes outa there theres...
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] going ghost is on my mind heavy
+      [2] i havent seen it yet but i do hate the pitch clock and can they stop with the ghost runner on second base
+    True Positives (correctly SLANG):
+      [1] narcissistic personality cannot comprehend getting ghosted like who do you think you are that people cannot ghost you
+    True Negatives (correctly NOT_SLANG):
+      [1] ghost of texas st
+      [2] obanai would be a poison ghost or psychic type gym leader
+      [3] i in fact did not this is my ghost
+
+  TF-IDF BASELINE  (coeff -2.8433 → biased toward NOT_SLANG)
+    Counts: TP=0  TN=26  FP=1  FN=3
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] its not ghost so im okay hes so me
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] going ghost is on my mind heavy
+      [2] narcissistic personality cannot comprehend getting ghosted like who do you think you are that people cannot ghost you
+      [3] i havent seen it yet but i do hate the pitch clock and can they stop with the ghost runner on second base
+    True Negatives (correctly NOT_SLANG):
+      [1] ghost of texas st
+      [2] ghost from power came into zara when i worked there and cussed out my co worker for asking for a picture then came up...
+      [3] obanai would be a poison ghost or psychic type gym leader
+
+────────────────────────────────────────────────────────────────────
+Word: "mood"  |  TF-IDF coeff: -3.1559
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=4  TN=24  FP=23  FN=1
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] any character goes btw humans not so much but anything nintendo or furry like is fine colors and mood can be changed ...
+      [2] it s true though as cheesy as it sounds for me i try to think something good might happen today instead of just activ...
+      [3] at this point it depends on my mood
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] labor day weekend mood i get it i get it
+    True Positives (correctly SLANG):
+      [1] you dont say gyatt when seeing an anime girl you ruin the mood
+      [2] lol why is this a mood
+      [3] bleh you know the mood is off when i spend all day napping and scrolling my phone
+    True Negatives (correctly NOT_SLANG):
+      [1] changing the mood of the country will take care of business without hate retribution lies and stupidity vote blue get...
+      [2] a few therapy sessions will help your mood
+      [3] the guys come charged in a good mood ready to work
+
+  TF-IDF BASELINE  (coeff -3.1559 → biased toward NOT_SLANG)
+    Counts: TP=2  TN=46  FP=1  FN=3
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] also im in a good mood rn so i dont need any negativity fucking it up rn lol
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] bleh you know the mood is off when i spend all day napping and scrolling my phone
+      [2] labor day weekend mood i get it i get it
+      [3] yep going to the world series run mood fr fr like you kids say me agrees with this system of operations move
+    True Positives (correctly SLANG):
+      [1] you dont say gyatt when seeing an anime girl you ruin the mood
+      [2] lol why is this a mood
+    True Negatives (correctly NOT_SLANG):
+      [1] changing the mood of the country will take care of business without hate retribution lies and stupidity vote blue get...
+      [2] a few therapy sessions will help your mood
+      [3] the guys come charged in a good mood ready to work
+
+────────────────────────────────────────────────────────────────────
+Word: "woke"  |  TF-IDF coeff: +2.1056
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=19  TN=0  FP=13  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] ever slept so good you woke up with a headache yup me too
+      [2] woke up in the am
+      [3] i just woke up omg
+    True Positives (correctly SLANG):
+      [1] got slightly drunk last night woke up fine big w for an almost yo
+      [2] its in sf as woke as it gets
+      [3] just curious why did starlink partner the the wokest of woke companies
+
+  TF-IDF BASELINE  (coeff +2.1056 → biased toward SLANG)
+    Counts: TP=13  TN=12  FP=1  FN=6
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] ever slept so good you woke up with a headache yup me too
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] its in sf as woke as it gets
+      [2] just curious why did starlink partner the the wokest of woke companies
+      [3] please explain what actions the current generals have taken that proves they are qualified military leaders the afgha...
+    True Positives (correctly SLANG):
+      [1] got slightly drunk last night woke up fine big w for an almost yo
+      [2] woke leftists cant name a single kamala accomplishment  via
+      [3] please stay with what you are good at posting politics woke stuff leave it for their specialist pl donot make me unfo...
+    True Negatives (correctly NOT_SLANG):
+      [1] woke up in the am
+      [2] i just woke up omg
+      [3] i just woke up vote star pleaseee
+
+────────────────────────────────────────────────────────────────────
+Word: "caps"  |  TF-IDF coeff: -2.4691
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=0  TN=4  FP=2  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] i think it goes beyond the basic netiquette like dont use caps and such just some random thing that popped into my mi...
+      [2] jaxson dart gets his season off to a good start for in the air for  yards and caps the seasonopening drive with a yar...
+    True Negatives (correctly NOT_SLANG):
+      [1] totally worth an all caps post against akron no one cares
+      [2] caps
+      [3] sorry let me use all caps yep right here
+
+  TF-IDF BASELINE  (coeff -2.4691 → biased toward NOT_SLANG)
+    Counts: TP=0  TN=5  FP=1  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] sorry let me use all caps yep right here
+    True Negatives (correctly NOT_SLANG):
+      [1] i think it goes beyond the basic netiquette like dont use caps and such just some random thing that popped into my mi...
+      [2] totally worth an all caps post against akron no one cares
+      [3] caps
+
+────────────────────────────────────────────────────────────────────
+Word: "big"  |  TF-IDF coeff: +3.1283
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=51  TN=6  FP=19  FN=3
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] this must be the last big stretch of the american seacoast that is undeveloped there are a few ramshackle fishing tow...
+      [2] i think we should kill jaiz with hammers nu was never even good hell it s honestly one of the worst takes on sonicexe...
+      [3] ouch and i wouldn t touch fetterman with a foot pole that means kamala is a big l
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] jorge got the big man vibin a little too hard
+      [2] yep mental illness still a big red flag
+      [3] sweetie pie pookie bear you big old softy
+    True Positives (correctly SLANG):
+      [1] it s more like a fanum tax ishowspeed among us big chungus rizz
+      [2] big w for us george fans
+      [3] its literally just a room with an animationless pap its a big l
+    True Negatives (correctly NOT_SLANG):
+      [1] despite these challenges marks spencer sees big potential in brooks brothers noting the widely recognized name and gl...
+      [2] however none of the big three weeklies recorded circulation gains recently
+      [3] but events beyond the companys control namely the skittish bond markets could have a big effect on the buyouts profit...
+
+  TF-IDF BASELINE  (coeff +3.1283 → biased toward SLANG)
+    Counts: TP=49  TN=18  FP=7  FN=5
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] ouch and i wouldn t touch fetterman with a foot pole that means kamala is a big l
+      [2] have you seen this documentary on pirate radio big l aka radio london
+      [3] i agree as a big l myself i thought that we won the civil rights we needed to have equal citizenship we won heartsamp
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] well his hat sums up what i think of him and his opinion big l
+      [2] she s thirsty and disingenuous she does kyle s bidding she made a big fuss in rhobh about not being a liar and then t...
+      [3] the big l strut after he got destroyed by
+    True Positives (correctly SLANG):
+      [1] it s more like a fanum tax ishowspeed among us big chungus rizz
+      [2] big w for us george fans
+      [3] its literally just a room with an animationless pap its a big l
+    True Negatives (correctly NOT_SLANG):
+      [1] despite these challenges marks spencer sees big potential in brooks brothers noting the widely recognized name and gl...
+      [2] however none of the big three weeklies recorded circulation gains recently
+      [3] this must be the last big stretch of the american seacoast that is undeveloped there are a few ramshackle fishing tow...
+
+────────────────────────────────────────────────────────────────────
+Word: "sus"  |  TF-IDF coeff: +3.3311
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=48  TN=0  FP=5  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] also earlier i typed usa into the emoji search and our flag didnt come up usually does i had to put flag and thumb th...
+      [2] damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus
+      [3] anything weirdo and bona fide fruit loop loomer has to say is automatically sus
+    True Positives (correctly SLANG):
+      [1] its very sus
+      [2] its close to being honest that defense was low key sus
+      [3] new accounts like the evilest highly sus except ours
+
+  TF-IDF BASELINE  (coeff +3.3311 → biased toward SLANG)
+    Counts: TP=44  TN=3  FP=2  FN=4
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus
+      [2] los youtubers son felices con sus croquetas
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] bring back oasis they left with hundreds of unresolved sus chords to clear up
+      [2] no trump signs the hats are sus clearly an over the top bit these queenies are worried about trump or someone coming ...
+      [3] fouls and a tackle on a single player on a couple minutes though sus
+    True Positives (correctly SLANG):
+      [1] its very sus
+      [2] its close to being honest that defense was low key sus
+      [3] new accounts like the evilest highly sus except ours
+    True Negatives (correctly NOT_SLANG):
+      [1] also earlier i typed usa into the emoji search and our flag didnt come up usually does i had to put flag and thumb th...
+      [2] anything weirdo and bona fide fruit loop loomer has to say is automatically sus
+      [3] left his arm out like that and didn t even budge after the contact highly sus
+
+────────────────────────────────────────────────────────────────────
+Word: "cringe"  |  TF-IDF coeff: +6.0664
+────────────────────────────────────────────────────────────────────
+
+  DICTIONARY BASELINE
+    Counts: TP=47  TN=0  FP=5  FN=0
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] done burn me at the steak here but this scene is so cringe
+      [2] i cringe so easily i m scared to switch it back on
+      [3] for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not stepping foot ...
+    True Positives (correctly SLANG):
+      [1] wow that was cringe would love to vibe out with americans new drunk wine mom but not when she s supporting this attac...
+      [2] worldly things that people cringe at for being dated should not be liturgical music its fossilized broadway tunes a c...
+      [3] ole miss is so cringe
+
+  TF-IDF BASELINE  (coeff +6.0664 → biased toward SLANG)
+    Counts: TP=44  TN=0  FP=5  FN=3
+    False Positives (predicted SLANG, was NOT_SLANG):
+      [1] done burn me at the steak here but this scene is so cringe
+      [2] i cringe so easily i m scared to switch it back on
+      [3] for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not stepping foot ...
+    False Negatives (predicted NOT_SLANG, was SLANG):
+      [1] worldly things that people cringe at for being dated should not be liturgical music its fossilized broadway tunes a c...
+      [2] weed is cringe but it will be awhile if ever before theres a backlash to it only fear i have is similar to tax evasio...
+      [3] glenn but fan of foot function and the impact to sprinting but when i keep seeing the social media posts of coaches o...
+    True Positives (correctly SLANG):
+      [1] wow that was cringe would love to vibe out with americans new drunk wine mom but not when she s supporting this attac...
+      [2] ole miss is so cringe
+      [3] she makes me cringe
+
+====================================================================
+SECTION 5: CROSS-MODEL ERROR COMPARISON
+====================================================================
+
+Both models wrong (agree on error):
+  Both predict SLANG when NOT_SLANG (shared FP): 174
+  Both predict NOT_SLANG when SLANG (shared FN): 29
+
+Dictionary wrong, TF-IDF correct:
+  Dict FP / TF-IDF TN : 787  (dict false alarms that TF-IDF caught)
+  Dict FN / TF-IDF TP : 210  (slang dict missed but TF-IDF found)
+
+TF-IDF wrong, Dictionary correct:
+  TF-IDF FP / Dict TN : 54  (TF-IDF false alarms that dict avoided)
+  TF-IDF FN / Dict TP : 201  (slang TF-IDF missed but dict found)
+
+--- Sample sentences where models DISAGREE (up to 8 each) ---
+
+Dict=SLANG, TF-IDF=NOT_SLANG (dict false alarm):
+  [1] gold=NOT_SLANG  |  they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its...
+  [2] gold=NOT_SLANG  |  best lr  class for beta will have u movin
+  [3] gold=NOT_SLANG  |  looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb ...
+  [4] gold=NOT_SLANG  |  six top executives at the new yorkbased company sold shares in august and september
+  [5] gold=NOT_SLANG  |  every month we release exclusive extras to our supporters on patreon this month weve got a creature su...
+  [6] gold=NOT_SLANG  |  lukaku just snatched his chain
+  [7] gold=NOT_SLANG  |  the department didnt specify how many consumers have been hurt by the alleged discriminatory practices...
+  [8] gold=NOT_SLANG  |  lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipo...
+
+Dict=NOT_SLANG, TF-IDF=SLANG (tfidf false alarm):
+  [1] gold=NOT_SLANG  |  hurmm nak cut off and softblock siapa lagi eh i wanna remove toxic and negative aura people
+  [2] gold=NOT_SLANG  |  if all you want is deathbenefit coverage pure insurance a term policy gives you maximum bang for your ...
+  [3] gold=NOT_SLANG  |  you forgot they probably fucked it too muslims love fucking goats
+  [4] gold=NOT_SLANG  |  the naczelnik averts his eyes what have you got
+  [5] gold=NOT_SLANG  |  but racial gerrymandering is not the best way to accomplish that essential goal
+  [6] gold=NOT_SLANG  |  smid s fashion
+  [7] gold=NOT_SLANG  |  hopefully fires himself
+  [8] gold=NOT_SLANG  |  i m outside sweating bussin my ass and i m bloated asf
+
+Dict missed SLANG, TF-IDF found it:
+  [1] negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular ta...
+  [2] peep the sign
+  [3] seeing how men respect their oshis especially in hololive is such a green flag
+  [4] it s sigma
+  [5] ruben is mewing send help
+  [6] fax flip phone gave him aura
+  [7] a red flag is a red flag
+  [8] racks bussin out a nigga jeans might as well go amp
+
+TF-IDF missed SLANG, Dict found it:
+  [1] alright cua
+  [2] theres an offset from whatever low vibrational music i listenedlisten to is offset by the associations...
+  [3] this is a bop i live mixed a friends grandmothers old collection of local country western s that were ...
+  [4] top performing projects by number of calls over the last hours sheesh booba fepe cook cz
+  [5] still kind of shook that i saw danzig sing for the misfits last year
+  [6] ntm on exes but like addison really ate with pepsi
+  [7] unfortunately it is a thing to look less guilty and get off the radar never works or to see how others...
+  [8] he must be shut down periodt they should have called the cops on his ass he has no respect for anyone ...
+
+====================================================================
+SECTION 6: POLYSEMY SUMMARY TABLE
+====================================================================
+
+Negative TF-IDF coefficients indicate words the model learned as NOT_SLANG
+signals — these cause false negatives when the word is used as slang.
+Positive TF-IDF coefficients can cause false positives on literal uses.
+
+Word        TF-IDF Coeff  Dict FP  Dict FN  TFIDF FP  TFIDF FN   Error Pattern
+------------------------------------------------------------------------------
+fire             -3.7161       29        3         1         4   FN-prone: slang meaning suppressed by negative coeff
+sick             -0.1557        3        0         0         2   Dict over-predicts SLANG (in slang lexicon)
+slay             +3.8954        4        0         3         0   FP-prone: literal use triggers high SLANG coeff
+extra            -5.0068       73        0         1         5   FN-prone: slang meaning suppressed by negative coeff
+basic            -4.4454       74        0         1         7   FN-prone: slang meaning suppressed by negative coeff
+beta             -4.6193       31        5         1         7   FN-prone: slang meaning suppressed by negative coeff
+squad            -5.1046       38        0         0         4   FN-prone: slang meaning suppressed by negative coeff
+lore             -6.1639       37        2         1         4   FN-prone: slang meaning suppressed by negative coeff
+ghost            -2.8433       12        2         1         3   FN-prone: slang meaning suppressed by negative coeff
+mood             -3.1559       23        1         1         3   FN-prone: slang meaning suppressed by negative coeff
+woke             +2.1056       13        0         1         6   FP-prone: literal use triggers high SLANG coeff
+caps             -2.4691        2        0         1         0   Dict over-predicts SLANG (in slang lexicon)
+big              +3.1283       19        3         7         5   FP-prone: literal use triggers high SLANG coeff
+sus              +3.3311        5        0         2         4   FP-prone: literal use triggers high SLANG coeff
+cringe           +6.0664        5        0         5         3   FP-prone: literal use triggers high SLANG coeff
+
+====================================================================
+END OF REPORT
+====================================================================

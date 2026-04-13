@@ -53,7 +53,20 @@ dictionary_baseline/
   dictionary_baseline_report.txt   # Evaluation Report on dictionary lookup model
 tfidf_baseline/
   tfidf_baseline_report.txt        # Evaluation report on TF-IDF sentence classifier
+bertweet_binary_results/
+  sweep_results.csv                # Hyperparameter sweep results (24 configs)
+  ablation_results.csv             # Dataset size ablation results (25/50/75/100%)
+  best_config.json                 # Best hyperparameter configuration from sweep
+  final_report.txt                 # Final evaluation report vs. baselines
+bert_bio/
+  bert_bio_report.txt              # Evaluation report on BERT BIO token classification model
+error_analysis/
+  baseline_report.txt              # Polysemy error analysis for dictionary and TF-IDF baselines
 build_dataset.py                   # Script to generate splits from labeled data
 dictionary_baseline.py             # Script to implement dictionary lookup model and generate outputs
 tfidf_baseline.py                  # Script to train/evaluate TF-IDF sentence baseline
+error_analysis_baseline.py         # Script to analyze FP/FN errors caused by polysemy in both baselines
+bertweet_binary.py                 # Script to fine-tune BERTweet for binary slang classification
+bertweet_binary.ipynb              # Colab notebook version of bertweet_binary.py
+bert_bio.py                        # Script to fine-tune BERT for BIO token-level slang tagging
 ```
