@@ -1,0 +1,478 @@
+======================================================================
+SLANG TOKEN CLASSIFICATION — ERROR ANALYSIS REPORT  (BIO format)
+======================================================================
+Source        : bert_bio/generalization_test_predictions.csv
+Sentences     : 1000
+Total tokens  : 16437
+
+──────────────────────────────────────────────────────────────────────
+TOKEN-LEVEL CONFUSION MATRIX
+──────────────────────────────────────────────────────────────────────
+  True  Positives (TP) — slang token correctly identified   :    960
+  False Positives (FP) — non-slang token called slang       :    259
+  True  Negatives (TN) — non-slang token correctly rejected :  14548
+  False Negatives (FN) — slang token missed by model        :    670
+
+──────────────────────────────────────────────────────────────────────
+TOKEN-LEVEL METRICS
+──────────────────────────────────────────────────────────────────────
+  Accuracy  : 0.9435
+  Precision : 0.7875
+  Recall    : 0.5890
+  F1 Score  : 0.6739
+
+──────────────────────────────────────────────────────────────────────
+SPAN-LEVEL METRICS
+──────────────────────────────────────────────────────────────────────
+              precision    recall  f1-score   support
+
+       SLANG       0.66      0.51      0.57      1232
+
+   micro avg       0.66      0.51      0.57      1232
+   macro avg       0.66      0.51      0.57      1232
+weighted avg       0.66      0.51      0.57      1232
+
+──────────────────────────────────────────────────────────────────────
+SPAN-LEVEL EXAMPLES
+──────────────────────────────────────────────────────────────────────
+  TP (span correctly identified) — Count: 618
+
+  span: [mewing]  (SLANG)
+    gold : O O B-SLANG O O
+    pred : O O B-SLANG O O
+    sent : "is bro mewing on stage"
+
+  span: [green flag]  (SLANG)
+    gold : O B-SLANG I-SLANG
+    pred : O B-SLANG I-SLANG
+    sent : "biggest green flag"
+
+  span: [rizzler]  (SLANG)
+    gold : O O O O O O B-SLANG
+    pred : O O O O O O B-SLANG
+    sent : "he has fucking nothing on the rizzler"
+
+  span: [yapping]  (SLANG)
+    gold : O O O O O O O B-SLANG O
+    pred : O O O O O O O B-SLANG O
+    sent : "are those the best words your always yapping bout"
+
+  span: [mog]  (SLANG)
+    gold : B-SLANG O
+    pred : B-SLANG O
+    sent : "mog time"
+
+  span: [fax]  (SLANG)
+    gold : O O B-SLANG
+    pred : O O B-SLANG
+    sent : "nothing but fax"
+
+  span: [mog]  (SLANG)
+    gold : O B-SLANG O O O O O O O O
+    pred : O B-SLANG O O O O O O O O
+    sent : "hey mog frog snake fox eater wait we are coming"
+
+  span: [gyatttt]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [tweaking]  (SLANG)
+    gold : O B-SLANG O O
+    pred : O B-SLANG O O
+    sent : "im tweaking so hard"
+
+  span: [ate this up]  (SLANG)
+    gold : O B-SLANG I-SLANG I-SLANG O O
+    pred : O B-SLANG I-SLANG I-SLANG O O
+    sent : "she ate this up so bad"
+
+  FP (span predicted but not in gold) — Count: 309
+
+  span: [rizz]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [skibidi]  (SLANG)
+    gold : O O B-SLANG O O
+    pred : O O B-SLANG O B-SLANG
+    sent : "what is gyatt and skibidi"
+
+  span: [glow up]  (SLANG)
+    gold : O O O O O O O B-SLANG
+    pred : O O O O O O B-SLANG I-SLANG
+    sent : "see as be like aboki whey glow up"
+
+  span: [ick]  (SLANG)
+    gold : O O O B-SLANG I-SLANG O O O O O O
+    pred : O O O O O B-SLANG O O O O O
+    sent : "either way i got the ick from other factors so whatever"
+
+  span: [vibe check]  (SLANG)
+    gold : O O O O O B-SLANG I-SLANG O
+    pred : O O O O O O B-SLANG I-SLANG
+    sent : "i guess i didnt pass the vibe check"
+
+  span: [bop]  (SLANG)
+    gold : O O O O O O O O O B-SLANG O O O O O O O O O O O O O O O O O O O O O O
+    pred : O O O O O O O O B-SLANG O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "i cant believe its been years since this bop came out i remember being obsessed with it when it came out still believe its sonically one of gidles best songs till date"
+
+  span: [negative aura]  (SLANG)
+    gold : O O O O O O O O O O O O B-SLANG I-SLANG O O O
+    pred : O O O O O O O O O O O O B-SLANG B-SLANG I-SLANG O O
+    sent : "may be subject to change ofc like with everything in this stupid ohio negative aura chud life"
+
+  span: [ohio]  (SLANG)
+    gold : O O O O O O O O O O O O B-SLANG I-SLANG O O O
+    pred : O O O O O O O O O O O O B-SLANG B-SLANG I-SLANG O O
+    sent : "may be subject to change ofc like with everything in this stupid ohio negative aura chud life"
+
+  span: [rizzing up]  (SLANG)
+    gold : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG I-SLANG B-SLANG I-SLANG I-SLANG O O B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG O
+    pred : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG B-SLANG B-SLANG I-SLANG B-SLANG B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG I-SLANG
+    sent : "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+
+  span: [baby]  (SLANG)
+    gold : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG I-SLANG B-SLANG I-SLANG I-SLANG O O B-SLANG B-SLANG I-SLANG B-SLANG I-SLANG O
+    pred : B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG O B-SLANG B-SLANG B-SLANG I-SLANG B-SLANG B-SLANG O O B-SLANG B-SLANG B-SLANG B-SLANG I-SLANG
+    sent : "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+
+  FN (span in gold but not predicted) — Count: 614
+
+  span: [kitten]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [hawk]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [done im]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [low]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [tax]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [tuah]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [you]  (SLANG)
+    gold : O B-SLANG O O O O O O O O O O O O O O O O O O B-SLANG O O O O O O B-SLANG I-SLANG O O B-SLANG B-SLANG O B-SLANG B-SLANG O O O O O O O O O O
+    pred : O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
+    sent : "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+  span: [rizz me]  (SLANG)
+    gold : O O O O B-SLANG O B-SLANG I-SLANG O O
+    pred : O O O O B-SLANG O B-SLANG O O O
+    sent : "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+  span: [summ]  (SLANG)
+    gold : O O O O O O O O O O B-SLANG
+    pred : O O O O O O O O O O O
+    sent : "it s like they don t know their lore or summ"
+
+  span: [green flags]  (SLANG)
+    gold : O O O O B-SLANG I-SLANG O
+    pred : O O O O O O O
+    sent : "seeing people talk about green flags amp"
+
+──────────────────────────────────────────────────────────────────────
+SENTENCE-LEVEL EXACT MATCH
+──────────────────────────────────────────────────────────────────────
+  Exact matches : 505 / 1000  (50.5%)
+
+──────────────────────────────────────────────────────────────────────
+TP EXAMPLES  (True  Positives — slang token correctly identified)
+  Count: 960
+
+  token: mewing             gold=B-SLANG      pred=B-SLANG      | "is bro mewing on stage"
+  token: green              gold=B-SLANG      pred=B-SLANG      | "biggest green flag"
+  token: flag               gold=I-SLANG      pred=I-SLANG      | "biggest green flag"
+  token: rizzler            gold=B-SLANG      pred=B-SLANG      | "he has fucking nothing on the rizzler"
+  token: yapping            gold=B-SLANG      pred=B-SLANG      | "are those the best words your always yapping bout"
+  token: mog                gold=B-SLANG      pred=B-SLANG      | "mog time"
+  token: fax                gold=B-SLANG      pred=B-SLANG      | "nothing but fax"
+  token: mog                gold=B-SLANG      pred=B-SLANG      | "hey mog frog snake fox eater wait we are coming"
+  token: gyatttt            gold=B-SLANG      pred=B-SLANG      | "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+  token: rizz               gold=B-SLANG      pred=B-SLANG      | "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+
+──────────────────────────────────────────────────────────────────────
+FP EXAMPLES  (False Positives — non-slang token incorrectly labelled as slang)
+  Count: 259
+
+  token: skibidi            gold=O            pred=B-SLANG      | "what is gyatt and skibidi"
+  token: glow               gold=O            pred=B-SLANG      | "see as be like aboki whey glow up"
+  token: ick                gold=O            pred=B-SLANG      | "either way i got the ick from other factors so whatever"
+  token: check              gold=O            pred=I-SLANG      | "i guess i didnt pass the vibe check"
+  token: bop                gold=O            pred=B-SLANG      | "i cant believe its been years since this bop came out i remember being obsessed with it when it came out still believe its sonically one of gidles best songs till date"
+  token: aura               gold=O            pred=I-SLANG      | "may be subject to change ofc like with everything in this stupid ohio negative aura chud life"
+  token: dunne              gold=O            pred=B-SLANG      | "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+  token: tax                gold=O            pred=I-SLANG      | "edging like a mew maxing mogging gooner like baby gronk rizzing up livvy dunne with that w sigma grindset fanum tax"
+  token: cringe             gold=O            pred=B-SLANG      | "i miss that genre of bollywood songs where the guy was just dancing doing absolutely cringe shit and the girl was just standing there looking her gorgeous self with an occasional movement of hips here and there"
+  token: negative           gold=O            pred=B-SLANG      | "anyone who listens to this shit is just weird anyone who defends it exudes extreme negative aura and probably has something wrong with their head"
+
+──────────────────────────────────────────────────────────────────────
+TN EXAMPLES  (True  Negatives — non-slang token correctly rejected)
+  Count: 14548
+
+  token: is                 gold=O            pred=O            | "is bro mewing on stage"
+  token: bro                gold=O            pred=O            | "is bro mewing on stage"
+  token: on                 gold=O            pred=O            | "is bro mewing on stage"
+  token: stage              gold=O            pred=O            | "is bro mewing on stage"
+  token: hey                gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: it                 gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: seems              gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: like               gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: youve              gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: been               gold=O            pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+
+──────────────────────────────────────────────────────────────────────
+FN EXAMPLES  (False Negatives — slang token the model failed to catch)
+  Count: 670
+
+  token: kitten             gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: low                gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: done               gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: im                 gold=I-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: tax                gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: you                gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: hawk               gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: tuah               gold=B-SLANG      pred=O            | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  token: me                 gold=I-SLANG      pred=O            | "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+  token: summ               gold=B-SLANG      pred=O            | "it s like they don t know their lore or summ"
+
+
+======================================================================
+POLYSEMOUS WORD ANALYSIS
+======================================================================
+Tracking 15 words: fire, sick, slay, extra, basic, beta, squad, lore, ghost, mood, woke, caps, big, sus, cringe
+
+  Word            TP    FP    TN    FN  Verdict
+  -------------------------------------------------------
+  fire             4     1     2     5  ✗ errors
+  sick             0     0     6     0  ✓ correct
+  slay             0     2     2     1  ✗ errors
+  extra            0     0     5     0  ✓ correct
+  basic            0     1     3     0  ✗ errors
+  beta             4     1     7     2  ✗ errors
+  squad            0     0     2     1  ✗ errors
+  lore             0     0     2     0  ✓ correct
+  ghost            2     0     2     1  ✗ errors
+  mood             5     0     1     1  ✗ errors
+  woke             0     3     4     0  ✗ errors
+  caps             —     —     —     —  not in dataset
+  big             47     4    14     5  ✗ errors
+  sus              0     4     4     0  ✗ errors
+  cringe           0     9     6     0  ✗ errors
+
+Detailed token rows for polysemous words:
+
+  [fire]
+    TP  token=fire         gold=I-SLANG      pred=I-SLANG      | "omg south carolina football is such a dumpster fire"
+    TP  token=fire         gold=B-SLANG      pred=B-SLANG      | "your words and image are fire"
+    TP  token=fire         gold=B-SLANG      pred=B-SLANG      | "ice is literally so fire o love chewing it"
+    TP  token=fire         gold=B-SLANG      pred=B-SLANG      | "man damn cam coleman fire"
+    FP  token=fire         gold=O            pred=B-SLANG      | "ros be mewing gg but your modeling is actually fire"
+    TN  token=fire         gold=O            pred=O            | "yo heard kanye and ty dolla ign dropped a new track this collab is fire straight up bangers from beginning to end been bumping it all day gotta say these two always know how to deliver flows are sick the beats are mad lit and the whole vibe is just pure energy"
+    TN  token=fire         gold=O            pred=O            | "a skibidimore the gyatt is on fire s no mother it s just the fanum tax c well skibidimore you are a cringe fellow but i must say you rizzed a good gyatt"
+    FN  token=fire         gold=B-SLANG      pred=O            | "if this was another version and not the live action yea fire"
+    FN  token=fire         gold=B-SLANG      pred=O            | "i don t even fw with the concrete boys like that but this is fire your tweaking"
+    FN  token=fire         gold=I-SLANG      pred=O            | "lawrence butler is on fire"
+    FN  token=fire         gold=B-SLANG      pred=O            | "fire this blowfisheyed dope before he hits the locker room"
+    FN  token=fire         gold=I-SLANG      pred=O            | "slow your roll there bud miami beats a team that is a dumpster fire under napier and they are national title contenders ha thats funny"
+
+  [sick]
+    TN  token=sick         gold=O            pred=O            | "thats a big red flag its a burner account but what a sick fuck"
+    TN  token=sick         gold=O            pred=O            | "yo heard kanye and ty dolla ign dropped a new track this collab is fire straight up bangers from beginning to end been bumping it all day gotta say these two always know how to deliver flows are sick the beats are mad lit and the whole vibe is just pure energy"
+    TN  token=sick         gold=O            pred=O            | "just finished vol  really cool kinda mad bro lost his drip at the end but hope his new clothes are just as cool the powers have me interested but i gotta see more of what they can do with these objects  for now was sick time to buy vol  amp"
+    TN  token=sick         gold=O            pred=O            | "talking about bleach fans make you sick while boruto fans saying some pedo shit doesnt make you sick and now your tweaking out with your hypocrite mind of yours honestly you might be one if your so blindly not seeing the"
+    TN  token=sick         gold=O            pred=O            | "talking about bleach fans make you sick while boruto fans saying some pedo shit doesnt make you sick and now your tweaking out with your hypocrite mind of yours honestly you might be one if your so blindly not seeing the"
+    TN  token=sick         gold=O            pred=O            | "covid vibe is back everywhere now with x as the new variant its ridiculous how the same sick tyrants who pushed the vaccines are now obsessed by censorship"
+
+  [slay]
+    FP  token=slay         gold=O            pred=B-SLANG      | "well yeah im not trying to look like a girl im just tryna slay"
+    FP  token=slay         gold=O            pred=B-SLANG      | "katy perry s new era is gonna slay"
+    TN  token=slay         gold=O            pred=O            | "reminds me of an early s group at least their sound does  without watching any music videos and just listening to their songs i m like okaaayyyy slay  i like it it s very demure"
+    TN  token=slay         gold=O            pred=O            | "nothing against op tho bc nobaras op as fuck and her n chaewon both slay its in good fun my tweet is more about those who say things like this and cannot make any distinction between asian women in media vs asian women in real life"
+    FN  token=slay         gold=B-SLANG      pred=O            | "isaac hades vampire survivors slay the spire that sort of stuff atm vampire survivors and balatro are m go tos i rarely play isaac anymore i needed to play more dmc to push it off its throne as my most played steam game"
+
+  [extra]
+    TN  token=extra        gold=O            pred=O            | "cold pizza is just a sandwich being extra"
+    TN  token=extra        gold=O            pred=O            | "this seems cool and i hate all the extra shit"
+    TN  token=extra        gold=O            pred=O            | "the fish is named extra hobbit stan account now"
+    TN  token=extra        gold=O            pred=O            | "it s catsunglixseung month pls remember to seung your lix extra this month here is my party invite let me know if u can make it"
+    TN  token=extra        gold=O            pred=O            | "gators got you down so bad youre predicting them to lose  extra games i did peep your schedule brutal after next week brother then again the sec always is"
+
+  [basic]
+    FP  token=basic        gold=O            pred=B-SLANG      | "you nailed it basic no real intelligence of it"
+    TN  token=basic        gold=O            pred=O            | "if you re privileged enough to be both healthy and insured i understand your ignorance to having to pay thousands of dollars for basic insulin to checks notes not fucking die bc people like you would rather simp for politicians a"
+    TN  token=basic        gold=O            pred=O            | "but honey my favorite towels are on sales  that s why happy basic wife happy wife"
+    TN  token=basic        gold=O            pred=O            | "y all getting stupid over the most basic color on the planet but what do u expect from the two dumbest fandoms"
+
+  [beta]
+    TP  token=beta         gold=B-SLANG      pred=B-SLANG      | "beta energy we are all qualified to question who will be the next president you sound ridiculous any black conservative who goes against the narrative is a threat"
+    TP  token=beta         gold=B-SLANG      pred=B-SLANG      | "lol such a beta weakling thing to say"
+    TP  token=beta         gold=B-SLANG      pred=B-SLANG      | "run away beta run away government hey can you not allow this facebook no government very well wow the tyranny"
+    TP  token=beta         gold=B-SLANG      pred=B-SLANG      | "holy beta male"
+    FP  token=beta         gold=O            pred=B-SLANG      | "you really really have  a short memory  tds  beta male genes"
+    TN  token=beta         gold=O            pred=O            | "yurrrr what s good day i m live on running black ops beta ft lsf gang follow my instagram come chat lurk or tab"
+    TN  token=beta         gold=O            pred=O            | "is the ttk terrible for anyone else playing black ops beta something is fucked up"
+    TN  token=beta         gold=O            pred=O            | "big w to the breadman beta codes cooking in the oven for us"
+    TN  token=beta         gold=O            pred=O            | "quiet degenerate some woke academic propagating an isolated and contested account does not negate my point post links go back to your beta hole"
+    TN  token=beta         gold=O            pred=O            | "mog is the eth beta for gains dont miss out"
+    TN  token=beta         gold=O            pred=O            | "day of star wars  day  of bo beta  mark your calendar"
+    TN  token=beta         gold=O            pred=O            | "this cat came all over in this fucking apple and now hes resting on it like a fucking sigma rizzler of gyats what do u think about this do you like it or youre a beta negative aura george strawberry i cant build"
+    FN  token=beta         gold=B-SLANG      pred=O            | "finally diving into the blackops  beta smoking vibing amp"
+    FN  token=beta         gold=B-SLANG      pred=O            | "what a beta"
+
+  [squad]
+    TN  token=squad        gold=O            pred=O            | "not her first car oh shit you are a fraud squad member lemme mute"
+    TN  token=squad        gold=O            pred=O            | "were hyped to shill your project with the squad slide into our dms and lets send it"
+    FN  token=squad        gold=I-SLANG      pred=O            | "they friends be knowing they on the burn squad"
+
+  [lore]
+    TN  token=lore         gold=O            pred=O            | "it s like they don t know their lore or summ"
+    TN  token=lore         gold=O            pred=O            | "i dont like when dragon ball gives us forms without any explanations beast gohan ssj rage ikari future trunks lore wise my least favorite forms but i still fuck with them cuz they go raw"
+
+  [ghost]
+    TP  token=ghost        gold=I-SLANG      pred=B-SLANG      | "if i go ghost it s not intentional i ll be back"
+    TP  token=ghost        gold=B-SLANG      pred=B-SLANG      | "i said i was going ghost after august that shit came quick asf"
+    TN  token=ghost        gold=O            pred=O            | "rizzimus prime leader of the rizzobots crizztiano rizznaldo otto von rizzmark adolf rizzler rizzons where ghost of rizzmas past the grand rizzard natural rizzaster rizzaldhino first rizzponder the last rizzort got a ticket to the"
+    TN  token=ghost        gold=O            pred=O            | "missing someone try getting a pet theyre always down for cuddles and never ghost you"
+    FN  token=ghost        gold=B-SLANG      pred=O            | "i live on a lake in indiana this is a holiday weekend thats normally very busy its like a ghost town where are the people"
+
+  [mood]
+    TP  token=mood         gold=B-SLANG      pred=B-SLANG      | "such a mood ngl"
+    TP  token=mood         gold=B-SLANG      pred=B-SLANG      | "this is a mood"
+    TP  token=mood         gold=B-SLANG      pred=B-SLANG      | "happiness issa mood"
+    TP  token=mood         gold=B-SLANG      pred=B-SLANG      | "mood im a virgo"
+    TP  token=mood         gold=B-SLANG      pred=B-SLANG      | "mood same situation here lt"
+    TN  token=mood         gold=O            pred=O            | "they literally be shitting the quality to p when you re in a mood to watch something a big l thinking not to renew"
+    FN  token=mood         gold=B-SLANG      pred=O            | "mi mood"
+
+  [woke]
+    FP  token=woke         gold=O            pred=B-SLANG      | "quiet degenerate some woke academic propagating an isolated and contested account does not negate my point post links go back to your beta hole"
+    FP  token=woke         gold=O            pred=B-SLANG      | "one of the goals of neuralink is alleviating the symptoms if the woke stazi you hang out with doesn t destroy him  might make a huge difference"
+    FP  token=woke         gold=O            pred=B-SLANG      | "the entire movie industry went woke there are hardly any movies worth watching"
+    TN  token=woke         gold=O            pred=O            | "it didddd i was so confused when i woke up to see  like what the sigma"
+    TN  token=woke         gold=O            pred=O            | "im open to this conclusion but i dont see a lot of evidence for it not convinced desantis would win in rust belt which is where his party must do well not convinced his stance on abortion wouldnt hurt him or that many care about his war on woke or  covid policy"
+    TN  token=woke         gold=O            pred=O            | "and the liberals are constantly saying that conservatives are importing american politics another case of the iron law of woke projection"
+    TN  token=woke         gold=O            pred=O            | "greens and labors mass immigration was obviously predicted to increase emissionsand here we are seriouslywho votes for these woke imbeciles"
+
+  [big]
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "yesss big w for you"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "sad day on crypto big l"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "keep pushing fam big w incoming"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "its a big l"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "earlier ple start time big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big l smh i really wanted these too"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "thats a big red flag its a burner account but what a sick fuck"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "that s a big l there"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "i can arrange better arrangement using gpy   big l a word wth"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w from my fav unc"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "fuck big w s seeing shit like this makes me wish i lived in america  that al and friends lineup is stacked too"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "homie got the most camera time big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "a big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w guards why does every game feel like playoff ball these days"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "wrong account big l for me you get hurt"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w to the breadman beta codes cooking in the oven for us"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "cant wait for the big w swingers club"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w for them"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "ohhh so you have this special kana edition big w frr and that kei cover is one of my fav kaguya covers she is just so so pretty"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "so taking a big l was all part of your grand scheme"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "took a big l today but i badly needed that one i was too passive and unassertive with my life since i graduated today i got a wake up call time to answer it"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "hang the big l on angel"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "from one infested company to another big l"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "chili dawgs big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "thats gonna be really amazing shl big w for you and the huddle"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "yooo big w brother and congratulations to you cause you just bagged an invaluable gem in the space now watch your project flourish gotta hope in asap"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "anyone cryin bout the market is a big l"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "drillas winning perfect world shanghai major would be insane  big w on the qualify for asiapacific rmr"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "joy because thats a cute couple also big w for big ribbon"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w brotha man"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w for cheaters cup"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w for hansumfella s alzheimer charity stream"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "that s tough big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "probably going to be horrendous builds but big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "morning big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w from this man"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "jimmu w another big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "that was a big w for the gop weird"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "its a big l for herself first  violating oneself amp"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w for maevaris nation"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "if she backs out she has put a big l on her forehead and her faux campaign"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "big w on controller and i like this"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "listen big w for common man"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "good shit still big w"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "no napoli get a big w with lukaku mctominay and billy gilmour s recent arrival"
+    TP  token=big          gold=I-SLANG      pred=B-SLANG      | "deep inside he knows who he really is a big l"
+    TP  token=big          gold=B-SLANG      pred=B-SLANG      | "another big w by the go stangs"
+    FP  token=big          gold=O            pred=B-SLANG      | "big red flag"
+    FP  token=big          gold=O            pred=B-SLANG      | "effort this is another big green flag for me most of the times we trade degen projects with tweets and fiverr content this is exactly the opposite you can clearly see the amount of effort that went into creating everything especially the site wallet and their content"
+    FP  token=big          gold=O            pred=B-SLANG      | "no  max life anymore is a big l blood necros crying"
+    FP  token=big          gold=O            pred=B-SLANG      | "since everyone can afford x no one gives a shit about those clout big wigs the kairo mercy masai and bookten"
+    TN  token=big          gold=O            pred=O            | "thing they gotta confront is that abortions are going to happen even if illegally so how many lives are we really saving by demanding a showdown that were going to lose the court gave us a big w  book the win and get back to w"
+    TN  token=big          gold=O            pred=O            | "honestly im pissed that my character is getting moved to the legacy this is the first big l ive seen you guys make all the other things are cool but keep my character in this cycle until the next cycle starts i just got my corruption up hig"
+    TN  token=big          gold=O            pred=O            | "i m healed now send me another instagram baddie with big nyash to finish me kpata kpata"
+    TN  token=big          gold=O            pred=O            | "some other case will be thrown at his factory all he has to do is keep his big mouth shut but he cant and wont do that like all bjp buffoons from the pm to the lowest andh bhakth suffer from same yapping syndrome"
+    TN  token=big          gold=O            pred=O            | "big fax no printer"
+    TN  token=big          gold=O            pred=O            | "reaction cm punk showed something real to our  horsemen cody rhodes is in big trouble and what disappointed trailer below go peep the full ep youtube  spotify  apple pods"
+    TN  token=big          gold=O            pred=O            | "aura erm what the sigma yapping the rizzler skibidi griddy glazing level gyatt pookie bear or man big justice hawk tuah thats me espresso no chick fil a sauce kai cenat unc turkish olympic shooter exist in the context freakbob fanum tax locking in edging"
+    TN  token=big          gold=O            pred=O            | "joy because thats a cute couple also big w for big ribbon"
+    TN  token=big          gold=O            pred=O            | "he would have made that album better so drake should have tried harder kay is that guy i would have because look what he got a mid ass album big l on drakes part"
+    TN  token=big          gold=O            pred=O            | "thats the best you could do and it was fucking taped and edited i was hoping for something from youjeezus h big big l"
+    TN  token=big          gold=O            pred=O            | "how much botox is in that judges face o he s paid off that s a red flag they fix a judge don t want to they old not like he s a model lacks self confidence huh exactly that he probably has a huge truck with big wheels but small packag"
+    TN  token=big          gold=O            pred=O            | "they literally be shitting the quality to p when you re in a mood to watch something a big l thinking not to renew"
+    TN  token=big          gold=O            pred=O            | "i wanna run some fort with a big justice or rizzler skin make it happen"
+    TN  token=big          gold=O            pred=O            | "in fact when you use your brain she is not she decided to join the colonial army to get captured like a pokmon that s a big l if you d ask me"
+    FN  token=big          gold=I-SLANG      pred=O            | "i trust mayor matt so i will follow the big l"
+    FN  token=big          gold=I-SLANG      pred=O            | "he tried the dark arts gimmick just for it to be backfire big l"
+    FN  token=big          gold=B-SLANG      pred=O            | "thats the best you could do and it was fucking taped and edited i was hoping for something from youjeezus h big big l"
+    FN  token=big          gold=B-SLANG      pred=O            | "update abt pretty girl that keeps laughing at my stupid jokes and at me we are now mutuals on instagram hehehhehe big w"
+    FN  token=big          gold=B-SLANG      pred=O            | "neither white nor black can compete with her big l for south africa"
+
+  [sus]
+    FP  token=sus          gold=O            pred=B-SLANG      | "marve for sure bowens play calling is sus but sometimes he adjusts well and sometimes drones tuten and wrs can make the adjustments and make plays despite bowen defense doesn t have the same ability"
+    FP  token=sus          gold=O            pred=B-SLANG      | "stream ended  no world was destroyed this time but mel was acting very sus we had an amazing time as always i cant wait to do it again  i hope you all had a fun time too and ill see you again on monday also huge thanks to  and lttleeclipse for the raids"
+    FP  token=sus          gold=O            pred=B-SLANG      | "literally and claiming that i like killugon like that like omg what when have i ever been sus abt them ever i barely even ship them"
+    FP  token=sus          gold=O            pred=B-SLANG      | "lmao that ref was moving sus thou"
+    TN  token=sus          gold=O            pred=O            | "i know we re all pretty exhausted about knetz and just generally all that s going on in south korea pero sus tweets ya estn en borderline xenophobia"
+    TN  token=sus          gold=O            pred=O            | "theres a lot of yapping involved but try it yourself i mean when i started i started from seoul and it only had white people then manhattan in our age bracket had sus people so like very yappable topic"
+    TN  token=sus          gold=O            pred=O            | "brazil is trying to shut down x in their country and is fining people if using a vpn  doesn t seem sus at all huh"
+    TN  token=sus          gold=O            pred=O            | "the shooter was in a blackrock commercial at his school why isn t trump talking about this all day everyday like everything else he can t stop talking about the situation is very sus him and ivanka even t"
+
+  [cringe]
+    FP  token=cringe       gold=O            pred=B-SLANG      | "i miss that genre of bollywood songs where the guy was just dancing doing absolutely cringe shit and the girl was just standing there looking her gorgeous self with an occasional movement of hips here and there"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "can somebody pls ban the act of selling online business courses the internet turned into such a cringe space its becoming unbearable day by day goddamn"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "weve all met people like this and loved them even if they are cringe she even got isakaied at the end"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "in my opinion jon voigt is a good actor but ill pass cringe cast otherwise"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "punks just boomers bayc is so  penguins dreamers wannabe doodles too colorful too cringe mfers just cco nakamigos full delusional what nft project then"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "it is beyond creepy and makes me cringe it has to be shared"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "buddy i was there when this shit was new and even then people thought it was cringe and racist there s a reason g was the butt of jokes until the day it died"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "the fact that its on the user to be responsible has always made me cringe you cant tell me that apps cant be like ok youre done for x period of time i know that goes against everything that is business but the availability seems like t"
+    FP  token=cringe       gold=O            pred=B-SLANG      | "omgwhy do you sound so cringe no one takes you seriously"
+    TN  token=cringe       gold=O            pred=O            | "i once said thanks you too to a civilian that thanked me for me service i still cringe thinking about it"
+    TN  token=cringe       gold=O            pred=O            | "a skibidimore the gyatt is on fire s no mother it s just the fanum tax c well skibidimore you are a cringe fellow but i must say you rizzed a good gyatt"
+    TN  token=cringe       gold=O            pred=O            | "this is total nonsense i m forced to accept that guy fit dey knack that girl cause for you to be comfortable like this with your brother s wife and she no cringe dier ei i fit slap the two"
+    TN  token=cringe       gold=O            pred=O            | "watched the short after seeing art of the fanfic girl and i made a mistake of looking into the comments emberlynn is so fucking great i love her she is cringe but she is free we should all be like her"
+    TN  token=cringe       gold=O            pred=O            | "okay so w her counting i wanna know what she meant by thoughts but good to know this wasn t just him being rando the way it comes off in text is him just rambling off a bunch of shit for no reason but he s just being his cringe self tho it come"
+    TN  token=cringe       gold=O            pred=O            | "my husband was right we are a red flag of craziness not sure all the guys i dated thought i was cool or was it this excuse me as i die with embarrassment cringe of myself"
+
+======================================================================
+END OF REPORT
+======================================================================
