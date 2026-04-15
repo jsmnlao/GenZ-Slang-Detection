@@ -32,6 +32,7 @@ import csv
 import itertools
 import json
 import os
+import re
 
 import numpy as np
 import pandas as pd
@@ -109,6 +110,26 @@ def load_data(path):
     return pd.read_csv(path)
 
 
+def find_latest_checkpoint(checkpoint_root):
+    if not os.path.isdir(checkpoint_root):
+        raise FileNotFoundError(f"Checkpoint directory not found: {checkpoint_root}")
+
+    checkpoint_dirs = []
+    for entry in os.listdir(checkpoint_root):
+        path = os.path.join(checkpoint_root, entry)
+        match = re.fullmatch(r"checkpoint-(\d+)", entry)
+        if os.path.isdir(path) and match:
+            checkpoint_dirs.append((int(match.group(1)), path))
+
+    if not checkpoint_dirs:
+        raise FileNotFoundError(
+            f"No checkpoint-* directories found in {checkpoint_root}"
+        )
+
+    checkpoint_dirs.sort(key=lambda item: item[0])
+    return checkpoint_dirs[-1][1]
+
+
 def fresh_model():
     """Load a fresh copy of BERTweet with a binary classification head."""
     return AutoModelForSequenceClassification.from_pretrained(
@@ -128,6 +149,23 @@ def compute_metrics(eval_pred):
         "recall": recall_score(labels, preds, zero_division=0),
         "f1": f1_score(labels, preds, zero_division=0),
     }
+
+
+def make_output_csv(df, preds, out_path, text_col="text", gold_col="label"):
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    gold_tags = df[gold_col].astype(str)
+    pred_tags = pd.Series(preds).map(ID2LABEL)
+
+    out = pd.DataFrame(
+        {
+            "text": df[text_col].astype(str),
+            "gold_tags": gold_tags,
+            "pred_tags": pred_tags,
+            "exact_match": gold_tags == pred_tags,
+        }
+    )
+    out.to_csv(out_path, index=False)
+    return out_path
 
 
 def get_training_args(config, run_dir, do_save=False):
@@ -308,11 +346,93 @@ def run_final_eval(train_df, dev_df, test_df, gen_df, tokenizer, best_config):
 
     test_metrics = trainer.evaluate(test_ds)
     gen_metrics = trainer.evaluate(gen_ds)
+    test_prediction_results = trainer.predict(test_ds)
+    gen_prediction_results = trainer.predict(gen_ds)
+
+    test_predictions = np.argmax(test_prediction_results.predictions, axis=-1)
+    gen_predictions = np.argmax(gen_prediction_results.predictions, axis=-1)
+
+    test_predictions_path = make_output_csv(
+        test_df,
+        test_predictions,
+        os.path.join(OUTPUT_DIR, "test_predictions.csv"),
+        text_col="text",
+        gold_col="label",
+    )
+    gen_predictions_path = make_output_csv(
+        gen_df,
+        gen_predictions,
+        os.path.join(OUTPUT_DIR, "generalization_test_predictions.csv"),
+        text_col="text",
+        gold_col="label",
+    )
 
     print(f"  Test  F1={test_metrics.get('eval_f1', 0):.4f}")
     print(f"  Gen   F1={gen_metrics.get('eval_f1', 0):.4f}")
+    print(f"  Test predictions saved to {test_predictions_path}")
+    print(f"  Gen predictions saved to {gen_predictions_path}")
 
     return test_metrics, gen_metrics
+
+
+def export_predictions_from_checkpoint(
+    test_df, gen_df, tokenizer, checkpoint_path, best_config
+):
+    seq_len = best_config["max_seq_length"]
+    print(f"\n[Predict Only] Loading checkpoint from: {checkpoint_path}")
+
+    test_ds = SlangDataset(test_df, tokenizer, seq_len)
+    gen_ds = SlangDataset(gen_df, tokenizer, seq_len)
+
+    model = AutoModelForSequenceClassification.from_pretrained(checkpoint_path)
+    training_args = TrainingArguments(
+        output_dir=OUTPUT_DIR,
+        per_device_eval_batch_size=32,
+        report_to="none",
+    )
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        compute_metrics=compute_metrics,
+    )
+
+    test_prediction_results = trainer.predict(test_ds)
+    gen_prediction_results = trainer.predict(gen_ds)
+
+    test_predictions = np.argmax(test_prediction_results.predictions, axis=-1)
+    gen_predictions = np.argmax(gen_prediction_results.predictions, axis=-1)
+
+    test_predictions_path = make_output_csv(
+        test_df,
+        test_predictions,
+        os.path.join(OUTPUT_DIR, "test_predictions.csv"),
+        text_col="text",
+        gold_col="label",
+    )
+    gen_predictions_path = make_output_csv(
+        gen_df,
+        gen_predictions,
+        os.path.join(OUTPUT_DIR, "generalization_test_predictions.csv"),
+        text_col="text",
+        gold_col="label",
+    )
+
+    test_metrics = compute_metrics(
+        (test_prediction_results.predictions, test_prediction_results.label_ids)
+    )
+    gen_metrics = compute_metrics(
+        (gen_prediction_results.predictions, gen_prediction_results.label_ids)
+    )
+
+    print(f"  Test  F1={test_metrics.get('f1', 0):.4f}")
+    print(f"  Gen   F1={gen_metrics.get('f1', 0):.4f}")
+    print(f"  Test predictions saved to {test_predictions_path}")
+    print(f"  Gen predictions saved to {gen_predictions_path}")
+
+    return (
+        {f"eval_{k}": v for k, v in test_metrics.items()},
+        {f"eval_{k}": v for k, v in gen_metrics.items()},
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -419,6 +539,16 @@ def main():
         help="Run sweep only; skip ablation and final eval. "
         "Best config is printed and saved to best_config.json for later use.",
     )
+    parser.add_argument(
+        "--predict_only",
+        action="store_true",
+        help="Skip training and export predictions using a saved final checkpoint.",
+    )
+    parser.add_argument(
+        "--checkpoint_path",
+        default=None,
+        help="Path to a saved checkpoint directory. Defaults to the latest checkpoint in output_dir/checkpoints/final.",
+    )
     args = parser.parse_args()
 
     global OUTPUT_DIR
@@ -441,6 +571,35 @@ def main():
         f"  train={len(train_df)}  dev={len(dev_df)}  "
         f"test={len(test_df)}  gen={len(gen_df)}"
     )
+
+    if args.predict_only:
+        if args.best_config_json is not None:
+            best_config = json.loads(args.best_config_json)
+        else:
+            best_config_path = os.path.join(OUTPUT_DIR, "best_config.json")
+            if not os.path.exists(best_config_path):
+                parser.error(
+                    "--predict_only requires --best_config_json or an existing best_config.json in output_dir"
+                )
+            with open(best_config_path, encoding="utf-8") as f:
+                best_config = json.load(f)
+
+        checkpoint_path = args.checkpoint_path
+        if checkpoint_path is None:
+            checkpoint_path = find_latest_checkpoint(
+                os.path.join(OUTPUT_DIR, "checkpoints", "final")
+            )
+
+        test_metrics, gen_metrics = export_predictions_from_checkpoint(
+            test_df, gen_df, tokenizer, checkpoint_path, best_config
+        )
+        save_final_report(
+            test_metrics,
+            gen_metrics,
+            best_config,
+            os.path.join(OUTPUT_DIR, "final_report.txt"),
+        )
+        return
 
     # ------------------------------------------------------------------
     # Hyperparameter sweep
