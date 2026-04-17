@@ -51,7 +51,19 @@ def evaluate_split(df, pipeline, split_name):
     print(
         f"Sentence - Accuracy: {results['accuracy']:.4f}  Precision: {results['precision']:.4f}  Recall: {results['recall']:.4f}  F1: {results['f1']:.4f}"
     )
-    return results
+    return results, pred_labels
+
+
+def save_predictions(df, pred_labels, output_path):
+    os.makedirs(os.path.dirname(output_path) if os.path.dirname(output_path) else ".", exist_ok=True)
+    out = pd.DataFrame({
+        "text": df["text"].fillna("").astype(str).tolist(),
+        "gold_tags": df["label"].tolist(),
+        "pred_tags": pred_labels,
+        "exact_match": [g == p for g, p in zip(df["label"].tolist(), pred_labels)],
+    })
+    out.to_csv(output_path, index=False)
+    print(f"Predictions saved to {output_path}")
 
 
 def build_pipeline():
@@ -139,15 +151,17 @@ def main():
     print("Training complete.")
 
     print("Evaluating TRAIN...")
-    train_results = evaluate_split(df_train, pipeline, "TRAIN")
+    train_results, _ = evaluate_split(df_train, pipeline, "TRAIN")
     print("Evaluating DEV...")
-    dev_results = evaluate_split(df_dev, pipeline, "DEV")
+    dev_results, _ = evaluate_split(df_dev, pipeline, "DEV")
     print("Evaluating TEST...")
-    test_results = evaluate_split(df_test, pipeline, "TEST")
+    test_results, test_preds = evaluate_split(df_test, pipeline, "TEST")
+    save_predictions(df_test, test_preds, os.path.join(args.output_dir, "test_predictions.csv"))
     print("Evaluating GENERALIZATION_TEST...")
-    generalization_results = evaluate_split(
+    generalization_results, gen_preds = evaluate_split(
         df_generalization, pipeline, "GENERALIZATION_TEST"
     )
+    save_predictions(df_generalization, gen_preds, os.path.join(args.output_dir, "generalization_test_predictions.csv"))
 
     positive_features, negative_features = top_weighted_features(pipeline)
     report_path = os.path.join(args.output_dir, "tfidf_baseline_report.txt")

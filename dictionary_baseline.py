@@ -138,27 +138,58 @@ def evaluate_dataset(df, slang_list, split_name=""):
         f"Token    — A: {token_eval_results['accuracy']:.4f}  Precision: {token_eval_results['precision']:.4f}  Recall: {token_eval_results['recall']:.4f}  F1: {token_eval_results['f1']:.4f}"
     )
 
-    return sentence_eval_results, token_eval_results
+    return sentence_eval_results, token_eval_results, pred_tags, pred_labels
 
 
-def run_evaluations(train_path, dev_path, test_path, general_path, slang_list):
+def save_predictions_sentence(df, pred_labels, output_path):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    gold_labels = df["label"].tolist()
+    out = pd.DataFrame({
+        "text": df["text"].fillna("").astype(str).tolist(),
+        "gold_tags": gold_labels,
+        "pred_tags": pred_labels,
+        "exact_match": [g == p for g, p in zip(gold_labels, pred_labels)],
+    })
+    out.to_csv(output_path, index=False)
+    print(f"Predictions saved to {output_path}")
+
+
+def save_predictions_bio(df, pred_tags, output_path):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    gold_tags = df["tags"].fillna("").astype(str).tolist()
+    pred_tags_str = [" ".join(tags) for tags in pred_tags]
+    out = pd.DataFrame({
+        "text": df["text"].fillna("").astype(str).tolist(),
+        "gold_tags": gold_tags,
+        "pred_tags": pred_tags_str,
+        "exact_match": [g == p for g, p in zip(gold_tags, pred_tags_str)],
+    })
+    out.to_csv(output_path, index=False)
+    print(f"Predictions saved to {output_path}")
+
+
+def run_evaluations(train_path, dev_path, test_path, general_path, slang_list, output_dir):
     df_train = pd.read_csv(train_path)
     df_dev = pd.read_csv(dev_path)
     df_test = pd.read_csv(test_path)
     df_general = pd.read_csv(general_path)
 
     print("Evalutating TRAIN...")
-    train_sentence_out, train_token_out = evaluate_dataset(
+    train_sentence_out, train_token_out, _, _ = evaluate_dataset(
         df_train, slang_list, "TRAIN"
     )
     print("Evalutating DEV...")
-    dev_sentence_out, dev_token_out = evaluate_dataset(df_dev, slang_list, "DEV")
+    dev_sentence_out, dev_token_out, _, _ = evaluate_dataset(df_dev, slang_list, "DEV")
     print("Evalutating TEST...")
-    test_sentence_out, test_token_out = evaluate_dataset(df_test, slang_list, "TEST")
+    test_sentence_out, test_token_out, test_pred_tags, test_pred_labels = evaluate_dataset(df_test, slang_list, "TEST")
+    save_predictions_sentence(df_test, test_pred_labels, os.path.join(output_dir, "sentence", "test_predictions.csv"))
+    save_predictions_bio(df_test, test_pred_tags, os.path.join(output_dir, "bio", "test_predictions.csv"))
     print("Evaluating GENERALIZATION_TEST...")
-    general_sentence_out, general_token_out = evaluate_dataset(
+    general_sentence_out, general_token_out, gen_pred_tags, gen_pred_labels = evaluate_dataset(
         df_general, slang_list, "GENERALIZATION_TEST"
     )
+    save_predictions_sentence(df_general, gen_pred_labels, os.path.join(output_dir, "sentence", "generalization_test_predictions.csv"))
+    save_predictions_bio(df_general, gen_pred_tags, os.path.join(output_dir, "bio", "generalization_test_predictions.csv"))
 
     return {
         "train": {"sentence": train_sentence_out, "token": train_token_out},
@@ -214,7 +245,7 @@ def main():
 
     print("Running evaluations...")
     results = run_evaluations(
-        args.train, args.dev, args.test, args.generalization, slang_list
+        args.train, args.dev, args.test, args.generalization, slang_list, args.output_dir
     )
 
     report_path = os.path.join(args.output_dir, "dictionary_baseline_report.txt")

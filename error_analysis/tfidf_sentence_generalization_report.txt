@@ -1,0 +1,286 @@
+======================================================================
+SLANG SENTENCE CLASSIFICATION - ERROR ANALYSIS REPORT
+======================================================================
+Source        : tfidf_baseline/generalization_test_predictions.csv
+Sentences     : 1000
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL CONFUSION MATRIX
+----------------------------------------------------------------------
+  True  Positives (TP) - slang sentence correctly identified   :    785
+  False Positives (FP) - non-slang sentence called slang       :      0
+  True  Negatives (TN) - non-slang sentence correctly rejected :      0
+  False Negatives (FN) - slang sentence missed by model        :    215
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL METRICS
+----------------------------------------------------------------------
+  Accuracy  : 0.7850
+  Precision : 1.0000
+  Recall    : 0.7850
+  F1 Score  : 0.8796
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL EXACT MATCH
+----------------------------------------------------------------------
+  Exact matches : 785 / 1000  (78.5%)
+
+----------------------------------------------------------------------
+TP EXAMPLES  (True  Positives - slang sentence correctly identified)
+  Count: 785
+
+  gold=SLANG       pred=SLANG       | "is bro mewing on stage"
+  gold=SLANG       pred=SLANG       | "hey kitten it seems like youve been caught in an inevitable trap with a doomed destiny hehehe laughs with a low grumpy and alpha voice youre so done im gonna fanum tax you with hawk tuah and kai cenat im ending it all after this tweet"
+  gold=SLANG       pred=SLANG       | "biggest green flag"
+  gold=SLANG       pred=SLANG       | "he has fucking nothing on the rizzler"
+  gold=SLANG       pred=SLANG       | "are those the best words your always yapping bout"
+  gold=SLANG       pred=SLANG       | "mog time"
+  gold=SLANG       pred=SLANG       | "nothing but fax"
+  gold=SLANG       pred=SLANG       | "hey mog frog snake fox eater wait we are coming"
+  gold=SLANG       pred=SLANG       | "brooooo stoppp ur ahh gyatttt finna rizz me tf up"
+  gold=SLANG       pred=SLANG       | "im tweaking so hard"
+
+----------------------------------------------------------------------
+FP EXAMPLES  (False Positives - non-slang sentence incorrectly labelled as slang)
+  Count: 0
+
+  (none)
+
+----------------------------------------------------------------------
+TN EXAMPLES  (True  Negatives - non-slang sentence correctly rejected)
+  Count: 0
+
+  (none)
+
+----------------------------------------------------------------------
+FN EXAMPLES  (False Negatives - slang sentence the model failed to catch)
+  Count: 215
+
+  gold=SLANG       pred=NOT_SLANG   | "it s like they don t know their lore or summ"
+  gold=SLANG       pred=NOT_SLANG   | "yurrrr what s good day i m live on running black ops beta ft lsf gang follow my instagram come chat lurk or tab"
+  gold=SLANG       pred=NOT_SLANG   | "i dont understand why people like the target in the short i mean visually sure i guess but the remaining  her whole personality is just such an ick even val wouldnt want to deal with her"
+  gold=SLANG       pred=NOT_SLANG   | "is that it he just called her fat is that illegal in germany  are they arresting elementary school kids for name calling too sheesh guess germany is off my list of must see places"
+  gold=SLANG       pred=NOT_SLANG   | "reminds me of an early s group at least their sound does  without watching any music videos and just listening to their songs i m like okaaayyyy slay  i like it it s very demure"
+  gold=SLANG       pred=NOT_SLANG   | "peep replies and you ll know how i feel about it"
+  gold=SLANG       pred=NOT_SLANG   | "the audacity to check in use this account for clout after everyones hardwork minus the presence of freeloaders and credit grabbers and act as if the majority of this group was not labelled as ampon psa cult of joe no longer exists"
+  gold=SLANG       pred=NOT_SLANG   | "mi mood"
+  gold=SLANG       pred=NOT_SLANG   | "it feels like some kind of weird paternalistic moralistic vibe to tell ukraine how to use the weapons we give them do we want them to win the fight with russia or languish for years in purgatory ukraine should decide how to defend herself"
+  gold=SLANG       pred=NOT_SLANG   | "is it really a red flag or just smart planning in a world where marriages sometimes don t last isn t it fair to protect what you ve worked hard for how would you approach that conversation with your partner"
+
+
+======================================================================
+POLYSEMOUS WORD ANALYSIS
+======================================================================
+Tracking 15 words: fire, sick, slay, extra, basic, beta, squad, lore, ghost, mood, woke, caps, big, sus, cringe
+
+  Word            TP    FP    TN    FN  Verdict
+  -------------------------------------------------------
+  fire             3     0     0     9  x errors
+  sick             1     0     0     4  x errors
+  slay             2     0     0     3  x errors
+  extra            0     0     0     5  x errors
+  basic            0     0     0     4  x errors
+  beta             3     0     0    11  x errors
+  squad            0     0     0     3  x errors
+  lore             0     0     0     2  x errors
+  ghost            0     0     0     5  x errors
+  mood             1     0     0     6  x errors
+  woke             0     0     0     7  x errors
+  caps             -     -     -     -  not in dataset
+  big             58     0     0    10  x errors
+  sus              5     0     0     3  x errors
+  cringe          13     0     0     2  x errors
+
+Detailed sentence rows for polysemous words:
+
+  [fire]
+    TP  gold=SLANG       pred=SLANG       | "omg south carolina football is such a dumpster fire"
+    TP  gold=SLANG       pred=SLANG       | "a skibidimore the gyatt is on fire s no mother it s just the fanum tax c well skibidimore you are a cringe fellow but i must say you rizzed a good gyatt"
+    TP  gold=SLANG       pred=SLANG       | "ros be mewing gg but your modeling is actually fire"
+    FN  gold=SLANG       pred=NOT_SLANG   | "your words and image are fire"
+    FN  gold=SLANG       pred=NOT_SLANG   | "yo heard kanye and ty dolla ign dropped a new track this collab is fire straight up bangers from beginning to end been bumping it all day gotta say these two always know how to deliver flows are sick the beats are mad lit and the whole vibe is just pure energy"
+    FN  gold=SLANG       pred=NOT_SLANG   | "if this was another version and not the live action yea fire"
+    FN  gold=SLANG       pred=NOT_SLANG   | "i don t even fw with the concrete boys like that but this is fire your tweaking"
+    FN  gold=SLANG       pred=NOT_SLANG   | "lawrence butler is on fire"
+    FN  gold=SLANG       pred=NOT_SLANG   | "fire this blowfisheyed dope before he hits the locker room"
+    FN  gold=SLANG       pred=NOT_SLANG   | "slow your roll there bud miami beats a team that is a dumpster fire under napier and they are national title contenders ha thats funny"
+    FN  gold=SLANG       pred=NOT_SLANG   | "ice is literally so fire o love chewing it"
+    FN  gold=SLANG       pred=NOT_SLANG   | "man damn cam coleman fire"
+
+  [sick]
+    TP  gold=SLANG       pred=SLANG       | "thats a big red flag its a burner account but what a sick fuck"
+    FN  gold=SLANG       pred=NOT_SLANG   | "yo heard kanye and ty dolla ign dropped a new track this collab is fire straight up bangers from beginning to end been bumping it all day gotta say these two always know how to deliver flows are sick the beats are mad lit and the whole vibe is just pure energy"
+    FN  gold=SLANG       pred=NOT_SLANG   | "just finished vol  really cool kinda mad bro lost his drip at the end but hope his new clothes are just as cool the powers have me interested but i gotta see more of what they can do with these objects  for now was sick time to buy vol  amp"
+    FN  gold=SLANG       pred=NOT_SLANG   | "talking about bleach fans make you sick while boruto fans saying some pedo shit doesnt make you sick and now your tweaking out with your hypocrite mind of yours honestly you might be one if your so blindly not seeing the"
+    FN  gold=SLANG       pred=NOT_SLANG   | "covid vibe is back everywhere now with x as the new variant its ridiculous how the same sick tyrants who pushed the vaccines are now obsessed by censorship"
+
+  [slay]
+    TP  gold=SLANG       pred=SLANG       | "well yeah im not trying to look like a girl im just tryna slay"
+    TP  gold=SLANG       pred=SLANG       | "katy perry s new era is gonna slay"
+    FN  gold=SLANG       pred=NOT_SLANG   | "reminds me of an early s group at least their sound does  without watching any music videos and just listening to their songs i m like okaaayyyy slay  i like it it s very demure"
+    FN  gold=SLANG       pred=NOT_SLANG   | "isaac hades vampire survivors slay the spire that sort of stuff atm vampire survivors and balatro are m go tos i rarely play isaac anymore i needed to play more dmc to push it off its throne as my most played steam game"
+    FN  gold=SLANG       pred=NOT_SLANG   | "nothing against op tho bc nobaras op as fuck and her n chaewon both slay its in good fun my tweet is more about those who say things like this and cannot make any distinction between asian women in media vs asian women in real life"
+
+  [extra]
+    FN  gold=SLANG       pred=NOT_SLANG   | "cold pizza is just a sandwich being extra"
+    FN  gold=SLANG       pred=NOT_SLANG   | "this seems cool and i hate all the extra shit"
+    FN  gold=SLANG       pred=NOT_SLANG   | "the fish is named extra hobbit stan account now"
+    FN  gold=SLANG       pred=NOT_SLANG   | "it s catsunglixseung month pls remember to seung your lix extra this month here is my party invite let me know if u can make it"
+    FN  gold=SLANG       pred=NOT_SLANG   | "gators got you down so bad youre predicting them to lose  extra games i did peep your schedule brutal after next week brother then again the sec always is"
+
+  [basic]
+    FN  gold=SLANG       pred=NOT_SLANG   | "you nailed it basic no real intelligence of it"
+    FN  gold=SLANG       pred=NOT_SLANG   | "if you re privileged enough to be both healthy and insured i understand your ignorance to having to pay thousands of dollars for basic insulin to checks notes not fucking die bc people like you would rather simp for politicians a"
+    FN  gold=SLANG       pred=NOT_SLANG   | "but honey my favorite towels are on sales  that s why happy basic wife happy wife"
+    FN  gold=SLANG       pred=NOT_SLANG   | "y all getting stupid over the most basic color on the planet but what do u expect from the two dumbest fandoms"
+
+  [beta]
+    TP  gold=SLANG       pred=SLANG       | "mog is the eth beta for gains dont miss out"
+    TP  gold=SLANG       pred=SLANG       | "this cat came all over in this fucking apple and now hes resting on it like a fucking sigma rizzler of gyats what do u think about this do you like it or youre a beta negative aura george strawberry i cant build"
+    TP  gold=SLANG       pred=SLANG       | "holy beta male"
+    FN  gold=SLANG       pred=NOT_SLANG   | "yurrrr what s good day i m live on running black ops beta ft lsf gang follow my instagram come chat lurk or tab"
+    FN  gold=SLANG       pred=NOT_SLANG   | "you really really have  a short memory  tds  beta male genes"
+    FN  gold=SLANG       pred=NOT_SLANG   | "finally diving into the blackops  beta smoking vibing amp"
+    FN  gold=SLANG       pred=NOT_SLANG   | "beta energy we are all qualified to question who will be the next president you sound ridiculous any black conservative who goes against the narrative is a threat"
+    FN  gold=SLANG       pred=NOT_SLANG   | "is the ttk terrible for anyone else playing black ops beta something is fucked up"
+    FN  gold=SLANG       pred=NOT_SLANG   | "big w to the breadman beta codes cooking in the oven for us"
+    FN  gold=SLANG       pred=NOT_SLANG   | "quiet degenerate some woke academic propagating an isolated and contested account does not negate my point post links go back to your beta hole"
+    FN  gold=SLANG       pred=NOT_SLANG   | "lol such a beta weakling thing to say"
+    FN  gold=SLANG       pred=NOT_SLANG   | "day of star wars  day  of bo beta  mark your calendar"
+    FN  gold=SLANG       pred=NOT_SLANG   | "what a beta"
+    FN  gold=SLANG       pred=NOT_SLANG   | "run away beta run away government hey can you not allow this facebook no government very well wow the tyranny"
+
+  [squad]
+    FN  gold=SLANG       pred=NOT_SLANG   | "not her first car oh shit you are a fraud squad member lemme mute"
+    FN  gold=SLANG       pred=NOT_SLANG   | "they friends be knowing they on the burn squad"
+    FN  gold=SLANG       pred=NOT_SLANG   | "were hyped to shill your project with the squad slide into our dms and lets send it"
+
+  [lore]
+    FN  gold=SLANG       pred=NOT_SLANG   | "it s like they don t know their lore or summ"
+    FN  gold=SLANG       pred=NOT_SLANG   | "i dont like when dragon ball gives us forms without any explanations beast gohan ssj rage ikari future trunks lore wise my least favorite forms but i still fuck with them cuz they go raw"
+
+  [ghost]
+    FN  gold=SLANG       pred=NOT_SLANG   | "i live on a lake in indiana this is a holiday weekend thats normally very busy its like a ghost town where are the people"
+    FN  gold=SLANG       pred=NOT_SLANG   | "rizzimus prime leader of the rizzobots crizztiano rizznaldo otto von rizzmark adolf rizzler rizzons where ghost of rizzmas past the grand rizzard natural rizzaster rizzaldhino first rizzponder the last rizzort got a ticket to the"
+    FN  gold=SLANG       pred=NOT_SLANG   | "if i go ghost it s not intentional i ll be back"
+    FN  gold=SLANG       pred=NOT_SLANG   | "missing someone try getting a pet theyre always down for cuddles and never ghost you"
+    FN  gold=SLANG       pred=NOT_SLANG   | "i said i was going ghost after august that shit came quick asf"
+
+  [mood]
+    TP  gold=SLANG       pred=SLANG       | "mood im a virgo"
+    FN  gold=SLANG       pred=NOT_SLANG   | "mi mood"
+    FN  gold=SLANG       pred=NOT_SLANG   | "such a mood ngl"
+    FN  gold=SLANG       pred=NOT_SLANG   | "this is a mood"
+    FN  gold=SLANG       pred=NOT_SLANG   | "they literally be shitting the quality to p when you re in a mood to watch something a big l thinking not to renew"
+    FN  gold=SLANG       pred=NOT_SLANG   | "happiness issa mood"
+    FN  gold=SLANG       pred=NOT_SLANG   | "mood same situation here lt"
+
+  [woke]
+    FN  gold=SLANG       pred=NOT_SLANG   | "it didddd i was so confused when i woke up to see  like what the sigma"
+    FN  gold=SLANG       pred=NOT_SLANG   | "quiet degenerate some woke academic propagating an isolated and contested account does not negate my point post links go back to your beta hole"
+    FN  gold=SLANG       pred=NOT_SLANG   | "im open to this conclusion but i dont see a lot of evidence for it not convinced desantis would win in rust belt which is where his party must do well not convinced his stance on abortion wouldnt hurt him or that many care about his war on woke or  covid policy"
+    FN  gold=SLANG       pred=NOT_SLANG   | "and the liberals are constantly saying that conservatives are importing american politics another case of the iron law of woke projection"
+    FN  gold=SLANG       pred=NOT_SLANG   | "one of the goals of neuralink is alleviating the symptoms if the woke stazi you hang out with doesn t destroy him  might make a huge difference"
+    FN  gold=SLANG       pred=NOT_SLANG   | "the entire movie industry went woke there are hardly any movies worth watching"
+    FN  gold=SLANG       pred=NOT_SLANG   | "greens and labors mass immigration was obviously predicted to increase emissionsand here we are seriouslywho votes for these woke imbeciles"
+
+  [big]
+    TP  gold=SLANG       pred=SLANG       | "yesss big w for you"
+    TP  gold=SLANG       pred=SLANG       | "sad day on crypto big l"
+    TP  gold=SLANG       pred=SLANG       | "keep pushing fam big w incoming"
+    TP  gold=SLANG       pred=SLANG       | "its a big l"
+    TP  gold=SLANG       pred=SLANG       | "earlier ple start time big w"
+    TP  gold=SLANG       pred=SLANG       | "big l smh i really wanted these too"
+    TP  gold=SLANG       pred=SLANG       | "thats a big red flag its a burner account but what a sick fuck"
+    TP  gold=SLANG       pred=SLANG       | "that s a big l there"
+    TP  gold=SLANG       pred=SLANG       | "i trust mayor matt so i will follow the big l"
+    TP  gold=SLANG       pred=SLANG       | "i can arrange better arrangement using gpy   big l a word wth"
+    TP  gold=SLANG       pred=SLANG       | "big red flag"
+    TP  gold=SLANG       pred=SLANG       | "honestly im pissed that my character is getting moved to the legacy this is the first big l ive seen you guys make all the other things are cool but keep my character in this cycle until the next cycle starts i just got my corruption up hig"
+    TP  gold=SLANG       pred=SLANG       | "big w from my fav unc"
+    TP  gold=SLANG       pred=SLANG       | "fuck big w s seeing shit like this makes me wish i lived in america  that al and friends lineup is stacked too"
+    TP  gold=SLANG       pred=SLANG       | "homie got the most camera time big w"
+    TP  gold=SLANG       pred=SLANG       | "a big w"
+    TP  gold=SLANG       pred=SLANG       | "big w guards why does every game feel like playoff ball these days"
+    TP  gold=SLANG       pred=SLANG       | "i m healed now send me another instagram baddie with big nyash to finish me kpata kpata"
+    TP  gold=SLANG       pred=SLANG       | "wrong account big l for me you get hurt"
+    TP  gold=SLANG       pred=SLANG       | "cant wait for the big w swingers club"
+    TP  gold=SLANG       pred=SLANG       | "big w for them"
+    TP  gold=SLANG       pred=SLANG       | "ohhh so you have this special kana edition big w frr and that kei cover is one of my fav kaguya covers she is just so so pretty"
+    TP  gold=SLANG       pred=SLANG       | "no  max life anymore is a big l blood necros crying"
+    TP  gold=SLANG       pred=SLANG       | "so taking a big l was all part of your grand scheme"
+    TP  gold=SLANG       pred=SLANG       | "took a big l today but i badly needed that one i was too passive and unassertive with my life since i graduated today i got a wake up call time to answer it"
+    TP  gold=SLANG       pred=SLANG       | "hang the big l on angel"
+    TP  gold=SLANG       pred=SLANG       | "chili dawgs big w"
+    TP  gold=SLANG       pred=SLANG       | "thats gonna be really amazing shl big w for you and the huddle"
+    TP  gold=SLANG       pred=SLANG       | "big fax no printer"
+    TP  gold=SLANG       pred=SLANG       | "yooo big w brother and congratulations to you cause you just bagged an invaluable gem in the space now watch your project flourish gotta hope in asap"
+    TP  gold=SLANG       pred=SLANG       | "anyone cryin bout the market is a big l"
+    TP  gold=SLANG       pred=SLANG       | "aura erm what the sigma yapping the rizzler skibidi griddy glazing level gyatt pookie bear or man big justice hawk tuah thats me espresso no chick fil a sauce kai cenat unc turkish olympic shooter exist in the context freakbob fanum tax locking in edging"
+    TP  gold=SLANG       pred=SLANG       | "drillas winning perfect world shanghai major would be insane  big w on the qualify for asiapacific rmr"
+    TP  gold=SLANG       pred=SLANG       | "joy because thats a cute couple also big w for big ribbon"
+    TP  gold=SLANG       pred=SLANG       | "big w brotha man"
+    TP  gold=SLANG       pred=SLANG       | "he would have made that album better so drake should have tried harder kay is that guy i would have because look what he got a mid ass album big l on drakes part"
+    TP  gold=SLANG       pred=SLANG       | "he tried the dark arts gimmick just for it to be backfire big l"
+    TP  gold=SLANG       pred=SLANG       | "thats the best you could do and it was fucking taped and edited i was hoping for something from youjeezus h big big l"
+    TP  gold=SLANG       pred=SLANG       | "update abt pretty girl that keeps laughing at my stupid jokes and at me we are now mutuals on instagram hehehhehe big w"
+    TP  gold=SLANG       pred=SLANG       | "big w for cheaters cup"
+    TP  gold=SLANG       pred=SLANG       | "big w for hansumfella s alzheimer charity stream"
+    TP  gold=SLANG       pred=SLANG       | "that s tough big w"
+    TP  gold=SLANG       pred=SLANG       | "probably going to be horrendous builds but big w"
+    TP  gold=SLANG       pred=SLANG       | "morning big w"
+    TP  gold=SLANG       pred=SLANG       | "big w from this man"
+    TP  gold=SLANG       pred=SLANG       | "jimmu w another big w"
+    TP  gold=SLANG       pred=SLANG       | "that was a big w for the gop weird"
+    TP  gold=SLANG       pred=SLANG       | "its a big l for herself first  violating oneself amp"
+    TP  gold=SLANG       pred=SLANG       | "since everyone can afford x no one gives a shit about those clout big wigs the kairo mercy masai and bookten"
+    TP  gold=SLANG       pred=SLANG       | "big w for maevaris nation"
+    TP  gold=SLANG       pred=SLANG       | "big w on controller and i like this"
+    TP  gold=SLANG       pred=SLANG       | "listen big w for common man"
+    TP  gold=SLANG       pred=SLANG       | "good shit still big w"
+    TP  gold=SLANG       pred=SLANG       | "no napoli get a big w with lukaku mctominay and billy gilmour s recent arrival"
+    TP  gold=SLANG       pred=SLANG       | "i wanna run some fort with a big justice or rizzler skin make it happen"
+    TP  gold=SLANG       pred=SLANG       | "deep inside he knows who he really is a big l"
+    TP  gold=SLANG       pred=SLANG       | "in fact when you use your brain she is not she decided to join the colonial army to get captured like a pokmon that s a big l if you d ask me"
+    TP  gold=SLANG       pred=SLANG       | "neither white nor black can compete with her big l for south africa"
+    FN  gold=SLANG       pred=NOT_SLANG   | "thing they gotta confront is that abortions are going to happen even if illegally so how many lives are we really saving by demanding a showdown that were going to lose the court gave us a big w  book the win and get back to w"
+    FN  gold=SLANG       pred=NOT_SLANG   | "effort this is another big green flag for me most of the times we trade degen projects with tweets and fiverr content this is exactly the opposite you can clearly see the amount of effort that went into creating everything especially the site wallet and their content"
+    FN  gold=SLANG       pred=NOT_SLANG   | "big w to the breadman beta codes cooking in the oven for us"
+    FN  gold=SLANG       pred=NOT_SLANG   | "some other case will be thrown at his factory all he has to do is keep his big mouth shut but he cant and wont do that like all bjp buffoons from the pm to the lowest andh bhakth suffer from same yapping syndrome"
+    FN  gold=SLANG       pred=NOT_SLANG   | "from one infested company to another big l"
+    FN  gold=SLANG       pred=NOT_SLANG   | "reaction cm punk showed something real to our  horsemen cody rhodes is in big trouble and what disappointed trailer below go peep the full ep youtube  spotify  apple pods"
+    FN  gold=SLANG       pred=NOT_SLANG   | "how much botox is in that judges face o he s paid off that s a red flag they fix a judge don t want to they old not like he s a model lacks self confidence huh exactly that he probably has a huge truck with big wheels but small packag"
+    FN  gold=SLANG       pred=NOT_SLANG   | "they literally be shitting the quality to p when you re in a mood to watch something a big l thinking not to renew"
+    FN  gold=SLANG       pred=NOT_SLANG   | "if she backs out she has put a big l on her forehead and her faux campaign"
+    FN  gold=SLANG       pred=NOT_SLANG   | "another big w by the go stangs"
+
+  [sus]
+    TP  gold=SLANG       pred=SLANG       | "i know we re all pretty exhausted about knetz and just generally all that s going on in south korea pero sus tweets ya estn en borderline xenophobia"
+    TP  gold=SLANG       pred=SLANG       | "stream ended  no world was destroyed this time but mel was acting very sus we had an amazing time as always i cant wait to do it again  i hope you all had a fun time too and ill see you again on monday also huge thanks to  and lttleeclipse for the raids"
+    TP  gold=SLANG       pred=SLANG       | "literally and claiming that i like killugon like that like omg what when have i ever been sus abt them ever i barely even ship them"
+    TP  gold=SLANG       pred=SLANG       | "lmao that ref was moving sus thou"
+    TP  gold=SLANG       pred=SLANG       | "the shooter was in a blackrock commercial at his school why isn t trump talking about this all day everyday like everything else he can t stop talking about the situation is very sus him and ivanka even t"
+    FN  gold=SLANG       pred=NOT_SLANG   | "theres a lot of yapping involved but try it yourself i mean when i started i started from seoul and it only had white people then manhattan in our age bracket had sus people so like very yappable topic"
+    FN  gold=SLANG       pred=NOT_SLANG   | "brazil is trying to shut down x in their country and is fining people if using a vpn  doesn t seem sus at all huh"
+    FN  gold=SLANG       pred=NOT_SLANG   | "marve for sure bowens play calling is sus but sometimes he adjusts well and sometimes drones tuten and wrs can make the adjustments and make plays despite bowen defense doesn t have the same ability"
+
+  [cringe]
+    TP  gold=SLANG       pred=SLANG       | "i once said thanks you too to a civilian that thanked me for me service i still cringe thinking about it"
+    TP  gold=SLANG       pred=SLANG       | "i miss that genre of bollywood songs where the guy was just dancing doing absolutely cringe shit and the girl was just standing there looking her gorgeous self with an occasional movement of hips here and there"
+    TP  gold=SLANG       pred=SLANG       | "weve all met people like this and loved them even if they are cringe she even got isakaied at the end"
+    TP  gold=SLANG       pred=SLANG       | "in my opinion jon voigt is a good actor but ill pass cringe cast otherwise"
+    TP  gold=SLANG       pred=SLANG       | "punks just boomers bayc is so  penguins dreamers wannabe doodles too colorful too cringe mfers just cco nakamigos full delusional what nft project then"
+    TP  gold=SLANG       pred=SLANG       | "a skibidimore the gyatt is on fire s no mother it s just the fanum tax c well skibidimore you are a cringe fellow but i must say you rizzed a good gyatt"
+    TP  gold=SLANG       pred=SLANG       | "it is beyond creepy and makes me cringe it has to be shared"
+    TP  gold=SLANG       pred=SLANG       | "this is total nonsense i m forced to accept that guy fit dey knack that girl cause for you to be comfortable like this with your brother s wife and she no cringe dier ei i fit slap the two"
+    TP  gold=SLANG       pred=SLANG       | "watched the short after seeing art of the fanfic girl and i made a mistake of looking into the comments emberlynn is so fucking great i love her she is cringe but she is free we should all be like her"
+    TP  gold=SLANG       pred=SLANG       | "the fact that its on the user to be responsible has always made me cringe you cant tell me that apps cant be like ok youre done for x period of time i know that goes against everything that is business but the availability seems like t"
+    TP  gold=SLANG       pred=SLANG       | "okay so w her counting i wanna know what she meant by thoughts but good to know this wasn t just him being rando the way it comes off in text is him just rambling off a bunch of shit for no reason but he s just being his cringe self tho it come"
+    TP  gold=SLANG       pred=SLANG       | "omgwhy do you sound so cringe no one takes you seriously"
+    TP  gold=SLANG       pred=SLANG       | "my husband was right we are a red flag of craziness not sure all the guys i dated thought i was cool or was it this excuse me as i die with embarrassment cringe of myself"
+    FN  gold=SLANG       pred=NOT_SLANG   | "can somebody pls ban the act of selling online business courses the internet turned into such a cringe space its becoming unbearable day by day goddamn"
+    FN  gold=SLANG       pred=NOT_SLANG   | "buddy i was there when this shit was new and even then people thought it was cringe and racist there s a reason g was the butt of jokes until the day it died"
+
+======================================================================
+END OF REPORT
+======================================================================
