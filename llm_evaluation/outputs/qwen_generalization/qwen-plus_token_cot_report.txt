@@ -1,0 +1,21 @@
+============================================================
+LLM (qwen-plus) — TOKEN_COT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       token_cot
+Samples:        1000
+Parse errors:   288 (28.8%)
+
+Sentence-level:
+  Accuracy  : 0.8870
+  Precision : 1.0000
+  Recall    : 0.8870
+  F1        : 0.9401
+
+Token-level:
+  Accuracy  : 0.8946
+  Precision : 0.4307
+  Recall    : 0.3583
+  F1        : 0.3912
+  Skipped   : 0 (length mismatch)

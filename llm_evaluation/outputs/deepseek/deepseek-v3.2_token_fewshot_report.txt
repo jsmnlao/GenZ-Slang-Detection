@@ -1,0 +1,21 @@
+============================================================
+QWEN (deepseek-v3.2) — TOKEN_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       token_fewshot
+Samples:        3000
+Parse errors:   526 (17.5%)
+
+Sentence-level:
+  Accuracy  : 0.7637
+  Precision : 0.6890
+  Recall    : 0.9613
+  F1        : 0.8027
+
+Token-level:
+  Accuracy  : 0.9316
+  Precision : 0.2797
+  Recall    : 0.4757
+  F1        : 0.3523
+

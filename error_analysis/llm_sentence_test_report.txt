@@ -1,0 +1,801 @@
+======================================================================
+SLANG SENTENCE CLASSIFICATION - ERROR ANALYSIS REPORT
+======================================================================
+Source        : llm_evaluation/outputs/qwen/qwen-plus_sentence_cot_raw.jsonl
+Model         : Qwen 2.5 Plus
+Sentences     : 3000
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL CONFUSION MATRIX
+----------------------------------------------------------------------
+  True  Positives (TP) - slang sentence correctly identified   :   1312
+  False Positives (FP) - non-slang sentence called slang       :    366
+  True  Negatives (TN) - non-slang sentence correctly rejected :   1134
+  False Negatives (FN) - slang sentence missed by model        :    188
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL METRICS
+----------------------------------------------------------------------
+  Accuracy  : 0.8153
+  Precision : 0.7819
+  Recall    : 0.8747
+  F1 Score  : 0.8257
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL EXACT MATCH
+----------------------------------------------------------------------
+  Exact matches : 2446 / 3000  (81.5%)
+
+----------------------------------------------------------------------
+TP EXAMPLES  (True  Positives - slang sentence correctly identified)
+----------------------------------------------------------------------
+  Count: 1312
+
+  TP  gold=SLANG       pred=SLANG       | "thirsty s"
+  TP  gold=SLANG       pred=SLANG       | "maybe the wef is looking for a female to fill a role sheesh"
+  TP  gold=SLANG       pred=SLANG       | "pas mal le glow up de fin les voyages"
+  TP  gold=SLANG       pred=SLANG       | "alright cua"
+  TP  gold=SLANG       pred=SLANG       | "that video was faf"
+  TP  gold=SLANG       pred=SLANG       | "sue it s bussin omg"
+  TP  gold=SLANG       pred=SLANG       | "are you green flag"
+  TP  gold=SLANG       pred=SLANG       | "blake lively is cheugy"
+  TP  gold=SLANG       pred=SLANG       | "peep the sign"
+  TP  gold=SLANG       pred=SLANG       | "you flex your injury ring we can flex the best player to ever play this sport in the history"
+
+----------------------------------------------------------------------
+FP EXAMPLES  (False Positives - non-slang sentence incorrectly labelled as slang)
+----------------------------------------------------------------------
+  Count: 366
+
+  FP  gold=NOT_SLANG   pred=SLANG       | "i love that a hype squad member is getting flammed for being a moron"
+       Reasoning: Scanning each token: 'hype squad' is Gen Z slang for a group of enthusiastic supporters, often used in fandom or social media contexts. 'Flammed' is internet slang meaning publi...
+  FP  gold=NOT_SLANG   pred=SLANG       | "hurmm nak cut off and softblock siapa lagi eh i wanna remove toxic and negative aura people"
+       Reasoning: Scanning each token: 'hurmm' is an onomatopoeic interjection common in Gen Z/Gen Alpha internet speech (expressing hesitation or skepticism). 'nak' is Singlish/Malaysian slang f...
+  FP  gold=NOT_SLANG   pred=SLANG       | "lukaku just snatched his chain"
+       Reasoning: Scanning each token: 'snatched his chain' is Gen Z slang meaning to humiliate or embarrass someone publicly — derived from the literal image of snatching jewelry, but used metap...
+  FP  gold=NOT_SLANG   pred=SLANG       | "not thirsty"
+       Reasoning: 'not thirsty' — 'thirsty' is Gen Z slang meaning overly eager (e.g., for attention, validation, or a romantic interest), so 'not thirsty' is the negated form of that slang. This...
+  FP  gold=NOT_SLANG   pred=SLANG       | "lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent ..."
+       Reasoning: Scanning each token: 'lol' is internet slang (laugh out loud). 'opsec' is military/internet slang for operational security — widely used in online communities and Gen Z/Alpha co...
+  FP  gold=NOT_SLANG   pred=SLANG       | "trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad a..."
+       Reasoning: Scanning each token: 'rn' is internet slang for 'right now'. 'unplayable' is used colloquially but is standard English (not slang). 'cheater', 'rapid fire', 'aimbot', 'crates', ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so ..."
+       Reasoning: Scanning each token: 'tbh' is internet slang for 'to be honest'. 'slay' is Gen Z slang meaning excellent or impressive. 'black and red' and 'background' are standard terms. The ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "kt s honesty is always a joy to see and hear follow  for all the tea on movies"
+       Reasoning: Scanning each token: 'kt s' appears to be a name or handle (e.g., 'KT's'), not slang. 'honesty', 'joy', 'see', 'hear', 'follow', 'for', 'all', 'the', 'tea', 'on', 'movies' — amo...
+  FP  gold=NOT_SLANG   pred=SLANG       | "what if pumpfun was a means bankers used to fund foreign wars put on your conspiracy cap retard"
+       Reasoning: Scanning each token: 'pumpfun' is a crypto-related platform name — not slang. 'conspiracy cap' is internet slang (a play on 'tinfoil hat', meaning to adopt a conspiratorial mind...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i hate not being able to function without medication if i forget to take it for one day i start tweaking"
+       Reasoning: Scanning each token: 'tweaking' is Gen Z/internet slang meaning experiencing severe anxiety, agitation, or stimulant-like side effects (often in the context of ADHD medication w...
+
+----------------------------------------------------------------------
+TN EXAMPLES  (True  Negatives - non-slang sentence correctly rejected)
+----------------------------------------------------------------------
+  Count: 1134
+
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not ..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "best lr  class for beta will have u movin"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "reach level in the black ops beta to unlock these skins for free play the beta here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and e..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "we think this is a superior deal to mccaws"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "six top executives at the new yorkbased company sold shares in august and september"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "east germany it is clear is no poland where the communist party now shares power with the democratically el..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "just play the beta i played for hours and didn t run into anyone that suspicious"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "every month we release exclusive extras to our supporters on patreon this month weve got a creature summone..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the department didnt specify how many consumers have been hurt by the alleged discriminatory practices sayi..."
+
+----------------------------------------------------------------------
+FN EXAMPLES  (False Negatives - slang sentence the model failed to catch)
+----------------------------------------------------------------------
+  Count: 188
+
+  FN  gold=SLANG       pred=NOT_SLANG   | "turn on your cam for the meeting"
+       Reasoning: Scanning each token: 'cam' is short for 'camera'. While 'cam' is a common abbreviation, it is widely accepted in professional and technical contexts (e.g., Zoom, Teams) and not ...
+  FN  gold=SLANG       pred=NOT_SLANG   | "negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular talk us..."
+       Reasoning: Scanning each token: 'negative aura' is a phrase used in internet discourse, sometimes ironically or as meme language — but in this context, it appears to be part of a headline-...
+  FN  gold=SLANG       pred=NOT_SLANG   | "theres an offset from whatever low vibrational music i listenedlisten to is offset by the associations it g..."
+       Reasoning: Scanning each token: 'low vibrational music' is New Age or spiritual jargon, not Gen Z/Gen Alpha internet slang. 'Offset', 'associations', 'cohesive', 'ongoing experience of bei...
+  FN  gold=SLANG       pred=NOT_SLANG   | "auction draft  team super flex ppr how d i do"
+       Reasoning: Scanning each token: 'auction draft', 'team', 'super flex', 'ppr' — 'ppr' stands for 'points per reception', a standard fantasy football scoring format; 'super flex' is also sta...
+  FN  gold=SLANG       pred=NOT_SLANG   | "apparently im low vibrational because i eat beef amp"
+       Reasoning: Scanning each token: 'apparently' is standard. 'im' is informal but not slang — it's just a contraction of 'I'm'. 'low vibrational' is New Age wellness jargon, not Gen Z/Alpha i...
+  FN  gold=SLANG       pred=NOT_SLANG   | "guys im tweaking cyj wms"
+       Reasoning: Scanning each token: 'guys' is standard English. 'im' is informal but not slang — it's just a contraction of 'I'm'. 'tweaking' can be slang (meaning anxious, jittery, or high), ...
+  FN  gold=SLANG       pred=NOT_SLANG   | "its a surprise cyep"
+       Reasoning: Scanning each token: 'its' is a contraction of 'it is', standard. 'a' and 'surprise' are standard English words. 'cyep' is not a recognized Gen Z or Gen Alpha slang term — it ap...
+  FN  gold=SLANG       pred=NOT_SLANG   | "ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it ..."
+       Reasoning: Scanning each token: 'ok look', 'i am glad you asked', 'pretty basic stuff', 'coinbase', 'decentralized', 'rollup' — these are all standard terms in cryptocurrency discourse. 'R...
+  FN  gold=SLANG       pred=NOT_SLANG   | "can you be my cmap during the meeting"
+       Reasoning: Scanning each token: 'cmap' is not a widely recognized Gen Z or Gen Alpha slang term. It could be a typo (e.g., 'camp', 'comp', 'cramp'), an acronym (e.g., 'concept map'), or do...
+  FN  gold=SLANG       pred=NOT_SLANG   | "the tonga loa negative aura is wild"
+       Reasoning: Scanning each token: 'Tonga Loa' is a professional wrestler’s name — proper noun, not slang. 'Negative aura' is a literal or metaphorical phrase used in wellness/spiritual conte...
+
+
+======================================================================
+POLYSEMOUS WORD ANALYSIS
+======================================================================
+Tracking 15 words: fire, sick, slay, extra, basic, beta, squad, lore, ghost, mood, woke, caps, big, sus, cringe
+
+  Word                TP    FP    TN    FN  Verdict
+  ─────────────────────────────────────────────────────
+  fire                 5    10    48     1  x errors
+  sick                 2     1     3     1  x errors
+  slay                33     3     1     0  x errors
+  extra                3    10    63     2  x errors
+  basic                6    11    63     3  x errors
+  beta                 6    14    48     2  x errors
+  squad                5    18    48     0  x errors
+  lore                 4    20    46     1  x errors
+  ghost                2     8    19     1  x errors
+  mood                 5    17    30     0  x errors
+  woke                12     4     9     7  x errors
+  caps                 0     3     3     0  x errors
+  big                 49     9    16     5  x errors
+  sus                 48     4     1     0  x errors
+  cringe              45     5     0     2  x errors
+
+Detailed sentence rows for polysemous words:
+
+  [fire]
+  TP  gold=SLANG       pred=SLANG       | "itll smother the flames as fire needs oxygen to burn also dont yeet the flames unless you really hate your ..."
+  TP  gold=SLANG       pred=SLANG       | "dinner was fire"
+  TP  gold=SLANG       pred=SLANG       | "naaah but i love this angle it s fire stay chillax"
+  FP  gold=NOT_SLANG   pred=SLANG       | "trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad a..."
+       Reasoning: Scanning each token: 'rn' is internet slang for 'right now'. 'unplayable' is used colloquially but is standard English (not slang). 'cheater', 'rapid fire', 'aimbot', 'crates', ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "worst performance i ve ever seen fire beamer"
+       Reasoning: Scanning each token: 'worst performance i ve ever seen' is standard English. 'fire beamer' — 'fire' is Gen Z slang meaning excellent or impressive, and 'beamer' is a slang term ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "k views and  likes may want to fire your social media guy"
+       Reasoning: Scanning each token: 'k' is internet shorthand for 'thousand' (e.g., '10k views'), commonly used in Gen Z/Alpha digital communication. 'views' and 'likes' are standard nouns but...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh south carolina might need to fire shane beamer right now"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "need to fire that photographer if hid shots are this bad"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "blake i still remember the time you ran into that pet store that was on fire and rescued all the pets you a..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "just allowed a first down fire durkin"
+       Reasoning: Scanning each token: 'first down' is standard American football terminology. 'fire durkin' — 'fire' here is likely used literally (as in 'to fire someone'), and 'Durkin' is a pr...
+
+  [sick]
+  TP  gold=SLANG       pred=SLANG       | "bunch of fat ugly femcels in this post that use this vile shit for easy clout legit off yourselves ingame a..."
+  TP  gold=SLANG       pred=SLANG       | "i m really sick and i m salty asf because i m working until tuesday and i can t take any medicine"
+  FP  gold=NOT_SLANG   pred=SLANG       | "bo beta drops and i get sick currently dying instead of playing the beta"
+       Reasoning: Scanning each token: 'bo' is not slang here — likely a typo or abbreviation for 'beta' (e.g., 'bo beta' = 'beta beta'? or mis-typed 'no beta'?); unclear but not established slan...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i got checked for iron about  months ago when i was also having these symptoms i lit have no idea what s wr..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i ate too much la tiao now i feel sick"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i ate junk food twice and felt sick after"
+  FN  gold=SLANG       pred=NOT_SLANG   | "i be so fucking low vibrational when i m sick"
+       Reasoning: Scanning each token: 'i be' is nonstandard grammar but not necessarily slang — it's a habitual aspect marker used in AAVE, sometimes adopted online, but here it's paired with 's...
+
+  [slay]
+  TP  gold=SLANG       pred=SLANG       | "awesome slay i wish we dmed more i like our friendship"
+  TP  gold=SLANG       pred=SLANG       | "chat i luv my new oomfies yall are so slay"
+  TP  gold=SLANG       pred=SLANG       | "i had one slay on a during a night attack cooks don t fuck around"
+  FP  gold=NOT_SLANG   pred=SLANG       | "wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so ..."
+       Reasoning: Scanning each token: 'tbh' is internet slang for 'to be honest'. 'slay' is Gen Z slang meaning excellent or impressive. 'black and red' and 'background' are standard terms. The ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "once an old man sat next to me at a pub and said i hear the beast from the east is returning with the gruff..."
+       Reasoning: Reasoning: Scanning each token: 'beast from the east' is a media-coined nickname for a specific weather event (a cold snap), used literally here — not Gen Z slang. 'Gruffest' is...
+  FP  gold=NOT_SLANG   pred=SLANG       | "oooh pretty i love that dolly style of eye makeup so much it s so yummy i can never pull it off so im alway..."
+       Reasoning: Scanning each token: 'oooh' is expressive but not slang. 'yummy' is used here as Gen Z slang meaning attractive or aesthetically pleasing (not literal food). 'slay' is a well-es...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "do you think you can fix a broken person only if they want to be helped and are honest my english teacher i..."
+
+  [extra]
+  TP  gold=SLANG       pred=SLANG       | "ill even act extra white like hey hows the weather to not make you uncomfortable with my poc swagger"
+  TP  gold=SLANG       pred=SLANG       | "hi september be extra special this year th has to be extra extra special"
+  TP  gold=SLANG       pred=SLANG       | "its extra"
+  FP  gold=NOT_SLANG   pred=SLANG       | "need more info first on performance and if developers will be releasing updates that take advantage of the ..."
+       Reasoning: Scanning each token: 'perf' is internet/tech slang for 'performance', commonly used in developer and tech communities (especially Gen Z/Alpha). It's a clipped form, not standard...
+  FP  gold=NOT_SLANG   pred=SLANG       | "while i agree with the sentiment k has been riddled with predatory microtransactions i dont play online i j..."
+       Reasoning: Scanning each token: 'k' is internet shorthand for 'okay', commonly used in informal online communication and considered Gen Z/Alpha slang. 'yall' is a colloquial contraction of...
+  FP  gold=NOT_SLANG   pred=SLANG       | "haya i gotta slash prices again doing simple background fullbodies for  and ths view pieces for  heres what..."
+       Reasoning: Scanning each token: 'haya' is Gen Z/Alpha slang meaning 'hey' or 'hi', often used as a playful greeting. 'slash prices' is standard business phrasing, not slang. 'fullbodies', ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not ..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh joy a classic blame shift favourites of the day   please arrive extra early due to xyz problem  your boo..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "as much as i love his wispy look the extra close cut may have been a good thing before this adventure"
+  FN  gold=SLANG       pred=NOT_SLANG   | "probably get two just to be extra safe"
+       Reasoning: Scanning each token: 'probably', 'get', 'two', 'just', 'to', 'be', 'extra', 'safe' — all are standard English words. 'Extra' can be Gen Z slang meaning overly dramatic or unnece...
+  FN  gold=SLANG       pred=NOT_SLANG   | "im bringing an extra charger bsts"
+       Reasoning: Scanning each token: 'im' is a common informal contraction of 'I’m', but not considered Gen Z/Alpha slang — just standard internet informality. 'bringing', 'an', 'extra', 'charg...
+
+  [basic]
+  TP  gold=SLANG       pred=SLANG       | "the twins theyre just so basic humans empty and nothings match good on them i dont like them at all"
+  TP  gold=SLANG       pred=SLANG       | "i dont but its kind of basic overall it needs more support to no be finecky"
+  TP  gold=SLANG       pred=SLANG       | "i m oldhead is a mentality theres new old heads you can t distinguish theres another generation of music ba..."
+  FP  gold=NOT_SLANG   pred=SLANG       | "lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent ..."
+       Reasoning: Scanning each token: 'lol' is internet slang (laugh out loud). 'opsec' is military/internet slang for operational security — widely used in online communities and Gen Z/Alpha co...
+  FP  gold=NOT_SLANG   pred=SLANG       | "this is why i don t date well that and every fucking human being is annoying as hell but like seriously you..."
+       Reasoning: Scanning each token: 'lmaooo' is an extended, emphatic variant of 'lmao' (laughing my ass off), a widely used Gen Z internet slang expression. 'basic' is also Gen Z slang meanin...
+  FP  gold=NOT_SLANG   pred=SLANG       | "sell pressure concerns are so pleby tbh if you have a highly desirable token then buy pressure will make an..."
+       Reasoning: Scanning each token: 'pleby' is Gen Z/internet slang meaning 'plebeian' — used mockingly to describe someone unsophisticated or low-status (here, implying unsophisticated market...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "cool tech but this is not a replacement for cell service it s only a basic connection for textcalls it will..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "if you d do your damn research you d know that already but you seem to not want to do basic research and ge..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the  has long been a poisoned chalice how many world class coaches have we had and our players make the wor..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it ..."
+       Reasoning: Scanning each token: 'ok look', 'i am glad you asked', 'pretty basic stuff', 'coinbase', 'decentralized', 'rollup' — these are all standard terms in cryptocurrency discourse. 'R...
+  FN  gold=SLANG       pred=NOT_SLANG   | "trying this out my interests are pretty basic but some are a bit specific"
+       Reasoning: Scanning each token: 'trying this out', 'my interests are pretty basic', 'some are a bit specific' — all phrases use standard English vocabulary and grammar. Words like 'basic' ...
+  FN  gold=SLANG       pred=NOT_SLANG   | "how did he manage to be a full time waiter and complete the physician associate course at the same time mos..."
+       Reasoning: Scanning each token: all words are standard English used in formal, academic, or professional contexts. Phrases like 'full time waiter', 'physician associate course', 'intellect...
+
+  [beta]
+  TP  gold=SLANG       pred=SLANG       | "white dudes lol beta"
+  TP  gold=SLANG       pred=SLANG       | "remember pence is a beta male trump would have demolished her"
+  TP  gold=SLANG       pred=SLANG       | "low testosterone beta"
+  FP  gold=NOT_SLANG   pred=SLANG       | "the beta started so good and just ended so bad and it s not even cus of the gameplay it s cus of the bans"
+       Reasoning: Scanning each token: 'beta' is standard tech/gaming terminology (a pre-release version), not slang. 'cus' is internet shorthand for 'because', common in informal online writing ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "it s impossible to enjoy this beta with the jackal in the game the game is so fun if you manage to find a l..."
+       Reasoning: Scanning each token: 'beta' refers to a pre-release version of software/game — standard tech term, not slang. 'jackal' is a character name in Apex Legends — proper noun, not sla...
+  FP  gold=NOT_SLANG   pred=SLANG       | "anyone tryna run the beta"
+       Reasoning: Scanning each token: 'anyone' and 'tryna' — 'tryna' is a phonetic spelling of 'trying to', common in informal speech and internet slang (Gen Z/Alpha). 'run the beta' — 'beta' he...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "best lr  class for beta will have u movin"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "reach level in the black ops beta to unlock these skins for free play the beta here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and e..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "with women who they desire sexually is simply approval seeking and weak behavior it is an attempt by beta m..."
+       Reasoning: Scanning each token: 'beta males' is a term originating from incel and manosphere communities, often used as internet slang to describe men perceived as socially or sexually uns...
+  FN  gold=SLANG       pred=NOT_SLANG   | "all my settings for the black ops  beta this should help those of you that are currently looking around for..."
+       Reasoning: Scanning each token: 'black ops beta' refers to a specific video game (Call of Duty: Black Ops) beta test — this is proper noun usage, not slang. 'controller settings' is standa...
+
+  [squad]
+  TP  gold=SLANG       pred=SLANG       | "rehashing garbage that has been rejected because of no public option everyone take note they do this before..."
+  TP  gold=SLANG       pred=SLANG       | "you know what i think you re the best rizzler of the skibidi squad"
+  TP  gold=SLANG       pred=SLANG       | "i ve been here stable af dong squad strong"
+  FP  gold=NOT_SLANG   pred=SLANG       | "i love that a hype squad member is getting flammed for being a moron"
+       Reasoning: Scanning each token: 'hype squad' is Gen Z slang for a group of enthusiastic supporters, often used in fandom or social media contexts. 'Flammed' is internet slang meaning publi...
+  FP  gold=NOT_SLANG   pred=SLANG       | "wubs squad"
+       Reasoning: Scanning each token: 'wubs' is internet slang for 'love' (derived from 'wub wub', mimicking a heart sound or used in memes/online affection), often seen in Gen Z/Alpha contexts....
+  FP  gold=NOT_SLANG   pred=SLANG       | "mudryk doesnt even know how to play proper squad football stop it lol"
+       Reasoning: Scanning each token: 'mudryk' is a proper noun (a footballer's name). 'doesnt', 'even', 'know', 'how', 'to', 'play', 'proper', 'squad', 'football', 'stop', 'it' are all standard...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "nobody axes a player out the squad like conte"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh he did something he decided to find a way into early retirement instead of going with his squad into bat..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "second biggest net spend in the league this window squad is considerably stronger than it was entering the ..."
+
+  [lore]
+  TP  gold=SLANG       pred=SLANG       | "real ones have a yapping contest about fnaf lore"
+  TP  gold=SLANG       pred=SLANG       | "in general i think he would vibe with how fnaf fansongs usually create and explore their own lore instead o..."
+  TP  gold=SLANG       pred=SLANG       | "oomf is explaining the charli xcx x matty healy x taylor swift lore outside the pub"
+  FP  gold=NOT_SLANG   pred=SLANG       | "watching rings of power for the first time  here s my liveposting thread about it yaaaaay i am so bad at re..."
+       Reasoning: Scanning each token: 'yaaaaay' is an elongated, expressive interjection common in internet communication — it reflects Gen Z/Alpha stylistic playfulness (exaggerated spelling fo...
+  FP  gold=NOT_SLANG   pred=SLANG       | "neva kee wipes the floor with him neva kee was my brothers main driver in the n game and he always won ever..."
+       Reasoning: Scanning each token: 'neva kee' is a misspelling of 'Neville Kee' or possibly referencing a meme — but more likely a proper noun (character name). 'wipes the floor with him' is ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i know how it feels so always feel free to lore dump to me"
+       Reasoning: Scanning each token: 'lore dump' is a Gen Z/internet slang phrase meaning to share extensive background information (often about fiction, games, or fandoms) — it’s a compound no...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "every month we release exclusive extras to our supporters on patreon this month weve got a creature summone..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "an undeserved deus ex machina of a transformation with no lore like ultra instinct and ego"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "controversial opinion but i prefer episodes over seasons more introduced activities a guarenteed exotic mis..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "oh my god lore is eating"
+       Reasoning: Scanning each token: 'oh my god' is an exclamation, common in speech but not Gen Z/Alpha slang (it's longstanding). 'lore' is a proper noun (a person's name), not the internet s...
+
+  [ghost]
+  TP  gold=SLANG       pred=SLANG       | "going ghost is on my mind heavy"
+  TP  gold=SLANG       pred=SLANG       | "narcissistic personality cannot comprehend getting ghosted like who do you think you are that people cannot..."
+  FP  gold=NOT_SLANG   pred=SLANG       | "omg i absolutely did i commented on it hahaha but in my head it was posted wayyy closer to the ghost mentio..."
+       Reasoning: Scanning each token: 'omg' is internet slang (oh my god), widely used across generations but still considered informal/internet slang. 'hahaha' is an expressive interjection, no...
+  FP  gold=NOT_SLANG   pred=SLANG       | "the ghost of mandela hope my flows they propel it let these words be your earth and moon you consume every ..."
+       Reasoning: Scanning each token: 'nigga' is a slang term used in African American Vernacular English (AAVE), widely adopted in Gen Z internet culture — it's considered slang in this context...
+  FP  gold=NOT_SLANG   pred=SLANG       | "since our singer ghost boy started streaming even though this isnt your official anniversary day a few of u..."
+       Reasoning: Scanning each token: 'ghost boy' is a proper noun (likely a username or stage name), not slang. 'loafers' stands out — in Gen Z internet slang, 'loafer' means someone who is laz...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "ghost of texas st"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "ghost from power came into zara when i worked there and cussed out my co worker for asking for a picture th..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "obanai would be a poison ghost or psychic type gym leader"
+  FN  gold=SLANG       pred=NOT_SLANG   | "i havent seen it yet but i do hate the pitch clock and can they stop with the ghost runner on second base"
+       Reasoning: Scanning each token: 'pitch clock' and 'ghost runner on second base' are official MLB rule terms introduced in 2023 — they are formal sports terminology, not slang. 'havent', 'd...
+
+  [mood]
+  TP  gold=SLANG       pred=SLANG       | "you dont say gyatt when seeing an anime girl you ruin the mood"
+  TP  gold=SLANG       pred=SLANG       | "lol why is this a mood"
+  TP  gold=SLANG       pred=SLANG       | "bleh you know the mood is off when i spend all day napping and scrolling my phone"
+  FP  gold=NOT_SLANG   pred=SLANG       | "any character goes btw humans not so much but anything nintendo or furry like is fine colors and mood can b..."
+       Reasoning: Scanning each token: 'btw' is internet slang for 'by the way'. 'furry' is a subculture term, but not Gen Z/Alpha slang per se — it's a proper noun referring to a fandom. 'colors...
+  FP  gold=NOT_SLANG   pred=SLANG       | "when i get in the mood of wanting to unalive myself"
+       Reasoning: Scanning each token: 'unalive' is internet slang (a euphemistic, often darkly humorous or ironic replacement for 'kill') that originated in online communities and is widely reco...
+  FP  gold=NOT_SLANG   pred=SLANG       | "ah please forgive me i am in a atwitter yapper mood hahah but still thank you for your kind words made me s..."
+       Reasoning: Scanning each token: 'ah', 'please', 'forgive', 'me', 'i', 'am', 'in', 'a', 'yapper', 'mood', 'hahah', 'but', 'still', 'thank', 'you', 'for', 'your', 'kind', 'words', 'made', 'm...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "changing the mood of the country will take care of business without hate retribution lies and stupidity vot..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "a few therapy sessions will help your mood"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the guys come charged in a good mood ready to work"
+
+  [woke]
+  TP  gold=SLANG       pred=SLANG       | "got slightly drunk last night woke up fine big w for an almost yo"
+  TP  gold=SLANG       pred=SLANG       | "its in sf as woke as it gets"
+  TP  gold=SLANG       pred=SLANG       | "just curious why did starlink partner the the wokest of woke companies"
+  FP  gold=NOT_SLANG   pred=SLANG       | "i just woke up omg"
+       Reasoning: Scanning each token: 'i', 'just', 'woke', 'up' are standard English words. 'omg' is internet slang for 'oh my god', widely used across generations but originating in and still p...
+  FP  gold=NOT_SLANG   pred=SLANG       | "its am and i just woke up and im having issues breathinh chat am i cooked"
+       Reasoning: Scanning each token: 'am' is standard abbreviation for 'ante meridiem', not slang. 'cooked' is Gen Z slang meaning 'in serious trouble' or 'doomed', especially in contexts imply...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i was stung in my sleep by a wasp but i went to bed so baked i didn t even know until after i woke up in th..."
+       Reasoning: Scanning each token: 'baked' is Gen Z/internet slang meaning extremely high (intoxicated, typically by cannabis). It is used here non-literally — not referring to cooking — and ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "ever slept so good you woke up with a headache yup me too"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "woke up in the am"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i just woke up vote star pleaseee"
+  FN  gold=SLANG       pred=NOT_SLANG   | "please explain what actions the current generals have taken that proves they are qualified military leaders..."
+       Reasoning: Scanning each token: 'woke' is used here in a political/critical context — while it originated as slang, its use here is ideological and not Gen Z/Gen Alpha internet slang in th...
+  FN  gold=SLANG       pred=NOT_SLANG   | "woke leftists cant name a single kamala accomplishment  via"
+       Reasoning: Scanning each token: 'woke' is a politically charged term that originated in activist circles and has been adopted into mainstream and internet usage; while it has historical ro...
+  FN  gold=SLANG       pred=NOT_SLANG   | "woke cia backed dominion will decide out next election just like they did in amp"
+       Reasoning: Scanning each token: 'woke' is sometimes used as slang (often pejoratively) to describe progressive or socially conscious attitudes — but in political discourse, it’s increasing...
+
+  [caps]
+  FP  gold=NOT_SLANG   pred=SLANG       | "i think it goes beyond the basic netiquette like dont use caps and such just some random thing that popped ..."
+       Reasoning: Scanning each token: 'netiquette' is a standard term (blend of 'network' + 'etiquette'), not slang. 'lol' is internet slang meaning 'laugh out loud', widely used across generati...
+  FP  gold=NOT_SLANG   pred=SLANG       | "totally worth an all caps post against akron no one cares"
+       Reasoning: Scanning each token: 'totally' is standard English. 'worth' is standard. 'an all caps post' — 'all caps' is internet slang meaning typing in uppercase letters to convey emphasis...
+  FP  gold=NOT_SLANG   pred=SLANG       | "caps"
+       Reasoning: 'caps' is internet slang meaning 'cannot approve this statement' or used to express disbelief/irony (short for 'cap', meaning lie; 'no cap' = telling the truth, 'cap' = lying). ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "sorry let me use all caps yep right here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "texas tech defense gets a threeandout on the first series against abilene christian tahj brooks caps the re..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "jaxson dart gets his season off to a good start for in the air for  yards and caps the seasonopening drive ..."
+
+  [big]
+  TP  gold=SLANG       pred=SLANG       | "it s more like a fanum tax ishowspeed among us big chungus rizz"
+  TP  gold=SLANG       pred=SLANG       | "big w for us george fans"
+  TP  gold=SLANG       pred=SLANG       | "its literally just a room with an animationless pap its a big l"
+  FP  gold=NOT_SLANG   pred=SLANG       | "ouch and i wouldn t touch fetterman with a foot pole that means kamala is a big l"
+       Reasoning: Scanning each token: 'ouch' is an interjection, not slang. 'foot pole' appears to be a misspelling/misuse of the idiom 'ten-foot pole', but that’s not Gen Z/Alpha slang — it's a...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i agree as a big l myself i thought that we won the civil rights we needed to have equal citizenship we won..."
+       Reasoning: Scanning each token: 'big l' is Gen Z slang meaning 'big loser', often used self-deprecatingly or ironically. 'heartsamp' appears to be a misspelling or typo of 'hearts and amp'...
+  FP  gold=NOT_SLANG   pred=SLANG       | "naaaa there is another rapper named big l"
+       Reasoning: Scanning each token: 'naaaa' is an elongated, informal variant of 'no', commonly used in internet and Gen Z speech to express disbelief or dismissal — it functions as slang. 'th...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "despite these challenges marks spencer sees big potential in brooks brothers noting the widely recognized n..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "however none of the big three weeklies recorded circulation gains recently"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "this must be the last big stretch of the american seacoast that is undeveloped there are a few ramshackle f..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "no be this same man talk say dr pounds get big bro for abroad big l"
+       Reasoning: Scanning each token: 'no be this same man' is Nigerian Pidgin English, not Gen Z/Gen Alpha internet slang. 'dr pounds' and 'big bro' may be nicknames or cultural references but ...
+  FN  gold=SLANG       pred=NOT_SLANG   | "thats a concern for most big l but i think this will be a removable drive for me i couldnt care less i alre..."
+       Reasoning: Scanning each token: 'l' appears in 'big l' — this could be slang for 'loss', but 'big L' is Gen Z slang meaning a major failure or embarrassing loss. However, here it's written...
+  FN  gold=SLANG       pred=NOT_SLANG   | "not a single big team won these games georgia beats whichever top mid team the big throws out there by  tds"
+       Reasoning: Scanning each token: 'georgia' is a proper noun (likely referring to the University of Georgia football team). 'tds' is an abbreviation for 'touchdowns', standard sports termino...
+
+  [sus]
+  TP  gold=SLANG       pred=SLANG       | "its very sus"
+  TP  gold=SLANG       pred=SLANG       | "its close to being honest that defense was low key sus"
+  TP  gold=SLANG       pred=SLANG       | "new accounts like the evilest highly sus except ours"
+  FP  gold=NOT_SLANG   pred=SLANG       | "also earlier i typed usa into the emoji search and our flag didnt come up usually does i had to put flag an..."
+       Reasoning: Scanning each token: 'usa', 'emoji', 'flag', 'thumb', 'sus' — 'sus' is Gen Z slang (short for 'suspicious', popularized by Among Us). All other words are standard English or lit...
+  FP  gold=NOT_SLANG   pred=SLANG       | "damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus"
+       Reasoning: Scanning each token: 'damn bro' is informal but not uniquely Gen Z slang. 'down bad' is Gen Z slang meaning emotionally devastated or overly infatuated — it's a recognized slang...
+  FP  gold=NOT_SLANG   pred=SLANG       | "anything weirdo and bona fide fruit loop loomer has to say is automatically sus"
+       Reasoning: Scanning each token: 'weirdo' is standard English (not slang in this context). 'bona fide' is a Latin legal phrase, used formally — not slang. 'fruit loop' is a brand name but s...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "los youtubers son felices con sus croquetas"
+
+  [cringe]
+  TP  gold=SLANG       pred=SLANG       | "wow that was cringe would love to vibe out with americans new drunk wine mom but not when she s supporting ..."
+  TP  gold=SLANG       pred=SLANG       | "worldly things that people cringe at for being dated should not be liturgical music its fossilized broadway..."
+  TP  gold=SLANG       pred=SLANG       | "ole miss is so cringe"
+  FP  gold=NOT_SLANG   pred=SLANG       | "done burn me at the steak here but this scene is so cringe"
+       Reasoning: Scanning each token: 'done burn me at the steak' is a misspelling/mishearing of the Gen Z slang phrase 'burn me at the stake', used hyperbolically to express embarrassment — but...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i cringe so easily i m scared to switch it back on"
+       Reasoning: Scanning each token: 'cringe' is used here as a verb meaning to feel intense secondhand embarrassment — this is a well-established Gen Z slang usage (originally from internet cu...
+  FP  gold=NOT_SLANG   pred=SLANG       | "for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not step..."
+       Reasoning: Scanning each token: 'cringe' is Gen Z slang meaning embarrassing or awkward in an uncomfortable way. It's used here to describe the phrase 'Pokémon Go to the polls', indicating...
+  FN  gold=SLANG       pred=NOT_SLANG   | "haha who got thrashed  to  plus or  plus to  such a tight slap that policies are now changing and cringe wo..."
+       Reasoning: Scanning each token: 'haha' is standard interjection, not slang. 'thrashed' is informal but widely accepted in standard English (e.g., “thrashed in a debate”) — not uniquely Gen...
+  FN  gold=SLANG       pred=NOT_SLANG   | "glenn but fan of foot function and the impact to sprinting but when i keep seeing the social media posts of..."
+       Reasoning: Scanning each token: 'glenn' is a name. 'fan of foot function', 'impact to sprinting', 'social media posts', 'coaches observing cuboid dysfunction', 'ms', 'cringe', 'earlier lin...
+
+
+
+======================================================================
+SLANG SENTENCE CLASSIFICATION - ERROR ANALYSIS REPORT
+======================================================================
+Source        : llm_evaluation/outputs/deepseek/deepseek-v3.2_sentence_cot_raw.jsonl
+Model         : DeepSeek-V3.2
+Sentences     : 3000
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL CONFUSION MATRIX
+----------------------------------------------------------------------
+  True  Positives (TP) - slang sentence correctly identified   :   1392
+  False Positives (FP) - non-slang sentence called slang       :    489
+  True  Negatives (TN) - non-slang sentence correctly rejected :   1011
+  False Negatives (FN) - slang sentence missed by model        :    108
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL METRICS
+----------------------------------------------------------------------
+  Accuracy  : 0.8010
+  Precision : 0.7400
+  Recall    : 0.9280
+  F1 Score  : 0.8234
+
+----------------------------------------------------------------------
+SENTENCE-LEVEL EXACT MATCH
+----------------------------------------------------------------------
+  Exact matches : 2403 / 3000  (80.1%)
+
+----------------------------------------------------------------------
+TP EXAMPLES  (True  Positives - slang sentence correctly identified)
+----------------------------------------------------------------------
+  Count: 1392
+
+  TP  gold=SLANG       pred=SLANG       | "thirsty s"
+  TP  gold=SLANG       pred=SLANG       | "maybe the wef is looking for a female to fill a role sheesh"
+  TP  gold=SLANG       pred=SLANG       | "pas mal le glow up de fin les voyages"
+  TP  gold=SLANG       pred=SLANG       | "alright cua"
+  TP  gold=SLANG       pred=SLANG       | "turn on your cam for the meeting"
+  TP  gold=SLANG       pred=SLANG       | "that video was faf"
+  TP  gold=SLANG       pred=SLANG       | "sue it s bussin omg"
+  TP  gold=SLANG       pred=SLANG       | "are you green flag"
+  TP  gold=SLANG       pred=SLANG       | "theres an offset from whatever low vibrational music i listenedlisten to is offset by the associations it g..."
+  TP  gold=SLANG       pred=SLANG       | "blake lively is cheugy"
+
+----------------------------------------------------------------------
+FP EXAMPLES  (False Positives - non-slang sentence incorrectly labelled as slang)
+----------------------------------------------------------------------
+  Count: 489
+
+  FP  gold=NOT_SLANG   pred=SLANG       | "they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not ..."
+       Reasoning: Scanning each token: 'they acting like they' has 'acting', possibly slang meaning behaving in a certain way, but 'acting' here is standard verb usage. 'paid extra for it' are st...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i love that a hype squad member is getting flammed for being a moron"
+       Reasoning: Scanning each token: 'flammed' is an internet slang variant spelling of 'flamed', meaning harshly criticized or insulted online. No other tokens are slang. The sentence contains...
+  FP  gold=NOT_SLANG   pred=SLANG       | "best lr  class for beta will have u movin"
+       Reasoning: Scanning each token: 'lr' is a two-letter abbreviation likely for 'lower rank' or 'lancer'? unclear, but check context. 'class for' are standard words. 'beta' could refer to a t...
+  FP  gold=NOT_SLANG   pred=SLANG       | "hurmm nak cut off and softblock siapa lagi eh i wanna remove toxic and negative aura people"
+       Reasoning: Scanning each token: 'hurmm' is a non-English expression often used in Malaysian/Indonesian online contexts, representing hesitation or thinking — considered slang. 'nak' is sla...
+  FP  gold=NOT_SLANG   pred=SLANG       | "lukaku just snatched his chain"
+       Reasoning: Scanning each token: 'lukaku' (likely a name) is not slang. 'just' is standard. 'snatched' in Gen Z slang means stealing or taking away something aggressively. Checking context,...
+  FP  gold=NOT_SLANG   pred=SLANG       | "not thirsty"
+       Reasoning: Scanning each token: 'thirsty' could be slang meaning craving attention, wanting something badly. However, checking context: it's paired with 'not' in a simple two-word expressi...
+  FP  gold=NOT_SLANG   pred=SLANG       | "lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent ..."
+       Reasoning: Scanning each token: 'lol' is classic internet slang (meaning laugh out loud). 'they cant even get a handle on petty crime' is standard English. 'all these governments pretendin...
+  FP  gold=NOT_SLANG   pred=SLANG       | "trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad a..."
+       Reasoning: Scanning each token: 'rn' is Gen Z slang abbreviation for 'right now'. 'cheater', 'rapid fire', 'aimbot', 'crates', 'abilites', 'spam', 'fight' — in gaming context these are sta...
+  FP  gold=NOT_SLANG   pred=SLANG       | "wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so ..."
+       Reasoning: Scanning each token: 'wouldve' is a contraction, not slang. 'done this one' standard. 'tbh' is internet abbreviation for 'to be honest' — slang. 'but it was gonna be more like b...
+  FP  gold=NOT_SLANG   pred=SLANG       | "kt s honesty is always a joy to see and hear follow  for all the tea on movies"
+       Reasoning: Scanning each token: 'kt' is ambiguous — could be abbreviation for something, but 'follow' suggests social media context. 'honesty', 'joy', 'see', 'hear', 'movies' are standard....
+
+----------------------------------------------------------------------
+TN EXAMPLES  (True  Negatives - non-slang sentence correctly rejected)
+----------------------------------------------------------------------
+  Count: 1011
+
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "reach level in the black ops beta to unlock these skins for free play the beta here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and e..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "we think this is a superior deal to mccaws"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "six top executives at the new yorkbased company sold shares in august and september"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "east germany it is clear is no poland where the communist party now shares power with the democratically el..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "just play the beta i played for hours and didn t run into anyone that suspicious"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "every month we release exclusive extras to our supporters on patreon this month weve got a creature summone..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the department didnt specify how many consumers have been hurt by the alleged discriminatory practices sayi..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh joy a classic blame shift favourites of the day   please arrive extra early due to xyz problem  your boo..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "so shall it be prince god will perfect your healing bop daddy"
+
+----------------------------------------------------------------------
+FN EXAMPLES  (False Negatives - slang sentence the model failed to catch)
+----------------------------------------------------------------------
+  Count: 108
+
+  FN  gold=SLANG       pred=NOT_SLANG   | "negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular talk us..."
+       Reasoning: Scanning each token: this text appears to be a headline or a list of keywords/tags ('negative aura', 'nick fuentes ruthlessly mocks jd vance', 'the kyle kulinski show', 'north a...
+  FN  gold=SLANG       pred=NOT_SLANG   | "auction draft  team super flex ppr how d i do"
+       Reasoning: Scanning each token: auction draft: standard fantasy football terminology. 'team super flex ppr' are standard fantasy football terms (position types). 'how d i do' appears to be...
+  FN  gold=SLANG       pred=NOT_SLANG   | "at least we managed snatched sancho"
+       Reasoning: Scanning each token: 'at least we managed snatched sancho' appears to describe obtaining a person (Sancho) or something named Sancho. 'managed snatched' could be a typing error ...
+  FN  gold=SLANG       pred=NOT_SLANG   | "a red flag is a red flag"
+       Reasoning: Scanning each token: 'red flag' can be slang when used in dating/relationship contexts to mean warning signs about a person's behavior. However, here it appears to be used in it...
+  FN  gold=SLANG       pred=NOT_SLANG   | "ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it ..."
+       Reasoning: Scanning each token: 'ok' could be an abbreviation but it is likely used colloquially here, not slang. The rest of the sentence discusses blockchain and crypto technical termino...
+  FN  gold=SLANG       pred=NOT_SLANG   | "happy birthday my dear love sweetheart munchkin sunshine honeybun lovebug kitten chocolate cupcake muffin s..."
+       Reasoning: Scanning each token: all terms appear to be affectionate nicknames. Some like 'baddie' can be slang (a fashionable attractive person), but in this context it is part of a long l...
+  FN  gold=SLANG       pred=NOT_SLANG   | "their entire campaign is built on a foundation of faux enthusiasm and support they ve been told that kamala..."
+       Reasoning: Scanning each token: 'faux' is French loanword meaning fake but used in English in its literal sense. 'enthusiasm', 'support', 'they've', 'been', 'told', 'that', 'Kamala', 'is',...
+  FN  gold=SLANG       pred=NOT_SLANG   | "oh god theyre so blood thirsty there its appalling cant believe hori validated those freaks"
+       Reasoning: Scanning each token: 'blood thirsty' is a candidate slang phrase, but here it is used literally or figuratively, not as Gen Z slang. 'appalling', 'cant believe', 'freaks' are st...
+  FN  gold=SLANG       pred=NOT_SLANG   | "sorry for the late response i was aak last night"
+       Reasoning: Scanning each token: 'aak' is not a recognized slang abbreviation — likely a typo or misspelling of a real slang term. No other slang is present. Given the sentence, 'aak' is no...
+  FN  gold=SLANG       pred=NOT_SLANG   | "well his hat sums up what i think of him and his opinion big l"
+       Reasoning: Scanning each token: 'sums up' is standard phrase. 'l' could be internet slang for 'loss' or 'laugh', but here it's tagged as non-slang (likely meaning 'league'). The sentence l...
+
+
+======================================================================
+POLYSEMOUS WORD ANALYSIS
+======================================================================
+Tracking 15 words: fire, sick, slay, extra, basic, beta, squad, lore, ghost, mood, woke, caps, big, sus, cringe
+
+  Word                TP    FP    TN    FN  Verdict
+  ─────────────────────────────────────────────────────
+  fire                 5    18    40     1  x errors
+  sick                 3     1     3     0  x errors
+  slay                33     2     2     0  x errors
+  extra                2    24    49     3  x errors
+  basic                6    19    55     3  x errors
+  beta                 7    26    36     1  x errors
+  squad                4    27    39     1  x errors
+  lore                 5    33    33     0  x errors
+  ghost                2    12    15     1  x errors
+  mood                 5    21    26     0  x errors
+  woke                19     7     6     0  x errors
+  caps                 0     2     4     0  x errors
+  big                 51    13    12     3  x errors
+  sus                 48     4     1     0  x errors
+  cringe              46     5     0     1  x errors
+
+Detailed sentence rows for polysemous words:
+
+  [fire]
+  TP  gold=SLANG       pred=SLANG       | "itll smother the flames as fire needs oxygen to burn also dont yeet the flames unless you really hate your ..."
+  TP  gold=SLANG       pred=SLANG       | "dinner was fire"
+  TP  gold=SLANG       pred=SLANG       | "naaah but i love this angle it s fire stay chillax"
+  FP  gold=NOT_SLANG   pred=SLANG       | "trials are unplayable rn its full of cheater with rapid fire and aimbot special system with crates is bad a..."
+       Reasoning: Scanning each token: 'rn' is Gen Z slang abbreviation for 'right now'. 'cheater', 'rapid fire', 'aimbot', 'crates', 'abilites', 'spam', 'fight' — in gaming context these are sta...
+  FP  gold=NOT_SLANG   pred=SLANG       | "worst performance i ve ever seen fire beamer"
+       Reasoning: Scanning each token: 'worst performance i ve ever seen' — 'worst', 'performance', 'i', 've', 'ever', 'seen' are all standard English. 'fire beamer' is slang: 'fire' as slang for...
+  FP  gold=NOT_SLANG   pred=SLANG       | "ghost from power came into zara when i worked there and cussed out my co worker for asking for a picture th..."
+       Reasoning: Scanning each token: 'ghost' could be slang meaning ghosting someone (ignoring them), but here it is a noun referring to a person named Ghost (possibly from TV show 'Power'). 'z...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh south carolina might need to fire shane beamer right now"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "need to fire that photographer if hid shots are this bad"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "blake i still remember the time you ran into that pet store that was on fire and rescued all the pets you a..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "just allowed a first down fire durkin"
+       Reasoning: Scanning each token: This sentence appears to be a sports comment, likely football (American football), referring to allowing a first down and saying "fire Durkin." "Fire Durkin...
+
+  [sick]
+  TP  gold=SLANG       pred=SLANG       | "bunch of fat ugly femcels in this post that use this vile shit for easy clout legit off yourselves ingame a..."
+  TP  gold=SLANG       pred=SLANG       | "i m really sick and i m salty asf because i m working until tuesday and i can t take any medicine"
+  TP  gold=SLANG       pred=SLANG       | "i be so fucking low vibrational when i m sick"
+  FP  gold=NOT_SLANG   pred=SLANG       | "i got checked for iron about  months ago when i was also having these symptoms i lit have no idea what s wr..."
+       Reasoning: Scanning each token: 'got checked for iron' — standard medical talk. 'months ago' — standard. 'having these symptoms' — standard. 'i lit' — 'lit' is Gen Z slang meaning cool, am...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i ate too much la tiao now i feel sick"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "bo beta drops and i get sick currently dying instead of playing the beta"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i ate junk food twice and felt sick after"
+
+  [slay]
+  TP  gold=SLANG       pred=SLANG       | "awesome slay i wish we dmed more i like our friendship"
+  TP  gold=SLANG       pred=SLANG       | "chat i luv my new oomfies yall are so slay"
+  TP  gold=SLANG       pred=SLANG       | "i had one slay on a during a night attack cooks don t fuck around"
+  FP  gold=NOT_SLANG   pred=SLANG       | "wouldve done this one tbh but it was gonna be more like black and red so the background isnt it but its so ..."
+       Reasoning: Scanning each token: 'wouldve' is a contraction, not slang. 'done this one' standard. 'tbh' is internet abbreviation for 'to be honest' — slang. 'but it was gonna be more like b...
+  FP  gold=NOT_SLANG   pred=SLANG       | "oooh pretty i love that dolly style of eye makeup so much it s so yummy i can never pull it off so im alway..."
+       Reasoning: Scanning each token: 'oooh pretty i love that dolly style of eye makeup so much it s so yummy i can never pull it off so im always jealous when other people look soso good with ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "once an old man sat next to me at a pub and said i hear the beast from the east is returning with the gruff..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "do you think you can fix a broken person only if they want to be helped and are honest my english teacher i..."
+
+  [extra]
+  TP  gold=SLANG       pred=SLANG       | "ill even act extra white like hey hows the weather to not make you uncomfortable with my poc swagger"
+  TP  gold=SLANG       pred=SLANG       | "im bringing an extra charger bsts"
+  FP  gold=NOT_SLANG   pred=SLANG       | "they acting like they paid extra for itthe signed vinyl cost the same as the standard im sorry but its not ..."
+       Reasoning: Scanning each token: 'they acting like they' has 'acting', possibly slang meaning behaving in a certain way, but 'acting' here is standard verb usage. 'paid extra for it' are st...
+  FP  gold=NOT_SLANG   pred=SLANG       | "enable twofactor authentication fa enhance your security by enabling fa even if a scammer gets your passwor..."
+       Reasoning: Scanning each token: 'fa' appears multiple times and is acronym slang for "two-factor authentication" (frequent abbreviation). 'twofactor' might be slang abbreviation for "two-f...
+  FP  gold=NOT_SLANG   pred=SLANG       | "oh that bitch is always listening it s the only way it can be prompted into doing anything u command also t..."
+       Reasoning: Scanning each token: 'oh' is a standard interjection. 'that bitch' uses 'bitch' here as slang — referring to a person or thing derisively — slang meaning here. 'is always listen...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh joy a classic blame shift favourites of the day   please arrive extra early due to xyz problem  your boo..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "as much as i love his wispy look the extra close cut may have been a good thing before this adventure"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh really you happy with kroger spending a billion dollars of that extra money they made off of you for sto..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "probably get two just to be extra safe"
+       Reasoning: Scanning each token: 'probably get two just to be extra safe' — all tokens are standard English. 'extra' could be interpreted informally ('extra' as slang meaning dramatic or ov...
+  FN  gold=SLANG       pred=NOT_SLANG   | "hi september be extra special this year th has to be extra extra special"
+       Reasoning: Scanning each token: 'hi september be extra special this year' are standard English words. 'th' may be an abbreviation (could be 'the' or shorthand for 'that') but this is uncle...
+  FN  gold=SLANG       pred=NOT_SLANG   | "its extra"
+       Reasoning: Scanning each token: 'its' is standard English. 'extra' in Gen Z slang means overly dramatic or exaggerated behavior, but in this short sentence it is ambiguous — could be slang...
+
+  [basic]
+  TP  gold=SLANG       pred=SLANG       | "the twins theyre just so basic humans empty and nothings match good on them i dont like them at all"
+  TP  gold=SLANG       pred=SLANG       | "i dont but its kind of basic overall it needs more support to no be finecky"
+  TP  gold=SLANG       pred=SLANG       | "i m oldhead is a mentality theres new old heads you can t distinguish theres another generation of music ba..."
+  FP  gold=NOT_SLANG   pred=SLANG       | "lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipotent ..."
+       Reasoning: Scanning each token: 'lol' is classic internet slang (meaning laugh out loud). 'they cant even get a handle on petty crime' is standard English. 'all these governments pretendin...
+  FP  gold=NOT_SLANG   pred=SLANG       | "this is why i don t date well that and every fucking human being is annoying as hell but like seriously you..."
+       Reasoning: Scanning each token: 'well that and every fucking human being is annoying as hell' uses informal but standard words. 'lmaooo' is internet slang meaning laughing my ass off — thi...
+  FP  gold=NOT_SLANG   pred=SLANG       | "sell pressure concerns are so pleby tbh if you have a highly desirable token then buy pressure will make an..."
+       Reasoning: Scanning each token: 'sell pressure concerns are so' are standard English. 'pleby' is likely slang: possibly derived from "plebeian" meaning common or unsophisticated, often use...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "cool tech but this is not a replacement for cell service it s only a basic connection for textcalls it will..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "if you d do your damn research you d know that already but you seem to not want to do basic research and ge..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the  has long been a poisoned chalice how many world class coaches have we had and our players make the wor..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything it ..."
+       Reasoning: Scanning each token: 'ok' could be an abbreviation but it is likely used colloquially here, not slang. The rest of the sentence discusses blockchain and crypto technical termino...
+  FN  gold=SLANG       pred=NOT_SLANG   | "trying this out my interests are pretty basic but some are a bit specific"
+       Reasoning: Scanning each token: 'basic' could be Gen Z slang meaning mainstream or conformist (as in "she's so basic"), but here the phrase "my interests are pretty basic" likely means sim...
+  FN  gold=SLANG       pred=NOT_SLANG   | "how did he manage to be a full time waiter and complete the physician associate course at the same time mos..."
+       Reasoning: Scanning each token: 'basic' is slang meaning simple/easy, but here it is literal descriptive term for the course, not slang usage. No slang abbreviation like 'fr' or 'ikr'. All...
+
+  [beta]
+  TP  gold=SLANG       pred=SLANG       | "with women who they desire sexually is simply approval seeking and weak behavior it is an attempt by beta m..."
+  TP  gold=SLANG       pred=SLANG       | "white dudes lol beta"
+  TP  gold=SLANG       pred=SLANG       | "remember pence is a beta male trump would have demolished her"
+  FP  gold=NOT_SLANG   pred=SLANG       | "best lr  class for beta will have u movin"
+       Reasoning: Scanning each token: 'lr' is a two-letter abbreviation likely for 'lower rank' or 'lancer'? unclear, but check context. 'class for' are standard words. 'beta' could refer to a t...
+  FP  gold=NOT_SLANG   pred=SLANG       | "hangover and the bo beta turning to total dogshit in the span of a day among other things has me wanting to..."
+       Reasoning: Scanning each token: 'hangover' standard. 'and the' standard. 'bo' unclear abbreviation (possibly slang). 'beta' could be slang for beta male/player (but context unclear). 'dogs...
+  FP  gold=NOT_SLANG   pred=SLANG       | "its a beta stuff is still getting ironed out"
+       Reasoning: Scanning each token: 'beta' is common slang referring to an early version of a product, often software. 'ironed out' is a metaphorical phrase meaning 'fixed' or 'sorted out', bu...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "reach level in the black ops beta to unlock these skins for free play the beta here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "looks like to me the covid vaccination was just a beta test and we nailed it were effectively as dumb and e..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "just play the beta i played for hours and didn t run into anyone that suspicious"
+  FN  gold=SLANG       pred=NOT_SLANG   | "all my settings for the black ops  beta this should help those of you that are currently looking around for..."
+       Reasoning: Scanning each token: 'black ops' is a video game series title (Call of Duty), not slang. 'beta' is gaming terminology for pre-release software. All other words — 'settings', 'co...
+
+  [squad]
+  TP  gold=SLANG       pred=SLANG       | "you know what i think you re the best rizzler of the skibidi squad"
+  TP  gold=SLANG       pred=SLANG       | "i ve been here stable af dong squad strong"
+  TP  gold=SLANG       pred=SLANG       | "and she is already back in her shit all that happened is that she saw jasmine crockett going viral and copi..."
+  FP  gold=NOT_SLANG   pred=SLANG       | "i love that a hype squad member is getting flammed for being a moron"
+       Reasoning: Scanning each token: 'flammed' is an internet slang variant spelling of 'flamed', meaning harshly criticized or insulted online. No other tokens are slang. The sentence contains...
+  FP  gold=NOT_SLANG   pred=SLANG       | "wubs squad"
+       Reasoning: Scanning each token: 'wubs' appears to be slang — possibly referring to a type of music style, an affectionate nickname, or internet slang meaning 'love' in some contexts. Witho...
+  FP  gold=NOT_SLANG   pred=SLANG       | "tough part is what constitutes a bad team vs good team burnley players for instance were quite good at buil..."
+       Reasoning: Scanning each token: 'last yr' is a common abbreviation for 'last year' used in internet slang/casual communication. This is a single-token slang expression. The rest of the sen...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "nobody axes a player out the squad like conte"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "oh he did something he decided to find a way into early retirement instead of going with his squad into bat..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "second biggest net spend in the league this window squad is considerably stronger than it was entering the ..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "rehashing garbage that has been rejected because of no public option everyone take note they do this before..."
+       Reasoning: Scanning each token: 'squad' could be slang referring to a close group of friends, but here it is used in political context ("the squad" referring to a group of progressive Demo...
+
+  [lore]
+  TP  gold=SLANG       pred=SLANG       | "real ones have a yapping contest about fnaf lore"
+  TP  gold=SLANG       pred=SLANG       | "in general i think he would vibe with how fnaf fansongs usually create and explore their own lore instead o..."
+  TP  gold=SLANG       pred=SLANG       | "oomf is explaining the charli xcx x matty healy x taylor swift lore outside the pub"
+  FP  gold=NOT_SLANG   pred=SLANG       | "ot isd literally the best game ive ever played actually lolzz ive loved it since  and now its even better i..."
+       Reasoning: Scanning each token: 'ot isd' appears malformed — likely abbreviation errors. 'literally' is standard English adverb but can be slang filler, but considered standard here. 'the ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "watching rings of power for the first time  here s my liveposting thread about it yaaaaay i am so bad at re..."
+       Reasoning: Scanning each token: 'liveposting' is a slang compound word meaning posting live updates/commentary while watching something. 'yaaaay' is slang (elongated expression of exciteme...
+  FP  gold=NOT_SLANG   pred=SLANG       | "rina and kendra lore"
+       Reasoning: Scanning each token: 'rina' and 'kendra' could be names. 'lore' could be slang meaning background story or narrative (especially in fandom contexts). In this sentence 'lore' lik...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "every month we release exclusive extras to our supporters on patreon this month weve got a creature summone..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "an undeserved deus ex machina of a transformation with no lore like ultra instinct and ego"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "controversial opinion but i prefer episodes over seasons more introduced activities a guarenteed exotic mis..."
+
+  [ghost]
+  TP  gold=SLANG       pred=SLANG       | "going ghost is on my mind heavy"
+  TP  gold=SLANG       pred=SLANG       | "narcissistic personality cannot comprehend getting ghosted like who do you think you are that people cannot..."
+  FP  gold=NOT_SLANG   pred=SLANG       | "ghost from power came into zara when i worked there and cussed out my co worker for asking for a picture th..."
+       Reasoning: Scanning each token: 'ghost' could be slang meaning ghosting someone (ignoring them), but here it is a noun referring to a person named Ghost (possibly from TV show 'Power'). 'z...
+  FP  gold=NOT_SLANG   pred=SLANG       | "omg i absolutely did i commented on it hahaha but in my head it was posted wayyy closer to the ghost mentio..."
+       Reasoning: Scanning each token: 'omg' is internet slang for 'oh my god'. 'i absolutely did i commented on it hahaha' uses standard words. 'wayyy' with extra letters might be colloquial emp...
+  FP  gold=NOT_SLANG   pred=SLANG       | "the ghost of mandela hope my flows they propel it let these words be your earth and moon you consume every ..."
+       Reasoning: Scanning each token: The sentence has 'nigga', which in context is a slang variant of "nigger" used in hip-hop and informal speech among some groups. But note this is 'nigga' — ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "ghost of texas st"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "obanai would be a poison ghost or psychic type gym leader"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "nephi  and after the angel had spoken unto us he departed hes there he delivers his message and hes outa th..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "i havent seen it yet but i do hate the pitch clock and can they stop with the ghost runner on second base"
+       Reasoning: Scanning each token: 'i havent seen it yet but i do hate the pitch clock' uses standard baseball terminology ('pitch clock' is technical jargon). 'ghost runner' is a baseball te...
+
+  [mood]
+  TP  gold=SLANG       pred=SLANG       | "you dont say gyatt when seeing an anime girl you ruin the mood"
+  TP  gold=SLANG       pred=SLANG       | "lol why is this a mood"
+  TP  gold=SLANG       pred=SLANG       | "bleh you know the mood is off when i spend all day napping and scrolling my phone"
+  FP  gold=NOT_SLANG   pred=SLANG       | "any character goes btw humans not so much but anything nintendo or furry like is fine colors and mood can b..."
+       Reasoning: Scanning each token: 'btw' is internet shorthand for 'by the way' — this is slang. 'furry' refers to a subculture/style but could be standard term — however, given context ('any...
+  FP  gold=NOT_SLANG   pred=SLANG       | "when i get in the mood of wanting to unalive myself"
+       Reasoning: Scanning each token: 'unalive' is Gen Z slang (avoiding censorship platforms) meaning to kill oneself. The rest — 'when i get in the mood of wanting to' — are standard English w...
+  FP  gold=NOT_SLANG   pred=SLANG       | "its saturday night laying on my couch in the garden with my lovely woman soul music on and some sweet chick..."
+       Reasoning: Scanning each token: 'mood' here is part of a hashtag-like phrase, meaning the situation perfectly captures a certain vibe — this is Gen Z slang. The rest of the sentence uses s...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "changing the mood of the country will take care of business without hate retribution lies and stupidity vot..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "a few therapy sessions will help your mood"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "the guys come charged in a good mood ready to work"
+
+  [woke]
+  TP  gold=SLANG       pred=SLANG       | "got slightly drunk last night woke up fine big w for an almost yo"
+  TP  gold=SLANG       pred=SLANG       | "its in sf as woke as it gets"
+  TP  gold=SLANG       pred=SLANG       | "just curious why did starlink partner the the wokest of woke companies"
+  FP  gold=NOT_SLANG   pred=SLANG       | "woke up in the am"
+       Reasoning: Scanning each token: 'woke up' is standard English for becoming awake. 'in the' are standard articles/prepositions. 'am' is internet slang shorthand for 'morning' (from 'AM' mea...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i just woke up omg"
+       Reasoning: Scanning each token: 'omg' is internet slang for 'oh my god'. This is a widely used abbreviation across Gen Z and others. The rest — 'i just woke up' — is standard English. The ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "woke up weighing bs down from lbs in june now im on this  week program to shredcut up ans lose this fat"
+       Reasoning: Scanning each token: 'bs' possibly slang for "bullshit" but here could be abbreviation for "BS" referring to pounds measurement? 'lbs' standard abbreviation for pounds. 'im' sla...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "ever slept so good you woke up with a headache yup me too"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "i just woke up vote star pleaseee"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "and then you woke up"
+
+  [caps]
+  FP  gold=NOT_SLANG   pred=SLANG       | "i think it goes beyond the basic netiquette like dont use caps and such just some random thing that popped ..."
+       Reasoning: Scanning each token: 'netiquette' is a standard term (internet etiquette). 'like dont use caps and such' is informal but not slang. 'just some random thing' — 'random' could be ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "caps"
+       Reasoning: Scanning each token: 'caps' has multiple possible meanings. The sentence is a single word in a conversation context. 'Caps' could be internet slang for 'capital letters', often ...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "totally worth an all caps post against akron no one cares"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "sorry let me use all caps yep right here"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "texas tech defense gets a threeandout on the first series against abilene christian tahj brooks caps the re..."
+
+  [big]
+  TP  gold=SLANG       pred=SLANG       | "it s more like a fanum tax ishowspeed among us big chungus rizz"
+  TP  gold=SLANG       pred=SLANG       | "big w for us george fans"
+  TP  gold=SLANG       pred=SLANG       | "its literally just a room with an animationless pap its a big l"
+  FP  gold=NOT_SLANG   pred=SLANG       | "i think we should kill jaiz with hammers nu was never even good hell it s honestly one of the worst takes o..."
+       Reasoning: Scanning each token: This text appears to be internet discourse about video games or online content (likely "sonicexe" refers to Sonic.exe creepypasta). Many tokens are standard...
+  FP  gold=NOT_SLANG   pred=SLANG       | "ouch and i wouldn t touch fetterman with a foot pole that means kamala is a big l"
+       Reasoning: Scanning each token: 'ouch' is a common expression of pain/discomfort but not specifically Gen Z slang — considered standard. 'i wouldn t touch fetterman with a foot pole' inclu...
+  FP  gold=NOT_SLANG   pred=SLANG       | "have you seen this documentary on pirate radio big l aka radio london"
+       Reasoning: Scanning each token: 'aka' is an abbreviation of 'also known as', which is widely used as internet slang. All other words are standard English in their literal sense. The senten...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "despite these challenges marks spencer sees big potential in brooks brothers noting the widely recognized n..."
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "however none of the big three weeklies recorded circulation gains recently"
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "this must be the last big stretch of the american seacoast that is undeveloped there are a few ramshackle f..."
+  FN  gold=SLANG       pred=NOT_SLANG   | "well his hat sums up what i think of him and his opinion big l"
+       Reasoning: Scanning each token: 'sums up' is standard phrase. 'l' could be internet slang for 'loss' or 'laugh', but here it's tagged as non-slang (likely meaning 'league'). The sentence l...
+  FN  gold=SLANG       pred=NOT_SLANG   | "no be this same man talk say dr pounds get big bro for abroad big l"
+       Reasoning: Scanning each token: this appears to be using African pidgin or informal dialect phrases like 'no be', 'say', 'big bro', 'big l' — but these are not Gen Z slang. They're dialect...
+  FN  gold=SLANG       pred=NOT_SLANG   | "sweetie pie pookie bear you big old softy"
+       Reasoning: Scanning each token: 'sweetie pie', 'pookie bear', 'softy' — these are affectionate nicknames or playful terms. They are not Gen Z slang but rather informal, dated expressions f...
+
+  [sus]
+  TP  gold=SLANG       pred=SLANG       | "its very sus"
+  TP  gold=SLANG       pred=SLANG       | "its close to being honest that defense was low key sus"
+  TP  gold=SLANG       pred=SLANG       | "new accounts like the evilest highly sus except ours"
+  FP  gold=NOT_SLANG   pred=SLANG       | "also earlier i typed usa into the emoji search and our flag didnt come up usually does i had to put flag an..."
+       Reasoning: Scanning each token: 'sus' is Gen Z slang (from Among Us game) meaning suspicious. The rest — 'typed usa into the emoji search' and 'flag didn't come up' — are standard English ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "damn bro some men are really down bad like that huh and is that a woman for sure the voice is super sus"
+       Reasoning: Scanning each token:
+1. 'damn' — Standard English word used for emphasis, not slang here.
+2. 'bro' — Slang abbreviation of 'brother', widely used as casual address.
+3. 'some men...
+  FP  gold=NOT_SLANG   pred=SLANG       | "anything weirdo and bona fide fruit loop loomer has to say is automatically sus"
+       Reasoning: Scanning each token: 'weirdo' and 'fruit loop' are informal insults but not necessarily Gen Z slang. 'loomer' could be slang but isn’t mainstream Gen Z slang. 'bona fide' is sta...
+  TN  gold=NOT_SLANG   pred=NOT_SLANG   | "los youtubers son felices con sus croquetas"
+
+  [cringe]
+  TP  gold=SLANG       pred=SLANG       | "wow that was cringe would love to vibe out with americans new drunk wine mom but not when she s supporting ..."
+  TP  gold=SLANG       pred=SLANG       | "worldly things that people cringe at for being dated should not be liturgical music its fossilized broadway..."
+  TP  gold=SLANG       pred=SLANG       | "ole miss is so cringe"
+  FP  gold=NOT_SLANG   pred=SLANG       | "done burn me at the steak here but this scene is so cringe"
+       Reasoning: Scanning each token: 'done' is standard English. 'burn me at the steak' is not slang (likely a misspelling of stake). Checking the phrase 'cringe' — this is Gen Z slang meaning ...
+  FP  gold=NOT_SLANG   pred=SLANG       | "i cringe so easily i m scared to switch it back on"
+       Reasoning: Scanning each token: 'i' is standard. 'cringe' can be slang as a verb meaning to feel embarrassed or awkward from watching something, which fits this context. 'so easily i m sca...
+  FP  gold=NOT_SLANG   pred=SLANG       | "for what she ran a terrible campaign vote for me i m a woman trump is bad isn t a winning strategy not step..."
+       Reasoning: Scanning each token: 'cringe' is Gen Z slang meaning embarrassing, awkward, or uncomfortable to watch — used here to describe 'Pokémon Go to the polls'. This is slang usage. All...
+  FN  gold=SLANG       pred=NOT_SLANG   | "haha who got thrashed  to  plus or  plus to  such a tight slap that policies are now changing and cringe wo..."
+       Reasoning: Scanning each token: 'haha' is a standard laughter expression, not slang. 'thrashed' is standard English for beaten. 'plus or' appears incomplete but not slang. 'slap' here appe...
+
+
+
+======================================================================
+CROSS-MODEL ERROR COMPARISON (Qwen 2.5 Plus vs DeepSeek-V3.2)
+======================================================================
+
+Both models wrong (agree on error):
+  Both predict SLANG when NOT_SLANG (shared FP) : 310
+  Both predict NOT_SLANG when SLANG (shared FN) : 68
+
+Qwen wrong, DeepSeek correct:
+  Qwen FP / DeepSeek TN : 56  (Qwen false alarms that DeepSeek avoided)
+  Qwen FN / DeepSeek TP : 120  (slang Qwen missed but DeepSeek found)
+
+DeepSeek wrong, Qwen correct:
+  DeepSeek FP / Qwen TN : 179  (DeepSeek false alarms that Qwen avoided)
+  DeepSeek FN / Qwen TP : 40  (slang DeepSeek missed but Qwen found)
+
+----------------------------------------------------------------------
+Shared False Positives (both predicted SLANG, gold NOT_SLANG) — up to 5
+----------------------------------------------------------------------
+
+  [1] gold=NOT_SLANG  pred=SLANG  | "i love that a hype squad member is getting flammed for being a moron"
+       Qwen reasoning:     Scanning each token: 'hype squad' is Gen Z slang for a group of enthusiastic supporters, often used in fandom or social media contexts. 'Flammed' is internet slang meaning publicly
+       DeepSeek reasoning: Scanning each token: 'flammed' is an internet slang variant spelling of 'flamed', meaning harshly criticized or insulted online. No other tokens are slang. The sentence contains th
+
+  [2] gold=NOT_SLANG  pred=SLANG  | "hurmm nak cut off and softblock siapa lagi eh i wanna remove toxic and negative aura people"
+       Qwen reasoning:     Scanning each token: 'hurmm' is an onomatopoeic interjection common in Gen Z/Gen Alpha internet speech (expressing hesitation or skepticism). 'nak' is Singlish/Malaysian slang for 
+       DeepSeek reasoning: Scanning each token: 'hurmm' is a non-English expression often used in Malaysian/Indonesian online contexts, representing hesitation or thinking — considered slang. 'nak' is slang 
+
+  [3] gold=NOT_SLANG  pred=SLANG  | "lukaku just snatched his chain"
+       Qwen reasoning:     Scanning each token: 'snatched his chain' is Gen Z slang meaning to humiliate or embarrass someone publicly — derived from the literal image of snatching jewelry, but used metaphor
+       DeepSeek reasoning: Scanning each token: 'lukaku' (likely a name) is not slang. 'just' is standard. 'snatched' in Gen Z slang means stealing or taking away something aggressively. Checking context, "s
+
+  [4] gold=NOT_SLANG  pred=SLANG  | "not thirsty"
+       Qwen reasoning:     'not thirsty' — 'thirsty' is Gen Z slang meaning overly eager (e.g., for attention, validation, or a romantic interest), so 'not thirsty' is the negated form of that slang. This is
+       DeepSeek reasoning: Scanning each token: 'thirsty' could be slang meaning craving attention, wanting something badly. However, checking context: it's paired with 'not' in a simple two-word expression.
+
+  [5] gold=NOT_SLANG  pred=SLANG  | "lol they cant even get a handle on petty crime all these governments pretending to be digitally omnipote..."
+       Qwen reasoning:     Scanning each token: 'lol' is internet slang (laugh out loud). 'opsec' is military/internet slang for operational security — widely used in online communities and Gen Z/Alpha conte
+       DeepSeek reasoning: Scanning each token: 'lol' is classic internet slang (meaning laugh out loud). 'they cant even get a handle on petty crime' is standard English. 'all these governments pretending t
+
+----------------------------------------------------------------------
+Shared False Negatives (both predicted NOT_SLANG, gold SLANG) — up to 5
+----------------------------------------------------------------------
+
+  [1] gold=SLANG  pred=NOT_SLANG  | "negative aura  nick fuentes ruthlessly mocks jd vance  the kyle kulinski show north america secular talk..."
+       Qwen reasoning:     Scanning each token: 'negative aura' is a phrase used in internet discourse, sometimes ironically or as meme language — but in this context, it appears to be part of a headline-sty
+       DeepSeek reasoning: Scanning each token: this text appears to be a headline or a list of keywords/tags ('negative aura', 'nick fuentes ruthlessly mocks jd vance', 'the kyle kulinski show', 'north amer
+
+  [2] gold=SLANG  pred=NOT_SLANG  | "auction draft  team super flex ppr how d i do"
+       Qwen reasoning:     Scanning each token: 'auction draft', 'team', 'super flex', 'ppr' — 'ppr' stands for 'points per reception', a standard fantasy football scoring format; 'super flex' is also standa
+       DeepSeek reasoning: Scanning each token: auction draft: standard fantasy football terminology. 'team super flex ppr' are standard fantasy football terms (position types). 'how d i do' appears to be in
+
+  [3] gold=SLANG  pred=NOT_SLANG  | "ok look i am glad you asked this is pretty basic stuff to me but coinbase is not decentralized anything ..."
+       Qwen reasoning:     Scanning each token: 'ok look', 'i am glad you asked', 'pretty basic stuff', 'coinbase', 'decentralized', 'rollup' — these are all standard terms in cryptocurrency discourse. 'Roll
+       DeepSeek reasoning: Scanning each token: 'ok' could be an abbreviation but it is likely used colloquially here, not slang. The rest of the sentence discusses blockchain and crypto technical terminolog
+
+  [4] gold=SLANG  pred=NOT_SLANG  | "their entire campaign is built on a foundation of faux enthusiasm and support they ve been told that kam..."
+       Qwen reasoning:     Scanning each token: 'faux enthusiasm' is standard English (‘faux’ is a French loanword meaning fake, used formally here). 'Kamala' is a proper noun. All other words — 'campaign', 
+       DeepSeek reasoning: Scanning each token: 'faux' is French loanword meaning fake but used in English in its literal sense. 'enthusiasm', 'support', 'they've', 'been', 'told', 'that', 'Kamala', 'is', 'w
+
+  [5] gold=SLANG  pred=NOT_SLANG  | "oh god theyre so blood thirsty there its appalling cant believe hori validated those freaks"
+       Qwen reasoning:     Scanning each token: 'blood thirsty' is used literally here (describing intense aggression), not as slang. 'Appalling', 'can't believe', 'validated', 'freaks' — while 'freaks' can 
+       DeepSeek reasoning: Scanning each token: 'blood thirsty' is a candidate slang phrase, but here it is used literally or figuratively, not as Gen Z slang. 'appalling', 'cant believe', 'freaks' are stand
+
+======================================================================
+END OF REPORT
+======================================================================

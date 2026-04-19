@@ -1,0 +1,21 @@
+============================================================
+QWEN (qwen-plus) — TOKEN_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       token_fewshot
+Samples:        3000
+Parse errors:   297 (9.9%)
+
+Sentence-level:
+  Accuracy  : 0.8003
+  Precision : 0.7482
+  Recall    : 0.9053
+  F1        : 0.8193
+
+Token-level:
+  Accuracy  : 0.9277
+  Precision : 0.2532
+  Recall    : 0.4429
+  F1        : 0.3222
+

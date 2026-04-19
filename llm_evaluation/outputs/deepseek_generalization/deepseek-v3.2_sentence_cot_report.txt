@@ -1,0 +1,14 @@
+============================================================
+LLM (deepseek-v3.2) — SENTENCE_COT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       sentence_cot
+Samples:        1000
+Parse errors:   1000 (100.0%)
+
+Sentence-level:
+  Accuracy  : 0.9360
+  Precision : 1.0000
+  Recall    : 0.9360
+  F1        : 0.9669

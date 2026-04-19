@@ -1,0 +1,21 @@
+============================================================
+LLM (qwen-plus) — TOKEN_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       token_fewshot
+Samples:        817
+Parse errors:   120 (14.7%)
+
+Sentence-level:
+  Accuracy  : 0.8286
+  Precision : 1.0000
+  Recall    : 0.8286
+  F1        : 0.9063
+
+Token-level:
+  Accuracy  : 0.8673
+  Precision : 0.2809
+  Recall    : 0.3101
+  F1        : 0.2948
+  Skipped   : 0 (length mismatch)

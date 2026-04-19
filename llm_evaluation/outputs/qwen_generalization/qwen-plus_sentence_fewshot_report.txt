@@ -1,0 +1,14 @@
+============================================================
+LLM (qwen-plus) — SENTENCE_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          qwen-plus
+Template:       sentence_fewshot
+Samples:        1000
+Parse errors:   1000 (100.0%)
+
+Sentence-level:
+  Accuracy  : 0.9060
+  Precision : 1.0000
+  Recall    : 0.9060
+  F1        : 0.9507
