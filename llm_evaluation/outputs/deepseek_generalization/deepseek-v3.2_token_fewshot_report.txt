@@ -1,0 +1,21 @@
+============================================================
+LLM (deepseek-v3.2) — TOKEN_FEWSHOT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       token_fewshot
+Samples:        358
+Parse errors:   94 (26.3%)
+
+Sentence-level:
+  Accuracy  : 0.9581
+  Precision : 1.0000
+  Recall    : 0.9581
+  F1        : 0.9786
+
+Token-level:
+  Accuracy  : 0.8708
+  Precision : 0.3140
+  Recall    : 0.3385
+  F1        : 0.3258
+  Skipped   : 0 (length mismatch)

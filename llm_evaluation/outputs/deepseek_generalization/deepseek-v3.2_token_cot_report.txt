@@ -1,0 +1,21 @@
+============================================================
+LLM (deepseek-v3.2) — TOKEN_COT EVALUATION REPORT
+============================================================
+
+Model:          deepseek-v3.2
+Template:       token_cot
+Samples:        1000
+Parse errors:   304 (30.4%)
+
+Sentence-level:
+  Accuracy  : 0.9640
+  Precision : 1.0000
+  Recall    : 0.9640
+  F1        : 0.9817
+
+Token-level:
+  Accuracy  : 0.8699
+  Precision : 0.3450
+  Recall    : 0.4356
+  F1        : 0.3850
+  Skipped   : 0 (length mismatch)
