@@ -1,6 +1,28 @@
-# Slang Detection
+# Automated Detection of Gen Z Slang in Social Media Texts
 
 NLP project for detecting Gen Z / Gen Alpha slang in text using sequence labeling (BIO tagging).
+
+## Course Information
+**Course:** CSCI 544 - Applied Natural Language Processing
+
+**Instructor:** Professor Robin Jia, Professor Xuezhe Ma
+
+**Institution:** University of Southern California
+
+**Term:** Spring 2026
+
+## Team Members
+* Christopher Ernesto (cernesto@usc.edu)
+* Christopher Sumali (sumali@usc.edu)
+* Jasmine Lao (laojasmi@usc.edu)
+* Ryan Keng (rkeng@usc.edu)
+* Romeo Nickel (rjnickel@usc.edu)
+
+## Project Description
+
+This project focuses on identifying and labeling slang expressions in text, particularly those used by Gen Z and Gen Alpha. We formulate Gen Z slang detection under two task settings: (1) sentence-level binary classification, which predicts whether a sentence contains slang, and (2) token-level sequence labeling, which identifies the full span of slang expressions using BIO tags.
+
+We implement and compare four approaches: a rule-based method, a classical machine learning model, a supervised neural model, and large language model (LLM) prompting to evaluate how well different approaches capture contextual and evolving language patterns.
 
 ## Dataset
 
