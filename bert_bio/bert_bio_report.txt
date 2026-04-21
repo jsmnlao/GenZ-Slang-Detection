@@ -2,6 +2,12 @@
 BERT BIO TAGGING REPORT
 ============================================================
 
+=== BEST HYPERPARAMETERS ===
+  Learning Rate             : 2e-05
+  Batch Size                : 16
+  Max Sequence Length       : 128
+  Num Epochs                : 3
+
 === TRAIN ===
   Sentence-level:
     Accuracy  : 0.9176
