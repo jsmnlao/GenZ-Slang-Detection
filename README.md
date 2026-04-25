@@ -1,7 +1,5 @@
 # Automated Detection of Gen Z Slang in Social Media Texts
 
-NLP project for detecting Gen Z / Gen Alpha slang in text using sequence labeling (BIO tagging).
-
 ## Course Information
 **Course:** CSCI 544 - Applied Natural Language Processing
 
@@ -23,6 +21,87 @@ NLP project for detecting Gen Z / Gen Alpha slang in text using sequence labelin
 This project focuses on identifying and labeling slang expressions in text, particularly those used by Gen Z and Gen Alpha. We formulate Gen Z slang detection under two task settings: (1) sentence-level binary classification, which predicts whether a sentence contains slang, and (2) token-level sequence labeling, which identifies the full span of slang expressions using BIO tags.
 
 We implement and compare four approaches: a rule-based method, a classical machine learning model, a supervised neural model, and large language model (LLM) prompting to evaluate how well different approaches capture contextual and evolving language patterns.
+
+## Environment Setup
+
+Run all commands from the repository root.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you need to rebuild the train/dev/test/generalization splits from the source data, run:
+
+```bash
+python build_dataset.py
+```
+
+## Device / System Used
+
+This repository was run and checked locally on:
+
+- macOS 15.7.4
+- Apple Silicon (`arm64`)
+- Python 3.13.7
+
+The neural models use PyTorch and Hugging Face Transformers. For sentence-level BERTweet experiments, we recommend running [bertweet_binary.ipynb](/Users/ryankeng/Documents/Repos/csci544-final-project/bertweet_binary.ipynb) in Google Colab rather than running `bertweet_binary.py` on a local machine, because Colab provides a faster and more practical training environment for this model.
+
+## Running The Code
+
+First, generate the dataset splits if `output/` does not already contain them:
+
+```bash
+python build_dataset.py
+```
+
+To generate model results:
+
+```bash
+python dictionary_baseline.py
+python tfidf_baseline.py
+python bert_bio.py
+```
+
+For the sentence-level BERTweet model, we recommend running [bertweet_binary.ipynb](/Users/ryankeng/Documents/Repos/csci544-final-project/bertweet_binary.ipynb) in Google Colab instead of running `bertweet_binary.py` locally, since Colab is noticeably better for training speed and overall performance. The local script is still included for reproducibility.
+
+We do not include standalone prompting scripts for the LLM experiments; those results are documented directly in `llm_evaluation/`.
+
+To generate error analysis reports:
+
+```bash
+python error_analysis_baseline.py
+python error_analysis_BERT_sentence.py
+python error_analysis_BERT_bio.py
+python error_analysis_dict_bio.py
+python error_analysis_llm.py
+```
+
+## How Results Are Generated
+
+This project has two output categories: model results and error analysis reports.
+
+For model results:
+
+- `dictionary_baseline.py` runs the rule-based dictionary baseline and writes results to `dictionary_baseline/`.
+- `tfidf_baseline.py` runs the TF-IDF baseline and writes results to `tfidf_baseline/`.
+- [bertweet_binary.ipynb](/Users/ryankeng/Documents/Repos/csci544-final-project/bertweet_binary.ipynb) is the recommended way to fine-tune BERTweet for sentence-level binary classification, especially in Google Colab for better performance; `bertweet_binary.py` is the local-script version of the same workflow. Both write outputs to `bertweet_binary_results/`.
+- `bert_bio.py` fine-tunes BERTweet for token-level BIO tagging and writes outputs to `bert_bio/`.
+- LLM prompting results are documented in `llm_evaluation/`, including Qwen and DeepSeek qualitative reports and prompting-based evaluations.
+
+Each model script reads the prepared CSV splits in `output/`, generates predictions for the relevant split(s), computes evaluation metrics, and saves report files plus prediction CSVs in its corresponding results directory.
+
+For error analysis reports:
+
+- `error_analysis_baseline.py` performs sentence-level binary error analysis for the dictionary and TF-IDF baselines.
+- `error_analysis_BERT_sentence.py` performs sentence-level binary error analysis for fine-tuned BERTweet.
+- `error_analysis_BERT_bio.py` performs token-level sequence-alignment and span-based error analysis for fine-tuned BERTweet.
+- `error_analysis_dict_bio.py` performs token-level sequence-alignment error analysis for the dictionary baseline.
+- `error_analysis_llm.py` performs sentence-level binary error analysis for Qwen and DeepSeek outputs.
+
+These scripts consume prediction files produced by the model runs, then write human-readable reports to `error_analysis/`.
 
 ## Dataset
 
@@ -116,7 +195,14 @@ error_analysis_baseline.py         # Sentence-level error analysis for dictionar
 error_analysis_BERT_sentence.py    # Sentence-level error analysis for BERTweet binary classifier
 error_analysis_BERT_bio.py         # BIO-level error analysis for BERT BIO model
 error_analysis_dict_bio.py         # BIO-level error analysis for dictionary baseline
+error_analysis_llm.py              # Sentence-level error analysis for Qwen and DeepSeek outputs
 bertweet_binary.py                 # Fine-tunes BERTweet for binary slang classification
 bertweet_binary.ipynb              # Colab notebook version of bertweet_binary.py
 bert_bio.py                        # Fine-tunes BERT for BIO token-level slang tagging
+llm_evaluation/
+  outputs/
+    qwen/                          # Qwen qualitative reports and prompting outputs on test
+    qwen_generalization/           # Qwen prompting outputs on generalization split
+    deepseek/                      # DeepSeek qualitative reports and prompting outputs on test
+    deepseek_generalization/       # DeepSeek prompting outputs on generalization split
 ```
