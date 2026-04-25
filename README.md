@@ -177,6 +177,12 @@ bert_bio/
   bert_bio_report.txt              # Evaluation report on BERT BIO token classification model
   test_predictions.csv             # BIO tag predictions on test split
   generalization_test_predictions.csv  # BIO tag predictions on generalization split
+llm_evaluation/
+  outputs/
+    qwen/                          # Qwen qualitative reports and prompting outputs on test
+    qwen_generalization/           # Qwen prompting outputs on generalization split
+    deepseek/                      # DeepSeek qualitative reports and prompting outputs on test
+    deepseek_generalization/       # DeepSeek prompting outputs on generalization split
 error_analysis/
   dict_sentence_test_report.txt              # Sentence-level error analysis: dictionary baseline on test
   dict_sentence_generalization_report.txt    # Sentence-level error analysis: dictionary baseline on generalization
@@ -188,6 +194,8 @@ error_analysis/
   bert_bio_generalization_report.txt         # BIO-level error analysis: BERT BIO on generalization
   dict_bio_test_report.txt                   # BIO-level error analysis: dictionary baseline on test
   dict_bio_generalization_report.txt         # BIO-level error analysis: dictionary baseline on generalization
+  llm_sentence_test_report.txt               # Sentence-level error analysis: Qwen and DeepSeek on test
+  llm_sentence_generalization_report.txt     # Sentence-level error analysis: Qwen and DeepSeek on generalization
 build_dataset.py                   # Generates train/dev/test/generalization splits from labeled data
 dictionary_baseline.py             # Dictionary lookup model: evaluation and prediction CSV export
 tfidf_baseline.py                  # TF-IDF sentence classifier: training, evaluation, and prediction CSV export
@@ -199,10 +207,4 @@ error_analysis_llm.py              # Sentence-level error analysis for Qwen and 
 bertweet_binary.py                 # Fine-tunes BERTweet for binary slang classification
 bertweet_binary.ipynb              # Colab notebook version of bertweet_binary.py
 bert_bio.py                        # Fine-tunes BERT for BIO token-level slang tagging
-llm_evaluation/
-  outputs/
-    qwen/                          # Qwen qualitative reports and prompting outputs on test
-    qwen_generalization/           # Qwen prompting outputs on generalization split
-    deepseek/                      # DeepSeek qualitative reports and prompting outputs on test
-    deepseek_generalization/       # DeepSeek prompting outputs on generalization split
 ```
