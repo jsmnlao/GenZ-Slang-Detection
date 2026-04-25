@@ -22,6 +22,10 @@ This project focuses on identifying and labeling slang expressions in text, part
 
 We implement and compare four approaches: a rule-based method, a classical machine learning model, a supervised neural model, and large language model (LLM) prompting to evaluate how well different approaches capture contextual and evolving language patterns.
 
+## Final Report
+
+Read the full project report here: [CSCI 544 Final Report](./CSCI_544_Final_Report.pdf)
+
 ## Environment Setup
 
 Run all commands from the repository root.
