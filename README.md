@@ -183,10 +183,30 @@ bert_bio/
   generalization_test_predictions.csv  # BIO tag predictions on generalization split
 llm_evaluation/
   outputs/
-    qwen/                          # Qwen qualitative reports and prompting outputs on test
-    qwen_generalization/           # Qwen prompting outputs on generalization split
-    deepseek/                      # DeepSeek qualitative reports and prompting outputs on test
-    deepseek_generalization/       # DeepSeek prompting outputs on generalization split
+    qwen/                                    # Qwen 2.5 Plus evaluation outputs (test set, 3,000 samples)
+      qwen-plus_sentence_cot_report.txt      # Sentence CoT results
+      qwen-plus_sentence_fewshot_report.txt  # Sentence few-shot results
+      qwen-plus_token_cot_report.txt         # Token CoT results (sentence + token level)
+      qwen-plus_token_fewshot_report.txt     # Token few-shot results (sentence + token level)
+      qualitative_report.txt                 # Qualitative CoT reasoning analysis
+      qualitative_samples.csv                # Sampled predictions with reasoning excerpts
+    qwen_generalization/                     # Qwen 2.5 Plus evaluation outputs (generalization set, 1,000 samples)
+      qwen-plus_sentence_cot_report.txt
+      qwen-plus_sentence_fewshot_report.txt
+      qwen-plus_token_cot_report.txt
+      qwen-plus_token_fewshot_report.txt
+    deepseek/                                # DeepSeek V3.2 evaluation outputs (test set, 3,000 samples)
+      deepseek-v3.2_sentence_cot_report.txt
+      deepseek-v3.2_sentence_fewshot_report.txt
+      deepseek-v3.2_token_cot_report.txt
+      deepseek-v3.2_token_fewshot_report.txt
+      qualitative_report.txt
+      qualitative_samples.csv
+    deepseek_generalization/                 # DeepSeek V3.2 evaluation outputs (generalization set, 1,000 samples)
+      deepseek-v3.2_sentence_cot_report.txt
+      deepseek-v3.2_sentence_fewshot_report.txt
+      deepseek-v3.2_token_cot_report.txt
+      deepseek-v3.2_token_fewshot_report.txt
 error_analysis/
   dict_sentence_test_report.txt              # Sentence-level error analysis: dictionary baseline on test
   dict_sentence_generalization_report.txt    # Sentence-level error analysis: dictionary baseline on generalization
