@@ -109,6 +109,34 @@ error_analysis/
   bert_bio_generalization_report.txt         # BIO-level error analysis: BERT BIO on generalization
   dict_bio_test_report.txt                   # BIO-level error analysis: dictionary baseline on test
   dict_bio_generalization_report.txt         # BIO-level error analysis: dictionary baseline on generalization
+  llm_sentence_test_report.txt               # Sentence-level error analysis: Qwen and DeepSeek on test
+  llm_sentence_generalization_report.txt     # Sentence-level error analysis: Qwen and DeepSeek on generalization
+llm_evaluation/
+  outputs/
+    qwen/                                    # Qwen 2.5 Plus evaluation outputs (test set, 3,000 samples)
+      qwen-plus_sentence_cot_report.txt      # Sentence CoT results
+      qwen-plus_sentence_fewshot_report.txt  # Sentence few-shot results
+      qwen-plus_token_cot_report.txt         # Token CoT results (sentence + token level)
+      qwen-plus_token_fewshot_report.txt     # Token few-shot results (sentence + token level)
+      qualitative_report.txt                 # Qualitative CoT reasoning analysis
+      qualitative_samples.csv               # Sampled predictions with reasoning excerpts
+    qwen_generalization/                     # Qwen 2.5 Plus evaluation outputs (generalization set, 1,000 samples)
+      qwen-plus_sentence_cot_report.txt
+      qwen-plus_sentence_fewshot_report.txt
+      qwen-plus_token_cot_report.txt
+      qwen-plus_token_fewshot_report.txt
+    deepseek/                                # DeepSeek V3.2 evaluation outputs (test set, 3,000 samples)
+      deepseek-v3.2_sentence_cot_report.txt
+      deepseek-v3.2_sentence_fewshot_report.txt
+      deepseek-v3.2_token_cot_report.txt
+      deepseek-v3.2_token_fewshot_report.txt
+      qualitative_report.txt
+      qualitative_samples.csv
+    deepseek_generalization/                 # DeepSeek V3.2 evaluation outputs (generalization set, 1,000 samples)
+      deepseek-v3.2_sentence_cot_report.txt
+      deepseek-v3.2_sentence_fewshot_report.txt
+      deepseek-v3.2_token_cot_report.txt
+      deepseek-v3.2_token_fewshot_report.txt
 build_dataset.py                   # Generates train/dev/test/generalization splits from labeled data
 dictionary_baseline.py             # Dictionary lookup model: evaluation and prediction CSV export
 tfidf_baseline.py                  # TF-IDF sentence classifier: training, evaluation, and prediction CSV export
@@ -116,6 +144,7 @@ error_analysis_baseline.py         # Sentence-level error analysis for dictionar
 error_analysis_BERT_sentence.py    # Sentence-level error analysis for BERTweet binary classifier
 error_analysis_BERT_bio.py         # BIO-level error analysis for BERT BIO model
 error_analysis_dict_bio.py         # BIO-level error analysis for dictionary baseline
+error_analysis_llm.py              # Sentence-level error analysis for Qwen and DeepSeek LLM models
 bertweet_binary.py                 # Fine-tunes BERTweet for binary slang classification
 bertweet_binary.ipynb              # Colab notebook version of bertweet_binary.py
 bert_bio.py                        # Fine-tunes BERT for BIO token-level slang tagging
